@@ -1,0 +1,237 @@
+{
+    "baseline_results": {
+        "base_clean_acc": 1.0,
+        "base_clean_em": 1.0,
+        "base_corr_acc": 0.0,
+        "base_corr_em": 0.0,
+        "pruned_clean_acc": 1.0,
+        "pruned_clean_em": 1.0,
+        "kl_div": 0.0
+    },
+    "pre_final_results": {
+        "base_clean_acc": 1.0,
+        "base_clean_em": 1.0,
+        "base_corr_acc": 0.0,
+        "base_corr_em": 0.0,
+        "pruned_clean_acc": 1.0,
+        "pruned_clean_em": 1.0,
+        "kl_div": 0.0
+    },
+    "final_results": {
+        "base_clean_acc": 1.0,
+        "base_clean_em": 1.0,
+        "base_corr_acc": 0.0,
+        "base_corr_em": 0.0,
+        "pruned_clean_acc": 1.0,
+        "pruned_clean_em": 1.0,
+        "kl_div": 0.0
+    },
+    "pruning_details": {
+        "granularity_stats": {
+            "embedding": {
+                "total": 1,
+                "active": 0
+            },
+            "layer_level": {
+                "total": 16,
+                "active": 16
+            },
+            "attention_blocks": {
+                "total": 16,
+                "active": 16
+            },
+            "mlp_blocks": {
+                "total": 16,
+                "active": 16
+            },
+            "attention_heads": {
+                "total": 512,
+                "active": 512
+            },
+            "attention_neurons": {
+                "total": 32768,
+                "active": 32768
+            },
+            "mlp_hidden": {
+                "total": 131072,
+                "active": 131072
+            },
+            "mlp_output": {
+                "total": 32768,
+                "active": 32768
+            }
+        },
+        "layer_report": [
+            {
+                "layer": 0,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 1,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 2,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 3,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 4,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 5,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 6,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 7,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 8,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 9,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 10,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 11,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 12,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 13,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 14,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            },
+            {
+                "layer": 15,
+                "layer_active": true,
+                "attn_block": "Active",
+                "mlp_block": "Active",
+                "attn_heads": "32/32",
+                "attn_neurons": "2048/2048",
+                "mlp_hidden": "8192/8192",
+                "mlp_output": "2048/2048"
+            }
+        ],
+        "prunable_compression": {
+            "total_prunable_params": 973078528,
+            "active_prunable_params": 805601280,
+            "compression_ratio": 1.207890990441326,
+            "reduction_percentage": 17.21107219827586,
+            "total_model_params": 1236011552,
+            "fixed_params": 262933024,
+            "effective_model_params": 1068534304,
+            "effective_compression": 1.156735490262744
+        }
+    }
+}

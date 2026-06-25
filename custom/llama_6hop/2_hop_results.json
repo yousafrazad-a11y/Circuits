@@ -1,0 +1,728 @@
+{
+    "meta-llama/Llama-3.2-1B": [
+        {
+            "id": "living_normal_1",
+            "type": "clean",
+            "target": "puppy",
+            "is_correct": false
+        },
+        {
+            "id": "living_normal_1",
+            "type": "corr",
+            "target": "dad",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_1",
+            "type": "clean",
+            "target": "chest",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_1",
+            "type": "corr",
+            "target": "box",
+            "is_correct": false
+        },
+        {
+            "id": "living_normal_2",
+            "type": "clean",
+            "target": "friend",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_2",
+            "type": "corr",
+            "target": "kitty",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_2",
+            "type": "clean",
+            "target": "cart",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_2",
+            "type": "corr",
+            "target": "bag",
+            "is_correct": false
+        },
+        {
+            "id": "living_normal_3",
+            "type": "clean",
+            "target": "grandma",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_3",
+            "type": "corr",
+            "target": "puppy",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_3",
+            "type": "clean",
+            "target": "truck",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_3",
+            "type": "corr",
+            "target": "chest",
+            "is_correct": false
+        },
+        {
+            "id": "living_normal_4",
+            "type": "clean",
+            "target": "uncle",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_4",
+            "type": "corr",
+            "target": "friend",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_4",
+            "type": "clean",
+            "target": "boat",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_4",
+            "type": "corr",
+            "target": "cart",
+            "is_correct": false
+        },
+        {
+            "id": "living_normal_5",
+            "type": "clean",
+            "target": "aunt",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_5",
+            "type": "corr",
+            "target": "grandma",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_5",
+            "type": "clean",
+            "target": "train",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_5",
+            "type": "corr",
+            "target": "truck",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_1",
+            "type": "clean",
+            "target": "puppy",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_1",
+            "type": "corr",
+            "target": "dad",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_shifted_1",
+            "type": "clean",
+            "target": "chest",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_1",
+            "type": "corr",
+            "target": "box",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_2",
+            "type": "clean",
+            "target": "friend",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_2",
+            "type": "corr",
+            "target": "kitty",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_2",
+            "type": "clean",
+            "target": "cart",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_2",
+            "type": "corr",
+            "target": "bag",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_3",
+            "type": "clean",
+            "target": "grandma",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_3",
+            "type": "corr",
+            "target": "puppy",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_3",
+            "type": "clean",
+            "target": "truck",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_3",
+            "type": "corr",
+            "target": "chest",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_4",
+            "type": "clean",
+            "target": "uncle",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_4",
+            "type": "corr",
+            "target": "friend",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_shifted_4",
+            "type": "clean",
+            "target": "boat",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_4",
+            "type": "corr",
+            "target": "cart",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_5",
+            "type": "clean",
+            "target": "aunt",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_5",
+            "type": "corr",
+            "target": "grandma",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_5",
+            "type": "clean",
+            "target": "train",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_5",
+            "type": "corr",
+            "target": "truck",
+            "is_correct": true
+        }
+    ],
+    "meta-llama/Meta-Llama-3.1-8B": [
+        {
+            "id": "living_normal_1",
+            "type": "clean",
+            "target": "puppy",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_1",
+            "type": "corr",
+            "target": "dad",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_1",
+            "type": "clean",
+            "target": "chest",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_1",
+            "type": "corr",
+            "target": "box",
+            "is_correct": false
+        },
+        {
+            "id": "living_normal_2",
+            "type": "clean",
+            "target": "friend",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_2",
+            "type": "corr",
+            "target": "kitty",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_2",
+            "type": "clean",
+            "target": "cart",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_2",
+            "type": "corr",
+            "target": "bag",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_3",
+            "type": "clean",
+            "target": "grandma",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_3",
+            "type": "corr",
+            "target": "puppy",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_3",
+            "type": "clean",
+            "target": "truck",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_3",
+            "type": "corr",
+            "target": "chest",
+            "is_correct": false
+        },
+        {
+            "id": "living_normal_4",
+            "type": "clean",
+            "target": "uncle",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_4",
+            "type": "corr",
+            "target": "friend",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_4",
+            "type": "clean",
+            "target": "boat",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_4",
+            "type": "corr",
+            "target": "cart",
+            "is_correct": false
+        },
+        {
+            "id": "living_normal_5",
+            "type": "clean",
+            "target": "aunt",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_5",
+            "type": "corr",
+            "target": "grandma",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_5",
+            "type": "clean",
+            "target": "train",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_5",
+            "type": "corr",
+            "target": "truck",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_1",
+            "type": "clean",
+            "target": "puppy",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_1",
+            "type": "corr",
+            "target": "dad",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_1",
+            "type": "clean",
+            "target": "chest",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_1",
+            "type": "corr",
+            "target": "box",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_2",
+            "type": "clean",
+            "target": "friend",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_2",
+            "type": "corr",
+            "target": "kitty",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_2",
+            "type": "clean",
+            "target": "cart",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_2",
+            "type": "corr",
+            "target": "bag",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_3",
+            "type": "clean",
+            "target": "grandma",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_3",
+            "type": "corr",
+            "target": "puppy",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_3",
+            "type": "clean",
+            "target": "truck",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_3",
+            "type": "corr",
+            "target": "chest",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_4",
+            "type": "clean",
+            "target": "uncle",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_4",
+            "type": "corr",
+            "target": "friend",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_shifted_4",
+            "type": "clean",
+            "target": "boat",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_4",
+            "type": "corr",
+            "target": "cart",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_5",
+            "type": "clean",
+            "target": "aunt",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_5",
+            "type": "corr",
+            "target": "grandma",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_shifted_5",
+            "type": "clean",
+            "target": "train",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_5",
+            "type": "corr",
+            "target": "truck",
+            "is_correct": true
+        }
+    ],
+    "Qwen/Qwen2.5-32B": [
+        {
+            "id": "living_normal_1",
+            "type": "clean",
+            "target": "puppy",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_1",
+            "type": "corr",
+            "target": "dad",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_1",
+            "type": "clean",
+            "target": "chest",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_1",
+            "type": "corr",
+            "target": "box",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_2",
+            "type": "clean",
+            "target": "friend",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_2",
+            "type": "corr",
+            "target": "kitty",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_2",
+            "type": "clean",
+            "target": "cart",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_2",
+            "type": "corr",
+            "target": "bag",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_3",
+            "type": "clean",
+            "target": "grandma",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_3",
+            "type": "corr",
+            "target": "puppy",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_3",
+            "type": "clean",
+            "target": "truck",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_3",
+            "type": "corr",
+            "target": "chest",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_4",
+            "type": "clean",
+            "target": "uncle",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_4",
+            "type": "corr",
+            "target": "friend",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_normal_4",
+            "type": "clean",
+            "target": "boat",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_4",
+            "type": "corr",
+            "target": "cart",
+            "is_correct": true
+        },
+        {
+            "id": "living_normal_5",
+            "type": "clean",
+            "target": "aunt",
+            "is_correct": false
+        },
+        {
+            "id": "living_normal_5",
+            "type": "corr",
+            "target": "grandma",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_5",
+            "type": "clean",
+            "target": "train",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_normal_5",
+            "type": "corr",
+            "target": "truck",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_1",
+            "type": "clean",
+            "target": "puppy",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_1",
+            "type": "corr",
+            "target": "dad",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_1",
+            "type": "clean",
+            "target": "chest",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_1",
+            "type": "corr",
+            "target": "box",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_2",
+            "type": "clean",
+            "target": "friend",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_2",
+            "type": "corr",
+            "target": "kitty",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_shifted_2",
+            "type": "clean",
+            "target": "cart",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_2",
+            "type": "corr",
+            "target": "bag",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_3",
+            "type": "clean",
+            "target": "grandma",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_3",
+            "type": "corr",
+            "target": "puppy",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_shifted_3",
+            "type": "clean",
+            "target": "truck",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_shifted_3",
+            "type": "corr",
+            "target": "chest",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_4",
+            "type": "clean",
+            "target": "uncle",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_4",
+            "type": "corr",
+            "target": "friend",
+            "is_correct": true
+        },
+        {
+            "id": "non_living_shifted_4",
+            "type": "clean",
+            "target": "boat",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_4",
+            "type": "corr",
+            "target": "cart",
+            "is_correct": true
+        },
+        {
+            "id": "living_shifted_5",
+            "type": "clean",
+            "target": "aunt",
+            "is_correct": false
+        },
+        {
+            "id": "living_shifted_5",
+            "type": "corr",
+            "target": "grandma",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_5",
+            "type": "clean",
+            "target": "train",
+            "is_correct": false
+        },
+        {
+            "id": "non_living_shifted_5",
+            "type": "corr",
+            "target": "truck",
+            "is_correct": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+# Single 40GB A100 (Jetstream2), in-process vLLM. No server, no SLURM.
+#
+# TARGET: CUDA 12.2 (driver/runtime on the instance).
+# vLLM's standard PyPI wheels are built against the CUDA 12.1 toolkit and bundle
+# a matching torch. CUDA is minor-version compatible within 12.x, so these
+# cu121 wheels run correctly on a CUDA 12.2 driver -- this is the supported path
+# and needs no special index. Do NOT pip-install a separate torch; let vLLM pull
+# the exact build it was compiled against.
+#
+# Install:
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+# IMPORTANT -- transformers pin:
+# vLLM 0.6.x calls tokenizer APIs (e.g. all_special_tokens_extended) that newer
+# transformers removed in its tokenizer-backend refactor. A too-new transformers
+# raises:
+#   AttributeError: TokenizersBackend has no attribute all_special_tokens_extended
+# Pinning transformers to the 4.45-4.46 line that vLLM 0.6.x was built against
+# fixes it. (If you upgrade vLLM to >=0.7, relax this pin accordingly.)
+#
+# The default judge (Qwen/Qwen2.5-32B-Instruct-AWQ) runs via vLLM's built-in
+# AWQ-Marlin kernels on Ampere -- no autoawq package is needed for inference.
+
+vllm>=0.6.0,<0.7.0           # high-throughput batched inference (cu121 wheel, CUDA 12.2-compatible)
+transformers>=4.45.2,<4.47   # MUST match vLLM 0.6.x; newer versions break the tokenizer
+tqdm>=4.66.0                 # progress bars
