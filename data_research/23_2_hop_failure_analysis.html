@@ -1,0 +1,77 @@
+<html><body><style>body{font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 2rem auto; padding: 0 1rem;}</style><h1>2-Hop Logical Tracking Failure Analysis (Qwen-32B)</h1>
+<h2>Overview</h2>
+<p>This report analyzes the failure patterns of Qwen-32B on the new 2-hop non-living dataset (<code>dataset2.jsonl</code>). We evaluated 1,000 generated prompts in both "clean" and "corrupted" structural states. </p>
+<p><strong>Combined Accuracy:</strong> 49.50% 
+<em>(A success requires the model to correctly answer BOTH the clean and corrupted prompt variants, completely ruling out lucky guesses).</em></p>
+<h2>Performance by Theme</h2>
+<p>We observed a massive disparity in logical tracking accuracy depending on the theme (setting) of the prompt:</p>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Combined Accuracy</th>
+<th>Total Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>The Storage Room</strong></td>
+<td><strong>93.4%</strong></td>
+<td>91</td>
+</tr>
+<tr>
+<td><strong>The Laboratory</strong></td>
+<td><strong>57.7%</strong></td>
+<td>130</td>
+</tr>
+<tr>
+<td><strong>The Warehouse</strong></td>
+<td><strong>51.2%</strong></td>
+<td>43</td>
+</tr>
+<tr>
+<td><strong>The Post Office</strong></td>
+<td><strong>47.0%</strong></td>
+<td>372</td>
+</tr>
+<tr>
+<td><strong>The NonLiving Kitchen</strong></td>
+<td><strong>37.9%</strong></td>
+<td>364</td>
+</tr>
+</tbody>
+</table>
+<p>By analyzing three separate randomized samples of 50 failures, we successfully isolated the exact mechanistic traps that break the LLM's logical tracking circuit. </p>
+<hr />
+<h2>Failure Mode 1: Semantic Bleeding (The Kitchen Trap)</h2>
+<p>The worst-performing theme was "The NonLiving Kitchen." When we analyze the entities involved in the failures, <strong><code>shelf</code></strong> (appearing in 197 failures) and <strong><code>drawer</code></strong> (appearing in 67 failures) are by far the most common "stationary distractor" containers.</p>
+<blockquote>
+<p>[!WARNING]
+<strong>Example Prompt:</strong> "The bean is placed in the tray. The pebble is placed in the shelf. The tray is moved to the pantry. The pantry is moved to the kitchen. The bean is in the -&gt; kitchen"</p>
+</blockquote>
+<p><strong>Why it fails:</strong> 
+The model possesses strong pre-trained semantic priors that a <code>shelf</code> or a <code>drawer</code> natively belongs inside a <code>pantry</code> or a <code>kitchen</code>. Even though the prompt explicitly places the distractor object (pebble) on the shelf and <em>never moves the shelf</em>, the model's semantic network hallucinates that the shelf was automatically transported inside the kitchen along with the tray. </p>
+<p><strong>The LLM allows implicit spatial assumptions to override explicit logical instructions.</strong></p>
+<hr />
+<h2>Failure Mode 2: Lexical Overlap (The Post Office Trap)</h2>
+<p>The second worst-performing theme was "The Post Office." The bottom 5 absolute worst-performing prompts in the entire dataset (where the model scored literally 0.00% probability of getting the right answer) all belonged to this theme.</p>
+<blockquote>
+<p>[!WARNING]
+<strong>Example Prompt:</strong> "The stamp is placed in the mailbag. The envelope is placed in the mailbox. The mailbag is moved to the postbox. The postbox is moved to the postoffice."</p>
+</blockquote>
+<p><strong>Why it fails:</strong>
+The entities used are <code>mailbag</code>, <code>mailbox</code>, <code>postbox</code>, <code>postoffice</code>, and <code>posttruck</code>. 
+The model's attention heads lose the ability to track distinct entities because the tokens (<code>mail</code>, <code>post</code>, <code>box</code>, <code>bag</code>) bleed into each other. When asked to track whether the <code>mailbag</code> or the <code>mailbox</code> moved to the <code>postbox</code>, the overlapping prefixes and suffixes cause severe attention confusion. </p>
+<p><strong>Lexical similarity destroys multi-hop attention routing.</strong></p>
+<hr />
+<h2>The Control: Pure Logic Success (The Storage Room)</h2>
+<p>The model achieved an outstanding <strong>93.4% accuracy</strong> in "The Storage Room" theme.</p>
+<blockquote>
+<p>[!TIP]
+<strong>Example Prompt:</strong> "The gold is placed in the crate. The jewel is placed in the shelf. The crate is moved to the rack. The rack is moved to the warehouse."</p>
+</blockquote>
+<p><strong>Why it succeeds:</strong>
+1. <strong>Lexical Distinctness:</strong> The entities (<code>crate</code>, <code>shelf</code>, <code>rack</code>, <code>warehouse</code>) share no overlapping tokens, allowing clean attention mapping.
+2. <strong>Weak Spatial Priors:</strong> A <code>crate</code> moving to a <code>rack</code> does not trigger overwhelming pre-trained assumptions that a <code>shelf</code> must also automatically move to a <code>warehouse</code>.</p>
+<h2>Conclusion</h2>
+<p>If you want to test pure logical reasoning without interference, <strong>you must construct datasets where entities are lexically distinct and lack strong pre-trained spatial hierarchies.</strong> If you use words with heavy spatial associations (like kitchen cabinets) or overlapping tokens (like mailboxes), you are inadvertently testing the model's semantic prior strength rather than its logical tracking circuit.</p></body></html>

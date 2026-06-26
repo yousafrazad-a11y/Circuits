@@ -108,6 +108,10 @@ from typing import List, Optional
 
 from tqdm import tqdm
 
+# Bypass vLLM's reliance on nvcc / FlashInfer which is unavailable here
+os.environ["VLLM_USE_FLASHINFER_SAMPLER"] = "0"
+os.environ["VLLM_WORKER_MULTIPROC_METHOD"] = "spawn"
+
 # ---------------------------------------------------------------------------
 # 1. EXPANDED THEME MATRIX (THE PROMPT ROTATION)
 # ---------------------------------------------------------------------------
@@ -121,25 +125,20 @@ from tqdm import tqdm
 # In CORRUPTED, the two placements are swapped -> target_item sits in the fixed
 # container and never moves -> answer is the fixed container.
 THEMES: dict[str, List[str]] = {
-    "The Warehouse": [
-        "bolt", "tool", "box", "bin",
-        "crate", "pallet", "truck", "train", "ship", "plane",
-    ],
-    "The Post Office": [
-        "card", "note", "bag", "sack",
-        "cart", "van", "truck", "plane", "train", "depot",
-    ],
-    "The Laboratory": [
-        "slide", "tube", "rack", "case",
-        "cooler", "fridge", "vault", "truck", "van", "ship",
-    ],
-    "The NonLiving Kitchen": [
-        "bean", "nut", "cup", "jar",
-        "bowl", "pan", "fridge", "cart", "van", "truck",
-    ],
     "The Storage Room": [
-        "coin", "gem", "safe", "vault",
-        "chest", "truck", "train", "plane", "ship", "bag",
+        "coin", "gem", "chest", "safe", "truck", "train"
+    ],
+    "The Treasury": [
+        "gold", "cash", "case", "vault", "cart", "ship"
+    ],
+    "The Armory": [
+        "sword", "shield", "chest", "rack", "wagon", "fort"
+    ],
+    "The Supply Yard": [
+        "brick", "pipe", "bin", "pallet", "truck", "yard"
+    ],
+    "The Toy Chest": [
+        "doll", "block", "case", "trunk", "wagon", "plane"
     ],
 }
 
@@ -156,11 +155,11 @@ THEMES: dict[str, List[str]] = {
 # item, both containers, and the six roles), which keeps every example realistic
 # while exploding diversity (theme x variation x sampling).
 THEME_VARIATIONS: dict[str, List[str]] = {
-    "The Warehouse": ["bolt", "tool", "gear", "part", "nail", "wire"],
-    "The Post Office": ["card", "note", "stamp", "bill", "form", "mail"],
-    "The Laboratory": ["slide", "tube", "vial", "swab", "pill", "drug"],
-    "The NonLiving Kitchen": ["bean", "nut", "seed", "plum", "pea", "egg"],
     "The Storage Room": ["coin", "gem", "ring", "gold", "cash", "bond"],
+    "The Treasury": ["gold", "cash", "bond", "coin", "gem", "ring"],
+    "The Armory": ["sword", "shield", "spear", "bow", "helm", "axe"],
+    "The Supply Yard": ["brick", "pipe", "wire", "wood", "nail", "bolt"],
+    "The Toy Chest": ["doll", "block", "ball", "bear", "kite", "toy"],
 }
 
 # ---------------------------------------------------------------------------
@@ -187,7 +186,9 @@ INTERP_REQUIREMENTS = (
     "and ALL containers must be non-living containers, locations, or vehicles.\n"
     "4. BOTH ITEMS FIT BOTH CONTAINERS: each item fits inside EITHER mobile or fixed.\n"
     "5. SENSIBLE CHAIN: the containers make a natural nesting/moving sequence (e.g., box -> truck -> ship).\n"
-    "6. CLEAN FORMATTING: lowercase, normal spaces, no code-style tokens."
+    "6. CLEAN FORMATTING: lowercase, normal spaces, no code-style tokens.\n"
+    "7. NO LEXICAL OVERLAP: No two words can share prefixes, suffixes, or compound roots. (e.g., REJECT if you see 'mailbag' and 'mailbox' in the same array). Every word must be completely visually and phonetically distinct.\n"
+    "8. NO SEMANTIC ENTAILMENT (HIERARCHY): Do not use stationary containers that naturally imply the outer container. (e.g., REJECT placing a 'shelf' inside a 'kitchen', because a shelf is intrinsically part of a kitchen). The mobile container and outer locations must be completely distinct, separate entities (like a crate moving to a truck)."
 )
 
 # ---- Generator prompt -----------------------------------------------------
