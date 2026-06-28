@@ -1,0 +1,12 @@
+{
+    "model": "RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8",
+    "clean_top1": 0.748,
+    "clean_top3": 0.932,
+    "clean_top10": 1.0,
+    "corrupted_top1": 0.902,
+    "corrupted_top3": 0.998,
+    "corrupted_top10": 1.0,
+    "combined_top1": 0.652,
+    "combined_top3": 0.93,
+    "combined_top10": 1.0
+}

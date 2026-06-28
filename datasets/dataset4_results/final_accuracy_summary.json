@@ -1,0 +1,62 @@
+{
+    "qwen_normal_32b": {
+        "model": "Qwen/Qwen2.5-32B-Instruct-GPTQ-Int8",
+        "clean_top1": 0.52,
+        "clean_top3": 0.892,
+        "clean_top10": 0.972,
+        "corrupted_top1": 0.29,
+        "corrupted_top3": 0.416,
+        "corrupted_top10": 0.69,
+        "combined_top1": 0.17,
+        "combined_top3": 0.39,
+        "combined_top10": 0.666
+    },
+    "qwen_coder_32b": {
+        "model": "Qwen/Qwen2.5-Coder-32B-Instruct-GPTQ-Int8",
+        "clean_top1": 0.948,
+        "clean_top3": 1.0,
+        "clean_top10": 1.0,
+        "corrupted_top1": 0.378,
+        "corrupted_top3": 0.564,
+        "corrupted_top10": 0.844,
+        "combined_top1": 0.37,
+        "combined_top3": 0.564,
+        "combined_top10": 0.844
+    },
+    "qwen_coder_7b": {
+        "model": "Qwen/Qwen2.5-Coder-7B-Instruct-GPTQ-Int8",
+        "clean_top1": 0.184,
+        "clean_top3": 0.884,
+        "clean_top10": 1.0,
+        "corrupted_top1": 0.394,
+        "corrupted_top3": 0.614,
+        "corrupted_top10": 0.898,
+        "combined_top1": 0.046,
+        "combined_top3": 0.578,
+        "combined_top10": 0.898
+    },
+    "deepseek_coder_33b": {
+        "model": "TheBloke/deepseek-coder-33B-instruct-AWQ",
+        "clean_top1": 0.82,
+        "clean_top3": 0.894,
+        "clean_top10": 0.918,
+        "corrupted_top1": 0.0,
+        "corrupted_top3": 0.022,
+        "corrupted_top10": 0.126,
+        "combined_top1": 0.0,
+        "combined_top3": 0.022,
+        "combined_top10": 0.124
+    },
+    "deepseek_thinking_32b": {
+        "model": "RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8",
+        "clean_top1": 0.798,
+        "clean_top3": 0.974,
+        "clean_top10": 1.0,
+        "corrupted_top1": 0.49,
+        "corrupted_top3": 0.838,
+        "corrupted_top10": 0.998,
+        "combined_top1": 0.42,
+        "combined_top3": 0.824,
+        "combined_top10": 0.998
+    }
+}

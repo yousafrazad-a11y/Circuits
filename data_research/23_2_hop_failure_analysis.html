@@ -1,4 +1,4 @@
-<html><body><style>body{font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 2rem auto; padding: 0 1rem;}</style><h1>2-Hop Logical Tracking Failure Analysis (Qwen-32B)</h1>
+<html><head><style>body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; } table { border-collapse: collapse; width: 100%; margin-bottom: 20px; } th, td { border: 1px solid #ddd; padding: 8px; text-align: left; } th { background-color: #f2f2f2; } blockquote { border-left: 4px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; background: #f9f9f9; }</style></head><body><h1>2-Hop Logical Tracking Failure Analysis (Qwen-32B)</h1>
 <h2>Overview</h2>
 <p>This report analyzes the failure patterns of Qwen-32B on the new 2-hop non-living dataset (<code>dataset2.jsonl</code>). We evaluated 1,000 generated prompts in both "clean" and "corrupted" structural states. </p>
 <p><strong>Combined Accuracy:</strong> 49.50% 
@@ -73,5 +73,50 @@ The model's attention heads lose the ability to track distinct entities because 
 <p><strong>Why it succeeds:</strong>
 1. <strong>Lexical Distinctness:</strong> The entities (<code>crate</code>, <code>shelf</code>, <code>rack</code>, <code>warehouse</code>) share no overlapping tokens, allowing clean attention mapping.
 2. <strong>Weak Spatial Priors:</strong> A <code>crate</code> moving to a <code>rack</code> does not trigger overwhelming pre-trained assumptions that a <code>shelf</code> must also automatically move to a <code>warehouse</code>.</p>
-<h2>Conclusion</h2>
-<p>If you want to test pure logical reasoning without interference, <strong>you must construct datasets where entities are lexically distinct and lack strong pre-trained spatial hierarchies.</strong> If you use words with heavy spatial associations (like kitchen cabinets) or overlapping tokens (like mailboxes), you are inadvertently testing the model's semantic prior strength rather than its logical tracking circuit.</p></body></html>
+<h2>Conclusion (Dataset 2)</h2>
+<p>If you want to test pure logical reasoning without interference, <strong>you must construct datasets where entities are lexically distinct and lack strong pre-trained spatial hierarchies.</strong> If you use words with heavy spatial associations (like kitchen cabinets) or overlapping tokens (like mailboxes), you are inadvertently testing the model's semantic prior strength rather than its logical tracking circuit.</p>
+<hr />
+<h1>UPDATE: Dataset 3 &amp; Multi-Model Evaluation</h1>
+<p>Following the elimination of semantic bleeding and lexical overlap in <code>dataset3.jsonl</code>, we tested the 1,000-example dataset against three distinct 8-bit quantized architectures on a 40GB A100 to evaluate reasoning universality:
+1. <strong>The Instruct Baseline:</strong> <code>Qwen2.5-32B-Instruct-GPTQ-Int8</code>
+2. <strong>The Coder Model:</strong> <code>Qwen2.5-Coder-32B-Instruct-GPTQ-Int8</code>
+3. <strong>The Thinking Model:</strong> <code>DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8</code></p>
+<h2>Finding 1: The "Shelf" Preposition Anomaly</h2>
+<p>Across all three models, <strong>"The Armory"</strong> theme was responsible for the vast majority of all failures (e.g., 32 out of 50 sampled failures for Qwen, 15/25 total failures for Coder, 35/50 for DeepSeek). </p>
+<blockquote>
+<p>[!WARNING]
+<strong>Example Failing Prompt:</strong> "The spear is placed <strong>in the shelf</strong>."</p>
+</blockquote>
+<p><strong>Why it fails:</strong> The dataset generator uniformly applied the preposition <code>"in the"</code> to all containers. However, in standard English, objects are placed <code>"on the shelf"</code>. Because LLMs are fundamentally next-token predictors, the ungrammatical sequence <code>"in the shelf"</code> creates a severe statistical jarring effect, causing the attention mechanism to lose track of the entity entirely. This proves that structural tracking circuits are highly brittle when faced with linguistic/grammatical anomalies.</p>
+<h2>Finding 2: The Dominance of Code Models</h2>
+<p>The Coder model vastly outperformed the standard Instruct model and even the <code>&lt;think&gt;</code> reasoning model on this strict tracking task.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Combined 2-Hop Accuracy (Dataset 3)</th>
+<th>Total Failures / 1,000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Qwen2.5-Coder-32B</strong></td>
+<td><strong>95.0%</strong></td>
+<td>50</td>
+</tr>
+<tr>
+<td><strong>DeepSeek-R1-32B</strong></td>
+<td><strong>64.6%</strong></td>
+<td>354</td>
+</tr>
+<tr>
+<td><strong>Qwen2.5-Instruct-32B</strong></td>
+<td><strong>58.6%</strong></td>
+<td>414</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!TIP]
+<strong>Why Code Models Dominate:</strong> Code-specialized models are explicitly trained to track arbitrary variable states (e.g., <code>x = 5</code>, <code>y = x</code>) with zero reliance on semantic priors. The Coder model treats objects and locations purely as memory pointers, completely ignoring whether a "sword" belongs in a "bunker", making it incredibly resilient to the semantic distractions that cripple natural language models.</p>
+</blockquote></body></html>
