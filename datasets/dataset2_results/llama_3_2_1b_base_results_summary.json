@@ -1,0 +1,12 @@
+{
+    "model": "meta-llama/Llama-3.2-1B",
+    "clean_top1": 0.632,
+    "clean_top3": 0.935,
+    "clean_top10": 1.0,
+    "corrupted_top1": 0.301,
+    "corrupted_top3": 0.728,
+    "corrupted_top10": 0.991,
+    "combined_top1": 0.152,
+    "combined_top3": 0.667,
+    "combined_top10": 0.991
+}

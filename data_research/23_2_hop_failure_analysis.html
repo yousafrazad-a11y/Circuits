@@ -1,4 +1,65 @@
-<html><head><style>body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; } table { border-collapse: collapse; width: 100%; margin-bottom: 20px; } th, td { border: 1px solid #ddd; padding: 8px; text-align: left; } th { background-color: #f2f2f2; } blockquote { border-left: 4px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; background: #f9f9f9; }</style></head><body><h1>2-Hop Logical Tracking Failure Analysis (Qwen-32B)</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Hop Failure Analysis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 2rem;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #f1f8ff;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 0.9em;
+        }
+        .container {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>2-Hop Logical Tracking Failure Analysis (Qwen-32B)</h1>
 <h2>Overview</h2>
 <p>This report analyzes the failure patterns of Qwen-32B on the new 2-hop non-living dataset (<code>dataset2.jsonl</code>). We evaluated 1,000 generated prompts in both "clean" and "corrupted" structural states. </p>
 <p><strong>Combined Accuracy:</strong> 49.50% 
@@ -117,6 +178,25 @@ The model's attention heads lose the ability to track distinct entities because 
 </tbody>
 </table>
 <blockquote>
-<p>[!TIP]
-<strong>Why Code Models Dominate:</strong> Code-specialized models are explicitly trained to track arbitrary variable states (e.g., <code>x = 5</code>, <code>y = x</code>) with zero reliance on semantic priors. The Coder model treats objects and locations purely as memory pointers, completely ignoring whether a "sword" belongs in a "bunker", making it incredibly resilient to the semantic distractions that cripple natural language models.</p>
-</blockquote></body></html>
+<p><strong>Why Code Models Dominate:</strong> Code-specialized models are explicitly trained to track arbitrary variable states (e.g., <code>x = 5</code>, <code>y = x</code>) with zero reliance on semantic priors. The Coder model treats objects and locations purely as memory pointers, completely ignoring whether a "sword" belongs in a "bunker", making it incredibly resilient to the semantic distractions that cripple natural language models.</p>
+</blockquote>
+<hr />
+<h1>UPDATE: Dataset 2 vs Dataset 7 (The Semantic Gravity Theory)</h1>
+<p>Through an exhaustive analysis filtering out regex false positives, we isolated the <strong>True Robust</strong> vs <strong>Brittle</strong> examples across both Dataset 2 and Dataset 7. This revealed that the models are not actually "reasoning" through logical hops, but are rather being pulled by the <strong>semantic gravity</strong> of nouns in the prompt. When confused, the model walks a knife's edge between logic and semantic association.</p>
+<h2>1. The Over-Eager Completion Engine (Dataset 2)</h2>
+<ul>
+<li><strong>Format:</strong> <code>X is placed in A. ... A is moved to C. C is moved to D.</code></li>
+<li><strong>Behavior:</strong> The movement chain acts as a massive semantic gravity well. The model blindly predicts the final destination (<code>D</code>). It passes Clean runs, but heavily fails Corrupted runs (because it predicts <code>D</code> even when the item was placed in <code>B</code> which never moved).</li>
+<li><strong>The Caveat (Why some pass):</strong> The only time the model passes Corrupt runs is when the distractor container <code>B</code> (e.g. <code>box</code>, <code>dish</code>) is semantically "heavier" in the LLM's pre-training data than the moving container <code>A</code> (e.g. <code>can</code>, <code>bucket</code>). If the movement chain relies on weak semantic links, the gravity drops just enough for the correct logical answer (<code>B</code>) to bubble up.</li>
+</ul>
+<h2>2. The Broken Indirect Reference (Dataset 7)</h2>
+<ul>
+<li><strong>Format:</strong> <code>X is placed in A. ... The object inside A is moved to C.</code></li>
+<li><strong>Behavior:</strong> The indirect phrase <code>"The object inside A"</code> completely breaks the model's logical binding. It loses track of the movement. When confused, it falls back to a "vibe check" and guesses the heaviest, most salient storage container mentioned early in the prompt, which is almost always the distractor <code>B</code> (e.g. <code>safe</code>, <code>locker</code>, <code>cabinet</code>). </li>
+<li><strong>The Result:</strong> It heavily fails Clean runs (guessing <code>B</code> instead of <code>D</code>), but wildly passes Corrupt runs because the target in Corrupt runs <em>happens</em> to be the distractor <code>B</code>! It gets the Corrupt run right for the entirely wrong reason.</li>
+<li><strong>The Caveat (Why some pass):</strong> It only passes the Clean run when the final destination <code>D</code> is extremely salient (e.g. <code>bunker</code>, <code>depot</code>) and the distractor <code>B</code> is extremely weak (e.g. <code>box</code>, <code>pouch</code>). The heavy gravity of <code>D</code> finally pulls the model to the end of the sentence.</li>
+</ul>
+<p><strong>Conclusion:</strong> The models exhibit opposing failures because Dataset 2 is biased toward the <strong>End</strong> of the sentence, while Dataset 7 is biased toward the <strong>Beginning</strong>. The models only pass both Clean and Corrupt when the specific nouns used in the sentence happen to perfectly counterbalance the dataset's structural bias!</p>
+    </div>
+</body>
+</html>

@@ -87,5 +87,23 @@ The Coder model vastly outperformed the standard Instruct model and even the `<t
 | **DeepSeek-R1-32B** | **64.6%** | 354 |
 | **Qwen2.5-Instruct-32B** | **58.6%** | 414 |
 
-> [!TIP]
 > **Why Code Models Dominate:** Code-specialized models are explicitly trained to track arbitrary variable states (e.g., `x = 5`, `y = x`) with zero reliance on semantic priors. The Coder model treats objects and locations purely as memory pointers, completely ignoring whether a "sword" belongs in a "bunker", making it incredibly resilient to the semantic distractions that cripple natural language models.
+
+---
+
+# UPDATE: Dataset 2 vs Dataset 7 (The Semantic Gravity Theory)
+
+Through an exhaustive analysis filtering out regex false positives, we isolated the **True Robust** vs **Brittle** examples across both Dataset 2 and Dataset 7. This revealed that the models are not actually "reasoning" through logical hops, but are rather being pulled by the **semantic gravity** of nouns in the prompt. When confused, the model walks a knife's edge between logic and semantic association.
+
+## 1. The Over-Eager Completion Engine (Dataset 2)
+- **Format:** `X is placed in A. ... A is moved to C. C is moved to D.`
+- **Behavior:** The movement chain acts as a massive semantic gravity well. The model blindly predicts the final destination (`D`). It passes Clean runs, but heavily fails Corrupted runs (because it predicts `D` even when the item was placed in `B` which never moved).
+- **The Caveat (Why some pass):** The only time the model passes Corrupt runs is when the distractor container `B` (e.g. `box`, `dish`) is semantically "heavier" in the LLM's pre-training data than the moving container `A` (e.g. `can`, `bucket`). If the movement chain relies on weak semantic links, the gravity drops just enough for the correct logical answer (`B`) to bubble up.
+
+## 2. The Broken Indirect Reference (Dataset 7)
+- **Format:** `X is placed in A. ... The object inside A is moved to C.`
+- **Behavior:** The indirect phrase `"The object inside A"` completely breaks the model's logical binding. It loses track of the movement. When confused, it falls back to a "vibe check" and guesses the heaviest, most salient storage container mentioned early in the prompt, which is almost always the distractor `B` (e.g. `safe`, `locker`, `cabinet`). 
+- **The Result:** It heavily fails Clean runs (guessing `B` instead of `D`), but wildly passes Corrupt runs because the target in Corrupt runs *happens* to be the distractor `B`! It gets the Corrupt run right for the entirely wrong reason.
+- **The Caveat (Why some pass):** It only passes the Clean run when the final destination `D` is extremely salient (e.g. `bunker`, `depot`) and the distractor `B` is extremely weak (e.g. `box`, `pouch`). The heavy gravity of `D` finally pulls the model to the end of the sentence.
+
+**Conclusion:** The models exhibit opposing failures because Dataset 2 is biased toward the **End** of the sentence, while Dataset 7 is biased toward the **Beginning**. The models only pass both Clean and Corrupt when the specific nouns used in the sentence happen to perfectly counterbalance the dataset's structural bias!

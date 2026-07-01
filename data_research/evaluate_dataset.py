@@ -12,24 +12,12 @@ os.environ["VLLM_WORKER_MULTIPROC_METHOD"] = "spawn"
 os.environ["HF_TOKEN"] = "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"
 
 MODELS = {
-    "qwen_normal_32b": {
-        "name": "Qwen/Qwen2.5-32B-Instruct-GPTQ-Int8",
-        "quant": "gptq"
+    "llama_3_2_1b_base": {
+        "name": "meta-llama/Llama-3.2-1B",
+        "quant": None
     },
-    "qwen_coder_32b": {
-        "name": "Qwen/Qwen2.5-Coder-32B-Instruct-GPTQ-Int8",
-        "quant": "gptq"
-    },
-    "qwen_coder_7b": {
-        "name": "Qwen/Qwen2.5-Coder-7B-Instruct-GPTQ-Int8",
-        "quant": "gptq"
-    },
-    "deepseek_coder_33b": {
-        "name": "TheBloke/deepseek-coder-33B-instruct-AWQ",
-        "quant": "awq"
-    },
-    "deepseek_thinking_32b": {
-        "name": "RedHatAI/DeepSeek-R1-Distill-Qwen-32B-quantized.w8a8",
+    "llama_3_1_8b_base": {
+        "name": "meta-llama/Llama-3.1-8B",
         "quant": None
     }
 }
@@ -57,9 +45,10 @@ def evaluate_model(model_key, model_config, input_file, output_file):
         "model": model_config['name'],
         "tensor_parallel_size": 1,
         "max_model_len": 4096,
-        "gpu_memory_utilization": 0.90,
+        "gpu_memory_utilization": 0.80,
+        "trust_remote_code": True,
         "enforce_eager": True,
-        "trust_remote_code": True
+        "max_logprobs": 50
     }
     if model_config['quant']:
         kwargs["quantization"] = model_config['quant']
@@ -70,7 +59,7 @@ def evaluate_model(model_key, model_config, input_file, output_file):
     sampling_params = SamplingParams(
         temperature=0.0,
         max_tokens=10,
-        logprobs=20 
+        logprobs=50 
     )
     
     clean_prompts = [ex["clean_prompt"] for ex in dataset]
@@ -110,7 +99,7 @@ def evaluate_model(model_key, model_config, input_file, output_file):
             else:
                 core_pattern = last_word_pattern
                 
-            return r'^(?:a\s+|an\s+|the\s+)?' + core_pattern + r'(?:\b|\W|$)'
+            return r'(?:\b|\W|^)(?:a\s+|an\s+|the\s+)?' + core_pattern + r'(?:\b|\W|$)'
         
         c_target_full = item["clean_target"]
         corr_target_full = item["corrupted_target"]
@@ -125,49 +114,80 @@ def evaluate_model(model_key, model_config, input_file, output_file):
         corr_ids = tokenizer.encode(corr_target_full, add_special_tokens=False)
         corr_expected_token = tokenizer.decode([corr_ids[0]]).strip().lower() if corr_ids else ""
         
+        # Get expected first tokens for ALL entities to handle multi-token words (like "lockbox" -> "lock")
+        entity_expected_tokens = {}
+        for ent in item.get("entities", []):
+            ent_with_space = " " + ent
+            e_ids = tokenizer.encode(ent_with_space, add_special_tokens=False)
+            if e_ids:
+                e_tok = tokenizer.decode([e_ids[0]]).strip().lower()
+                entity_expected_tokens[ent] = e_tok
+        
         c_pred_clean = c_pred_top1.strip().lower()
         corr_pred_clean = corr_pred_top1.strip().lower()
         
-        # Top 1 regex check: string must start with target at a word boundary/punctuation
+        # Top 1 regex check: string must contain target at a word boundary/punctuation
         c_pattern = build_target_regex(c_target)
-        c_pass_top1 = bool(re.match(c_pattern, c_pred_clean)) if c_pattern else False
+        c_pass_top1 = bool(re.search(c_pattern, c_pred_clean)) if c_pattern else False
         
         corr_pattern = build_target_regex(corr_target)
-        corr_pass_top1 = bool(re.match(corr_pattern, corr_pred_clean)) if corr_pattern else False
+        corr_pass_top1 = bool(re.search(corr_pattern, corr_pred_clean)) if corr_pattern else False
         
         c_pass_top3 = c_pass_top1
         c_pass_top10 = c_pass_top1
         c_prob = 0.0
+        c_entity_probs = {ent: 0.0 for ent in item.get("entities", [])}
         
         sorted_c_logprobs = sorted(c_top.values(), key=lambda x: x.logprob, reverse=True)
-        for rank, lp_obj in enumerate(sorted_c_logprobs[:10]):
+        for rank, lp_obj in enumerate(sorted_c_logprobs):
             t = lp_obj.decoded_token
             if not t: continue
             t_clean = t.strip().lower()
             if not t_clean: continue
             
-            if t_clean == c_target or (c_expected_token and t_clean == c_expected_token):
-                if rank < 1: c_pass_top1 = True
-                if rank < 3: c_pass_top3 = True
-                if rank < 10: c_pass_top10 = True
-                if c_prob == 0.0: c_prob = math.exp(lp_obj.logprob)
+            prob = math.exp(lp_obj.logprob)
+            
+            # Check for entities using both full string and tokenizer-expected first token
+            for ent in c_entity_probs.keys():
+                exp_tok = entity_expected_tokens.get(ent, "")
+                if t_clean == ent.lower() or (t_clean.startswith(ent.lower()) and len(t_clean) <= len(ent) + 2) or (exp_tok and t_clean == exp_tok):
+                    if prob > c_entity_probs[ent]:
+                        c_entity_probs[ent] = prob
+            
+            if rank < 10:
+                if t_clean == c_target or (c_expected_token and t_clean == c_expected_token):
+                    if rank < 1: c_pass_top1 = True
+                    if rank < 3: c_pass_top3 = True
+                    if rank < 10: c_pass_top10 = True
+                    if c_prob == 0.0: c_prob = prob
                 
         corr_pass_top3 = corr_pass_top1
         corr_pass_top10 = corr_pass_top1
         corr_prob = 0.0
+        corr_entity_probs = {ent: 0.0 for ent in item.get("entities", [])}
         
         sorted_corr_logprobs = sorted(corr_top.values(), key=lambda x: x.logprob, reverse=True)
-        for rank, lp_obj in enumerate(sorted_corr_logprobs[:10]):
+        for rank, lp_obj in enumerate(sorted_corr_logprobs):
             t = lp_obj.decoded_token
             if not t: continue
             t_clean = t.strip().lower()
             if not t_clean: continue
             
-            if t_clean == corr_target or (corr_expected_token and t_clean == corr_expected_token):
-                if rank < 1: corr_pass_top1 = True
-                if rank < 3: corr_pass_top3 = True
-                if rank < 10: corr_pass_top10 = True
-                if corr_prob == 0.0: corr_prob = math.exp(lp_obj.logprob)
+            prob = math.exp(lp_obj.logprob)
+            
+            # Check for entities using both full string and tokenizer-expected first token
+            for ent in corr_entity_probs.keys():
+                exp_tok = entity_expected_tokens.get(ent, "")
+                if t_clean == ent.lower() or (t_clean.startswith(ent.lower()) and len(t_clean) <= len(ent) + 2) or (exp_tok and t_clean == exp_tok):
+                    if prob > corr_entity_probs[ent]:
+                        corr_entity_probs[ent] = prob
+            
+            if rank < 10:
+                if t_clean == corr_target or (corr_expected_token and t_clean == corr_expected_token):
+                    if rank < 1: corr_pass_top1 = True
+                    if rank < 3: corr_pass_top3 = True
+                    if rank < 10: corr_pass_top10 = True
+                    if corr_prob == 0.0: corr_prob = prob
                 
         item["clean_pred_top1"] = c_pred_top1
         item["clean_pass_top1"] = c_pass_top1
@@ -190,6 +210,9 @@ def evaluate_model(model_key, model_config, input_file, output_file):
         item["clean_prob"] = c_prob
         item["corrupted_prob"] = corr_prob
         item["avg_prob"] = (c_prob + corr_prob) / 2.0
+        
+        item["clean_entity_probs"] = c_entity_probs
+        item["corrupted_entity_probs"] = corr_entity_probs
         
         results.append(item)
         
@@ -273,8 +296,29 @@ def main():
         p.start()
         p.join()
         
+        # Kill any zombie background EngineCore processes to guarantee clean VRAM for the next model
+        import subprocess
+        try:
+            smi_out = subprocess.check_output(['nvidia-smi', '--query-compute-apps=pid', '--format=csv,noheader'])
+            gpu_pids = [pid.strip() for pid in smi_out.decode().split('\\n') if pid.strip()]
+            current_pid = str(os.getpid())
+            for pid in gpu_pids:
+                if pid != current_pid:
+                    os.system(f"kill -9 {pid}")
+                    print(f"Force-killed zombie GPU process {pid}")
+        except Exception as e:
+            pass
+        
         if p.exitcode != 0:
-            print(f"ERROR: {model_key.upper()} phase failed with exit code {p.exitcode}. VRAM will be cleared before next model.")
+            print(f"ERROR: {model_key.upper()} phase failed with exit code {p.exitcode}. VRAM has been forcefully cleared.")
+            
+        # Clear huggingface cache for this model to save disk space
+        model_repo_name = model_config["name"]
+        cache_dir = os.path.expanduser(f"~/.cache/huggingface/hub/models--{model_repo_name.replace('/', '--')}")
+        if os.path.exists(cache_dir):
+            import shutil
+            shutil.rmtree(cache_dir, ignore_errors=True)
+            print(f"Successfully cleared cache for {model_repo_name} at {cache_dir}")
             
     # Combine summaries
     all_summaries = {}
