@@ -1,0 +1,262 @@
+<html><head><style>body{font-family:sans-serif; line-height:1.6; max-width:900px; margin:auto; padding:2rem; background:#f4f4f9;} table{border-collapse:collapse; width:100%; margin:1rem 0; background:white;} th,td{border:1px solid #ddd; padding:8px; text-align:left;} th{background:#2c3e50; color:white;}</style></head><body><h1>Semantic Gravity Ratio Analysis</h1>
+<h2>Objective</h2>
+<p>To prove that the structural multi-hop chain (<code>Container 1 -&gt; Container 2 -&gt; Container 3</code>) acts as an attention trap ("Semantic Gravity Well") regardless of the logical variable binding. We hypothesize that the probability ratio between the containers in the movement chain remains mathematically similar in both the Clean state (where the target item is in the chain) and the Corrupted state (where the distractor item is in the chain).</p>
+<h2>Methodology</h2>
+<ul>
+<li><strong>Clean Prompt:</strong> <code>The distractor is placed in Unmoved_0. The target is placed in Chain_0. Chain_0 -&gt; Chain_1 -&gt; Chain_2.</code></li>
+<li><strong>Corrupted Prompt:</strong> <code>The distractor is placed in Chain_0. The target is placed in Unmoved_0. Chain_0 -&gt; Chain_1 -&gt; Chain_2.</code></li>
+</ul>
+<p>We extract the probabilities of <code>Chain_0</code>, <code>Chain_1</code>, and <code>Chain_2</code> for N=500 queries and calculate the ratio <code>1.0 : (Chain_1/Chain_0) : (Chain_2/Chain_0)</code>.</p>
+<h2>Model: 1B</h2>
+<p><strong>Clean Accuracy:</strong> 62.6% | <strong>Corrupted Accuracy:</strong> 32.6%</p>
+<h3>Clean Probabilities (Target is in the Chain)</h3>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Probability</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Unmoved_0</code></td>
+<td>0.1587</td>
+<td>Distractor Initial</td>
+</tr>
+<tr>
+<td><code>Chain_0</code></td>
+<td>0.2082</td>
+<td>Target Initial</td>
+</tr>
+<tr>
+<td><code>Chain_1</code></td>
+<td>0.1122</td>
+<td>Target Intermediate</td>
+</tr>
+<tr>
+<td><code>Chain_2</code></td>
+<td>0.2785</td>
+<td>Target Final (Correct)</td>
+</tr>
+<tr>
+<td><strong>Chain Ratio (<code>Chain_0</code>:<code>Chain_1</code>:<code>Chain_2</code>):</strong> <code>1.0 : 0.5 : 1.3</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Corrupted Probabilities (Distractor is in the Chain)</h3>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Probability</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Unmoved_0</code></td>
+<td>0.1743</td>
+<td>Target Initial (Correct)</td>
+</tr>
+<tr>
+<td><code>Chain_0</code></td>
+<td>0.1424</td>
+<td>Distractor Initial</td>
+</tr>
+<tr>
+<td><code>Chain_1</code></td>
+<td>0.0975</td>
+<td>Distractor Intermediate</td>
+</tr>
+<tr>
+<td><code>Chain_2</code></td>
+<td>0.2476</td>
+<td>Distractor Final</td>
+</tr>
+<tr>
+<td><strong>Chain Ratio (<code>Chain_0</code>:<code>Chain_1</code>:<code>Chain_2</code>):</strong> <code>1.0 : 0.7 : 1.7</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Observation:</strong> Note how the probability ratio of the containers within the multi-hop chain remains structurally similar across both prompts, even though the logical contents of the chain are entirely swapped!</p>
+</blockquote>
+<hr />
+<h2>Model: 8B</h2>
+<p><strong>Clean Accuracy:</strong> 82.2% | <strong>Corrupted Accuracy:</strong> 45.8%</p>
+<h3>Clean Probabilities (Target is in the Chain)</h3>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Probability</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Unmoved_0</code></td>
+<td>0.1079</td>
+<td>Distractor Initial</td>
+</tr>
+<tr>
+<td><code>Chain_0</code></td>
+<td>0.1703</td>
+<td>Target Initial</td>
+</tr>
+<tr>
+<td><code>Chain_1</code></td>
+<td>0.1214</td>
+<td>Target Intermediate</td>
+</tr>
+<tr>
+<td><code>Chain_2</code></td>
+<td>0.4593</td>
+<td>Target Final (Correct)</td>
+</tr>
+<tr>
+<td><strong>Chain Ratio (<code>Chain_0</code>:<code>Chain_1</code>:<code>Chain_2</code>):</strong> <code>1.0 : 0.7 : 2.7</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Corrupted Probabilities (Distractor is in the Chain)</h3>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Probability</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Unmoved_0</code></td>
+<td>0.2227</td>
+<td>Target Initial (Correct)</td>
+</tr>
+<tr>
+<td><code>Chain_0</code></td>
+<td>0.1295</td>
+<td>Distractor Initial</td>
+</tr>
+<tr>
+<td><code>Chain_1</code></td>
+<td>0.1040</td>
+<td>Distractor Intermediate</td>
+</tr>
+<tr>
+<td><code>Chain_2</code></td>
+<td>0.4004</td>
+<td>Distractor Final</td>
+</tr>
+<tr>
+<td><strong>Chain Ratio (<code>Chain_0</code>:<code>Chain_1</code>:<code>Chain_2</code>):</strong> <code>1.0 : 0.8 : 3.1</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Observation:</strong> Note how the probability ratio of the containers within the multi-hop chain remains structurally similar across both prompts, even though the logical contents of the chain are entirely swapped!</p>
+</blockquote>
+<hr />
+<h2>Model: 32B</h2>
+<p><strong>Clean Accuracy:</strong> 96.8% | <strong>Corrupted Accuracy:</strong> 97.2%</p>
+<h3>Clean Probabilities (Target is in the Chain)</h3>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Probability</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Unmoved_0</code></td>
+<td>0.0282</td>
+<td>Distractor Initial</td>
+</tr>
+<tr>
+<td><code>Chain_0</code></td>
+<td>0.0732</td>
+<td>Target Initial</td>
+</tr>
+<tr>
+<td><code>Chain_1</code></td>
+<td>0.0921</td>
+<td>Target Intermediate</td>
+</tr>
+<tr>
+<td><code>Chain_2</code></td>
+<td>0.7690</td>
+<td>Target Final (Correct)</td>
+</tr>
+<tr>
+<td><strong>Chain Ratio (<code>Chain_0</code>:<code>Chain_1</code>:<code>Chain_2</code>):</strong> <code>1.0 : 1.3 : 10.5</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Corrupted Probabilities (Distractor is in the Chain)</h3>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Probability</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Unmoved_0</code></td>
+<td>0.6829</td>
+<td>Target Initial (Correct)</td>
+</tr>
+<tr>
+<td><code>Chain_0</code></td>
+<td>0.0158</td>
+<td>Distractor Initial</td>
+</tr>
+<tr>
+<td><code>Chain_1</code></td>
+<td>0.0318</td>
+<td>Distractor Intermediate</td>
+</tr>
+<tr>
+<td><code>Chain_2</code></td>
+<td>0.1004</td>
+<td>Distractor Final</td>
+</tr>
+<tr>
+<td><strong>Chain Ratio (<code>Chain_0</code>:<code>Chain_1</code>:<code>Chain_2</code>):</strong> <code>1.0 : 2.0 : 6.4</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Observation:</strong> Note how the probability ratio of the containers within the multi-hop chain remains structurally similar across both prompts, even though the logical contents of the chain are entirely swapped!</p>
+</blockquote>
+<hr />
+<h2>Example Walkthrough</h2>
+<p><strong>Generic Clean Prompt:</strong>
+<code>The bean is placed in the bucket. The pebble is placed in the shelf. The bucket is moved to the pantry. The pantry is moved to the kitchen. The bean is in the</code>
+- <strong><code>Chain_0</code> (Target start):</strong> <code>bucket</code>
+- <strong><code>Chain_1</code> (Target inter):</strong> <code>pantry</code>
+- <strong><code>Chain_2</code> (Target final):</strong> <code>kitchen</code>
+- <strong><code>Unmoved_0</code> (Distractor):</strong> <code>shelf</code></p>
+<p><strong>Generic Corrupted Prompt:</strong>
+<code>The pebble is placed in the bucket. The bean is placed in the shelf. The bucket is moved to the pantry. The pantry is moved to the kitchen. The bean is in the</code>
+- <strong><code>Unmoved_0</code> (Target):</strong> <code>shelf</code>
+- <strong><code>Chain_0</code> (Distractor start):</strong> <code>bucket</code>
+- <strong><code>Chain_1</code> (Distractor inter):</strong> <code>pantry</code>
+- <strong><code>Chain_2</code> (Distractor final):</strong> <code>kitchen</code></p></body></html>
