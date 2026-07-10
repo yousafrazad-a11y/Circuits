@@ -1,0 +1,52 @@
+{
+    "fruits_vs_animals": {
+        "iou": 0.7250898703106902,
+        "intersection": 120821,
+        "union": 166629
+    },
+    "fruits_vs_colors": {
+        "iou": 0.7418281430219147,
+        "intersection": 128633,
+        "union": 173400
+    },
+    "fruits_vs_metals": {
+        "iou": 0.7345066466953754,
+        "intersection": 125536,
+        "union": 170912
+    },
+    "fruits_vs_vehicles": {
+        "iou": 0.7461476766608078,
+        "intersection": 131175,
+        "union": 175803
+    },
+    "animals_vs_colors": {
+        "iou": 0.7564351135958131,
+        "intersection": 127187,
+        "union": 168140
+    },
+    "animals_vs_metals": {
+        "iou": 0.7629405122719439,
+        "intersection": 128380,
+        "union": 168270
+    },
+    "animals_vs_vehicles": {
+        "iou": 0.7427694730526947,
+        "intersection": 118855,
+        "union": 160016
+    },
+    "colors_vs_metals": {
+        "iou": 0.7689356673400125,
+        "intersection": 132087,
+        "union": 171779
+    },
+    "colors_vs_vehicles": {
+        "iou": 0.7628760715218579,
+        "intersection": 128508,
+        "union": 168452
+    },
+    "metals_vs_vehicles": {
+        "iou": 0.7688489980637787,
+        "intersection": 131833,
+        "union": 171468
+    }
+}

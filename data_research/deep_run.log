@@ -1,0 +1,408 @@
+
+=======================================================
+[1/10] Intersecting 'fruits' and 'animals'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3965.27it/s]
+[ep 0 | step 0] KL_a=0.1352 KL_b=0.0024 margin_a=1.242 margin_b=0.266 | λa=4.928 λb=5.200 λcore=7.664 | sparsity=157.8331 total=158.6558
+[ep 0 | step 10] KL_a=2.1325 KL_b=0.0900 margin_a=4.758 margin_b=0.805 | λa=0.000 λb=4.590 λcore=4.590 | sparsity=79.1269 total=82.5441
+[ep 0 | step 20] KL_a=2.8850 KL_b=0.5550 margin_a=5.180 margin_b=3.727 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=5.2790
+[ep 0 | step 30] KL_a=1.1430 KL_b=0.5858 margin_a=2.773 margin_b=3.602 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=3.3737
+[ep 0 | step 40] KL_a=3.1926 KL_b=0.3626 margin_a=3.483 margin_b=3.273 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=3.4854
+[ep 0 | step 50] KL_a=1.3395 KL_b=0.3026 margin_a=2.625 margin_b=3.141 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.5540
+[ep 0 | step 60] KL_a=3.7787 KL_b=0.1833 margin_a=2.984 margin_b=0.453 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.2458
+[ep 1 | step 70] KL_a=0.7454 KL_b=0.2148 margin_a=0.000 margin_b=1.047 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.3666
+[ep 1 | step 80] KL_a=3.8551 KL_b=0.5535 margin_a=6.758 margin_b=3.469 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.6314
+[ep 1 | step 90] KL_a=0.4500 KL_b=0.4036 margin_a=0.352 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.3445
+[ep 1 | step 100] KL_a=3.1044 KL_b=0.1393 margin_a=6.656 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.8081
+[ep 1 | step 110] KL_a=0.7544 KL_b=0.0960 margin_a=0.500 margin_b=0.328 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.2871
+[ep 1 | step 120] KL_a=0.8710 KL_b=0.1865 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.2320
+[ep 2 | step 130] KL_a=0.8392 KL_b=0.1602 margin_a=1.000 margin_b=0.586 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.3824
+[ep 2 | step 140] KL_a=2.7601 KL_b=0.1529 margin_a=5.516 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.6019
+[ep 2 | step 150] KL_a=2.5950 KL_b=0.7153 margin_a=3.008 margin_b=5.367 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.4844
+[ep 2 | step 160] KL_a=1.8145 KL_b=0.1519 margin_a=0.617 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.4490
+[ep 2 | step 170] KL_a=0.4635 KL_b=0.1587 margin_a=0.000 margin_b=0.109 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.9125
+[ep 2 | step 180] KL_a=2.4216 KL_b=0.1916 margin_a=5.188 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.4215
+[ep 3 | step 190] KL_a=0.5437 KL_b=0.1635 margin_a=1.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.0284
+[ep 3 | step 200] KL_a=0.3575 KL_b=0.1062 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7991
+[ep 3 | step 210] KL_a=0.6031 KL_b=0.0986 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6669
+[ep 3 | step 220] KL_a=0.3509 KL_b=0.1089 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7712
+[ep 3 | step 230] KL_a=0.4627 KL_b=0.2400 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6386
+[ep 3 | step 240] KL_a=0.5183 KL_b=0.6042 margin_a=0.219 margin_b=4.664 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.5528
+[ep 3 | step 250] KL_a=0.4782 KL_b=0.1328 margin_a=0.000 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.9137
+[ep 4 | step 260] KL_a=2.6377 KL_b=0.0868 margin_a=4.953 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.3652
+[ep 4 | step 270] KL_a=0.3582 KL_b=0.1542 margin_a=0.000 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8405
+[ep 4 | step 280] KL_a=0.3857 KL_b=0.1001 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5948
+[ep 4 | step 290] KL_a=0.1549 KL_b=0.0953 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6783
+[ep 4 | step 300] KL_a=2.7276 KL_b=0.5722 margin_a=2.875 margin_b=4.438 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.9407
+[ep 4 | step 310] KL_a=0.3694 KL_b=0.0867 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.3147
+
+=> Pair fruits & animals Core Density: 67.61% (133304 / 197168 gates)
+
+=======================================================
+[2/10] Intersecting 'fruits' and 'colors'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3434.41it/s]
+[ep 0 | step 0] KL_a=0.3223 KL_b=0.0135 margin_a=0.172 margin_b=4.273 | λa=4.544 λb=5.177 λcore=7.449 | sparsity=152.2870 total=154.6775
+[ep 0 | step 10] KL_a=3.3669 KL_b=0.1945 margin_a=4.281 margin_b=2.930 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=4.8897
+[ep 0 | step 20] KL_a=2.2138 KL_b=1.6863 margin_a=5.344 margin_b=2.539 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=4.6704
+[ep 0 | step 30] KL_a=3.3513 KL_b=1.2993 margin_a=4.180 margin_b=1.266 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=3.5888
+[ep 0 | step 40] KL_a=1.5159 KL_b=1.0801 margin_a=3.270 margin_b=1.770 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.6367
+[ep 0 | step 50] KL_a=1.1745 KL_b=2.7925 margin_a=2.234 margin_b=1.797 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.6221
+[ep 0 | step 60] KL_a=3.3011 KL_b=1.1291 margin_a=4.461 margin_b=0.625 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.8801
+[ep 1 | step 70] KL_a=0.4354 KL_b=2.2978 margin_a=0.000 margin_b=3.535 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.2295
+[ep 1 | step 80] KL_a=0.5526 KL_b=0.6618 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.1957
+[ep 1 | step 90] KL_a=0.4593 KL_b=0.8693 margin_a=1.367 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.4307
+[ep 1 | step 100] KL_a=0.4647 KL_b=0.5204 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.1640
+[ep 1 | step 110] KL_a=0.7771 KL_b=0.6759 margin_a=0.273 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.1751
+[ep 1 | step 120] KL_a=0.5762 KL_b=2.5752 margin_a=0.500 margin_b=3.562 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.5386
+[ep 2 | step 130] KL_a=0.3393 KL_b=0.9975 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.0045
+[ep 2 | step 140] KL_a=0.5700 KL_b=0.8145 margin_a=0.500 margin_b=0.070 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.1134
+[ep 2 | step 150] KL_a=1.2869 KL_b=0.5846 margin_a=5.133 margin_b=0.359 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.6976
+[ep 2 | step 160] KL_a=0.4619 KL_b=0.4477 margin_a=1.500 margin_b=0.062 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.2130
+[ep 2 | step 170] KL_a=0.5549 KL_b=0.1735 margin_a=0.000 margin_b=1.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.1795
+[ep 2 | step 180] KL_a=0.3024 KL_b=0.6482 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8805
+[ep 3 | step 190] KL_a=0.3801 KL_b=0.6707 margin_a=1.000 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.4279
+[ep 3 | step 200] KL_a=0.3086 KL_b=0.8916 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.9012
+[ep 3 | step 210] KL_a=0.6025 KL_b=0.3463 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.6186
+[ep 3 | step 220] KL_a=0.2375 KL_b=0.9283 margin_a=0.062 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.6683
+[ep 3 | step 230] KL_a=0.5868 KL_b=2.6603 margin_a=0.031 margin_b=5.273 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=3.6850
+[ep 3 | step 240] KL_a=0.1818 KL_b=0.2191 margin_a=0.547 margin_b=0.125 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5712
+[ep 3 | step 250] KL_a=0.2879 KL_b=0.6885 margin_a=0.000 margin_b=0.062 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4729
+[ep 4 | step 260] KL_a=0.4257 KL_b=0.4463 margin_a=0.000 margin_b=0.562 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6597
+[ep 4 | step 270] KL_a=0.1565 KL_b=0.3680 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.1265
+[ep 4 | step 280] KL_a=4.0027 KL_b=0.1773 margin_a=6.262 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=7.1096
+[ep 4 | step 290] KL_a=0.5542 KL_b=0.7929 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6093
+[ep 4 | step 300] KL_a=0.2885 KL_b=0.2266 margin_a=1.047 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.1027
+[ep 4 | step 310] KL_a=0.3042 KL_b=0.3366 margin_a=0.023 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8500
+
+=> Pair fruits & colors Core Density: 70.65% (139297 / 197168 gates)
+
+=======================================================
+[3/10] Intersecting 'fruits' and 'metals'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3478.50it/s]
+[ep 0 | step 0] KL_a=0.0359 KL_b=2.0262 margin_a=0.000 margin_b=5.289 | λa=5.131 λb=1.051 λcore=5.657 | sparsity=104.9940 total=108.6696
+[ep 0 | step 10] KL_a=3.5026 KL_b=0.0166 margin_a=6.623 margin_b=2.535 | λa=0.000 λb=0.042 λcore=0.042 | sparsity=0.7334 total=6.5245
+[ep 0 | step 20] KL_a=0.8755 KL_b=0.3769 margin_a=1.922 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.4317
+[ep 0 | step 30] KL_a=0.6907 KL_b=0.5142 margin_a=1.852 margin_b=0.375 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.5051
+[ep 0 | step 40] KL_a=3.0828 KL_b=1.7528 margin_a=6.363 margin_b=4.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=5.2343
+[ep 0 | step 50] KL_a=1.5854 KL_b=0.3134 margin_a=0.562 margin_b=0.969 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.5163
+[ep 0 | step 60] KL_a=0.8131 KL_b=0.3438 margin_a=0.000 margin_b=1.516 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.3953
+[ep 1 | step 70] KL_a=0.6726 KL_b=0.4273 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.0790
+[ep 1 | step 80] KL_a=4.0252 KL_b=0.4174 margin_a=8.230 margin_b=0.258 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=3.7363
+[ep 1 | step 90] KL_a=0.7827 KL_b=2.8447 margin_a=0.000 margin_b=4.246 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=3.1838
+[ep 1 | step 100] KL_a=0.2693 KL_b=0.3753 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.7097
+[ep 1 | step 110] KL_a=0.5893 KL_b=0.3467 margin_a=0.500 margin_b=1.141 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.3031
+[ep 1 | step 120] KL_a=0.9579 KL_b=0.6606 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.2736
+[ep 2 | step 130] KL_a=0.5846 KL_b=0.1789 margin_a=0.000 margin_b=1.234 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.0946
+[ep 2 | step 140] KL_a=0.3778 KL_b=1.2411 margin_a=0.180 margin_b=4.102 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.9085
+[ep 2 | step 150] KL_a=0.3041 KL_b=0.2653 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.3794
+[ep 2 | step 160] KL_a=0.4733 KL_b=0.2279 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5801
+[ep 2 | step 170] KL_a=0.3591 KL_b=0.1944 margin_a=0.148 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.6150
+[ep 2 | step 180] KL_a=0.4377 KL_b=0.1427 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5260
+[ep 3 | step 190] KL_a=0.3349 KL_b=0.3097 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5688
+[ep 3 | step 200] KL_a=1.0716 KL_b=0.2220 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.4946
+[ep 3 | step 210] KL_a=0.2475 KL_b=1.5140 margin_a=0.000 margin_b=4.203 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=4.2988
+[ep 3 | step 220] KL_a=0.6873 KL_b=0.8055 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.7378
+[ep 3 | step 230] KL_a=0.2872 KL_b=0.1663 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.0308
+[ep 3 | step 240] KL_a=0.8994 KL_b=0.1590 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.7457
+[ep 3 | step 250] KL_a=3.5509 KL_b=0.1900 margin_a=6.793 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=6.8464
+[ep 4 | step 260] KL_a=1.0309 KL_b=1.1399 margin_a=0.742 margin_b=6.691 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=7.5689
+[ep 4 | step 270] KL_a=0.5431 KL_b=0.2576 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5985
+[ep 4 | step 280] KL_a=0.4564 KL_b=0.2206 margin_a=0.047 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.1132
+[ep 4 | step 290] KL_a=0.2864 KL_b=0.1767 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=-0.0793
+[ep 4 | step 300] KL_a=0.4445 KL_b=0.3743 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5333
+[ep 4 | step 310] KL_a=0.3066 KL_b=0.2639 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.4370
+
+=> Pair fruits & metals Core Density: 70.73% (139461 / 197168 gates)
+
+=======================================================
+[4/10] Intersecting 'fruits' and 'vehicles'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3445.52it/s]
+[ep 0 | step 0] KL_a=0.0844 KL_b=0.0037 margin_a=1.996 margin_b=0.750 | λa=5.032 λb=5.198 λcore=7.713 | sparsity=159.0929 total=160.5100
+[ep 0 | step 10] KL_a=2.9549 KL_b=0.2437 margin_a=5.148 margin_b=3.234 | λa=0.000 λb=4.934 λcore=4.934 | sparsity=84.9829 total=90.4359
+[ep 0 | step 20] KL_a=1.7398 KL_b=0.6878 margin_a=3.039 margin_b=5.297 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.9139
+[ep 0 | step 30] KL_a=2.4655 KL_b=0.5833 margin_a=2.016 margin_b=4.219 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.7434
+[ep 0 | step 40] KL_a=2.5376 KL_b=0.6034 margin_a=1.825 margin_b=3.727 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.1449
+[ep 0 | step 50] KL_a=1.0002 KL_b=0.2682 margin_a=0.742 margin_b=1.039 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.4478
+[ep 0 | step 60] KL_a=1.3910 KL_b=0.2870 margin_a=1.141 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.3879
+[ep 1 | step 70] KL_a=1.4398 KL_b=0.2956 margin_a=0.852 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.3725
+[ep 1 | step 80] KL_a=1.9653 KL_b=0.2316 margin_a=1.336 margin_b=0.562 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.6926
+[ep 1 | step 90] KL_a=3.8775 KL_b=0.6602 margin_a=3.867 margin_b=5.297 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.6576
+[ep 1 | step 100] KL_a=0.4724 KL_b=0.6234 margin_a=0.000 margin_b=3.742 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.9107
+[ep 1 | step 110] KL_a=1.4581 KL_b=0.1677 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.2707
+[ep 1 | step 120] KL_a=0.5801 KL_b=0.4907 margin_a=0.000 margin_b=3.984 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.9910
+[ep 2 | step 130] KL_a=0.6271 KL_b=0.1680 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8164
+[ep 2 | step 140] KL_a=0.5669 KL_b=0.1526 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7150
+[ep 2 | step 150] KL_a=0.5880 KL_b=0.1487 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6443
+[ep 2 | step 160] KL_a=0.8104 KL_b=0.1720 margin_a=1.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.9689
+[ep 2 | step 170] KL_a=0.6300 KL_b=0.1774 margin_a=0.078 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5396
+[ep 2 | step 180] KL_a=0.4212 KL_b=0.1224 margin_a=0.023 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6097
+[ep 3 | step 190] KL_a=0.9083 KL_b=0.5567 margin_a=0.500 margin_b=4.461 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.3332
+[ep 3 | step 200] KL_a=0.4514 KL_b=0.1205 margin_a=0.070 margin_b=0.562 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6069
+[ep 3 | step 210] KL_a=0.4512 KL_b=0.1455 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4696
+[ep 3 | step 220] KL_a=0.3209 KL_b=0.1477 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.1460
+[ep 3 | step 230] KL_a=3.3734 KL_b=0.5859 margin_a=4.258 margin_b=4.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=6.9204
+[ep 3 | step 240] KL_a=2.9699 KL_b=0.5908 margin_a=5.430 margin_b=4.961 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=8.2116
+[ep 3 | step 250] KL_a=0.3902 KL_b=0.1681 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7446
+[ep 4 | step 260] KL_a=0.9783 KL_b=0.1504 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4127
+[ep 4 | step 270] KL_a=0.3443 KL_b=0.1803 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.0362
+[ep 4 | step 280] KL_a=0.3853 KL_b=0.1185 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=-0.0373
+[ep 4 | step 290] KL_a=2.7493 KL_b=0.0923 margin_a=4.391 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.3373
+[ep 4 | step 300] KL_a=0.3892 KL_b=0.1823 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.2737
+[ep 4 | step 310] KL_a=0.4434 KL_b=0.1180 margin_a=0.445 margin_b=0.156 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.3602
+
+=> Pair fruits & vehicles Core Density: 68.01% (134100 / 197168 gates)
+
+=======================================================
+[5/10] Intersecting 'animals' and 'colors'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3653.18it/s]
+[ep 0 | step 0] KL_a=0.0054 KL_b=0.2552 margin_a=0.500 margin_b=3.203 | λa=5.194 λb=4.682 λcore=7.535 | sparsity=154.3766 total=156.3584
+[ep 0 | step 10] KL_a=0.0341 KL_b=2.1296 margin_a=0.602 margin_b=4.613 | λa=7.129 λb=0.000 λcore=7.129 | sparsity=122.7898 total=125.9479
+[ep 0 | step 20] KL_a=0.5884 KL_b=3.7499 margin_a=2.867 margin_b=6.199 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=5.5832
+[ep 0 | step 30] KL_a=0.6315 KL_b=3.6280 margin_a=4.156 margin_b=5.457 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0027 total=5.2680
+[ep 0 | step 40] KL_a=0.5607 KL_b=3.4525 margin_a=3.555 margin_b=4.180 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0027 total=3.9727
+[ep 0 | step 50] KL_a=0.5489 KL_b=2.8892 margin_a=3.766 margin_b=3.633 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0027 total=3.3869
+[ep 0 | step 60] KL_a=0.5596 KL_b=1.2683 margin_a=5.234 margin_b=1.031 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0027 total=2.7219
+[ep 1 | step 70] KL_a=0.6028 KL_b=1.3781 margin_a=4.680 margin_b=0.477 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0027 total=2.3654
+[ep 1 | step 80] KL_a=0.5211 KL_b=1.1923 margin_a=3.727 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0027 total=1.9937
+[ep 1 | step 90] KL_a=0.2349 KL_b=2.3143 margin_a=0.945 margin_b=3.281 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.2843
+[ep 1 | step 100] KL_a=0.6361 KL_b=0.6428 margin_a=5.516 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.1348
+[ep 1 | step 110] KL_a=0.2799 KL_b=2.7918 margin_a=0.000 margin_b=4.148 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.4983
+[ep 1 | step 120] KL_a=0.5384 KL_b=0.9469 margin_a=4.906 margin_b=0.594 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.1766
+[ep 2 | step 130] KL_a=0.5401 KL_b=0.3488 margin_a=4.008 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=1.8712
+[ep 2 | step 140] KL_a=0.6092 KL_b=1.2360 margin_a=4.125 margin_b=1.344 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.3913
+[ep 2 | step 150] KL_a=0.5054 KL_b=2.3587 margin_a=4.500 margin_b=5.742 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.2052
+[ep 2 | step 160] KL_a=0.6088 KL_b=0.5507 margin_a=4.516 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.9239
+[ep 2 | step 170] KL_a=0.1985 KL_b=0.6611 margin_a=0.422 margin_b=0.109 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.9889
+[ep 2 | step 180] KL_a=0.0798 KL_b=0.5942 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.0488
+[ep 3 | step 190] KL_a=0.1741 KL_b=0.5486 margin_a=0.500 margin_b=0.438 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.0086
+[ep 3 | step 200] KL_a=0.6578 KL_b=3.2449 margin_a=4.031 margin_b=4.727 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=5.0553
+[ep 3 | step 210] KL_a=0.1512 KL_b=0.5725 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5725
+[ep 3 | step 220] KL_a=0.1589 KL_b=0.5822 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.9208
+[ep 3 | step 230] KL_a=0.1095 KL_b=0.2790 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4793
+[ep 3 | step 240] KL_a=0.1620 KL_b=0.2150 margin_a=0.000 margin_b=0.391 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4180
+[ep 3 | step 250] KL_a=0.1143 KL_b=0.5233 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.3340
+[ep 4 | step 260] KL_a=0.0882 KL_b=0.1661 margin_a=0.078 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.1183
+[ep 4 | step 270] KL_a=0.1301 KL_b=0.6305 margin_a=0.547 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6187
+[ep 4 | step 280] KL_a=0.1515 KL_b=0.3389 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.0971
+[ep 4 | step 290] KL_a=0.0808 KL_b=0.4643 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.0884
+[ep 4 | step 300] KL_a=0.0797 KL_b=0.5608 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.1219
+[ep 4 | step 310] KL_a=0.1113 KL_b=0.4513 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.3638
+
+=> Pair animals & colors Core Density: 64.89% (127939 / 197168 gates)
+
+=======================================================
+[6/10] Intersecting 'animals' and 'metals'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3324.08it/s]
+[ep 0 | step 0] KL_a=0.0214 KL_b=0.1436 margin_a=1.250 margin_b=2.453 | λa=5.161 λb=4.911 λcore=7.616 | sparsity=156.8520 total=158.7860
+[ep 0 | step 10] KL_a=0.0490 KL_b=0.4277 margin_a=0.125 margin_b=1.969 | λa=5.384 λb=0.000 λcore=5.384 | sparsity=92.7275 total=93.8804
+[ep 0 | step 20] KL_a=0.5116 KL_b=2.4935 margin_a=3.180 margin_b=2.695 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.8748
+[ep 0 | step 30] KL_a=0.5001 KL_b=0.4836 margin_a=4.438 margin_b=1.578 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=3.0163
+[ep 0 | step 40] KL_a=0.2967 KL_b=0.3201 margin_a=2.812 margin_b=0.078 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=1.6660
+[ep 0 | step 50] KL_a=0.6220 KL_b=0.7125 margin_a=3.570 margin_b=2.359 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.5641
+[ep 0 | step 60] KL_a=0.5787 KL_b=1.9560 margin_a=3.758 margin_b=3.648 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=3.1298
+[ep 1 | step 70] KL_a=0.5961 KL_b=2.8243 margin_a=3.766 margin_b=4.727 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=3.4581
+[ep 1 | step 80] KL_a=0.5112 KL_b=0.5638 margin_a=3.656 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.0318
+[ep 1 | step 90] KL_a=0.2358 KL_b=0.4144 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=1.0801
+[ep 1 | step 100] KL_a=0.1634 KL_b=0.3604 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=1.2163
+[ep 1 | step 110] KL_a=0.1863 KL_b=0.1384 margin_a=0.531 margin_b=1.406 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=1.3642
+[ep 1 | step 120] KL_a=0.1784 KL_b=0.4720 margin_a=0.656 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.0316
+[ep 2 | step 130] KL_a=0.3401 KL_b=0.3105 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8284
+[ep 2 | step 140] KL_a=0.0904 KL_b=0.3800 margin_a=1.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.1425
+[ep 2 | step 150] KL_a=0.1775 KL_b=0.2914 margin_a=0.000 margin_b=0.039 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7017
+[ep 2 | step 160] KL_a=0.5810 KL_b=0.8688 margin_a=4.516 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.1782
+[ep 2 | step 170] KL_a=0.4980 KL_b=2.0566 margin_a=3.523 margin_b=4.688 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.4222
+[ep 2 | step 180] KL_a=0.2360 KL_b=0.6194 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.1344
+[ep 3 | step 190] KL_a=0.1806 KL_b=0.7465 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7990
+[ep 3 | step 200] KL_a=0.6114 KL_b=1.7814 margin_a=4.711 margin_b=3.195 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.2253
+[ep 3 | step 210] KL_a=0.6128 KL_b=1.0295 margin_a=3.688 margin_b=6.406 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=5.2210
+[ep 3 | step 220] KL_a=0.5564 KL_b=1.1229 margin_a=3.266 margin_b=5.750 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.7746
+[ep 3 | step 230] KL_a=0.1245 KL_b=0.3645 margin_a=0.000 margin_b=0.273 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5948
+[ep 3 | step 240] KL_a=0.1068 KL_b=0.4228 margin_a=0.891 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7023
+[ep 3 | step 250] KL_a=0.1991 KL_b=0.3190 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5045
+[ep 4 | step 260] KL_a=0.5998 KL_b=1.9641 margin_a=4.391 margin_b=2.633 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.9717
+[ep 4 | step 270] KL_a=0.0893 KL_b=0.5124 margin_a=0.500 margin_b=0.125 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5938
+[ep 4 | step 280] KL_a=0.4816 KL_b=0.4250 margin_a=4.414 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.9683
+[ep 4 | step 290] KL_a=0.1079 KL_b=0.1260 margin_a=0.000 margin_b=0.148 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.0619
+[ep 4 | step 300] KL_a=0.1223 KL_b=1.0278 margin_a=0.188 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.9731
+[ep 4 | step 310] KL_a=0.0807 KL_b=0.3634 margin_a=0.531 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.3845
+
+=> Pair animals & metals Core Density: 67.32% (132738 / 197168 gates)
+
+=======================================================
+[7/10] Intersecting 'animals' and 'vehicles'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3654.62it/s]
+[ep 0 | step 0] KL_a=0.5687 KL_b=0.0033 margin_a=4.000 margin_b=0.281 | λa=4.039 λb=5.198 λcore=7.218 | sparsity=145.9293 total=148.3560
+[ep 0 | step 10] KL_a=0.5927 KL_b=0.1066 margin_a=4.680 margin_b=1.672 | λa=0.759 λb=5.302 λcore=5.682 | sparsity=101.3516 total=104.8817
+[ep 0 | step 20] KL_a=0.5656 KL_b=0.3997 margin_a=4.266 margin_b=4.312 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.6742
+[ep 0 | step 30] KL_a=0.5869 KL_b=0.5189 margin_a=3.367 margin_b=3.789 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=3.6185
+[ep 0 | step 40] KL_a=0.1119 KL_b=0.1593 margin_a=0.000 margin_b=0.531 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=0.6615
+[ep 0 | step 50] KL_a=0.2539 KL_b=0.7028 margin_a=2.469 margin_b=5.242 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=3.1893
+[ep 0 | step 60] KL_a=0.3954 KL_b=0.2065 margin_a=1.535 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=1.3291
+[ep 1 | step 70] KL_a=0.2646 KL_b=0.3466 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7947
+[ep 1 | step 80] KL_a=0.1496 KL_b=0.2338 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8747
+[ep 1 | step 90] KL_a=0.1353 KL_b=0.4096 margin_a=0.062 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7348
+[ep 1 | step 100] KL_a=0.1042 KL_b=0.1947 margin_a=0.500 margin_b=0.422 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8737
+[ep 1 | step 110] KL_a=0.1299 KL_b=0.5193 margin_a=0.500 margin_b=4.164 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.0363
+[ep 1 | step 120] KL_a=0.1193 KL_b=0.5938 margin_a=0.500 margin_b=3.539 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.8459
+[ep 2 | step 130] KL_a=0.0803 KL_b=0.1683 margin_a=0.000 margin_b=1.031 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6845
+[ep 2 | step 140] KL_a=0.1340 KL_b=0.1260 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4820
+[ep 2 | step 150] KL_a=0.1079 KL_b=0.6949 margin_a=0.000 margin_b=3.844 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.7446
+[ep 2 | step 160] KL_a=0.1108 KL_b=0.2458 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5409
+[ep 2 | step 170] KL_a=0.1101 KL_b=0.2695 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.2291
+[ep 2 | step 180] KL_a=0.1075 KL_b=0.2161 margin_a=0.000 margin_b=0.234 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.2493
+[ep 3 | step 190] KL_a=0.1033 KL_b=0.1343 margin_a=0.500 margin_b=0.078 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4338
+[ep 3 | step 200] KL_a=0.0830 KL_b=0.1104 margin_a=0.000 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4118
+[ep 3 | step 210] KL_a=0.1105 KL_b=0.1774 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=-0.0383
+[ep 3 | step 220] KL_a=0.1001 KL_b=0.1328 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=-0.1322
+[ep 3 | step 230] KL_a=0.1074 KL_b=0.1366 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5503
+[ep 3 | step 240] KL_a=0.0775 KL_b=0.1780 margin_a=1.000 margin_b=0.109 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7343
+[ep 3 | step 250] KL_a=0.1028 KL_b=0.1616 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.2057
+[ep 4 | step 260] KL_a=0.0656 KL_b=0.5391 margin_a=0.000 margin_b=3.742 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.7279
+[ep 4 | step 270] KL_a=0.0904 KL_b=0.1059 margin_a=0.133 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=-0.1468
+[ep 4 | step 280] KL_a=0.6320 KL_b=0.6773 margin_a=3.781 margin_b=6.781 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=8.3391
+[ep 4 | step 290] KL_a=0.1059 KL_b=0.0989 margin_a=0.500 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8440
+[ep 4 | step 300] KL_a=0.0731 KL_b=0.1227 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=-0.2631
+[ep 4 | step 310] KL_a=0.6009 KL_b=0.5983 margin_a=4.820 margin_b=3.531 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=6.9811
+
+=> Pair animals & vehicles Core Density: 66.66% (131427 / 197168 gates)
+
+=======================================================
+[8/10] Intersecting 'colors' and 'metals'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3459.34it/s]
+[ep 0 | step 0] KL_a=0.0240 KL_b=1.7268 margin_a=1.871 margin_b=3.359 | λa=5.156 λb=1.665 λcore=5.988 | sparsity=113.5712 total=117.0618
+[ep 0 | step 10] KL_a=3.1192 KL_b=1.0017 margin_a=4.234 margin_b=2.406 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=4.7010
+[ep 0 | step 20] KL_a=0.0273 KL_b=0.8350 margin_a=1.016 margin_b=3.266 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.2210
+[ep 0 | step 30] KL_a=1.2543 KL_b=0.3150 margin_a=1.422 margin_b=1.297 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.8058
+[ep 0 | step 40] KL_a=0.9733 KL_b=0.5140 margin_a=4.789 margin_b=1.133 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.5856
+[ep 0 | step 50] KL_a=0.7688 KL_b=0.7447 margin_a=1.914 margin_b=1.203 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.8426
+[ep 0 | step 60] KL_a=0.7488 KL_b=0.7994 margin_a=0.000 margin_b=0.609 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.2877
+[ep 1 | step 70] KL_a=1.2744 KL_b=1.5385 margin_a=4.133 margin_b=4.164 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=3.3355
+[ep 1 | step 80] KL_a=1.5195 KL_b=0.3186 margin_a=4.195 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.1101
+[ep 1 | step 90] KL_a=2.3546 KL_b=0.2000 margin_a=5.484 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.6002
+[ep 1 | step 100] KL_a=0.5748 KL_b=0.1917 margin_a=1.047 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.4678
+[ep 1 | step 110] KL_a=1.7378 KL_b=0.2745 margin_a=5.801 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.4884
+[ep 1 | step 120] KL_a=0.7540 KL_b=0.3526 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.0480
+[ep 2 | step 130] KL_a=0.5704 KL_b=0.5312 margin_a=0.000 margin_b=1.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.3779
+[ep 2 | step 140] KL_a=0.4681 KL_b=0.4676 margin_a=1.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.1535
+[ep 2 | step 150] KL_a=0.9708 KL_b=0.2498 margin_a=0.055 margin_b=0.570 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=1.0933
+[ep 2 | step 160] KL_a=0.4686 KL_b=0.3332 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.7011
+[ep 2 | step 170] KL_a=0.2059 KL_b=0.3943 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5420
+[ep 2 | step 180] KL_a=0.4040 KL_b=0.2831 margin_a=0.000 margin_b=0.156 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5429
+[ep 3 | step 190] KL_a=0.4259 KL_b=1.5654 margin_a=0.500 margin_b=4.750 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=3.3173
+[ep 3 | step 200] KL_a=0.6071 KL_b=0.3180 margin_a=0.000 margin_b=0.055 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5594
+[ep 3 | step 210] KL_a=0.3346 KL_b=0.3489 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.3735
+[ep 3 | step 220] KL_a=0.2556 KL_b=0.2480 margin_a=1.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.7357
+[ep 3 | step 230] KL_a=0.2239 KL_b=2.1612 margin_a=0.000 margin_b=4.902 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=4.1457
+[ep 3 | step 240] KL_a=0.4089 KL_b=0.2548 margin_a=0.242 margin_b=1.031 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.9996
+[ep 3 | step 250] KL_a=0.2220 KL_b=0.1524 margin_a=0.000 margin_b=0.219 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.1429
+[ep 4 | step 260] KL_a=0.3290 KL_b=0.4868 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5813
+[ep 4 | step 270] KL_a=0.3103 KL_b=2.3061 margin_a=0.000 margin_b=2.242 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=2.7314
+[ep 4 | step 280] KL_a=0.3624 KL_b=0.2487 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.4574
+[ep 4 | step 290] KL_a=0.3136 KL_b=0.3450 margin_a=1.047 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.9283
+[ep 4 | step 300] KL_a=0.2406 KL_b=0.2578 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.7206
+[ep 4 | step 310] KL_a=0.4308 KL_b=0.2278 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0030 total=0.5484
+
+=> Pair colors & metals Core Density: 72.82% (143568 / 197168 gates)
+
+=======================================================
+[9/10] Intersecting 'colors' and 'vehicles'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3436.60it/s]
+[ep 0 | step 0] KL_a=0.0231 KL_b=0.0028 margin_a=4.047 margin_b=0.250 | λa=5.158 λb=5.199 λcore=7.778 | sparsity=160.7845 total=162.9459
+[ep 0 | step 10] KL_a=4.0363 KL_b=0.0365 margin_a=7.555 margin_b=0.281 | λa=0.000 λb=6.750 λcore=6.751 | sparsity=116.0640 total=121.1119
+[ep 0 | step 20] KL_a=1.5287 KL_b=0.5508 margin_a=4.004 margin_b=3.320 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.1913
+[ep 0 | step 30] KL_a=1.7177 KL_b=0.6420 margin_a=4.312 margin_b=4.773 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=4.5534
+[ep 0 | step 40] KL_a=3.6766 KL_b=0.5270 margin_a=7.539 margin_b=3.875 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=4.9497
+[ep 0 | step 50] KL_a=1.3528 KL_b=0.6354 margin_a=1.574 margin_b=5.086 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=3.0004
+[ep 0 | step 60] KL_a=0.7402 KL_b=0.6222 margin_a=2.258 margin_b=4.484 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.6501
+[ep 1 | step 70] KL_a=1.7963 KL_b=0.5324 margin_a=0.000 margin_b=5.031 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.4160
+[ep 1 | step 80] KL_a=0.9733 KL_b=0.6456 margin_a=0.297 margin_b=4.430 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=2.1570
+[ep 1 | step 90] KL_a=2.5290 KL_b=0.5986 margin_a=3.957 margin_b=4.312 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0028 total=3.0062
+[ep 1 | step 100] KL_a=1.9950 KL_b=0.1842 margin_a=7.150 margin_b=1.414 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.0092
+[ep 1 | step 110] KL_a=0.6456 KL_b=0.3393 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.3154
+[ep 1 | step 120] KL_a=0.7437 KL_b=0.1874 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.1208
+[ep 2 | step 130] KL_a=0.5328 KL_b=0.6323 margin_a=0.500 margin_b=6.438 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.5210
+[ep 2 | step 140] KL_a=0.3458 KL_b=0.2080 margin_a=1.484 margin_b=0.391 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.3270
+[ep 2 | step 150] KL_a=0.2930 KL_b=0.1900 margin_a=0.500 margin_b=0.078 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.9310
+[ep 2 | step 160] KL_a=0.3953 KL_b=0.7475 margin_a=0.500 margin_b=4.062 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.0309
+[ep 2 | step 170] KL_a=0.5504 KL_b=0.1466 margin_a=0.359 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.0695
+[ep 2 | step 180] KL_a=0.5806 KL_b=0.5289 margin_a=0.500 margin_b=4.383 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.1385
+[ep 3 | step 190] KL_a=0.3918 KL_b=0.1744 margin_a=0.000 margin_b=0.078 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7122
+[ep 3 | step 200] KL_a=0.6125 KL_b=0.1526 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8423
+[ep 3 | step 210] KL_a=0.3006 KL_b=0.1497 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5070
+[ep 3 | step 220] KL_a=2.9258 KL_b=0.5471 margin_a=4.270 margin_b=3.039 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.5809
+[ep 3 | step 230] KL_a=0.3889 KL_b=0.3134 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6947
+[ep 3 | step 240] KL_a=2.1303 KL_b=0.6287 margin_a=2.867 margin_b=4.164 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.3763
+[ep 3 | step 250] KL_a=0.4214 KL_b=0.6885 margin_a=1.000 margin_b=4.930 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.0533
+[ep 4 | step 260] KL_a=0.3087 KL_b=0.1374 margin_a=0.188 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5950
+[ep 4 | step 270] KL_a=2.1320 KL_b=0.1697 margin_a=5.383 margin_b=0.133 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.2488
+[ep 4 | step 280] KL_a=0.6295 KL_b=0.5484 margin_a=0.562 margin_b=4.156 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.8947
+[ep 4 | step 290] KL_a=0.2886 KL_b=0.1183 margin_a=0.000 margin_b=1.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6913
+[ep 4 | step 300] KL_a=0.4378 KL_b=0.1114 margin_a=0.000 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.5052
+[ep 4 | step 310] KL_a=0.4480 KL_b=0.1494 margin_a=0.039 margin_b=0.008 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.2654
+
+=> Pair colors & vehicles Core Density: 66.51% (131143 / 197168 gates)
+
+=======================================================
+[10/10] Intersecting 'metals' and 'vehicles'
+=======================================================
+
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3491.61it/s]
+[ep 0 | step 0] KL_a=0.0410 KL_b=0.0027 margin_a=0.844 margin_b=0.656 | λa=5.121 λb=5.200 λcore=7.760 | sparsity=160.2498 total=161.0217
+[ep 0 | step 10] KL_a=0.8332 KL_b=0.0439 margin_a=2.266 margin_b=0.531 | λa=0.000 λb=5.171 λcore=5.171 | sparsity=88.9237 total=90.6922
+[ep 0 | step 20] KL_a=2.1662 KL_b=0.2197 margin_a=5.102 margin_b=1.281 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.8213
+[ep 0 | step 30] KL_a=2.0822 KL_b=0.5447 margin_a=4.930 margin_b=4.375 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.7510
+[ep 0 | step 40] KL_a=1.4554 KL_b=0.5810 margin_a=4.273 margin_b=5.023 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=4.0450
+[ep 0 | step 50] KL_a=0.9670 KL_b=0.6441 margin_a=3.938 margin_b=3.781 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.0825
+[ep 0 | step 60] KL_a=0.4169 KL_b=0.6395 margin_a=0.000 margin_b=5.469 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.4380
+[ep 1 | step 70] KL_a=1.1135 KL_b=0.5055 margin_a=0.500 margin_b=4.719 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.4005
+[ep 1 | step 80] KL_a=0.7339 KL_b=0.3472 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.3196
+[ep 1 | step 90] KL_a=0.5580 KL_b=0.2091 margin_a=1.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.2390
+[ep 1 | step 100] KL_a=0.7021 KL_b=0.1149 margin_a=0.547 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.2312
+[ep 1 | step 110] KL_a=0.3492 KL_b=0.2585 margin_a=0.000 margin_b=1.822 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.3434
+[ep 1 | step 120] KL_a=0.5204 KL_b=0.1325 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.8726
+[ep 2 | step 130] KL_a=0.7741 KL_b=0.1255 margin_a=0.281 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.1028
+[ep 2 | step 140] KL_a=0.6395 KL_b=0.5758 margin_a=0.000 margin_b=3.930 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=1.9413
+[ep 2 | step 150] KL_a=0.3654 KL_b=0.6225 margin_a=0.078 margin_b=4.789 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=2.1175
+[ep 2 | step 160] KL_a=0.1767 KL_b=0.2015 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.7536
+[ep 2 | step 170] KL_a=0.4576 KL_b=0.1661 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6154
+[ep 2 | step 180] KL_a=1.5900 KL_b=0.1721 margin_a=6.105 margin_b=0.336 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.5588
+[ep 3 | step 190] KL_a=0.2393 KL_b=0.1759 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4503
+[ep 3 | step 200] KL_a=0.3325 KL_b=0.1510 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.3924
+[ep 3 | step 210] KL_a=0.2785 KL_b=0.1258 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.4839
+[ep 3 | step 220] KL_a=0.5143 KL_b=0.1683 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.2959
+[ep 3 | step 230] KL_a=0.4653 KL_b=0.1290 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.1789
+[ep 3 | step 240] KL_a=1.4480 KL_b=0.1237 margin_a=3.641 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.1053
+[ep 3 | step 250] KL_a=0.1691 KL_b=0.0864 margin_a=0.500 margin_b=0.188 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.3435
+[ep 4 | step 260] KL_a=0.4346 KL_b=0.1178 margin_a=0.000 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.0750
+[ep 4 | step 270] KL_a=0.9685 KL_b=0.5925 margin_a=6.297 margin_b=3.875 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=7.3535
+[ep 4 | step 280] KL_a=0.5229 KL_b=0.1594 margin_a=0.000 margin_b=0.047 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.1895
+[ep 4 | step 290] KL_a=0.3171 KL_b=0.1496 margin_a=0.500 margin_b=0.000 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.2963
+[ep 4 | step 300] KL_a=0.5398 KL_b=0.5503 margin_a=0.602 margin_b=3.336 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=3.4501
+[ep 4 | step 310] KL_a=0.3175 KL_b=0.1028 margin_a=0.500 margin_b=0.500 | λa=0.000 λb=0.000 λcore=0.000 | sparsity=0.0029 total=0.6568
+
+=> Pair metals & vehicles Core Density: 67.52% (133128 / 197168 gates)
+
+
+#######################################################
+PAIRWISE CIRCUIT SIMILARITY (IoU BETWEEN PAIRS)
+#######################################################
+
+Global Intersection (Active in ALL 10 pairs): 7422 gates
+Saved highly detailed results to /home/exouser/pruning/data_research/deep_universal_circuit_results.json

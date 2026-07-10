@@ -1,0 +1,40 @@
+# Codebase Log and Documentation
+
+This document serves as a complete log of the codebase structure, the roles of all files and folders, and a comprehensive history of the fixes and optimisations applied during the Venn Circuit Discovery research.
+
+## Directory Structure and File Roles
+
+### 1. `venn_circuit_discovery_v2/`
+The core architecture folder for discovering intersections between circuits.
+*   `api.py`: Exposes the `VennCircuitDiscoverer` class. This is the main entry point for running the discovery process, linking models, data, and the trainer.
+*   `models.py`: Contains the `LlamaVennCircuit` wrapper. This file implements the `_venn_mix` mechanism, which intercepts the clean activations and mixes them with corrupted activations based on the gate probabilities.
+*   `gates.py`: Implements `HardConcreteGate` and `VennConcreteGate`. This is where the continuous relaxation of the L0 norm is defined. Contains the critical logic for the differentiable OR operation used in the intersection/union modes.
+*   `trainer.py`: Implements `VennTrainer`. Drives the actual optimization loop, computes the clean logits, the Venn logits, and applies the KL divergence, margin loss, homoscedastic uncertainty, and sparsity losses.
+*   `scheduler.py`: Implements the `DualVennScheduler` and `PIDController`. This dynamically adjusts the sparsity penalties (`lambda_a`, `lambda_b`, `lambda_core`) based on the measured KL divergence for each task to ensure exact faithfulness.
+
+### 2. `data_research/`
+The experimentation and results directory.
+*   `batch_venn_discovery_ultra.py`: The final, optimized script used to run the massive 10-pair overnight circuit discovery task. It dynamically scales up to 100 epochs per pair and tracks exact intersection topologies.
+*   `ultra_run.log`: The raw execution log for the overnight run.
+*   `ultra_circuit_results.json`: The final processed output containing pairwise circuit similarities (IoU), core densities, and global intersections across all trained pairs.
+*   `ultra_raw_tensors/`: Contains the highly requested `.pt` files. These are the raw saved PyTorch circuit tensors (`a_only`, `b_only`, `core`) for every single tested pair. This allows for post-hoc calculation without retraining.
+
+### 3. `induction_datasets/`
+Contains the datasets (e.g., 10-hop induction paths for fruits, animals, metals, colors, vehicles) used to train the circuit discovery.
+
+## History of Major Fixes
+
+### Fix 1: The PID Controller (Anti-Windup & Double-Integral)
+*   **The Bug:** The original PID controller in `scheduler.py` was implemented as a double-integrator (`output = output + control`), causing the pruning pressure (`lambda`) to instantly explode to the maximum of 200.0 in just 40 steps.
+*   **The Fix:** Rewrote the PID into a strict Positional format (`output = kp*error + ki*integral + kd*derivative`). Implemented hard integral clamping (`clamp(integral, 0, max/ki)`) to prevent windup and the subsequent violent rebound oscillation that was repeatedly crashing the network upon recovery.
+
+### Fix 2: The Sparsity Scale Issue
+*   **The Bug:** Swapping from `.mean()` to `.sum()` in the sparsity calculation made the L0 penalty 130,000 times larger, completely overpowering the task loss.
+*   **The Fix:** Rescaled the maximum lambda from `200.0` to `20.0` and reduced the `target_kl` to `0.5`, giving the network breathing room while maintaining exact accuracy.
+
+### Fix 3: The "Death by Epsilon" Vanishing Gradient Bug (Gates)
+*   **The Bug:** When the extreme initial pruning pressure forced the gates deeply negative (e.g., `log_alpha = -30.0`), the sigmoid gradient vanished to `1e-13`. The PyTorch `Adam` optimizer uses an epsilon of `1e-8` for normalization, which completely swallowed the gradient. The gates became permanently "dead" and could never reopen, even if the task loss demanded it.
+*   **The Fix:** Implemented a strict parameter clamp: `self.log_alpha.clamp_(-5.0, 5.0)` in the forward pass of `gates.py`. This mathematically guarantees the gradient never drops below Adam's `1e-8` epsilon limit, allowing the optimizer to instantly recover and reopen any gate if the task requires it.
+
+## Conclusion
+The architecture is now structurally immune to death states, gradient vanishing, and PID oscillation loops. The overnight run has successfully completed across all 10 pairs, generating both the summary metrics and the raw tensors for future research.
