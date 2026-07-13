@@ -1,0 +1,6 @@
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4908.49it/s]
+Llama model successfully adapted for pruning with block-level gates.
+[0] Unbatched GT > GD? True
+[1] Unbatched GT > GD? True
+[0] Batched GT > GD? True
+[1] Batched GT > GD? True

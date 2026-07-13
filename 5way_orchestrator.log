@@ -1,0 +1,121 @@
+nohup: ignoring input
+Loading 5 datasets...
+ - Loaded animals: 500 samples
+ - Loaded colors: 500 samples
+ - Loaded fruits: 500 samples
+ - Loaded metals: 500 samples
+ - Loaded vehicles: 500 samples
+
+Initializing Model at pruning level: heads
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4104.59it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+
+============================================================
+PHASE 1: JOINT TRAINING ON ALL 5 DATASETS
+============================================================
+Trainable gate parameters: 512 / 1235814912
+Epoch 1/100 | Loss: 8.665 | KL: 0.236 | Task: 0.584 | Sparsity: 7.728
+Epoch 10/100 | Loss: 3.696 | KL: 0.382 | Task: 0.527 | Sparsity: 2.596
+Epoch 20/100 | Loss: 3.657 | KL: 0.381 | Task: 0.514 | Sparsity: 2.571
+Epoch 30/100 | Loss: 3.579 | KL: 0.388 | Task: 0.500 | Sparsity: 2.497
+Epoch 40/100 | Loss: 3.580 | KL: 0.392 | Task: 0.499 | Sparsity: 2.493
+Epoch 50/100 | Loss: 3.541 | KL: 0.390 | Task: 0.509 | Sparsity: 2.447
+Epoch 60/100 | Loss: 3.547 | KL: 0.393 | Task: 0.508 | Sparsity: 2.449
+Epoch 70/100 | Loss: 3.569 | KL: 0.397 | Task: 0.529 | Sparsity: 2.445
+Epoch 80/100 | Loss: 3.543 | KL: 0.400 | Task: 0.518 | Sparsity: 2.425
+Epoch 90/100 | Loss: 3.548 | KL: 0.399 | Task: 0.524 | Sparsity: 2.426
+Epoch 100/100 | Loss: 3.534 | KL: 0.397 | Task: 0.512 | Sparsity: 2.425
+
+============================================================
+PHASE 2: FINE-TUNE ON ANIMALS
+============================================================
+Trainable gate parameters: 512 / 1235814912
+Epoch 1/100 | Loss: 3.239 | KL: 0.263 | Task: 0.449 | Sparsity: 2.395
+Epoch 10/100 | Loss: 3.009 | KL: 0.259 | Task: 0.456 | Sparsity: 2.165
+Epoch 20/100 | Loss: 2.973 | KL: 0.261 | Task: 0.437 | Sparsity: 2.144
+Epoch 30/100 | Loss: 2.950 | KL: 0.264 | Task: 0.438 | Sparsity: 2.117
+Epoch 40/100 | Loss: 2.977 | KL: 0.265 | Task: 0.458 | Sparsity: 2.122
+Epoch 50/100 | Loss: 2.946 | KL: 0.262 | Task: 0.440 | Sparsity: 2.114
+Epoch 60/100 | Loss: 2.911 | KL: 0.266 | Task: 0.428 | Sparsity: 2.084
+Epoch 70/100 | Loss: 2.885 | KL: 0.272 | Task: 0.442 | Sparsity: 2.036
+Epoch 80/100 | Loss: 2.876 | KL: 0.270 | Task: 0.438 | Sparsity: 2.033
+Epoch 90/100 | Loss: 2.854 | KL: 0.271 | Task: 0.396 | Sparsity: 2.051
+Epoch 100/100 | Loss: 2.866 | KL: 0.268 | Task: 0.417 | Sparsity: 2.048
+
+============================================================
+PHASE 2: FINE-TUNE ON COLORS
+============================================================
+Trainable gate parameters: 512 / 1235814912
+Epoch 1/100 | Loss: 3.609 | KL: 0.477 | Task: 0.477 | Sparsity: 2.416
+Epoch 10/100 | Loss: 3.537 | KL: 0.478 | Task: 0.453 | Sparsity: 2.367
+Epoch 20/100 | Loss: 3.437 | KL: 0.454 | Task: 0.490 | Sparsity: 2.266
+Epoch 30/100 | Loss: 3.453 | KL: 0.457 | Task: 0.513 | Sparsity: 2.255
+Epoch 40/100 | Loss: 3.398 | KL: 0.426 | Task: 0.509 | Sparsity: 2.251
+Epoch 50/100 | Loss: 3.419 | KL: 0.422 | Task: 0.541 | Sparsity: 2.244
+Epoch 60/100 | Loss: 3.351 | KL: 0.437 | Task: 0.489 | Sparsity: 2.207
+Epoch 70/100 | Loss: 3.304 | KL: 0.430 | Task: 0.506 | Sparsity: 2.153
+Epoch 80/100 | Loss: 3.290 | KL: 0.426 | Task: 0.502 | Sparsity: 2.150
+Epoch 90/100 | Loss: 3.313 | KL: 0.446 | Task: 0.493 | Sparsity: 2.151
+Epoch 100/100 | Loss: 3.326 | KL: 0.440 | Task: 0.511 | Sparsity: 2.155
+
+============================================================
+PHASE 2: FINE-TUNE ON FRUITS
+============================================================
+Trainable gate parameters: 512 / 1235814912
+Epoch 1/100 | Loss: 3.715 | KL: 0.498 | Task: 0.547 | Sparsity: 2.421
+Epoch 10/100 | Loss: 3.606 | KL: 0.467 | Task: 0.483 | Sparsity: 2.422
+Epoch 20/100 | Loss: 3.573 | KL: 0.432 | Task: 0.479 | Sparsity: 2.447
+Epoch 30/100 | Loss: 3.560 | KL: 0.430 | Task: 0.516 | Sparsity: 2.398
+Epoch 40/100 | Loss: 3.518 | KL: 0.406 | Task: 0.491 | Sparsity: 2.418
+Epoch 50/100 | Loss: 3.505 | KL: 0.418 | Task: 0.476 | Sparsity: 2.401
+Epoch 60/100 | Loss: 3.490 | KL: 0.409 | Task: 0.472 | Sparsity: 2.404
+Epoch 70/100 | Loss: 3.508 | KL: 0.410 | Task: 0.511 | Sparsity: 2.381
+Epoch 80/100 | Loss: 3.511 | KL: 0.425 | Task: 0.497 | Sparsity: 2.377
+Epoch 90/100 | Loss: 3.544 | KL: 0.444 | Task: 0.501 | Sparsity: 2.377
+Epoch 100/100 | Loss: 3.480 | KL: 0.410 | Task: 0.483 | Sparsity: 2.381
+
+============================================================
+PHASE 2: FINE-TUNE ON METALS
+============================================================
+Trainable gate parameters: 512 / 1235814912
+Epoch 1/100 | Loss: 3.785 | KL: 0.451 | Task: 0.694 | Sparsity: 2.414
+Epoch 10/100 | Loss: 3.620 | KL: 0.457 | Task: 0.631 | Sparsity: 2.304
+Epoch 20/100 | Loss: 3.600 | KL: 0.420 | Task: 0.668 | Sparsity: 2.301
+Epoch 30/100 | Loss: 3.603 | KL: 0.444 | Task: 0.641 | Sparsity: 2.296
+Epoch 40/100 | Loss: 3.646 | KL: 0.476 | Task: 0.659 | Sparsity: 2.273
+Epoch 50/100 | Loss: 3.594 | KL: 0.456 | Task: 0.653 | Sparsity: 2.257
+Epoch 60/100 | Loss: 3.600 | KL: 0.442 | Task: 0.680 | Sparsity: 2.257
+Epoch 70/100 | Loss: 3.546 | KL: 0.445 | Task: 0.648 | Sparsity: 2.231
+Epoch 80/100 | Loss: 3.563 | KL: 0.440 | Task: 0.646 | Sparsity: 2.257
+Epoch 90/100 | Loss: 3.562 | KL: 0.436 | Task: 0.653 | Sparsity: 2.255
+Epoch 100/100 | Loss: 3.558 | KL: 0.442 | Task: 0.639 | Sparsity: 2.257
+
+============================================================
+PHASE 2: FINE-TUNE ON VEHICLES
+============================================================
+Trainable gate parameters: 512 / 1235814912
+Epoch 1/100 | Loss: 3.475 | KL: 0.326 | Task: 0.590 | Sparsity: 2.395
+Epoch 10/100 | Loss: 3.362 | KL: 0.308 | Task: 0.553 | Sparsity: 2.347
+Epoch 20/100 | Loss: 3.346 | KL: 0.311 | Task: 0.564 | Sparsity: 2.316
+Epoch 30/100 | Loss: 3.337 | KL: 0.310 | Task: 0.552 | Sparsity: 2.320
+Epoch 40/100 | Loss: 3.278 | KL: 0.300 | Task: 0.529 | Sparsity: 2.299
+Epoch 50/100 | Loss: 3.281 | KL: 0.300 | Task: 0.535 | Sparsity: 2.296
+Epoch 60/100 | Loss: 3.282 | KL: 0.309 | Task: 0.545 | Sparsity: 2.273
+Epoch 70/100 | Loss: 3.264 | KL: 0.312 | Task: 0.524 | Sparsity: 2.272
+Epoch 80/100 | Loss: 3.261 | KL: 0.303 | Task: 0.532 | Sparsity: 2.274
+Epoch 90/100 | Loss: 3.258 | KL: 0.304 | Task: 0.532 | Sparsity: 2.271
+Epoch 100/100 | Loss: 3.265 | KL: 0.307 | Task: 0.556 | Sparsity: 2.248
+
+============================================================
+PHASE 3: 5-WAY GLOBAL INTERSECTION
+============================================================
+The 5-Way Universal Circuit contains 45 active components.
+Saved animals specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
+Saved colors specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
+Saved fruits specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
+Saved metals specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
+Saved vehicles specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
+Saved global 5-way circuit to /home/exouser/pruning/intersection_experiments/results_5way/5WAY_GLOBAL_CIRCUIT.pt
+
+All 5-way processing completed perfectly.

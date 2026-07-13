@@ -362,10 +362,9 @@ class PrunableLlamaDecoderLayer(nn.Module):
             hidden_states = self.post_attention_layernorm(hidden_states)
             hidden_states = residual + self.mlp(hidden_states)  # single-stream
 
-            outputs = (hidden_states,)
             if output_attentions:
-                outputs += (weights,)
-            return outputs
+                return (hidden_states, weights)
+            return hidden_states
 
         # --- Dual-stream pruning mode ---
         clean_states = hidden_states

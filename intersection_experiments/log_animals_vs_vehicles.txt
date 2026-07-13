@@ -1,0 +1,335 @@
+Loading datasets: /home/exouser/pruning/induction_datasets/category_chains/animals.jsonl and /home/exouser/pruning/induction_datasets/category_chains/vehicles.jsonl
+Initializing Model at pruning level: heads
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3958.30it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+
+==================================================
+PHASE 1: JOINT TRAINING (A+B)
+==================================================
+Trainable gate parameters: 512 / 1235814912
+Epoch 1/100 | Loss: 10.884 | KL: 0.154 | Task: 0.617 | Sparsity: 10.036
+Epoch 2/100 | Loss: 5.603 | KL: 0.208 | Task: 0.432 | Sparsity: 4.859
+Epoch 3/100 | Loss: 4.314 | KL: 0.236 | Task: 0.432 | Sparsity: 3.529
+Epoch 4/100 | Loss: 3.836 | KL: 0.247 | Task: 0.418 | Sparsity: 3.048
+Epoch 5/100 | Loss: 3.560 | KL: 0.262 | Task: 0.442 | Sparsity: 2.725
+Epoch 6/100 | Loss: 3.400 | KL: 0.252 | Task: 0.418 | Sparsity: 2.604
+Epoch 7/100 | Loss: 3.327 | KL: 0.248 | Task: 0.460 | Sparsity: 2.495
+Epoch 8/100 | Loss: 3.250 | KL: 0.257 | Task: 0.469 | Sparsity: 2.396
+Epoch 9/100 | Loss: 3.210 | KL: 0.270 | Task: 0.469 | Sparsity: 2.336
+Epoch 10/100 | Loss: 3.165 | KL: 0.260 | Task: 0.472 | Sparsity: 2.303
+Epoch 11/100 | Loss: 3.157 | KL: 0.264 | Task: 0.481 | Sparsity: 2.280
+Epoch 12/100 | Loss: 3.127 | KL: 0.281 | Task: 0.462 | Sparsity: 2.243
+Epoch 13/100 | Loss: 3.104 | KL: 0.290 | Task: 0.449 | Sparsity: 2.220
+Epoch 14/100 | Loss: 3.106 | KL: 0.285 | Task: 0.467 | Sparsity: 2.212
+Epoch 15/100 | Loss: 3.086 | KL: 0.273 | Task: 0.488 | Sparsity: 2.189
+Epoch 16/100 | Loss: 3.065 | KL: 0.276 | Task: 0.485 | Sparsity: 2.166
+Epoch 17/100 | Loss: 3.063 | KL: 0.274 | Task: 0.487 | Sparsity: 2.164
+Epoch 18/100 | Loss: 3.058 | KL: 0.269 | Task: 0.493 | Sparsity: 2.161
+Epoch 19/100 | Loss: 3.062 | KL: 0.279 | Task: 0.494 | Sparsity: 2.149
+Epoch 20/100 | Loss: 3.032 | KL: 0.269 | Task: 0.487 | Sparsity: 2.142
+Epoch 21/100 | Loss: 3.050 | KL: 0.274 | Task: 0.496 | Sparsity: 2.142
+Epoch 22/100 | Loss: 3.040 | KL: 0.270 | Task: 0.492 | Sparsity: 2.143
+Epoch 23/100 | Loss: 3.044 | KL: 0.268 | Task: 0.500 | Sparsity: 2.142
+Epoch 24/100 | Loss: 3.033 | KL: 0.261 | Task: 0.501 | Sparsity: 2.140
+Epoch 25/100 | Loss: 3.041 | KL: 0.275 | Task: 0.486 | Sparsity: 2.141
+Epoch 26/100 | Loss: 3.031 | KL: 0.269 | Task: 0.485 | Sparsity: 2.141
+Epoch 27/100 | Loss: 3.013 | KL: 0.258 | Task: 0.485 | Sparsity: 2.141
+Epoch 28/100 | Loss: 3.042 | KL: 0.270 | Task: 0.494 | Sparsity: 2.143
+Epoch 29/100 | Loss: 3.055 | KL: 0.274 | Task: 0.503 | Sparsity: 2.141
+Epoch 30/100 | Loss: 3.048 | KL: 0.272 | Task: 0.499 | Sparsity: 2.141
+Epoch 31/100 | Loss: 3.031 | KL: 0.266 | Task: 0.489 | Sparsity: 2.142
+Epoch 32/100 | Loss: 3.039 | KL: 0.267 | Task: 0.497 | Sparsity: 2.141
+Epoch 33/100 | Loss: 3.053 | KL: 0.270 | Task: 0.509 | Sparsity: 2.139
+Epoch 34/100 | Loss: 3.039 | KL: 0.272 | Task: 0.491 | Sparsity: 2.140
+Epoch 35/100 | Loss: 3.034 | KL: 0.269 | Task: 0.490 | Sparsity: 2.140
+Epoch 36/100 | Loss: 3.038 | KL: 0.270 | Task: 0.492 | Sparsity: 2.140
+Epoch 37/100 | Loss: 3.040 | KL: 0.272 | Task: 0.492 | Sparsity: 2.140
+Epoch 38/100 | Loss: 3.042 | KL: 0.268 | Task: 0.499 | Sparsity: 2.142
+Epoch 39/100 | Loss: 3.037 | KL: 0.271 | Task: 0.489 | Sparsity: 2.141
+Epoch 40/100 | Loss: 3.031 | KL: 0.265 | Task: 0.491 | Sparsity: 2.142
+Epoch 41/100 | Loss: 3.031 | KL: 0.269 | Task: 0.487 | Sparsity: 2.140
+Epoch 42/100 | Loss: 3.055 | KL: 0.272 | Task: 0.506 | Sparsity: 2.141
+Epoch 43/100 | Loss: 3.051 | KL: 0.268 | Task: 0.508 | Sparsity: 2.141
+Epoch 44/100 | Loss: 3.038 | KL: 0.268 | Task: 0.494 | Sparsity: 2.142
+Epoch 45/100 | Loss: 3.040 | KL: 0.268 | Task: 0.499 | Sparsity: 2.139
+Epoch 46/100 | Loss: 3.027 | KL: 0.275 | Task: 0.486 | Sparsity: 2.129
+Epoch 47/100 | Loss: 3.027 | KL: 0.279 | Task: 0.491 | Sparsity: 2.117
+Epoch 48/100 | Loss: 3.021 | KL: 0.274 | Task: 0.494 | Sparsity: 2.116
+Epoch 49/100 | Loss: 3.028 | KL: 0.274 | Task: 0.500 | Sparsity: 2.118
+Epoch 50/100 | Loss: 3.025 | KL: 0.275 | Task: 0.496 | Sparsity: 2.116
+Epoch 51/100 | Loss: 3.024 | KL: 0.283 | Task: 0.483 | Sparsity: 2.117
+Epoch 52/100 | Loss: 3.024 | KL: 0.273 | Task: 0.498 | Sparsity: 2.116
+Epoch 53/100 | Loss: 3.019 | KL: 0.281 | Task: 0.482 | Sparsity: 2.116
+Epoch 54/100 | Loss: 3.026 | KL: 0.272 | Task: 0.500 | Sparsity: 2.118
+Epoch 55/100 | Loss: 3.025 | KL: 0.275 | Task: 0.496 | Sparsity: 2.117
+Epoch 56/100 | Loss: 3.022 | KL: 0.281 | Task: 0.485 | Sparsity: 2.115
+Epoch 57/100 | Loss: 3.026 | KL: 0.277 | Task: 0.495 | Sparsity: 2.116
+Epoch 58/100 | Loss: 3.022 | KL: 0.277 | Task: 0.491 | Sparsity: 2.115
+Epoch 59/100 | Loss: 3.021 | KL: 0.274 | Task: 0.492 | Sparsity: 2.117
+Epoch 60/100 | Loss: 3.028 | KL: 0.273 | Task: 0.501 | Sparsity: 2.117
+Epoch 61/100 | Loss: 3.035 | KL: 0.281 | Task: 0.499 | Sparsity: 2.115
+Epoch 62/100 | Loss: 3.021 | KL: 0.275 | Task: 0.492 | Sparsity: 2.116
+Epoch 63/100 | Loss: 3.028 | KL: 0.278 | Task: 0.494 | Sparsity: 2.117
+Epoch 64/100 | Loss: 3.022 | KL: 0.279 | Task: 0.487 | Sparsity: 2.117
+Epoch 65/100 | Loss: 3.025 | KL: 0.279 | Task: 0.490 | Sparsity: 2.116
+Epoch 66/100 | Loss: 3.028 | KL: 0.276 | Task: 0.496 | Sparsity: 2.117
+Epoch 67/100 | Loss: 3.022 | KL: 0.275 | Task: 0.493 | Sparsity: 2.116
+Epoch 68/100 | Loss: 3.022 | KL: 0.281 | Task: 0.484 | Sparsity: 2.116
+Epoch 69/100 | Loss: 3.023 | KL: 0.274 | Task: 0.497 | Sparsity: 2.116
+Epoch 70/100 | Loss: 3.024 | KL: 0.272 | Task: 0.499 | Sparsity: 2.117
+Epoch 71/100 | Loss: 3.015 | KL: 0.274 | Task: 0.487 | Sparsity: 2.116
+Epoch 72/100 | Loss: 3.023 | KL: 0.273 | Task: 0.496 | Sparsity: 2.117
+Epoch 73/100 | Loss: 3.012 | KL: 0.272 | Task: 0.488 | Sparsity: 2.116
+Epoch 74/100 | Loss: 3.019 | KL: 0.272 | Task: 0.491 | Sparsity: 2.119
+Epoch 75/100 | Loss: 3.032 | KL: 0.271 | Task: 0.507 | Sparsity: 2.120
+Epoch 76/100 | Loss: 3.024 | KL: 0.276 | Task: 0.489 | Sparsity: 2.120
+Epoch 77/100 | Loss: 3.013 | KL: 0.270 | Task: 0.490 | Sparsity: 2.118
+Epoch 78/100 | Loss: 3.018 | KL: 0.273 | Task: 0.492 | Sparsity: 2.116
+Epoch 79/100 | Loss: 3.023 | KL: 0.276 | Task: 0.494 | Sparsity: 2.116
+Epoch 80/100 | Loss: 3.022 | KL: 0.273 | Task: 0.495 | Sparsity: 2.117
+Epoch 81/100 | Loss: 3.015 | KL: 0.275 | Task: 0.485 | Sparsity: 2.117
+Epoch 82/100 | Loss: 3.021 | KL: 0.275 | Task: 0.490 | Sparsity: 2.119
+Epoch 83/100 | Loss: 3.020 | KL: 0.276 | Task: 0.489 | Sparsity: 2.117
+Epoch 84/100 | Loss: 3.028 | KL: 0.277 | Task: 0.495 | Sparsity: 2.117
+Epoch 85/100 | Loss: 3.035 | KL: 0.279 | Task: 0.501 | Sparsity: 2.116
+Epoch 86/100 | Loss: 3.027 | KL: 0.276 | Task: 0.497 | Sparsity: 2.116
+Epoch 87/100 | Loss: 3.008 | KL: 0.269 | Task: 0.488 | Sparsity: 2.116
+Epoch 88/100 | Loss: 3.036 | KL: 0.276 | Task: 0.506 | Sparsity: 2.116
+Epoch 89/100 | Loss: 3.025 | KL: 0.273 | Task: 0.500 | Sparsity: 2.116
+Epoch 90/100 | Loss: 3.033 | KL: 0.280 | Task: 0.496 | Sparsity: 2.117
+Epoch 91/100 | Loss: 3.021 | KL: 0.272 | Task: 0.496 | Sparsity: 2.116
+Epoch 92/100 | Loss: 3.021 | KL: 0.275 | Task: 0.489 | Sparsity: 2.119
+Epoch 93/100 | Loss: 3.027 | KL: 0.278 | Task: 0.494 | Sparsity: 2.117
+Epoch 94/100 | Loss: 3.020 | KL: 0.277 | Task: 0.489 | Sparsity: 2.116
+Epoch 95/100 | Loss: 3.017 | KL: 0.272 | Task: 0.492 | Sparsity: 2.117
+Epoch 96/100 | Loss: 3.012 | KL: 0.275 | Task: 0.484 | Sparsity: 2.115
+Epoch 97/100 | Loss: 3.013 | KL: 0.275 | Task: 0.485 | Sparsity: 2.115
+Epoch 98/100 | Loss: 3.029 | KL: 0.275 | Task: 0.500 | Sparsity: 2.117
+Epoch 99/100 | Loss: 3.021 | KL: 0.278 | Task: 0.487 | Sparsity: 2.117
+Epoch 100/100 | Loss: 3.029 | KL: 0.278 | Task: 0.493 | Sparsity: 2.118
+
+==================================================
+PHASE 2A: FINE-TUNE ON ANIMALS.JSONL
+==================================================
+Trainable gate parameters: 512 / 1235814912
+Epoch 1/100 | Loss: 2.908 | KL: 0.252 | Task: 0.420 | Sparsity: 2.110
+Epoch 2/100 | Loss: 2.882 | KL: 0.241 | Task: 0.413 | Sparsity: 2.108
+Epoch 3/100 | Loss: 2.872 | KL: 0.244 | Task: 0.400 | Sparsity: 2.105
+Epoch 4/100 | Loss: 2.881 | KL: 0.251 | Task: 0.416 | Sparsity: 2.087
+Epoch 5/100 | Loss: 2.849 | KL: 0.252 | Task: 0.414 | Sparsity: 2.056
+Epoch 6/100 | Loss: 2.842 | KL: 0.257 | Task: 0.421 | Sparsity: 2.036
+Epoch 7/100 | Loss: 2.814 | KL: 0.245 | Task: 0.423 | Sparsity: 2.023
+Epoch 8/100 | Loss: 2.796 | KL: 0.257 | Task: 0.419 | Sparsity: 1.991
+Epoch 9/100 | Loss: 2.762 | KL: 0.258 | Task: 0.401 | Sparsity: 1.974
+Epoch 10/100 | Loss: 2.772 | KL: 0.260 | Task: 0.412 | Sparsity: 1.970
+Epoch 11/100 | Loss: 2.770 | KL: 0.255 | Task: 0.422 | Sparsity: 1.967
+Epoch 12/100 | Loss: 2.759 | KL: 0.246 | Task: 0.424 | Sparsity: 1.966
+Epoch 13/100 | Loss: 2.757 | KL: 0.254 | Task: 0.411 | Sparsity: 1.965
+Epoch 14/100 | Loss: 2.769 | KL: 0.247 | Task: 0.434 | Sparsity: 1.965
+Epoch 15/100 | Loss: 2.756 | KL: 0.255 | Task: 0.413 | Sparsity: 1.961
+Epoch 16/100 | Loss: 2.767 | KL: 0.259 | Task: 0.430 | Sparsity: 1.950
+Epoch 17/100 | Loss: 2.745 | KL: 0.264 | Task: 0.408 | Sparsity: 1.941
+Epoch 18/100 | Loss: 2.747 | KL: 0.251 | Task: 0.430 | Sparsity: 1.940
+Epoch 19/100 | Loss: 2.737 | KL: 0.253 | Task: 0.421 | Sparsity: 1.936
+Epoch 20/100 | Loss: 2.729 | KL: 0.259 | Task: 0.421 | Sparsity: 1.921
+Epoch 21/100 | Loss: 2.738 | KL: 0.259 | Task: 0.443 | Sparsity: 1.907
+Epoch 22/100 | Loss: 2.737 | KL: 0.258 | Task: 0.443 | Sparsity: 1.907
+Epoch 23/100 | Loss: 2.726 | KL: 0.259 | Task: 0.425 | Sparsity: 1.913
+Epoch 24/100 | Loss: 2.730 | KL: 0.256 | Task: 0.437 | Sparsity: 1.909
+Epoch 25/100 | Loss: 2.715 | KL: 0.256 | Task: 0.425 | Sparsity: 1.906
+Epoch 26/100 | Loss: 2.688 | KL: 0.240 | Task: 0.427 | Sparsity: 1.901
+Epoch 27/100 | Loss: 2.712 | KL: 0.245 | Task: 0.445 | Sparsity: 1.899
+Epoch 28/100 | Loss: 2.676 | KL: 0.242 | Task: 0.419 | Sparsity: 1.895
+Epoch 29/100 | Loss: 2.705 | KL: 0.243 | Task: 0.448 | Sparsity: 1.894
+Epoch 30/100 | Loss: 2.695 | KL: 0.243 | Task: 0.437 | Sparsity: 1.894
+Epoch 31/100 | Loss: 2.720 | KL: 0.254 | Task: 0.446 | Sparsity: 1.892
+Epoch 32/100 | Loss: 2.730 | KL: 0.254 | Task: 0.455 | Sparsity: 1.893
+Epoch 33/100 | Loss: 2.703 | KL: 0.242 | Task: 0.448 | Sparsity: 1.893
+Epoch 34/100 | Loss: 2.705 | KL: 0.250 | Task: 0.438 | Sparsity: 1.892
+Epoch 35/100 | Loss: 2.692 | KL: 0.251 | Task: 0.422 | Sparsity: 1.893
+Epoch 36/100 | Loss: 2.695 | KL: 0.243 | Task: 0.440 | Sparsity: 1.891
+Epoch 37/100 | Loss: 2.726 | KL: 0.268 | Task: 0.433 | Sparsity: 1.891
+Epoch 38/100 | Loss: 2.722 | KL: 0.250 | Task: 0.454 | Sparsity: 1.892
+Epoch 39/100 | Loss: 2.708 | KL: 0.249 | Task: 0.442 | Sparsity: 1.892
+Epoch 40/100 | Loss: 2.692 | KL: 0.248 | Task: 0.429 | Sparsity: 1.892
+Epoch 41/100 | Loss: 2.714 | KL: 0.255 | Task: 0.439 | Sparsity: 1.893
+Epoch 42/100 | Loss: 2.694 | KL: 0.250 | Task: 0.427 | Sparsity: 1.891
+Epoch 43/100 | Loss: 2.733 | KL: 0.252 | Task: 0.464 | Sparsity: 1.891
+Epoch 44/100 | Loss: 2.706 | KL: 0.260 | Task: 0.425 | Sparsity: 1.891
+Epoch 45/100 | Loss: 2.709 | KL: 0.249 | Task: 0.445 | Sparsity: 1.891
+Epoch 46/100 | Loss: 2.738 | KL: 0.264 | Task: 0.453 | Sparsity: 1.889
+Epoch 47/100 | Loss: 2.732 | KL: 0.264 | Task: 0.447 | Sparsity: 1.889
+Epoch 48/100 | Loss: 2.697 | KL: 0.251 | Task: 0.429 | Sparsity: 1.891
+Epoch 49/100 | Loss: 2.724 | KL: 0.254 | Task: 0.451 | Sparsity: 1.893
+Epoch 50/100 | Loss: 2.720 | KL: 0.269 | Task: 0.423 | Sparsity: 1.894
+Epoch 51/100 | Loss: 2.688 | KL: 0.249 | Task: 0.424 | Sparsity: 1.890
+Epoch 52/100 | Loss: 2.707 | KL: 0.255 | Task: 0.434 | Sparsity: 1.891
+Epoch 53/100 | Loss: 2.687 | KL: 0.245 | Task: 0.428 | Sparsity: 1.891
+Epoch 54/100 | Loss: 2.716 | KL: 0.253 | Task: 0.446 | Sparsity: 1.891
+Epoch 55/100 | Loss: 2.710 | KL: 0.251 | Task: 0.442 | Sparsity: 1.891
+Epoch 56/100 | Loss: 2.696 | KL: 0.250 | Task: 0.430 | Sparsity: 1.891
+Epoch 57/100 | Loss: 2.701 | KL: 0.248 | Task: 0.439 | Sparsity: 1.890
+Epoch 58/100 | Loss: 2.738 | KL: 0.261 | Task: 0.455 | Sparsity: 1.890
+Epoch 59/100 | Loss: 2.692 | KL: 0.247 | Task: 0.433 | Sparsity: 1.890
+Epoch 60/100 | Loss: 2.712 | KL: 0.257 | Task: 0.436 | Sparsity: 1.890
+Epoch 61/100 | Loss: 2.700 | KL: 0.249 | Task: 0.436 | Sparsity: 1.890
+Epoch 62/100 | Loss: 2.704 | KL: 0.254 | Task: 0.430 | Sparsity: 1.893
+Epoch 63/100 | Loss: 2.702 | KL: 0.254 | Task: 0.431 | Sparsity: 1.889
+Epoch 64/100 | Loss: 2.720 | KL: 0.261 | Task: 0.440 | Sparsity: 1.888
+Epoch 65/100 | Loss: 2.721 | KL: 0.266 | Task: 0.437 | Sparsity: 1.885
+Epoch 66/100 | Loss: 2.703 | KL: 0.260 | Task: 0.430 | Sparsity: 1.884
+Epoch 67/100 | Loss: 2.703 | KL: 0.253 | Task: 0.447 | Sparsity: 1.876
+Epoch 68/100 | Loss: 2.718 | KL: 0.270 | Task: 0.442 | Sparsity: 1.871
+Epoch 69/100 | Loss: 2.697 | KL: 0.267 | Task: 0.429 | Sparsity: 1.868
+Epoch 70/100 | Loss: 2.715 | KL: 0.265 | Task: 0.449 | Sparsity: 1.868
+Epoch 71/100 | Loss: 2.700 | KL: 0.270 | Task: 0.426 | Sparsity: 1.869
+Epoch 72/100 | Loss: 2.705 | KL: 0.271 | Task: 0.431 | Sparsity: 1.868
+Epoch 73/100 | Loss: 2.705 | KL: 0.273 | Task: 0.428 | Sparsity: 1.866
+Epoch 74/100 | Loss: 2.677 | KL: 0.256 | Task: 0.425 | Sparsity: 1.867
+Epoch 75/100 | Loss: 2.690 | KL: 0.265 | Task: 0.426 | Sparsity: 1.866
+Epoch 76/100 | Loss: 2.712 | KL: 0.273 | Task: 0.437 | Sparsity: 1.865
+Epoch 77/100 | Loss: 2.719 | KL: 0.261 | Task: 0.460 | Sparsity: 1.867
+Epoch 78/100 | Loss: 2.697 | KL: 0.261 | Task: 0.438 | Sparsity: 1.867
+Epoch 79/100 | Loss: 2.715 | KL: 0.264 | Task: 0.454 | Sparsity: 1.865
+Epoch 80/100 | Loss: 2.713 | KL: 0.266 | Task: 0.449 | Sparsity: 1.865
+Epoch 81/100 | Loss: 2.704 | KL: 0.264 | Task: 0.443 | Sparsity: 1.865
+Epoch 82/100 | Loss: 2.688 | KL: 0.267 | Task: 0.422 | Sparsity: 1.866
+Epoch 83/100 | Loss: 2.702 | KL: 0.269 | Task: 0.435 | Sparsity: 1.863
+Epoch 84/100 | Loss: 2.705 | KL: 0.268 | Task: 0.438 | Sparsity: 1.865
+Epoch 85/100 | Loss: 2.690 | KL: 0.265 | Task: 0.424 | Sparsity: 1.869
+Epoch 86/100 | Loss: 2.715 | KL: 0.273 | Task: 0.434 | Sparsity: 1.872
+Epoch 87/100 | Loss: 2.695 | KL: 0.263 | Task: 0.431 | Sparsity: 1.869
+Epoch 88/100 | Loss: 2.706 | KL: 0.262 | Task: 0.446 | Sparsity: 1.867
+Epoch 89/100 | Loss: 2.695 | KL: 0.261 | Task: 0.439 | Sparsity: 1.866
+Epoch 90/100 | Loss: 2.693 | KL: 0.260 | Task: 0.437 | Sparsity: 1.866
+Epoch 91/100 | Loss: 2.723 | KL: 0.268 | Task: 0.456 | Sparsity: 1.865
+Epoch 92/100 | Loss: 2.714 | KL: 0.272 | Task: 0.442 | Sparsity: 1.864
+Epoch 93/100 | Loss: 2.684 | KL: 0.264 | Task: 0.428 | Sparsity: 1.859
+Epoch 94/100 | Loss: 2.707 | KL: 0.272 | Task: 0.439 | Sparsity: 1.860
+Epoch 95/100 | Loss: 2.702 | KL: 0.271 | Task: 0.436 | Sparsity: 1.859
+Epoch 96/100 | Loss: 2.712 | KL: 0.273 | Task: 0.445 | Sparsity: 1.857
+Epoch 97/100 | Loss: 2.690 | KL: 0.263 | Task: 0.435 | Sparsity: 1.860
+Epoch 98/100 | Loss: 2.723 | KL: 0.273 | Task: 0.451 | Sparsity: 1.863
+Epoch 99/100 | Loss: 2.701 | KL: 0.273 | Task: 0.431 | Sparsity: 1.861
+Epoch 100/100 | Loss: 2.713 | KL: 0.271 | Task: 0.444 | Sparsity: 1.863
+
+==================================================
+PHASE 2B: FINE-TUNE ON VEHICLES.JSONL
+==================================================
+Trainable gate parameters: 512 / 1235814912
+Epoch 1/100 | Loss: 3.190 | KL: 0.306 | Task: 0.617 | Sparsity: 2.114
+Epoch 2/100 | Loss: 3.168 | KL: 0.308 | Task: 0.592 | Sparsity: 2.114
+Epoch 3/100 | Loss: 3.151 | KL: 0.298 | Task: 0.590 | Sparsity: 2.115
+Epoch 4/100 | Loss: 3.164 | KL: 0.305 | Task: 0.591 | Sparsity: 2.115
+Epoch 5/100 | Loss: 3.183 | KL: 0.316 | Task: 0.594 | Sparsity: 2.115
+Epoch 6/100 | Loss: 3.151 | KL: 0.302 | Task: 0.584 | Sparsity: 2.114
+Epoch 7/100 | Loss: 3.163 | KL: 0.305 | Task: 0.590 | Sparsity: 2.116
+Epoch 8/100 | Loss: 3.167 | KL: 0.308 | Task: 0.588 | Sparsity: 2.116
+Epoch 9/100 | Loss: 3.163 | KL: 0.304 | Task: 0.590 | Sparsity: 2.118
+Epoch 10/100 | Loss: 3.143 | KL: 0.302 | Task: 0.574 | Sparsity: 2.117
+Epoch 11/100 | Loss: 3.159 | KL: 0.305 | Task: 0.586 | Sparsity: 2.117
+Epoch 12/100 | Loss: 3.152 | KL: 0.297 | Task: 0.590 | Sparsity: 2.117
+Epoch 13/100 | Loss: 3.177 | KL: 0.310 | Task: 0.594 | Sparsity: 2.117
+Epoch 14/100 | Loss: 3.127 | KL: 0.298 | Task: 0.563 | Sparsity: 2.117
+Epoch 15/100 | Loss: 3.159 | KL: 0.302 | Task: 0.598 | Sparsity: 2.109
+Epoch 16/100 | Loss: 3.140 | KL: 0.308 | Task: 0.586 | Sparsity: 2.092
+Epoch 17/100 | Loss: 3.116 | KL: 0.298 | Task: 0.577 | Sparsity: 2.093
+Epoch 18/100 | Loss: 3.152 | KL: 0.309 | Task: 0.595 | Sparsity: 2.093
+Epoch 19/100 | Loss: 3.149 | KL: 0.305 | Task: 0.598 | Sparsity: 2.094
+Epoch 20/100 | Loss: 3.131 | KL: 0.313 | Task: 0.570 | Sparsity: 2.092
+Epoch 21/100 | Loss: 3.149 | KL: 0.312 | Task: 0.589 | Sparsity: 2.092
+Epoch 22/100 | Loss: 3.150 | KL: 0.308 | Task: 0.592 | Sparsity: 2.096
+Epoch 23/100 | Loss: 3.161 | KL: 0.312 | Task: 0.601 | Sparsity: 2.092
+Epoch 24/100 | Loss: 3.156 | KL: 0.314 | Task: 0.591 | Sparsity: 2.093
+Epoch 25/100 | Loss: 3.131 | KL: 0.310 | Task: 0.573 | Sparsity: 2.094
+Epoch 26/100 | Loss: 3.147 | KL: 0.307 | Task: 0.595 | Sparsity: 2.091
+Epoch 27/100 | Loss: 3.149 | KL: 0.308 | Task: 0.596 | Sparsity: 2.091
+Epoch 28/100 | Loss: 3.149 | KL: 0.313 | Task: 0.587 | Sparsity: 2.091
+Epoch 29/100 | Loss: 3.155 | KL: 0.325 | Task: 0.579 | Sparsity: 2.089
+Epoch 30/100 | Loss: 3.152 | KL: 0.312 | Task: 0.593 | Sparsity: 2.091
+Epoch 31/100 | Loss: 3.170 | KL: 0.313 | Task: 0.610 | Sparsity: 2.091
+Epoch 32/100 | Loss: 3.133 | KL: 0.299 | Task: 0.590 | Sparsity: 2.094
+Epoch 33/100 | Loss: 3.152 | KL: 0.302 | Task: 0.604 | Sparsity: 2.095
+Epoch 34/100 | Loss: 3.148 | KL: 0.308 | Task: 0.594 | Sparsity: 2.093
+Epoch 35/100 | Loss: 3.142 | KL: 0.303 | Task: 0.591 | Sparsity: 2.096
+Epoch 36/100 | Loss: 3.167 | KL: 0.311 | Task: 0.605 | Sparsity: 2.095
+Epoch 37/100 | Loss: 3.123 | KL: 0.293 | Task: 0.589 | Sparsity: 2.094
+Epoch 38/100 | Loss: 3.141 | KL: 0.304 | Task: 0.592 | Sparsity: 2.093
+Epoch 39/100 | Loss: 3.124 | KL: 0.296 | Task: 0.586 | Sparsity: 2.094
+Epoch 40/100 | Loss: 3.181 | KL: 0.307 | Task: 0.626 | Sparsity: 2.094
+Epoch 41/100 | Loss: 3.117 | KL: 0.298 | Task: 0.577 | Sparsity: 2.092
+Epoch 42/100 | Loss: 3.121 | KL: 0.292 | Task: 0.589 | Sparsity: 2.094
+Epoch 43/100 | Loss: 3.143 | KL: 0.305 | Task: 0.592 | Sparsity: 2.093
+Epoch 44/100 | Loss: 3.144 | KL: 0.300 | Task: 0.599 | Sparsity: 2.095
+Epoch 45/100 | Loss: 3.136 | KL: 0.299 | Task: 0.594 | Sparsity: 2.093
+Epoch 46/100 | Loss: 3.151 | KL: 0.303 | Task: 0.601 | Sparsity: 2.095
+Epoch 47/100 | Loss: 3.124 | KL: 0.295 | Task: 0.584 | Sparsity: 2.098
+Epoch 48/100 | Loss: 3.178 | KL: 0.314 | Task: 0.609 | Sparsity: 2.098
+Epoch 49/100 | Loss: 3.131 | KL: 0.300 | Task: 0.586 | Sparsity: 2.095
+Epoch 50/100 | Loss: 3.136 | KL: 0.303 | Task: 0.588 | Sparsity: 2.094
+Epoch 51/100 | Loss: 3.149 | KL: 0.300 | Task: 0.605 | Sparsity: 2.093
+Epoch 52/100 | Loss: 3.149 | KL: 0.305 | Task: 0.597 | Sparsity: 2.094
+Epoch 53/100 | Loss: 3.162 | KL: 0.311 | Task: 0.602 | Sparsity: 2.094
+Epoch 54/100 | Loss: 3.130 | KL: 0.305 | Task: 0.580 | Sparsity: 2.093
+Epoch 55/100 | Loss: 3.147 | KL: 0.312 | Task: 0.587 | Sparsity: 2.092
+Epoch 56/100 | Loss: 3.160 | KL: 0.308 | Task: 0.607 | Sparsity: 2.091
+Epoch 57/100 | Loss: 3.132 | KL: 0.305 | Task: 0.585 | Sparsity: 2.090
+Epoch 58/100 | Loss: 3.128 | KL: 0.304 | Task: 0.583 | Sparsity: 2.090
+Epoch 59/100 | Loss: 3.153 | KL: 0.313 | Task: 0.592 | Sparsity: 2.092
+Epoch 60/100 | Loss: 3.126 | KL: 0.301 | Task: 0.583 | Sparsity: 2.092
+Epoch 61/100 | Loss: 3.134 | KL: 0.303 | Task: 0.585 | Sparsity: 2.094
+Epoch 62/100 | Loss: 3.142 | KL: 0.297 | Task: 0.602 | Sparsity: 2.094
+Epoch 63/100 | Loss: 3.134 | KL: 0.293 | Task: 0.599 | Sparsity: 2.095
+Epoch 64/100 | Loss: 3.147 | KL: 0.299 | Task: 0.604 | Sparsity: 2.096
+Epoch 65/100 | Loss: 3.140 | KL: 0.302 | Task: 0.595 | Sparsity: 2.093
+Epoch 66/100 | Loss: 3.150 | KL: 0.302 | Task: 0.602 | Sparsity: 2.095
+Epoch 67/100 | Loss: 3.110 | KL: 0.291 | Task: 0.579 | Sparsity: 2.094
+Epoch 68/100 | Loss: 3.129 | KL: 0.300 | Task: 0.583 | Sparsity: 2.096
+Epoch 69/100 | Loss: 3.159 | KL: 0.303 | Task: 0.612 | Sparsity: 2.094
+Epoch 70/100 | Loss: 3.156 | KL: 0.306 | Task: 0.604 | Sparsity: 2.094
+Epoch 71/100 | Loss: 3.134 | KL: 0.295 | Task: 0.595 | Sparsity: 2.096
+Epoch 72/100 | Loss: 3.136 | KL: 0.305 | Task: 0.586 | Sparsity: 2.092
+Epoch 73/100 | Loss: 3.141 | KL: 0.308 | Task: 0.588 | Sparsity: 2.092
+Epoch 74/100 | Loss: 3.155 | KL: 0.305 | Task: 0.602 | Sparsity: 2.095
+Epoch 75/100 | Loss: 3.126 | KL: 0.290 | Task: 0.593 | Sparsity: 2.097
+Epoch 76/100 | Loss: 3.130 | KL: 0.296 | Task: 0.593 | Sparsity: 2.093
+Epoch 77/100 | Loss: 3.130 | KL: 0.302 | Task: 0.581 | Sparsity: 2.095
+Epoch 78/100 | Loss: 3.119 | KL: 0.296 | Task: 0.580 | Sparsity: 2.095
+Epoch 79/100 | Loss: 3.173 | KL: 0.309 | Task: 0.616 | Sparsity: 2.094
+Epoch 80/100 | Loss: 3.149 | KL: 0.309 | Task: 0.591 | Sparsity: 2.094
+Epoch 81/100 | Loss: 3.112 | KL: 0.293 | Task: 0.579 | Sparsity: 2.094
+Epoch 82/100 | Loss: 3.126 | KL: 0.297 | Task: 0.586 | Sparsity: 2.095
+Epoch 83/100 | Loss: 3.141 | KL: 0.300 | Task: 0.597 | Sparsity: 2.095
+Epoch 84/100 | Loss: 3.110 | KL: 0.293 | Task: 0.578 | Sparsity: 2.092
+Epoch 85/100 | Loss: 3.129 | KL: 0.302 | Task: 0.581 | Sparsity: 2.094
+Epoch 86/100 | Loss: 3.138 | KL: 0.302 | Task: 0.590 | Sparsity: 2.095
+Epoch 87/100 | Loss: 3.136 | KL: 0.306 | Task: 0.585 | Sparsity: 2.092
+Epoch 88/100 | Loss: 3.143 | KL: 0.307 | Task: 0.590 | Sparsity: 2.092
+Epoch 89/100 | Loss: 3.126 | KL: 0.304 | Task: 0.576 | Sparsity: 2.094
+Epoch 90/100 | Loss: 3.137 | KL: 0.293 | Task: 0.604 | Sparsity: 2.093
+Epoch 91/100 | Loss: 3.126 | KL: 0.301 | Task: 0.581 | Sparsity: 2.094
+Epoch 92/100 | Loss: 3.125 | KL: 0.302 | Task: 0.581 | Sparsity: 2.092
+Epoch 93/100 | Loss: 3.147 | KL: 0.309 | Task: 0.591 | Sparsity: 2.093
+Epoch 94/100 | Loss: 3.153 | KL: 0.313 | Task: 0.592 | Sparsity: 2.092
+Epoch 95/100 | Loss: 3.146 | KL: 0.311 | Task: 0.586 | Sparsity: 2.093
+Epoch 96/100 | Loss: 3.154 | KL: 0.311 | Task: 0.592 | Sparsity: 2.094
+Epoch 97/100 | Loss: 3.135 | KL: 0.301 | Task: 0.587 | Sparsity: 2.097
+Epoch 98/100 | Loss: 3.137 | KL: 0.302 | Task: 0.588 | Sparsity: 2.095
+Epoch 99/100 | Loss: 3.178 | KL: 0.320 | Task: 0.605 | Sparsity: 2.093
+Epoch 100/100 | Loss: 3.105 | KL: 0.295 | Task: 0.571 | Sparsity: 2.092
+
+==================================================
+PHASE 3: INTERSECTION & METRICS
+==================================================
+
+--- RESULTS ---
+Size_A: 56
+Size_B: 66
+Intersection: 55
+Union: 67
+Jaccard_Similarity: 0.8209
+Overlap_A_Percent: 0.9821
+Overlap_B_Percent: 0.8333
+
+Saved masks and metrics to /home/exouser/pruning/intersection_experiments/results/animals_vs_vehicles_heads.pt
