@@ -1,0 +1,7 @@
+nohup: ignoring input
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3577.42it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3810.75it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!

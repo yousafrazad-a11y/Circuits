@@ -1,0 +1,68 @@
+nohup: ignoring input
+
+============================================================
+EXTREME 5-WAY RUN (300 EPOCHS)
+============================================================
+
+============================================================
+PHASE 1: JOINT TRAINING ON ALL 5 DATASETS
+============================================================
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 2583.15it/s]
+/home/exouser/pruning/venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py:322: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Epoch 1/300 | Loss: 8.681 | KL: 0.220 | Task: 0.578 | Sparsity: 7.773
+Epoch 10/300 | Loss: 3.593 | KL: 0.364 | Task: 0.526 | Sparsity: 2.521
+Epoch 20/300 | Loss: 3.476 | KL: 0.389 | Task: 0.550 | Sparsity: 2.343
+Epoch 30/300 | Loss: 3.471 | KL: 0.382 | Task: 0.553 | Sparsity: 2.345
+Epoch 40/300 | Loss: 3.466 | KL: 0.385 | Task: 0.569 | Sparsity: 2.319
+Epoch 50/300 | Loss: 3.443 | KL: 0.396 | Task: 0.557 | Sparsity: 2.292
+Epoch 60/300 | Loss: 3.447 | KL: 0.398 | Task: 0.556 | Sparsity: 2.293
+Epoch 70/300 | Loss: 3.451 | KL: 0.396 | Task: 0.561 | Sparsity: 2.295
+Epoch 80/300 | Loss: 3.451 | KL: 0.407 | Task: 0.568 | Sparsity: 2.272
+Epoch 90/300 | Loss: 3.439 | KL: 0.405 | Task: 0.560 | Sparsity: 2.271
+Epoch 100/300 | Loss: 3.444 | KL: 0.402 | Task: 0.558 | Sparsity: 2.282
+Epoch 110/300 | Loss: 3.437 | KL: 0.407 | Task: 0.555 | Sparsity: 2.271
+Epoch 120/300 | Loss: 3.456 | KL: 0.399 | Task: 0.563 | Sparsity: 2.295
+Epoch 130/300 | Loss: 3.443 | KL: 0.396 | Task: 0.559 | Sparsity: 2.289
+Epoch 140/300 | Loss: 3.442 | KL: 0.397 | Task: 0.554 | Sparsity: 2.293
+Epoch 150/300 | Loss: 3.442 | KL: 0.393 | Task: 0.561 | Sparsity: 2.292
+Epoch 160/300 | Loss: 3.442 | KL: 0.404 | Task: 0.557 | Sparsity: 2.279
+Epoch 170/300 | Loss: 3.462 | KL: 0.410 | Task: 0.573 | Sparsity: 2.274
+Epoch 180/300 | Loss: 3.437 | KL: 0.407 | Task: 0.558 | Sparsity: 2.269
+Epoch 190/300 | Loss: 3.436 | KL: 0.406 | Task: 0.557 | Sparsity: 2.270
+Epoch 200/300 | Loss: 3.445 | KL: 0.404 | Task: 0.571 | Sparsity: 2.268
+Epoch 210/300 | Loss: 3.447 | KL: 0.407 | Task: 0.567 | Sparsity: 2.270
+Epoch 220/300 | Loss: 3.445 | KL: 0.407 | Task: 0.567 | Sparsity: 2.268
+Epoch 230/300 | Loss: 3.446 | KL: 0.407 | Task: 0.566 | Sparsity: 2.270
+Epoch 240/300 | Loss: 3.438 | KL: 0.405 | Task: 0.561 | Sparsity: 2.270
+Epoch 250/300 | Loss: 3.439 | KL: 0.404 | Task: 0.563 | Sparsity: 2.271
+Epoch 260/300 | Loss: 3.425 | KL: 0.400 | Task: 0.553 | Sparsity: 2.272
+Epoch 270/300 | Loss: 3.442 | KL: 0.394 | Task: 0.558 | Sparsity: 2.294
+Epoch 280/300 | Loss: 3.437 | KL: 0.395 | Task: 0.551 | Sparsity: 2.293
+Epoch 290/300 | Loss: 3.456 | KL: 0.396 | Task: 0.568 | Sparsity: 2.293
+Epoch 300/300 | Loss: 3.435 | KL: 0.390 | Task: 0.558 | Sparsity: 2.292
+Phase 1 completed. Checkpoint saved.
+
+Spawning 5 parallel Phase 2 workers (Intersection Method)...
+Launched animals (PID: 32827)
+Launched colors (PID: 32828)
+Launched fruits (PID: 32829)
+Launched metals (PID: 32830)
+Launched vehicles (PID: 32831)
+Waiting for 5-Way Intersection workers to finish...
+
+Intersection Method Complete! Collecting Extreme Masks...
+
+============================================================
+PHASE 3: 5-WAY EXTREME GLOBAL INTERSECTION
+============================================================
+The EXTREME 5-Way Universal Circuit contains 47 active components.
+Saved EXTREME global 5-way circuit.
+
+Spawning final Direct Method worker (Joint Dataset for +300 Epochs)...
+Launched Direct Method Phase 4 (PID: 42283)
+Waiting for Direct Method to finish...
+
+All Extreme 5-way processing completed perfectly.

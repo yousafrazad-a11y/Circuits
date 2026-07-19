@@ -1,0 +1,70 @@
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4941.72it/s]
+Llama model successfully adapted for pruning with block-level gates.
+
+===============================================================================================
+| Mask Type                           | Eval Dataset    | Prob Acc |  Gen Acc |  Heads |  KL Div |
+-----------------------------------------------------------------------------------------------
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Pure Circuit (fruits)               | fruits          |   39.40% |    0.60% |     76 |    1.97 |
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Pure Circuit (animals)              | animals         |   48.00% |    3.60% |     56 |    1.45 |
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Pure Circuit (colors)               | colors          |   50.20% |    4.60% |     57 |    1.48 |
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Pure Circuit (metals)               | metals          |   44.40% |    5.00% |     74 |    1.92 |
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Pure Circuit (vehicles)             | vehicles        |   33.60% |    2.00% |     59 |    1.53 |
+-----------------------------------------------------------------------------------------------
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Extreme Circuit (fruits)            | fruits          |   39.40% |    0.60% |     77 |    2.00 |
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Extreme Circuit (animals)           | animals         |   48.00% |    3.60% |     64 |    1.66 |
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Extreme Circuit (colors)            | colors          |   50.20% |    4.60% |     68 |    1.77 |
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Extreme Circuit (metals)            | metals          |   44.40% |    5.00% |     76 |    1.97 |
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Extreme Circuit (vehicles)          | vehicles        |   33.60% |    2.00% |     67 |    1.74 |
+-----------------------------------------------------------------------------------------------
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Global Joint (600 epochs)           | fruits          |   39.40% |    0.60% |     78 |    2.02 |
+| Global Joint (600 epochs)           | animals         |   48.00% |    3.60% |     78 |    2.02 |
+| Global Joint (600 epochs)           | colors          |   50.20% |    4.60% |     78 |    2.02 |
+| Global Joint (600 epochs)           | metals          |   44.40% |    5.00% |     78 |    2.02 |
+| Global Joint (600 epochs)           | vehicles        |   33.60% |    2.00% |     78 |    2.02 |
+| Global Joint (600 epochs)           | ALL AVERAGED    |   43.12% |    3.16% |     78 |    2.02 |
+-----------------------------------------------------------------------------------------------
+
+--- Setting final circuit mode to: True ---
+    Updated 112 HardConcreteGate modules.
+| Universal Core (5-way Int.)         | fruits          |   39.40% |    0.60% |     44 |    1.14 |
+| Universal Core (5-way Int.)         | animals         |   48.00% |    3.60% |     44 |    1.14 |
+| Universal Core (5-way Int.)         | colors          |   50.20% |    4.60% |     44 |    1.14 |
+| Universal Core (5-way Int.)         | metals          |   44.40% |    5.00% |     44 |    1.14 |
+| Universal Core (5-way Int.)         | vehicles        |   33.60% |    2.00% |     44 |    1.14 |
+| Universal Core (5-way Int.)         | ALL AVERAGED    |   43.12% |    3.16% |     44 |    1.14 |
+===============================================================================================
