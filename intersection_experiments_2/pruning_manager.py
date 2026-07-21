@@ -1,5 +1,6 @@
 import os
 import sys
+import dataclasses
 import torch
 import torch.nn.functional as F
 from torch.optim import AdamW
@@ -66,6 +67,26 @@ class CircuitPruningManager:
             param.requires_grad = is_gate
             if is_gate:
                 param.data = param.data.float()
+
+    def set_global_sparsity_lambda(self, value: float):
+        """
+        Set the sparsity lambda globally across all granularity levels.
+
+        Anchored on lambda_attention_heads: every level's lambda is scaled by
+        the same factor (value / current lambda_attention_heads), preserving
+        the relative weighting between levels (e.g. heads 0.05 : full layers 0.25).
+        Example: with default config, value=0.10 doubles every level's lambda.
+        """
+        if self.model is None:
+            raise ValueError("Model not initialized.")
+
+        cfg = self.model.pruning_config
+        scale = value / cfg.lambda_attention_heads
+        for f in dataclasses.fields(cfg):
+            if f.name.startswith("lambda_"):
+                setattr(cfg, f.name, getattr(cfg, f.name) * scale)
+        print(f"Global sparsity lambda set (x{scale:.3g} on all levels): "
+              f"attention_heads={cfg.lambda_attention_heads:.4g}")
 
     def train_masks(self, dataloader, epochs: int = 10, lr: float = 0.05, config: Optional[PruningConfig] = None):
         """

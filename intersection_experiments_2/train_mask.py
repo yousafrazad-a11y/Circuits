@@ -66,7 +66,7 @@ def main():
     parser.add_argument("--epochs", type=int, required=True, help="Number of epochs to train.")
     parser.add_argument("--output_name", type=str, required=True, help="Base name for the saved mask and checkpoint files.")
     parser.add_argument("--mask", type=str, default=None, help="Optional path to a binary mask file to finetune from. Starts from the pure binary mask; gates that are off in the mask are frozen off for the whole run.")
-    parser.add_argument("--lambda_sparsity", type=float, default=None, help="Sparsity lambda for attention-head gates. Default: keep the PruningConfig value (0.05).")
+    parser.add_argument("--lambda_sparsity", type=float, default=None, help="Global sparsity lambda: sets the attention-head lambda to this value and scales every other granularity level's lambda by the same factor (default: keep PruningConfig values, heads=0.05).")
     args = parser.parse_args()
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -95,8 +95,7 @@ def main():
     manager.initialize_model()
     
     if args.lambda_sparsity is not None:
-        manager.model.pruning_config.lambda_attention_heads = args.lambda_sparsity
-        print(f"Sparsity lambda (attention heads) overridden to {args.lambda_sparsity}")
+        manager.set_global_sparsity_lambda(args.lambda_sparsity)
     
     if args.mask:
         print(f"Finetuning from binary mask {args.mask} (off-gates frozen)...")
