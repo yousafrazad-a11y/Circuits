@@ -61,38 +61,41 @@ def collate_fn(batch, tokenizer):
     }
 
 def main():
-    parser = argparse.ArgumentParser(description="Train a pruning mask on a dataset.")
-    parser.add_argument("--dataset", type=str, required=True, help="Name of the dataset (e.g., fruits, all).")
+    parser = argparse.ArgumentParser(description="Train a pruning mask on one or more datasets.")
+    parser.add_argument("--dataset", type=str, nargs='+', required=True,
+                        help="One or more dataset names (resolved to intersection_experiments_2/datasets/<name>.jsonl) "
+                             "or direct .jsonl paths. Multiple datasets are mixed and shuffled (seed 42).")
     parser.add_argument("--epochs", type=int, required=True, help="Number of epochs to train.")
     parser.add_argument("--output_name", type=str, required=True, help="Base name for the saved mask and checkpoint files.")
     parser.add_argument("--mask", type=str, default=None, help="Optional path to a binary mask file to finetune from. Starts from the pure binary mask; gates that are off in the mask are frozen off for the whole run.")
     parser.add_argument("--lambda_sparsity", type=float, default=None, help="Global sparsity lambda: sets the attention-head lambda to this value and scales every other granularity level's lambda by the same factor (default: keep PruningConfig values, heads=0.05).")
+    parser.add_argument("--prune_mlp_blocks", action="store_true", help="Also prune whole MLP blocks (one scalar gate per MLP per layer). Default: attention heads only.")
     args = parser.parse_args()
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     
-    # Load dataset
-    if args.dataset == "all":
-        dataset_names = ["fruits", "animals", "colors", "metals", "vehicles"]
-        mixed_data = []
-        for name in dataset_names:
-            path = f"intersection_experiments_2/datasets/{name}.jsonl"
-            with open(path, 'r') as f:
-                for line in f:
-                    mixed_data.append(json.loads(line))
-        random.seed(42)
-        random.shuffle(mixed_data)
-        ds = MemoryDataset(mixed_data)
-    else:
-        dataset_path = f"intersection_experiments_2/datasets/{args.dataset}.jsonl"
-        if not os.path.exists(dataset_path):
-            raise FileNotFoundError(f"Dataset file not found at {dataset_path}")
-        ds = CategoryDataset(dataset_path)
+    # Load dataset(s): names resolve to intersection_experiments_2/datasets/<name>.jsonl,
+    # or pass direct .jsonl paths. Multiple datasets are mixed and shuffled (seed 42).
+    mixed_data = []
+    for name in args.dataset:
+        path = name if name.endswith(".jsonl") else f"intersection_experiments_2/datasets/{name}.jsonl"
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"Dataset file not found at {path}")
+        with open(path, 'r') as f:
+            for line in f:
+                mixed_data.append(json.loads(line))
+    random.seed(42)
+    random.shuffle(mixed_data)
+    ds = MemoryDataset(mixed_data)
     
     manager = CircuitPruningManager(model_name="meta-llama/Llama-3.2-1B", device=device)
     dl = DataLoader(ds, batch_size=8, shuffle=True, collate_fn=lambda b: collate_fn(b, manager.tokenizer))
     
-    manager.initialize_model()
+    config = manager._get_default_config()
+    if args.prune_mlp_blocks:
+        config.prune_mlp_blocks = True
+        print("MLP block pruning ENABLED (heads + whole MLP blocks).")
+    manager.initialize_model(config)
     
     if args.lambda_sparsity is not None:
         manager.set_global_sparsity_lambda(args.lambda_sparsity)
@@ -101,7 +104,7 @@ def main():
         print(f"Finetuning from binary mask {args.mask} (off-gates frozen)...")
         manager.load_masks_for_finetuning(args.mask)
     
-    print(f"\n--- TRAINING MASKS ON {args.dataset.upper()} ({len(ds)} samples) ---")
+    print(f"\n--- TRAINING MASKS ON {', '.join(args.dataset).upper()} ({len(ds)} samples) ---")
     manager.train_masks(dl, epochs=args.epochs)
     
     # Save mask and checkpoint
