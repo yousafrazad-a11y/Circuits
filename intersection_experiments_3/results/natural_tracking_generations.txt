@@ -1,0 +1,119 @@
+==============================================================================
+[1] (easy) chain: apples -> bananas -> mangoes
+PROMPT: My shopping list always goes in the same order: apples, bananas, mangoes, apples, bananas, and then I buy
+EXPECTED: mangoes
+  full_model: 'a few other things. I have a list of things I need to buy, but I don’t always buy them in the'
+  ns_fruits_300: 'a bunch of bananas, a bunch of bananas, a bunch of bananas, a bunch of bananas, a bunch of bananas,'
+  dn_fruits_300: 'a lot of bananas, and then i.e. 2.3.4.5.6.7.8.'
+  union_ns_dn_fruits_300: 'a bag of chocolate, bananas, and a bag of apples, bananas, and a bag of apples, bananas, and a'
+  anti_ns_fruits_300: "the last item on my list. I don't. I'm't't't't} % ' ' ' % ' '"
+  anti_dn_fruits_300: 'the rest of the day’s. I’m not go to the “” I’m””””””””'
+  anti_union_ns_dn_fruits_300: 'the last item on the list. I don’t”””””””””””””””'
+
+==============================================================================
+[2] (easy) chain: roses -> tulips -> daisies
+PROMPT: Every morning I water the roses, the tulips, and the daisies, then again the roses and the tulips, and finally the
+EXPECTED: daisies
+  full_model: 'daisies. I water the daisies every morning, and the daisies are the only flowers that I water'
+  ns_fruits_300: 'daisies, and the tulips, and the tulips, and the tulips, and the tulips, and'
+  dn_fruits_300: 'daisies, and the tulips, and the tulips, and the tulips, and the tulips, and'
+  union_ns_dn_fruits_300: 'daisies, and the tulips, and the tulips, and the tulips, and the tulips, and'
+  anti_ns_fruits_300: 'tulips. I was the first time I was not sure that I would not be” I would and }\ndef }\ndef'
+  anti_dn_fruits_300: 'tulips. I was. I was. I was. I. I was. I was. I. I. I'
+  anti_union_ns_dn_fruits_300: 'tulips. I was the end of the end.\nI was not\ndef\ndef\ndef ”def\ndef'
+
+==============================================================================
+[3] (easy) chain: Sam -> Lily -> Noah
+PROMPT: The kids took turns on the swing: first Sam, then Lily, then Noah, then Sam again, then Lily, and after her it was
+EXPECTED: Noah
+  full_model: 'Noah’s turn. I was so proud of them all. They were all so happy and so excited to be swinging. I'
+  ns_fruits_300: 'Noah, it was, it was, it was, it was, it was, it was, it was, it was'
+  dn_fruits_300: 'Noah. I was a little girl, and after her, and her, and her, and her, and her, and'
+  union_ns_dn_fruits_300: 'Noah, it was, it was, it was, it was, it was, it was, it was, it was'
+  anti_ns_fruits_300: 'Lily’s turn. I was the only time to be the only because she was not . }\n and was not }\n }\n }'
+  anti_dn_fruits_300: 'Lily’s turn. She was a little too tired to go through the door. She was not. She was not. She'
+  anti_union_ns_dn_fruits_300: 'Lily’s turn. She was not quite sure she was quite sure that she was not” }\nThe\ndef\n  }'
+
+==============================================================================
+[4] (easy) chain: bakery -> school -> hospital
+PROMPT: The bus stops at the bakery, the school, and the hospital, then loops back to the bakery and the school before heading to the
+EXPECTED: hospital
+  full_model: 'hospital. The bus is a 2.5 hour trip, and the bus driver is a 30 year old man who'
+  ns_fruits_300: 'hospital. The bus stops at the school, the bus stop, the bus stop, the bus stop, the bus stop,'
+  dn_fruits_300: 'hospital. The bus stops at the school. The bus stops at the school. The bus stops at the school. The bus'
+  union_ns_dn_fruits_300: 'hospital. The bus stops at the bakery and the school, the bakery and the school, the bakery and the school, the'
+  anti_ns_fruits_300: 'school. The school is a ̾ ̾ ̾ �����̍ �'
+  anti_dn_fruits_300: 'school. The bus is a ̸̸ ̸ ̅ ̅ ̅ �'
+  anti_union_ns_dn_fruits_300: 'school. The students are not sure they are not very sure they are very likely to ”” ” ” ” ” ” ”'
+
+==============================================================================
+[5] (easy) chain: peaches -> cherries -> plums
+PROMPT: For dessert, Grandpa always served peaches, cherries, and plums, one bowl of each, and after the peaches and the cherries came the
+EXPECTED: plums
+  full_model: 'plums. He would say, “I’m going to make a plum pudding.” He would take a big bowl and fill'
+  ns_fruits_300: 'plums, the plum, the plum, the plum, the plum, the plum, the plum, the plum, the'
+  dn_fruits_300: 'plums, and after the plum, and after the plum, and after the plum, and after the plum, and after'
+  union_ns_dn_fruits_300: 'plums, and after the cherries, and the plums, and the cherries, and the plums, and'
+  anti_ns_fruits_300: 'cherries. He would not wait until they were all done. He would not wait until they would not be done. He'
+  anti_dn_fruits_300: 'cherries. He would have a “” said “” ” ” ” ” ” ” ” ” ” ” ” ” ”'
+  anti_union_ns_dn_fruits_300: 'cherries. He would not bother with the least that he would not be surprised by ”” ” ” ” ” ” ”'
+
+==============================================================================
+[6] (hard) chain: voltmeter -> oscilloscope -> spectrometer
+PROMPT: The technician calibrated the voltmeter first, then the oscilloscope, then the spectrometer, and because the protocol required it, she recalibrated the voltmeter and the oscilloscope before finally adjusting the
+EXPECTED: spectrometer
+  full_model: 'spectrometer. The technician was very careful and precise in her work. She was very conscientious and thorough in her work.'
+  ns_fruits_300: 'spectrometer. The oscilloscope is a 2. The oscilloscope is a 3. The oscilloscope'
+  dn_fruits_300: 'spectrometer, the oscilloscope, the oscilloscope, the oscilloscope, the oscilloscope, the osc'
+  union_ns_dn_fruits_300: 'spectrometer. The oscilloscope is a 2. The oscilloscope is a 3. The oscilloscope'
+  anti_ns_fruits_300: 'oscilator to the ̶ ̶ ̸ ̸ ̸ ̸ �'
+  anti_dn_fruits_300: 'oscilloscope and the \xa0 Read more\nThe \xa0\xa0\xa0”\xa0\xa0\xa0”'
+  anti_union_ns_dn_fruits_300: 'oscilator to the proper settings. The proper settings were calibrated by the proper settings were calibrated by the proper settings were calibrated'
+
+==============================================================================
+[7] (hard) chain: cathedral -> harbor -> museum
+PROMPT: Although the brochure promised the cathedral, the harbor, and the museum as the day's route, heavy rain delayed everything by two hours; but once the cathedral and the harbor were finally done, the guide insisted they would still end at the
+EXPECTED: museum
+  full_model: 'museum. The museum was closed, but the guide insisted they would still end at the museum. The museum was closed, but'
+  ns_fruits_300: 'harbor. The museum, the bridge, the road, the train, the hotel, the car, the car, the car'
+  dn_fruits_300: 'harbor, the museum, the market, the harbor, the harbor, the harbor, the harbor, the harbor, the harbor'
+  union_ns_dn_fruits_300: 'museum, the tour, the tour, the tour, the tour, the tour, the tour, the tour, the tour'
+  anti_ns_fruits_300: 'harbor. "We were not quite so impressed with the " " " " " " " " " " " " "'
+  anti_dn_fruits_300: 'harbor, and the guide was a “” “” ” ” ” ” ” ” ” ” ” ” ” ” ” ”'
+  anti_union_ns_dn_fruits_300: 'harbor, so we could not miss the end the end\nThe end\nThe\n }\nThe\ndef\ndef\ndef'
+
+==============================================================================
+[8] (hard) chain: cello suite -> waltz -> nocturne
+PROMPT: The conductor opened with the cello suite, moved to the waltz, and closed the first half with the nocturne; after the intermission, the orchestra repeated the cello suite and then the waltz, so the audience knew the final piece would be the
+EXPECTED: nocturne
+  full_model: 'nocturne. The conductor then announced that the orchestra would play the nocturne in the order of the program, and'
+  ns_fruits_300: 'waltz. The orchestra, the orchestra, the orchestra, the orchestra, the orchestra, the orchestra, the orchestra,'
+  dn_fruits_300: 'waltz.\nThe orchestra, and the no. 2. The 20. 20. 20.'
+  union_ns_dn_fruits_300: 'waltz. The orchestra, the orchestra, the orchestra, the orchestra, the orchestra, the orchestra, the orchestra,'
+  anti_ns_fruits_300: 'walt. The final was not a surprise.\nThe final was not a surprise because it was not because because because because because'
+  anti_dn_fruits_300: 'waltrold. The concert was a very good. The. The concert was. The. The. was. was'
+  anti_union_ns_dn_fruits_300: 'walt. The “” was not “” ” ” ” ” ” ” ” ” ” ” ” ” ” ” ”'
+
+==============================================================================
+[9] (hard) chain: cabernet -> merlot -> syrah
+PROMPT: In the tasting, the sommelier poured the cabernet, then the merlot, then the syrah, commenting at length on each; after a second pour of the cabernet followed by another of the merlot, she reached for the bottle of
+EXPECTED: syrah
+  full_model: 'syrah. “This is the best of the three,” she said, “but the cabernet is the best of the'
+  ns_fruits_300: 'chardonnier, the wine, the wine, the wine, the wine, the wine, the wine, the wine'
+  dn_fruits_300: 'chardonn, the wine, the grapes, the grapes, the grapes, the grapes, the sy, the sy,'
+  union_ns_dn_fruits_300: 'chardonnier, the wine, the wine, the wine, the wine, the wine, the wine, the wine'
+  anti_ns_fruits_300: 'merlot. “The “” “” “” “” “” “” “” “” “” “”'
+  anti_dn_fruits_300: 'merlot. The wine was not written down as “s” ” ” ” ” ” ” ” ” ” ” ” ”'
+  anti_union_ns_dn_fruits_300: 'merlot. “I’m not sure that the ̸ ” ” ” ” ” ” ” ” ” ” ” ”'
+
+==============================================================================
+[10] (hard) chain: fencing -> archery -> rowing
+PROMPT: The coach rotated the team through fencing, archery, and rowing every single morning without exception, so even though Tuesday's fog delayed fencing and pushed archery well past breakfast, everyone knew the last session of the day would be
+EXPECTED: rowing
+  full_model: 'rowing. The team was split into two groups, and the first group was given a 10-minute warm-up, then'
+  ns_fruits_300: 'rowing is a team of the coach of the coach of the coach of the coach of the coach of the coach of the'
+  dn_fruits_300: 'rowing is rowing is rowing is rowing is rowing is rowing is rowing is rowing is row'
+  union_ns_dn_fruits_300: 'rowing, the team of the coach, the team of the coach, the team of the team, the team of the'
+  anti_ns_fruits_300: 'archery. The team would not be surprised by any of any other. The coaches would not be any. The coaches would'
+  anti_dn_fruits_300: 'archery. The coach was a ̸̸̸ ” was ” was ” ” ” ” ” ” ”'
+  anti_union_ns_dn_fruits_300: 'archery. The coaches were not to be surprised by any of any\nThe\n\x08\nThe\n }\nThe\ndef'

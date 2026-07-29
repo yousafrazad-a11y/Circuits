@@ -1,0 +1,7 @@
+FINAL 5-WAY GLOBAL CIRCUIT RESULTS SUMMARY
+==================================================
+FRUITS     | Prob Acc:  99.80% | Gen Acc:  79.20%
+ANIMALS    | Prob Acc: 100.00% | Gen Acc:  99.20%
+COLORS     | Prob Acc: 100.00% | Gen Acc:  86.80%
+METALS     | Prob Acc:  98.20% | Gen Acc:  91.80%
+VEHICLES   | Prob Acc:  99.00% | Gen Acc:  99.00%

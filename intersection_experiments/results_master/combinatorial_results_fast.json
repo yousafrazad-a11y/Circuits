@@ -1,0 +1,145 @@
+{
+  "2-way": {
+    "fruits_animals": {
+      "fruits": 0.466,
+      "animals": 0.482,
+      "avg": 0.474,
+      "heads": 60
+    },
+    "fruits_colors": {
+      "fruits": 0.466,
+      "colors": 0.518,
+      "avg": 0.492,
+      "heads": 62
+    },
+    "fruits_metals": {
+      "fruits": 0.466,
+      "metals": 0.48,
+      "avg": 0.473,
+      "heads": 69
+    },
+    "fruits_vehicles": {
+      "fruits": 0.466,
+      "vehicles": 0.338,
+      "avg": 0.402,
+      "heads": 64
+    },
+    "animals_colors": {
+      "animals": 0.482,
+      "colors": 0.518,
+      "avg": 0.5,
+      "heads": 53
+    },
+    "animals_metals": {
+      "animals": 0.482,
+      "metals": 0.48,
+      "avg": 0.481,
+      "heads": 57
+    },
+    "animals_vehicles": {
+      "animals": 0.482,
+      "vehicles": 0.338,
+      "avg": 0.41000000000000003,
+      "heads": 59
+    },
+    "colors_metals": {
+      "colors": 0.518,
+      "metals": 0.48,
+      "avg": 0.499,
+      "heads": 63
+    },
+    "colors_vehicles": {
+      "colors": 0.518,
+      "vehicles": 0.338,
+      "avg": 0.42800000000000005,
+      "heads": 56
+    },
+    "metals_vehicles": {
+      "metals": 0.48,
+      "vehicles": 0.338,
+      "avg": 0.40900000000000003,
+      "heads": 62
+    }
+  },
+  "3-way": {
+    "fruits_animals_colors": {
+      "fruits": 0.466,
+      "animals": 0.482,
+      "colors": 0.518,
+      "avg": 0.48866666666666664,
+      "heads": 50
+    },
+    "fruits_animals_metals": {
+      "fruits": 0.466,
+      "animals": 0.482,
+      "metals": 0.48,
+      "avg": 0.476,
+      "heads": 54
+    },
+    "fruits_animals_vehicles": {
+      "fruits": 0.466,
+      "animals": 0.482,
+      "vehicles": 0.338,
+      "avg": 0.4286666666666667,
+      "heads": 56
+    },
+    "fruits_colors_metals": {
+      "fruits": 0.466,
+      "colors": 0.518,
+      "metals": 0.48,
+      "avg": 0.488,
+      "heads": 59
+    },
+    "fruits_colors_vehicles": {
+      "fruits": 0.466,
+      "colors": 0.518,
+      "vehicles": 0.338,
+      "avg": 0.4406666666666667,
+      "heads": 53
+    },
+    "fruits_metals_vehicles": {
+      "fruits": 0.466,
+      "metals": 0.48,
+      "vehicles": 0.338,
+      "avg": 0.428,
+      "heads": 59
+    },
+    "animals_colors_metals": {
+      "animals": 0.482,
+      "colors": 0.518,
+      "metals": 0.48,
+      "avg": 0.49333333333333335,
+      "heads": 50
+    },
+    "animals_colors_vehicles": {
+      "animals": 0.482,
+      "colors": 0.518,
+      "vehicles": 0.338,
+      "avg": 0.446,
+      "heads": 50
+    },
+    "animals_metals_vehicles": {
+      "animals": 0.482,
+      "metals": 0.48,
+      "vehicles": 0.338,
+      "avg": 0.43333333333333335,
+      "heads": 54
+    },
+    "colors_metals_vehicles": {
+      "colors": 0.518,
+      "metals": 0.48,
+      "vehicles": 0.338,
+      "avg": 0.44533333333333336,
+      "heads": 53
+    }
+  },
+  "universal": {
+    "heads": 44,
+    "fruits": 0.466,
+    "animals": 0.482,
+    "colors": 0.518,
+    "metals": 0.48,
+    "vehicles": 0.338,
+    "avg": 0.4568
+  }
+}

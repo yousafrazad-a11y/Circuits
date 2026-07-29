@@ -1,0 +1,41 @@
+
+============================================================
+PHASE 2: FINE-TUNE ON VEHICLES (300 Epochs)
+============================================================
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4108.67it/s]
+/home/exouser/pruning/venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py:322: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Epoch 1/300 | Loss: 3.376 | KL: 0.328 | Task: 0.608 | Sparsity: 2.276
+Epoch 10/300 | Loss: 3.241 | KL: 0.325 | Task: 0.574 | Sparsity: 2.179
+Epoch 20/300 | Loss: 3.199 | KL: 0.328 | Task: 0.571 | Sparsity: 2.135
+Epoch 30/300 | Loss: 3.213 | KL: 0.328 | Task: 0.604 | Sparsity: 2.117
+Epoch 40/300 | Loss: 3.209 | KL: 0.334 | Task: 0.610 | Sparsity: 2.098
+Epoch 50/300 | Loss: 3.196 | KL: 0.341 | Task: 0.588 | Sparsity: 2.096
+Epoch 60/300 | Loss: 3.194 | KL: 0.327 | Task: 0.609 | Sparsity: 2.095
+Epoch 70/300 | Loss: 3.178 | KL: 0.317 | Task: 0.604 | Sparsity: 2.099
+Epoch 80/300 | Loss: 3.194 | KL: 0.328 | Task: 0.605 | Sparsity: 2.097
+Epoch 90/300 | Loss: 3.158 | KL: 0.325 | Task: 0.577 | Sparsity: 2.093
+Epoch 100/300 | Loss: 3.163 | KL: 0.324 | Task: 0.590 | Sparsity: 2.087
+Epoch 110/300 | Loss: 3.159 | KL: 0.329 | Task: 0.593 | Sparsity: 2.072
+Epoch 120/300 | Loss: 3.182 | KL: 0.334 | Task: 0.612 | Sparsity: 2.068
+Epoch 130/300 | Loss: 3.193 | KL: 0.339 | Task: 0.619 | Sparsity: 2.065
+Epoch 140/300 | Loss: 3.171 | KL: 0.347 | Task: 0.605 | Sparsity: 2.046
+Epoch 150/300 | Loss: 3.200 | KL: 0.359 | Task: 0.617 | Sparsity: 2.044
+Epoch 160/300 | Loss: 3.174 | KL: 0.348 | Task: 0.606 | Sparsity: 2.045
+Epoch 170/300 | Loss: 3.150 | KL: 0.334 | Task: 0.580 | Sparsity: 2.069
+Epoch 180/300 | Loss: 3.139 | KL: 0.321 | Task: 0.592 | Sparsity: 2.065
+Epoch 190/300 | Loss: 3.146 | KL: 0.338 | Task: 0.568 | Sparsity: 2.070
+Epoch 200/300 | Loss: 3.158 | KL: 0.339 | Task: 0.581 | Sparsity: 2.069
+Epoch 210/300 | Loss: 3.130 | KL: 0.330 | Task: 0.569 | Sparsity: 2.067
+Epoch 220/300 | Loss: 3.194 | KL: 0.334 | Task: 0.645 | Sparsity: 2.048
+Epoch 230/300 | Loss: 3.159 | KL: 0.331 | Task: 0.618 | Sparsity: 2.045
+Epoch 240/300 | Loss: 3.133 | KL: 0.317 | Task: 0.610 | Sparsity: 2.048
+Epoch 250/300 | Loss: 3.142 | KL: 0.322 | Task: 0.614 | Sparsity: 2.045
+Epoch 260/300 | Loss: 3.135 | KL: 0.323 | Task: 0.604 | Sparsity: 2.046
+Epoch 270/300 | Loss: 3.154 | KL: 0.326 | Task: 0.619 | Sparsity: 2.046
+Epoch 280/300 | Loss: 3.157 | KL: 0.324 | Task: 0.626 | Sparsity: 2.046
+Epoch 290/300 | Loss: 3.169 | KL: 0.334 | Task: 0.620 | Sparsity: 2.048
+Epoch 300/300 | Loss: 3.166 | KL: 0.336 | Task: 0.616 | Sparsity: 2.046
+[VEHICLES] Finished Phase 2 and saved circuit.

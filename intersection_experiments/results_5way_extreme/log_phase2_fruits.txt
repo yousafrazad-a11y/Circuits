@@ -1,0 +1,39 @@
+
+============================================================
+PHASE 2: FINE-TUNE ON FRUITS (300 Epochs)
+============================================================
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 5041.85it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Epoch 1/300 | Loss: 3.658 | KL: 0.487 | Task: 0.640 | Sparsity: 2.287
+Epoch 10/300 | Loss: 3.535 | KL: 0.450 | Task: 0.608 | Sparsity: 2.251
+Epoch 20/300 | Loss: 3.448 | KL: 0.441 | Task: 0.532 | Sparsity: 2.255
+Epoch 30/300 | Loss: 3.475 | KL: 0.448 | Task: 0.523 | Sparsity: 2.280
+Epoch 40/300 | Loss: 3.457 | KL: 0.433 | Task: 0.559 | Sparsity: 2.249
+Epoch 50/300 | Loss: 3.522 | KL: 0.438 | Task: 0.616 | Sparsity: 2.249
+Epoch 60/300 | Loss: 3.463 | KL: 0.447 | Task: 0.557 | Sparsity: 2.236
+Epoch 70/300 | Loss: 3.440 | KL: 0.451 | Task: 0.550 | Sparsity: 2.215
+Epoch 80/300 | Loss: 3.437 | KL: 0.461 | Task: 0.546 | Sparsity: 2.201
+Epoch 90/300 | Loss: 3.436 | KL: 0.455 | Task: 0.547 | Sparsity: 2.206
+Epoch 100/300 | Loss: 3.432 | KL: 0.457 | Task: 0.541 | Sparsity: 2.206
+Epoch 110/300 | Loss: 3.449 | KL: 0.450 | Task: 0.568 | Sparsity: 2.207
+Epoch 120/300 | Loss: 3.425 | KL: 0.440 | Task: 0.558 | Sparsity: 2.208
+Epoch 130/300 | Loss: 3.405 | KL: 0.438 | Task: 0.541 | Sparsity: 2.207
+Epoch 140/300 | Loss: 3.440 | KL: 0.451 | Task: 0.562 | Sparsity: 2.201
+Epoch 150/300 | Loss: 3.389 | KL: 0.448 | Task: 0.514 | Sparsity: 2.202
+Epoch 160/300 | Loss: 3.469 | KL: 0.475 | Task: 0.550 | Sparsity: 2.207
+Epoch 170/300 | Loss: 3.418 | KL: 0.450 | Task: 0.541 | Sparsity: 2.201
+Epoch 180/300 | Loss: 3.457 | KL: 0.469 | Task: 0.542 | Sparsity: 2.212
+Epoch 190/300 | Loss: 3.479 | KL: 0.475 | Task: 0.563 | Sparsity: 2.203
+Epoch 200/300 | Loss: 3.426 | KL: 0.457 | Task: 0.536 | Sparsity: 2.204
+Epoch 210/300 | Loss: 3.390 | KL: 0.442 | Task: 0.530 | Sparsity: 2.197
+Epoch 220/300 | Loss: 3.416 | KL: 0.447 | Task: 0.540 | Sparsity: 2.205
+Epoch 230/300 | Loss: 3.403 | KL: 0.459 | Task: 0.512 | Sparsity: 2.203
+Epoch 240/300 | Loss: 3.437 | KL: 0.440 | Task: 0.573 | Sparsity: 2.204
+Epoch 250/300 | Loss: 3.410 | KL: 0.462 | Task: 0.515 | Sparsity: 2.202
+Epoch 260/300 | Loss: 3.417 | KL: 0.449 | Task: 0.536 | Sparsity: 2.207
+Epoch 270/300 | Loss: 3.396 | KL: 0.444 | Task: 0.528 | Sparsity: 2.202
+Epoch 280/300 | Loss: 3.402 | KL: 0.452 | Task: 0.522 | Sparsity: 2.203
+Epoch 290/300 | Loss: 3.486 | KL: 0.474 | Task: 0.574 | Sparsity: 2.201
+Epoch 300/300 | Loss: 3.410 | KL: 0.447 | Task: 0.532 | Sparsity: 2.208
+[FRUITS] Finished Phase 2 and saved circuit.

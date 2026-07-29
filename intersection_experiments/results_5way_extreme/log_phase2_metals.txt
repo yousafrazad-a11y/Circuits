@@ -1,0 +1,39 @@
+
+============================================================
+PHASE 2: FINE-TUNE ON METALS (300 Epochs)
+============================================================
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3574.56it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Epoch 1/300 | Loss: 3.654 | KL: 0.448 | Task: 0.698 | Sparsity: 2.284
+Epoch 10/300 | Loss: 3.522 | KL: 0.439 | Task: 0.692 | Sparsity: 2.171
+Epoch 20/300 | Loss: 3.484 | KL: 0.453 | Task: 0.631 | Sparsity: 2.173
+Epoch 30/300 | Loss: 3.481 | KL: 0.450 | Task: 0.630 | Sparsity: 2.175
+Epoch 40/300 | Loss: 3.515 | KL: 0.467 | Task: 0.643 | Sparsity: 2.171
+Epoch 50/300 | Loss: 3.490 | KL: 0.458 | Task: 0.632 | Sparsity: 2.171
+Epoch 60/300 | Loss: 3.530 | KL: 0.464 | Task: 0.662 | Sparsity: 2.171
+Epoch 70/300 | Loss: 3.477 | KL: 0.448 | Task: 0.634 | Sparsity: 2.171
+Epoch 80/300 | Loss: 3.480 | KL: 0.452 | Task: 0.635 | Sparsity: 2.167
+Epoch 90/300 | Loss: 3.493 | KL: 0.461 | Task: 0.651 | Sparsity: 2.150
+Epoch 100/300 | Loss: 3.502 | KL: 0.473 | Task: 0.669 | Sparsity: 2.124
+Epoch 110/300 | Loss: 3.446 | KL: 0.458 | Task: 0.637 | Sparsity: 2.121
+Epoch 120/300 | Loss: 3.467 | KL: 0.457 | Task: 0.659 | Sparsity: 2.122
+Epoch 130/300 | Loss: 3.458 | KL: 0.464 | Task: 0.637 | Sparsity: 2.125
+Epoch 140/300 | Loss: 3.461 | KL: 0.456 | Task: 0.651 | Sparsity: 2.126
+Epoch 150/300 | Loss: 3.433 | KL: 0.459 | Task: 0.618 | Sparsity: 2.126
+Epoch 160/300 | Loss: 3.459 | KL: 0.459 | Task: 0.646 | Sparsity: 2.125
+Epoch 170/300 | Loss: 3.468 | KL: 0.452 | Task: 0.665 | Sparsity: 2.125
+Epoch 180/300 | Loss: 3.473 | KL: 0.489 | Task: 0.621 | Sparsity: 2.118
+Epoch 190/300 | Loss: 3.468 | KL: 0.459 | Task: 0.655 | Sparsity: 2.124
+Epoch 200/300 | Loss: 3.465 | KL: 0.461 | Task: 0.651 | Sparsity: 2.122
+Epoch 210/300 | Loss: 3.505 | KL: 0.468 | Task: 0.678 | Sparsity: 2.126
+Epoch 220/300 | Loss: 3.478 | KL: 0.463 | Task: 0.660 | Sparsity: 2.125
+Epoch 230/300 | Loss: 3.523 | KL: 0.476 | Task: 0.686 | Sparsity: 2.123
+Epoch 240/300 | Loss: 3.429 | KL: 0.464 | Task: 0.614 | Sparsity: 2.119
+Epoch 250/300 | Loss: 3.487 | KL: 0.469 | Task: 0.661 | Sparsity: 2.122
+Epoch 260/300 | Loss: 3.467 | KL: 0.474 | Task: 0.633 | Sparsity: 2.124
+Epoch 270/300 | Loss: 3.460 | KL: 0.471 | Task: 0.631 | Sparsity: 2.122
+Epoch 280/300 | Loss: 3.431 | KL: 0.466 | Task: 0.613 | Sparsity: 2.120
+Epoch 290/300 | Loss: 3.463 | KL: 0.460 | Task: 0.650 | Sparsity: 2.123
+Epoch 300/300 | Loss: 3.451 | KL: 0.460 | Task: 0.638 | Sparsity: 2.123
+[METALS] Finished Phase 2 and saved circuit.

@@ -1,0 +1,329 @@
+======================================================================
+DATASET: fruits_1 | MASK: frozen_fruits_300ep_mask_minus_intersection.pt (18/512 heads)
+======================================================================
+
+[1] Prompt: Sequence: peach lime mango peach lime
+    Target: mango
+    Circuit prob-pred: grape  (WRONG)
+    Circuit gen: 'packagepackage'
+    Base gen:    'mango peach lime mango peach lime'
+
+[2] Prompt: Sequence: mango melon banana mango melon
+    Target: banana
+    Circuit prob-pred: apple  (WRONG)
+    Circuit gen: 'packagepackage'
+    Base gen:    'banana mango melon banana mango'
+
+[3] Prompt: Sequence: date cherry fig date cherry
+    Target: fig
+    Circuit prob-pred: cherry  (WRONG)
+    Circuit gen: 'cherrypackagepackage'
+    Base gen:    'fig date cherry fig date cherry'
+
+[4] Prompt: Sequence: date lime kiwi date lime
+    Target: kiwi
+    Circuit prob-pred: lime  (WRONG)
+    Circuit gen: 'limepackagepackage'
+    Base gen:    'kiwi date lime kiwi'
+
+[5] Prompt: Sequence: lemon lime grape lemon lime
+    Target: grape
+    Circuit prob-pred: lime  (WRONG)
+    Circuit gen: 'limepackagepackage'
+    Base gen:    'grape lemon lime grape lemon lime'
+
+[6] Prompt: Sequence: apple melon mango apple melon
+    Target: mango
+    Circuit prob-pred: banana  (WRONG)
+    Circuit gen: 'packagepackage'
+    Base gen:    'mango apple melon mango apple'
+
+[7] Prompt: Sequence: apple fig lime apple fig
+    Target: lime
+    Circuit prob-pred: fig  (WRONG)
+    Circuit gen: 'figpackagepackage'
+    Base gen:    'lime apple fig lime apple fig'
+
+[8] Prompt: Sequence: fig papaya grape fig papaya
+    Target: grape
+    Circuit prob-pred: mango  (WRONG)
+    Circuit gen: 'packagepackage'
+    Base gen:    'grape fig papaya grape fig'
+
+[9] Prompt: Sequence: lemon apple pear lemon apple
+    Target: pear
+    Circuit prob-pred: apple  (WRONG)
+    Circuit gen: 'applepackagepackage'
+    Base gen:    'pear lemon apple pear lemon apple'
+
+[10] Prompt: Sequence: peach pear apple peach pear
+    Target: apple
+    Circuit prob-pred: pear  (WRONG)
+    Circuit gen: 'pearpackagepackage'
+    Base gen:    'apple peach pear apple peach pear'
+
+prob-pred on these 10 examples: 0/10
+
+======================================================================
+DATASET: animals_1 | MASK: frozen_animals_300ep_mask_minus_intersection.pt (4/512 heads)
+======================================================================
+
+[1] Prompt: Sequence: wolf goat lion wolf goat
+    Target: lion
+    Circuit prob-pred: wolf  (WRONG)
+    Circuit gen: 'wolf'
+    Base gen:    'lion wolf goat lion wolf goat'
+
+[2] Prompt: Sequence: lion cow dog lion cow
+    Target: dog
+    Circuit prob-pred: cow  (WRONG)
+    Circuit gen: 'cow'
+    Base gen:    'dog lion cow dog lion cow'
+
+[3] Prompt: Sequence: snake pig frog snake pig
+    Target: frog
+    Circuit prob-pred: pig  (WRONG)
+    Circuit gen: 'pig'
+    Base gen:    'frog snake pig frog snake pig'
+
+[4] Prompt: Sequence: snake goat horse snake goat
+    Target: horse
+    Circuit prob-pred: sheep  (WRONG)
+    Circuit gen: 'sheep'
+    Base gen:    'horse snake goat horse snake goat'
+
+[5] Prompt: Sequence: sheep goat bear sheep goat
+    Target: bear
+    Circuit prob-pred: horse  (WRONG)
+    Circuit gen: 'horse'
+    Base gen:    'bear sheep goat bear sheep goat'
+
+[6] Prompt: Sequence: cat cow lion cat cow
+    Target: lion
+    Circuit prob-pred: cow  (WRONG)
+    Circuit gen: 'cow'
+    Base gen:    'lion cat cow lion cat cow'
+
+[7] Prompt: Sequence: cat frog goat cat frog
+    Target: goat
+    Circuit prob-pred: frog  (WRONG)
+    Circuit gen: 'frog'
+    Base gen:    'goat cat frog goat cat frog'
+
+[8] Prompt: Sequence: frog bird bear frog bird
+    Target: bear
+    Circuit prob-pred: bird  (WRONG)
+    Circuit gen: 'bird'
+    Base gen:    'bear frog bird bear frog bird'
+
+[9] Prompt: Sequence: sheep cat fox sheep cat
+    Target: fox
+    Circuit prob-pred: cat  (WRONG)
+    Circuit gen: 'cat'
+    Base gen:    'fox sheep cat fox sheep cat'
+
+[10] Prompt: Sequence: wolf fox cat wolf fox
+    Target: cat
+    Circuit prob-pred: fox  (WRONG)
+    Circuit gen: 'fox'
+    Base gen:    'cat wolf fox cat wolf fox'
+
+prob-pred on these 10 examples: 0/10
+
+======================================================================
+DATASET: colors_1 | MASK: frozen_colors_300ep_mask_minus_intersection.pt (16/512 heads)
+======================================================================
+
+[1] Prompt: Sequence: purple magenta green purple magenta
+    Target: green
+    Circuit prob-pred: yellow  (WRONG)
+    Circuit gen: 'yellowpackagepackage'
+    Base gen:    'green purple magenta green purple'
+
+[2] Prompt: Sequence: green gray blue green gray
+    Target: blue
+    Circuit prob-pred: white  (WRONG)
+    Circuit gen: 'redpackagepackage'
+    Base gen:    'blue green gray blue green gray'
+
+[3] Prompt: Sequence: navy brown teal navy brown
+    Target: teal
+    Circuit prob-pred: red  (WRONG)
+    Circuit gen: 'redpackagepackage'
+    Base gen:    'teal navy brown teal navy brown'
+
+[4] Prompt: Sequence: navy magenta white navy magenta
+    Target: white
+    Circuit prob-pred: blue  (WRONG)
+    Circuit gen: 'packagepackage'
+    Base gen:    'white navy magenta white navy'
+
+[5] Prompt: Sequence: cyan magenta pink cyan magenta
+    Target: pink
+    Circuit prob-pred: yellow  (WRONG)
+    Circuit gen: 'yellowpackagepackage'
+    Base gen:    'pink cyan magenta pink cyan'
+
+[6] Prompt: Sequence: red gray green red gray
+    Target: green
+    Circuit prob-pred: blue  (WRONG)
+    Circuit gen: 'bluepackagepackage'
+    Base gen:    'green red gray green red gray'
+
+[7] Prompt: Sequence: red teal magenta red teal
+    Target: magenta
+    Circuit prob-pred: teal  (WRONG)
+    Circuit gen: 'tealpackagepackage'
+    Base gen:    'magenta red teal magenta'
+
+[8] Prompt: Sequence: teal maroon pink teal maroon
+    Target: pink
+    Circuit prob-pred: yellow  (WRONG)
+    Circuit gen: 'packagepackage'
+    Base gen:    'pink teal maroon pink teal'
+
+[9] Prompt: Sequence: cyan red orange cyan red
+    Target: orange
+    Circuit prob-pred: red  (WRONG)
+    Circuit gen: 'redpackagepackage'
+    Base gen:    'orange cyan red orange cyan red'
+
+[10] Prompt: Sequence: purple orange red purple orange
+    Target: red
+    Circuit prob-pred: orange  (WRONG)
+    Circuit gen: 'orangepackagepackage'
+    Base gen:    'red purple orange red purple orange'
+
+prob-pred on these 10 examples: 0/10
+
+======================================================================
+DATASET: metals_1 | MASK: frozen_metals_300ep_mask_minus_intersection.pt (18/512 heads)
+======================================================================
+
+[1] Prompt: Sequence: lead platinum silver lead platinum
+    Target: silver
+    Circuit prob-pred: silver  (OK)
+    Circuit gen: 'silverpackagepackage'
+    Base gen:    'silver lead platinum silver lead platinum'
+
+[2] Prompt: Sequence: silver brass gold silver brass
+    Target: gold
+    Circuit prob-pred: brass  (WRONG)
+    Circuit gen: 'brasspackagepackage'
+    Base gen:    'gold silver brass gold silver brass'
+
+[3] Prompt: Sequence: chrome steel titanium chrome steel
+    Target: titanium
+    Circuit prob-pred: steel  (WRONG)
+    Circuit gen: 'steelpackagepackage'
+    Base gen:    'titanium\nChrome steel titanium chrome'
+
+[4] Prompt: Sequence: chrome platinum bronze chrome platinum
+    Target: bronze
+    Circuit prob-pred: platinum  (WRONG)
+    Circuit gen: 'platinumpackagepackage'
+    Base gen:    'bronze chrome platinum bronze chrome platinum'
+
+[5] Prompt: Sequence: aluminum platinum zinc aluminum platinum
+    Target: zinc
+    Circuit prob-pred: platinum  (WRONG)
+    Circuit gen: 'platinumpackagepackage'
+    Base gen:    'zinc aluminum platinum zinc aluminum platinum'
+
+[6] Prompt: Sequence: iron brass silver iron brass
+    Target: silver
+    Circuit prob-pred: copper  (WRONG)
+    Circuit gen: 'copperpackagepackage'
+    Base gen:    'silver iron brass silver iron brass'
+
+[7] Prompt: Sequence: iron titanium platinum iron titanium
+    Target: platinum
+    Circuit prob-pred: titanium  (WRONG)
+    Circuit gen: 'titaniumpackagepackage'
+    Base gen:    'platinum iron titanium platinum iron titanium'
+
+[8] Prompt: Sequence: titanium cobalt zinc titanium cobalt
+    Target: zinc
+    Circuit prob-pred: nickel  (WRONG)
+    Circuit gen: 'nickelpackagepackage'
+    Base gen:    'zinc titanium cobalt zinc titanium'
+
+[9] Prompt: Sequence: aluminum iron tin aluminum iron
+    Target: tin
+    Circuit prob-pred: iron  (WRONG)
+    Circuit gen: 'ironpackagepackage'
+    Base gen:    'tin aluminum iron tin aluminum iron'
+
+[10] Prompt: Sequence: lead tin iron lead tin
+    Target: iron
+    Circuit prob-pred: copper  (WRONG)
+    Circuit gen: 'copperpackagepackage'
+    Base gen:    'iron lead tin iron lead tin'
+
+prob-pred on these 10 examples: 1/10
+
+======================================================================
+DATASET: vehicles_1 | MASK: frozen_vehicles_300ep_mask_minus_intersection.pt (2/512 heads)
+======================================================================
+
+[1] Prompt: Sequence: boat tram truck boat tram
+    Target: truck
+    Circuit prob-pred: bus  (WRONG)
+    Circuit gen: 'bus'
+    Base gen:    'truck boat tram truck boat tram'
+
+[2] Prompt: Sequence: truck van bus truck van
+    Target: bus
+    Circuit prob-pred: car  (WRONG)
+    Circuit gen: ''
+    Base gen:    'bus truck van bus truck van'
+
+[3] Prompt: Sequence: wagon jeep cart wagon jeep
+    Target: cart
+    Circuit prob-pred: car  (WRONG)
+    Circuit gen: 'car'
+    Base gen:    'cart wagon jeep cart wagon jeep'
+
+[4] Prompt: Sequence: wagon tram scooter wagon tram
+    Target: scooter
+    Circuit prob-pred: bus  (WRONG)
+    Circuit gen: 'bus'
+    Base gen:    'Wagon tram scooter wagon'
+
+[5] Prompt: Sequence: taxi tram plane taxi tram
+    Target: plane
+    Circuit prob-pred: bus  (WRONG)
+    Circuit gen: 'bus'
+    Base gen:    'plane taxi tram plane taxi tram'
+
+[6] Prompt: Sequence: car van truck car van
+    Target: truck
+    Circuit prob-pred: plane  (WRONG)
+    Circuit gen: 'plane'
+    Base gen:    'truck car van truck car van'
+
+[7] Prompt: Sequence: car cart tram car cart
+    Target: tram
+    Circuit prob-pred: cart  (WRONG)
+    Circuit gen: 'cart'
+    Base gen:    'tram car cart tram car cart'
+
+[8] Prompt: Sequence: cart jet plane cart jet
+    Target: plane
+    Circuit prob-pred: jet  (WRONG)
+    Circuit gen: 'jet'
+    Base gen:    'plane cart jet plane cart jet'
+
+[9] Prompt: Sequence: taxi car ship taxi car
+    Target: ship
+    Circuit prob-pred: car  (WRONG)
+    Circuit gen: 'car'
+    Base gen:    'ship taxi car ship taxi car'
+
+[10] Prompt: Sequence: boat ship car boat ship
+    Target: car
+    Circuit prob-pred: ship  (WRONG)
+    Circuit gen: 'ship'
+    Base gen:    'car boat ship car boat ship'
+
+prob-pred on these 10 examples: 0/10

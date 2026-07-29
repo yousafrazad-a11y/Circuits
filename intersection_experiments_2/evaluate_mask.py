@@ -174,7 +174,15 @@ def main():
     dl = DataLoader(ds, batch_size=8, shuffle=False, collate_fn=lambda b: collate_fn(b, manager.tokenizer))
     
     print(f"Loading mask from {args.mask}...")
-    manager.initialize_model()
+    # Enable pruning levels to match the mask file's gate types. A gate module that
+    # exists in the model but is missing from the mask gets pinned OFF by load_masks,
+    # so levels must be enabled exactly when the mask contains them.
+    mask_state = torch.load(args.mask, weights_only=True)
+    config = manager._get_default_config()
+    if any('mlp_block_gate' in k for k in mask_state):
+        config.prune_mlp_blocks = True
+        print("Mask contains mlp_block_gate entries -> enabling MLP block pruning.")
+    manager.initialize_model(config)
     manager.load_masks(args.mask)
     
     active_heads, total_heads = get_active_heads(args.mask)

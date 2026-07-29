@@ -1,0 +1,39 @@
+
+============================================================
+PHASE 4: DIRECT METHOD ON JOINT DATASET (Remaining 300 Epochs)
+============================================================
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 2448.48it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Epoch 1/300 | Loss: 3.461 | KL: 0.401 | Task: 0.571 | Sparsity: 2.289
+Epoch 10/300 | Loss: 3.437 | KL: 0.393 | Task: 0.552 | Sparsity: 2.296
+Epoch 20/300 | Loss: 3.457 | KL: 0.414 | Task: 0.567 | Sparsity: 2.270
+Epoch 30/300 | Loss: 3.448 | KL: 0.408 | Task: 0.565 | Sparsity: 2.271
+Epoch 40/300 | Loss: 3.434 | KL: 0.403 | Task: 0.560 | Sparsity: 2.270
+Epoch 50/300 | Loss: 3.412 | KL: 0.415 | Task: 0.567 | Sparsity: 2.223
+Epoch 60/300 | Loss: 3.416 | KL: 0.417 | Task: 0.566 | Sparsity: 2.223
+Epoch 70/300 | Loss: 3.410 | KL: 0.414 | Task: 0.566 | Sparsity: 2.223
+Epoch 80/300 | Loss: 3.411 | KL: 0.408 | Task: 0.575 | Sparsity: 2.224
+Epoch 90/300 | Loss: 3.420 | KL: 0.415 | Task: 0.575 | Sparsity: 2.222
+Epoch 100/300 | Loss: 3.425 | KL: 0.403 | Task: 0.572 | Sparsity: 2.249
+Epoch 110/300 | Loss: 3.419 | KL: 0.407 | Task: 0.563 | Sparsity: 2.246
+Epoch 120/300 | Loss: 3.422 | KL: 0.407 | Task: 0.570 | Sparsity: 2.240
+Epoch 130/300 | Loss: 3.411 | KL: 0.399 | Task: 0.567 | Sparsity: 2.246
+Epoch 140/300 | Loss: 3.419 | KL: 0.410 | Task: 0.560 | Sparsity: 2.243
+Epoch 150/300 | Loss: 3.419 | KL: 0.405 | Task: 0.564 | Sparsity: 2.246
+Epoch 160/300 | Loss: 3.436 | KL: 0.410 | Task: 0.573 | Sparsity: 2.248
+Epoch 170/300 | Loss: 3.435 | KL: 0.402 | Task: 0.586 | Sparsity: 2.246
+Epoch 180/300 | Loss: 3.440 | KL: 0.423 | Task: 0.577 | Sparsity: 2.228
+Epoch 190/300 | Loss: 3.420 | KL: 0.402 | Task: 0.572 | Sparsity: 2.245
+Epoch 200/300 | Loss: 3.421 | KL: 0.407 | Task: 0.570 | Sparsity: 2.241
+Epoch 210/300 | Loss: 3.417 | KL: 0.402 | Task: 0.569 | Sparsity: 2.245
+Epoch 220/300 | Loss: 3.420 | KL: 0.418 | Task: 0.572 | Sparsity: 2.221
+Epoch 230/300 | Loss: 3.433 | KL: 0.416 | Task: 0.583 | Sparsity: 2.226
+Epoch 240/300 | Loss: 3.420 | KL: 0.416 | Task: 0.573 | Sparsity: 2.223
+Epoch 250/300 | Loss: 3.436 | KL: 0.421 | Task: 0.582 | Sparsity: 2.222
+Epoch 260/300 | Loss: 3.411 | KL: 0.413 | Task: 0.569 | Sparsity: 2.223
+Epoch 270/300 | Loss: 3.415 | KL: 0.415 | Task: 0.568 | Sparsity: 2.225
+Epoch 280/300 | Loss: 3.417 | KL: 0.412 | Task: 0.573 | Sparsity: 2.225
+Epoch 290/300 | Loss: 3.421 | KL: 0.418 | Task: 0.572 | Sparsity: 2.222
+Epoch 300/300 | Loss: 3.409 | KL: 0.415 | Task: 0.564 | Sparsity: 2.222
+[DIRECT METHOD] Finished Phase 4 and saved JOINT_600_EXTREME_CIRCUIT.pt.

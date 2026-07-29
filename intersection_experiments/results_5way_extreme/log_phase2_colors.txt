@@ -1,0 +1,39 @@
+
+============================================================
+PHASE 2: FINE-TUNE ON COLORS (300 Epochs)
+============================================================
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4788.32it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Epoch 1/300 | Loss: 3.491 | KL: 0.456 | Task: 0.523 | Sparsity: 2.283
+Epoch 10/300 | Loss: 3.434 | KL: 0.461 | Task: 0.548 | Sparsity: 2.194
+Epoch 20/300 | Loss: 3.394 | KL: 0.469 | Task: 0.526 | Sparsity: 2.164
+Epoch 30/300 | Loss: 3.379 | KL: 0.473 | Task: 0.523 | Sparsity: 2.146
+Epoch 40/300 | Loss: 3.337 | KL: 0.446 | Task: 0.524 | Sparsity: 2.144
+Epoch 50/300 | Loss: 3.354 | KL: 0.450 | Task: 0.537 | Sparsity: 2.143
+Epoch 60/300 | Loss: 3.283 | KL: 0.426 | Task: 0.504 | Sparsity: 2.140
+Epoch 70/300 | Loss: 3.305 | KL: 0.461 | Task: 0.519 | Sparsity: 2.094
+Epoch 80/300 | Loss: 3.310 | KL: 0.441 | Task: 0.553 | Sparsity: 2.095
+Epoch 90/300 | Loss: 3.292 | KL: 0.462 | Task: 0.507 | Sparsity: 2.092
+Epoch 100/300 | Loss: 3.316 | KL: 0.452 | Task: 0.542 | Sparsity: 2.096
+Epoch 110/300 | Loss: 3.289 | KL: 0.441 | Task: 0.530 | Sparsity: 2.097
+Epoch 120/300 | Loss: 3.300 | KL: 0.453 | Task: 0.528 | Sparsity: 2.093
+Epoch 130/300 | Loss: 3.288 | KL: 0.444 | Task: 0.527 | Sparsity: 2.095
+Epoch 140/300 | Loss: 3.318 | KL: 0.457 | Task: 0.540 | Sparsity: 2.093
+Epoch 150/300 | Loss: 3.298 | KL: 0.450 | Task: 0.529 | Sparsity: 2.093
+Epoch 160/300 | Loss: 3.261 | KL: 0.439 | Task: 0.508 | Sparsity: 2.095
+Epoch 170/300 | Loss: 3.305 | KL: 0.444 | Task: 0.539 | Sparsity: 2.099
+Epoch 180/300 | Loss: 3.314 | KL: 0.451 | Task: 0.543 | Sparsity: 2.096
+Epoch 190/300 | Loss: 3.287 | KL: 0.437 | Task: 0.536 | Sparsity: 2.096
+Epoch 200/300 | Loss: 3.324 | KL: 0.458 | Task: 0.543 | Sparsity: 2.094
+Epoch 210/300 | Loss: 3.309 | KL: 0.454 | Task: 0.532 | Sparsity: 2.096
+Epoch 220/300 | Loss: 3.296 | KL: 0.451 | Task: 0.527 | Sparsity: 2.092
+Epoch 230/300 | Loss: 3.281 | KL: 0.447 | Task: 0.518 | Sparsity: 2.092
+Epoch 240/300 | Loss: 3.309 | KL: 0.455 | Task: 0.529 | Sparsity: 2.098
+Epoch 250/300 | Loss: 3.287 | KL: 0.450 | Task: 0.515 | Sparsity: 2.097
+Epoch 260/300 | Loss: 3.308 | KL: 0.457 | Task: 0.523 | Sparsity: 2.099
+Epoch 270/300 | Loss: 3.313 | KL: 0.457 | Task: 0.532 | Sparsity: 2.095
+Epoch 280/300 | Loss: 3.304 | KL: 0.458 | Task: 0.520 | Sparsity: 2.097
+Epoch 290/300 | Loss: 3.312 | KL: 0.451 | Task: 0.541 | Sparsity: 2.095
+Epoch 300/300 | Loss: 3.288 | KL: 0.446 | Task: 0.525 | Sparsity: 2.093
+[COLORS] Finished Phase 2 and saved circuit.

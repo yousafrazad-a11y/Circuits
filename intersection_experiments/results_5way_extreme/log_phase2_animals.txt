@@ -1,0 +1,41 @@
+
+============================================================
+PHASE 2: FINE-TUNE ON ANIMALS (300 Epochs)
+============================================================
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 5516.39it/s]
+/home/exouser/pruning/venv/lib/python3.12/site-packages/torch/_inductor/compile_fx.py:322: UserWarning: TensorFloat32 tensor cores for float32 matrix multiplication available but not enabled. Consider setting `torch.set_float32_matmul_precision('high')` for better performance.
+  warnings.warn(
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Epoch 1/300 | Loss: 3.096 | KL: 0.267 | Task: 0.426 | Sparsity: 2.269
+Epoch 10/300 | Loss: 2.925 | KL: 0.255 | Task: 0.477 | Sparsity: 2.065
+Epoch 20/300 | Loss: 2.910 | KL: 0.261 | Task: 0.488 | Sparsity: 2.031
+Epoch 30/300 | Loss: 2.887 | KL: 0.268 | Task: 0.468 | Sparsity: 2.016
+Epoch 40/300 | Loss: 2.829 | KL: 0.261 | Task: 0.444 | Sparsity: 1.994
+Epoch 50/300 | Loss: 2.821 | KL: 0.263 | Task: 0.436 | Sparsity: 1.990
+Epoch 60/300 | Loss: 2.859 | KL: 0.268 | Task: 0.467 | Sparsity: 1.990
+Epoch 70/300 | Loss: 2.796 | KL: 0.256 | Task: 0.444 | Sparsity: 1.968
+Epoch 80/300 | Loss: 2.839 | KL: 0.266 | Task: 0.474 | Sparsity: 1.967
+Epoch 90/300 | Loss: 2.787 | KL: 0.248 | Task: 0.451 | Sparsity: 1.963
+Epoch 100/300 | Loss: 2.794 | KL: 0.262 | Task: 0.437 | Sparsity: 1.964
+Epoch 110/300 | Loss: 2.839 | KL: 0.269 | Task: 0.475 | Sparsity: 1.961
+Epoch 120/300 | Loss: 2.854 | KL: 0.295 | Task: 0.475 | Sparsity: 1.937
+Epoch 130/300 | Loss: 2.785 | KL: 0.269 | Task: 0.439 | Sparsity: 1.942
+Epoch 140/300 | Loss: 2.762 | KL: 0.261 | Task: 0.431 | Sparsity: 1.940
+Epoch 150/300 | Loss: 2.795 | KL: 0.269 | Task: 0.451 | Sparsity: 1.941
+Epoch 160/300 | Loss: 2.789 | KL: 0.263 | Task: 0.453 | Sparsity: 1.942
+Epoch 170/300 | Loss: 2.781 | KL: 0.262 | Task: 0.447 | Sparsity: 1.942
+Epoch 180/300 | Loss: 2.781 | KL: 0.269 | Task: 0.436 | Sparsity: 1.941
+Epoch 190/300 | Loss: 2.786 | KL: 0.269 | Task: 0.445 | Sparsity: 1.938
+Epoch 200/300 | Loss: 2.794 | KL: 0.267 | Task: 0.452 | Sparsity: 1.941
+Epoch 210/300 | Loss: 2.770 | KL: 0.261 | Task: 0.440 | Sparsity: 1.939
+Epoch 220/300 | Loss: 2.797 | KL: 0.268 | Task: 0.455 | Sparsity: 1.940
+Epoch 230/300 | Loss: 2.833 | KL: 0.275 | Task: 0.480 | Sparsity: 1.940
+Epoch 240/300 | Loss: 2.772 | KL: 0.266 | Task: 0.434 | Sparsity: 1.939
+Epoch 250/300 | Loss: 2.803 | KL: 0.274 | Task: 0.450 | Sparsity: 1.942
+Epoch 260/300 | Loss: 2.799 | KL: 0.274 | Task: 0.451 | Sparsity: 1.936
+Epoch 270/300 | Loss: 2.799 | KL: 0.279 | Task: 0.444 | Sparsity: 1.936
+Epoch 280/300 | Loss: 2.776 | KL: 0.266 | Task: 0.439 | Sparsity: 1.938
+Epoch 290/300 | Loss: 2.774 | KL: 0.258 | Task: 0.448 | Sparsity: 1.938
+Epoch 300/300 | Loss: 2.824 | KL: 0.280 | Task: 0.461 | Sparsity: 1.943
+[ANIMALS] Finished Phase 2 and saved circuit.
