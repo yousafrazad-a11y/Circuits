@@ -1,0 +1,11 @@
+mask_path,dataset,split,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,fruits_2,trained,0.9980,0.9960,0.5780,0.5260,0.9621,94,512
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,animals_2,trained,1.0000,0.9940,0.8060,0.7360,0.1275,94,512
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,colors_2,trained,0.9960,0.9960,0.5800,0.5460,0.8045,94,512
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,metals_2,trained,0.9840,0.9760,0.5940,0.5760,0.5387,94,512
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,vehicles_2,trained,0.9960,0.9900,0.5820,0.4820,0.1932,94,512
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,clothing_2,heldout,0.9980,0.9980,0.5640,0.5060,0.1770,94,512
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,furniture_2,heldout,0.9120,0.9160,0.3560,0.3340,0.5817,94,512
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,instruments_2,heldout,0.9800,0.9360,0.4400,0.1900,1.5990,94,512
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,professions_2,heldout,0.9980,0.9940,0.4520,0.2760,0.6623,94,512
+intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt,sports_2,heldout,0.9920,0.9240,0.4380,0.3600,1.1888,94,512

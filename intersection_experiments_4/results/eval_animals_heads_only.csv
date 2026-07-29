@@ -1,0 +1,2 @@
+mask_path,dataset,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+intersection_experiments_4/masks/animals_heads_only.pt,animals_2,1.0000,0.9940,0.8300,0.7440,0.1198,52,512

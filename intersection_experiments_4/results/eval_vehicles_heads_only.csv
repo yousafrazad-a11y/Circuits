@@ -1,0 +1,2 @@
+mask_path,dataset,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+intersection_experiments_4/masks/vehicles_heads_only.pt,vehicles_2,0.9960,0.9900,0.8540,0.8300,0.1315,62,512

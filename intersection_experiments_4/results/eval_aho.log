@@ -1,0 +1,30 @@
+Loading mask from intersection_experiments_4/masks/animals_heads_only.pt...
+Mask contains mlp_block_gate entries -> enabling MLP block pruning.
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4473.70it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3923.58it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/animals_heads_only.pt
+Active Heads in mask: 52/512
+
+--- EVALUATING ANIMALS_2 ---
+Evaluating Base Model...
+Evaluating Circuit Model...
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluating KL Divergence...
+Evaluated KL Divergence: 0.1198
+
+Results for animals_2:
+Base Prob: 1.0000 | Base Gen: 0.9940
+Circ Prob: 0.8300 | Circ Gen: 0.7440
+KL Div: 0.1198
+
+Results appended to intersection_experiments_4/results/eval_animals_heads_only.csv

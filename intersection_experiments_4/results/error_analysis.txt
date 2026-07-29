@@ -1,0 +1,53 @@
+
+MASK: heads_intersection (47)
+  fruits_2: correct=5 in_category=5 off_category=9 empty=1
+      err: target=date got=melon | Sequence: melon lemon date melon lemon
+      err: target=pear got=plum | Sequence: plum peach pear plum peach
+      err: target=banana got=peach | Sequence: lime peach banana lime peach
+      err: target=lime got=pear | Sequence: pear plum lime pear plum
+  animals_2: correct=6 in_category=7 off_category=6 empty=1
+      err: target=goat got=pig | Sequence: wolf pig goat wolf pig
+      err: target=snake got=the | Sequence: lion frog snake lion frog
+      err: target=fox got=cow | Sequence: bird cow fox bird cow
+      err: target=goat got=the | Sequence: sheep bird goat sheep bird
+  colors_2: correct=5 in_category=7 off_category=5 empty=3
+      err: target=navy got=gray | Sequence: gray cyan navy gray cyan
+      err: target=magenta got=magit | Sequence: purple brown magenta purple brown
+      err: target=navy got=blue | Sequence: green teal navy green teal
+      err: target=orange got=blue | Sequence: maroon gray orange maroon gray
+  metals_2: correct=4 in_category=7 off_category=8 empty=1
+      err: target=chrome got=bronze | Sequence: brass aluminum chrome brass aluminum
+      err: target=tin got=the | Sequence: nickel lead tin nickel lead
+      err: target=platinum got=copper | Sequence: lead steel platinum lead steel
+      err: target=chrome got=gold | Sequence: silver titanium chrome silver titanium
+  vehicles_2: correct=12 in_category=1 off_category=7 empty=0
+      err: target=ship got=the | Sequence: bike boat ship bike boat
+      err: target=tram got=the | Sequence: boat jeep tram boat jeep
+      err: target=tram got=the | Sequence: ship bike tram ship bike
+      err: target=ship got=van | Sequence: jet van ship jet van
+
+MASK: fruits_heads_only (94)
+  fruits_2: correct=15 in_category=5 off_category=0 empty=0
+      err: target=date got=melon | Sequence: melon lemon date melon lemon
+      err: target=pear got=plum | Sequence: plum peach pear plum peach
+      err: target=banana got=peach | Sequence: lime peach banana lime peach
+      err: target=lime got=plum | Sequence: pear plum lime pear plum
+  animals_2: correct=16 in_category=2 off_category=2 empty=0
+      err: target=fox got=the | Sequence: deer wolf fox deer wolf
+      err: target=goat got=fox | Sequence: fox deer goat fox deer
+      err: target=bird got=snake | Sequence: snake sheep bird snake sheep
+      err: target=tiger got=the | Sequence: frog deer tiger frog deer
+  colors_2: correct=16 in_category=3 off_category=0 empty=1
+      err: target=orange got=purple | Sequence: black purple orange black purple
+      err: target=maroon got=pink | Sequence: pink purple maroon pink purple
+      err: target=yellow got=black | Sequence: teal black yellow teal black
+  metals_2: correct=14 in_category=5 off_category=1 empty=0
+      err: target=chrome got=copper | Sequence: brass aluminum chrome brass aluminum
+      err: target=steel got=brass | Sequence: gold brass steel gold brass
+      err: target=iron got=ir | Sequence: titanium gold iron titanium gold
+      err: target=iron got=zinc | Sequence: zinc lead iron zinc lead
+  vehicles_2: correct=15 in_category=4 off_category=1 empty=0
+      err: target=ship got=the | Sequence: bike boat ship bike boat
+      err: target=bus got=tram | Sequence: tram boat bus tram boat
+      err: target=tram got=jeep | Sequence: boat jeep tram boat jeep
+      err: target=ship got=jet | Sequence: jet van ship jet van

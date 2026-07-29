@@ -176,6 +176,29 @@ Generative accuracy on all 10 test sets (500 ex each):
    prompt, "basketball" for sports, "gold"/"alloy" for metals) — MLPs retain
    category vocabulary while tracking fails; heads_only generations are clean.
 
+### 7b. MLP mask × head mask pairing (fruits)
+
+Fruits' MLP gates paired with all 512 heads vs with the pruned 94 fruits heads
+(gen acc; `results/eval_fruits_mlp_only.csv`, `results/eval_frozen_fruits_all.csv`):
+
+- trained mean: 0.456 (all heads) -> **0.573** (pruned heads); per-dataset:
+  fruits 0.344->0.526, animals 0.696->0.736, colors 0.454->0.546,
+  metals 0.434->0.576, vehicles 0.350->0.482
+- heldout mean: 0.342 -> 0.333 (wash)
+- Pruning heads never degrades the MLP-gated circuit; unpruned attention adds
+  noise. Ranking (trained): heads_only 0.755 > full 0.573 > mlp_only 0.456 —
+  3 corrupted MLP layers hurt more than 418 corrupted heads.
+
+Reverse pairing (fruits' 94 pruned heads; all MLPs vs fruits' MLP gates;
+`results/eval_fruits_heads_only.csv` vs `results/eval_frozen_fruits_all.csv`):
+- trained mean: **0.755** (all MLPs) -> 0.573 (pruned MLPs), −24%
+- heldout mean: **0.600** -> 0.333, −45%
+- Asymmetry: pruning HEADS always helps or is neutral; pruning MLPS always
+  hurts, worst on heldout transfer. The head selection is general but needs
+  full MLP compute mass to express that generality.
+- Practical rule: prune heads, never gate MLPs. Best circuit found anywhere:
+  fruits_heads_only (94 head gates, MLPs untouched): 75.5% trained / 60% heldout.
+
 ## 8. Cross-assembly leak test: MLP gates do NOT carry category vocabulary
 
 Hybrid masks (heads from category A, MLP gates from category B) were tested with
@@ -221,7 +244,38 @@ Combined with §7-8 this gives the full picture:
    critical mass of clean MLP compute resolves the exact token.
 4. MLP gates are fungible compute capacity, not category storage.
 
-## 10. Findings (vs exp_2's 1.5× λ run)
+## 10. The "disjoint" heads: not unique, not category-specific — a robustness shell
+
+Head-participation stats across the 5 frozen masks (417/512 heads unused by all):
+heads used by exactly 1 dataset: **0** (chance expectation ~203); by 2: 1; by 3: 31;
+by 4: 16; by 5: 47. Masks form a nested family: fruits ≈ colors ≈ metals
+(IoU 0.96-0.98, 92-94 heads) with animals (52) and vehicles (62) as rough subsets.
+
+Fungibility (heads-only masks, all MLPs clean, own test set):
+- animals' 52 heads on animals: 0.744 | fruits' 94 heads on animals: **0.816**
+- vehicles' 62 heads on vehicles: 0.830 | fruits' 94 heads on vehicles: 0.742
+Cross-category heads match or beat a dataset's own heads — no category-specific
+head function.
+
+Error analysis (20 prompts/dataset, first token; `results/error_analysis.txt`):
+- 47-head intersection: 25 correct, 27 in-category, **41 off-category**, 6 empty
+- 94-head fruits mask: 76 correct, 19 in-category, **4 off-category**, 1 empty
+- The in-category errors are the SAME hard examples in both masks (position
+  swaps like date/melon) — the extra heads do not fix tracking errors; they
+  eliminate off-task failures ("the", fragments, empty), converting them into
+  on-category attempts.
+
+Conclusions:
+1. The 47-head shared core does the sequence tracking (necessary, category-invariant).
+2. The ~47 extra heads form a *robustness/precision shell* shared by subsets of
+   categories: they sharpen the output distribution onto the right word family.
+3. Per-dataset mask size differences (94 vs 52) reflect different pruning stopping
+   points (task loss satisfied earlier -> sparsity pressure removes more shell),
+   i.e. the same solution degeneracy as MLP blocks — NOT different category needs.
+4. Final circuit anatomy: shared attention core (logic) -> shared-subset attention
+   shell (output precision) -> fungible MLP compute mass. Nothing category-unique.
+
+## 11. Findings (vs exp_2's 1.5× λ run)
 
 1. **Normal λ fixes the training collapse**: combined phase-1 now reaches
    58–80% gen on trained categories (exp_2: 38–71%) and even 22–60% on
