@@ -1,0 +1,11 @@
+mask_path,dataset,split,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,fruits_2,trained,0.9980,0.9960,0.5240,0.3780,1.0086,85,512
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,animals_2,trained,1.0000,0.9940,0.7460,0.7140,0.1275,85,512
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,colors_2,trained,0.9960,0.9960,0.5140,0.4900,0.8293,85,512
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,metals_2,trained,0.9840,0.9760,0.5440,0.5080,0.5453,85,512
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,vehicles_2,trained,0.9960,0.9900,0.6440,0.5280,0.1834,85,512
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,clothing_2,heldout,0.9980,0.9980,0.4880,0.3020,0.1782,85,512
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,furniture_2,heldout,0.9120,0.9160,0.2940,0.2180,0.5521,85,512
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,instruments_2,heldout,0.9800,0.9360,0.3840,0.2280,1.6091,85,512
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,professions_2,heldout,0.9980,0.9940,0.4560,0.3500,0.6201,85,512
+intersection_experiments_2/masks/all_300ep_l015_mask.pt,sports_2,heldout,0.9920,0.9240,0.4320,0.2940,1.1704,85,512

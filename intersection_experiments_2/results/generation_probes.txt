@@ -1,0 +1,1849 @@
+
+================================================================================
+MASK: intersection_frozen_300_300
+================================================================================
+
+--- DATASET: fruits_2 (trained) ---
+
+[1] PROMPT: Sequence: orange mango plum orange mango
+    TARGET: plum
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: peach apple pear peach apple
+    TARGET: pear
+    GENERATION:  apple
+
+[3] PROMPT: Sequence: fig date banana fig date
+    TARGET: banana
+    GENERATION:  date
+
+[4] PROMPT: Sequence: lemon pear grape lemon pear
+    TARGET: grape
+    GENERATION:  pear
+
+[5] PROMPT: Sequence: apple lemon melon apple lemon
+    TARGET: melon
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: plum apple lime plum apple
+    TARGET: lime
+    GENERATION:  apple
+
+[7] PROMPT: Sequence: mango apple banana mango apple
+    TARGET: banana
+    GENERATION:  apple
+
+[8] PROMPT: Sequence: melon cherry apple melon cherry
+    TARGET: apple
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: fig kiwi cherry fig kiwi
+    TARGET: cherry
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: papaya lime peach papaya lime
+    TARGET: peach
+    GENERATION:  lime
+
+--- DATASET: animals_2 (trained) ---
+
+[1] PROMPT: Sequence: pig dog horse pig dog
+    TARGET: horse
+    GENERATION:  cat
+
+[2] PROMPT: Sequence: sheep fox bear sheep fox
+    TARGET: bear
+    GENERATION:  fox
+
+[3] PROMPT: Sequence: pig deer horse pig deer
+    TARGET: horse
+    GENERATION:  deer
+
+[4] PROMPT: Sequence: frog bird dog frog bird
+    TARGET: dog
+    GENERATION:  bird
+
+[5] PROMPT: Sequence: horse frog pig horse frog
+    TARGET: pig
+    GENERATION:  bear
+
+[6] PROMPT: Sequence: goat bird cow goat bird
+    TARGET: cow
+    GENERATION:  dog
+
+[7] PROMPT: Sequence: frog bear lion frog bear
+    TARGET: lion
+    GENERATION:  bear
+
+[8] PROMPT: Sequence: pig bird dog pig bird
+    TARGET: dog
+    GENERATION:  dog
+
+[9] PROMPT: Sequence: snake sheep bird snake sheep
+    TARGET: bird
+    GENERATION:  sheep
+
+[10] PROMPT: Sequence: goat deer dog goat deer
+    TARGET: dog
+    GENERATION:  dog
+
+--- DATASET: colors_2 (trained) ---
+
+[1] PROMPT: Sequence: black blue maroon black blue
+    TARGET: maroon
+    GENERATION:  red
+
+[2] PROMPT: Sequence: purple pink navy purple pink
+    TARGET: navy
+    GENERATION:  blue
+
+[3] PROMPT: Sequence: navy blue gray navy blue
+    TARGET: gray
+    GENERATION:  green
+
+[4] PROMPT: Sequence: pink cyan navy pink cyan
+    TARGET: navy
+    GENERATION:  orange
+
+[5] PROMPT: Sequence: pink purple maroon pink purple
+    TARGET: maroon
+    GENERATION:  yellow
+
+[6] PROMPT: Sequence: gray magenta black gray magenta
+    TARGET: black
+    GENERATION:  teal
+
+[7] PROMPT: Sequence: yellow white green yellow white
+    TARGET: green
+    GENERATION:  white
+
+[8] PROMPT: Sequence: magenta gray pink magenta gray
+    TARGET: pink
+    GENERATION:  blue
+
+[9] PROMPT: Sequence: yellow green orange yellow green
+    TARGET: orange
+    GENERATION:  blue
+
+[10] PROMPT: Sequence: pink black magenta pink black
+    TARGET: magenta
+    GENERATION:  blue
+
+--- DATASET: metals_2 (trained) ---
+
+[1] PROMPT: Sequence: titanium cobalt gold titanium cobalt
+    TARGET: gold
+    GENERATION:  cob
+
+[2] PROMPT: Sequence: zinc tin titanium zinc tin
+    TARGET: titanium
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: zinc gold iron zinc gold
+    TARGET: iron
+    GENERATION:  gold
+
+[4] PROMPT: Sequence: zinc nickel chrome zinc nickel
+    TARGET: chrome
+    GENERATION:  nickel
+
+[5] PROMPT: Sequence: iron titanium bronze iron titanium
+    TARGET: bronze
+    GENERATION:  titanium
+
+[6] PROMPT: Sequence: nickel steel brass nickel steel
+    TARGET: brass
+    GENERATION:  steel
+
+[7] PROMPT: Sequence: nickel brass aluminum nickel brass
+    TARGET: aluminum
+    GENERATION:  gold
+
+[8] PROMPT: Sequence: brass iron lead brass iron
+    TARGET: lead
+    GENERATION:  steel
+
+[9] PROMPT: Sequence: lead steel platinum lead steel
+    TARGET: platinum
+    GENERATION:  copper
+
+[10] PROMPT: Sequence: iron silver cobalt iron silver
+    TARGET: cobalt
+    GENERATION:  silver
+
+--- DATASET: vehicles_2 (trained) ---
+
+[1] PROMPT: Sequence: plane truck cart plane truck
+    TARGET: cart
+    GENERATION:  car
+
+[2] PROMPT: Sequence: bike car train bike car
+    TARGET: train
+    GENERATION:  car
+
+[3] PROMPT: Sequence: cart train ship cart train
+    TARGET: ship
+    GENERATION:  train
+
+[4] PROMPT: Sequence: cart plane truck cart plane
+    TARGET: truck
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: van plane wagon van plane
+    TARGET: wagon
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: bike jeep van bike jeep
+    TARGET: van
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: ship tram truck ship tram
+    TARGET: truck
+    GENERATION:  jeep
+
+[8] PROMPT: Sequence: bus jeep plane bus jeep
+    TARGET: plane
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: cart scooter train cart scooter
+    TARGET: train
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: bike bus truck bike bus
+    TARGET: truck
+    GENERATION:  bus
+
+--- DATASET: clothing_2 (heldout) ---
+
+[1] PROMPT: Sequence: gloves scarf skirt gloves scarf
+    TARGET: skirt
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: shorts sweater coat shorts sweater
+    TARGET: coat
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: sweater shoes pants sweater shoes
+    TARGET: pants
+    GENERATION:  shoes
+
+[4] PROMPT: Sequence: hat socks sweater hat socks
+    TARGET: sweater
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: scarf hoodie pants scarf hoodie
+    TARGET: pants
+    GENERATION:  hoodie
+
+[6] PROMPT: Sequence: sweater shirt dress sweater shirt
+    TARGET: dress
+    GENERATION:  shirt
+
+[7] PROMPT: Sequence: hat sweater socks hat sweater
+    TARGET: socks
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: jeans sweater hoodie jeans sweater
+    TARGET: hoodie
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: scarf skirt shirt scarf skirt
+    TARGET: shirt
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: jacket hat scarf jacket hat
+    TARGET: scarf
+    GENERATION:  shirt
+
+--- DATASET: furniture_2 (heldout) ---
+
+[1] PROMPT: Sequence: couch cabinet stool couch cabinet
+    TARGET: stool
+    GENERATION:  cabinet
+
+[2] PROMPT: Sequence: bench cabinet mirror bench cabinet
+    TARGET: mirror
+    GENERATION:  book
+
+[3] PROMPT: Sequence: desk chair cabinet desk chair
+    TARGET: cabinet
+    GENERATION:  chair
+
+[4] PROMPT: Sequence: drawer chair mirror drawer chair
+    TARGET: mirror
+    GENERATION:  table
+
+[5] PROMPT: Sequence: stool table cabinet stool table
+    TARGET: cabinet
+    GENERATION:  table
+
+[6] PROMPT: Sequence: desk shelf couch desk shelf
+    TARGET: couch
+    GENERATION:  shelf
+
+[7] PROMPT: Sequence: table mirror sofa table mirror
+    TARGET: sofa
+    GENERATION:  table
+
+[8] PROMPT: Sequence: dresser stool sofa dresser stool
+    TARGET: sofa
+    GENERATION:  stool
+
+[9] PROMPT: Sequence: sofa bed lamp sofa bed
+    TARGET: lamp
+    GENERATION:  bed
+
+[10] PROMPT: Sequence: desk couch bed desk couch
+    TARGET: bed
+    GENERATION:  couch
+
+--- DATASET: instruments_2 (heldout) ---
+
+[1] PROMPT: Sequence: violin piano saxophone violin piano
+    TARGET: saxophone
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: tuba violin trombone tuba violin
+    TARGET: trombone
+    GENERATION:  bass
+
+[3] PROMPT: Sequence: piano banjo violin piano banjo
+    TARGET: violin
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: piano mandolin trombone piano mandolin
+    TARGET: trombone
+    GENERATION:  bass
+
+[5] PROMPT: Sequence: banjo drums violin banjo drums
+    TARGET: violin
+    GENERATION:  bass
+
+[6] PROMPT: Sequence: piano banjo flute piano banjo
+    TARGET: flute
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: trumpet saxophone clarinet trumpet saxophone
+    TARGET: clarinet
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: trombone harp flute trombone harp
+    TARGET: flute
+    GENERATION:  o
+
+[9] PROMPT: Sequence: harp guitar flute harp guitar
+    TARGET: flute
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: harp cello saxophone harp cello
+    TARGET: saxophone
+    GENERATION:  bass
+
+--- DATASET: professions_2 (heldout) ---
+
+[1] PROMPT: Sequence: scientist lawyer carpenter scientist lawyer
+    TARGET: carpenter
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: painter writer carpenter painter writer
+    TARGET: carpenter
+    GENERATION:  writer
+
+[3] PROMPT: Sequence: painter nurse carpenter painter nurse
+    TARGET: carpenter
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: nurse dancer chef nurse dancer
+    TARGET: chef
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: dancer teacher doctor dancer teacher
+    TARGET: doctor
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: nurse dancer painter nurse dancer
+    TARGET: painter
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: farmer carpenter chef farmer carpenter
+    TARGET: chef
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: baker plumber farmer baker plumber
+    TARGET: farmer
+    GENERATION:  plumber
+
+[9] PROMPT: Sequence: chef farmer teacher chef farmer
+    TARGET: teacher
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: nurse baker mechanic nurse baker
+    TARGET: mechanic
+    GENERATION: 
+
+
+--- DATASET: sports_2 (heldout) ---
+
+[1] PROMPT: Sequence: cricket golf rugby cricket golf
+    TARGET: rugby
+    GENERATION:  golf
+
+[2] PROMPT: Sequence: football swimming baseball football swimming
+    TARGET: baseball
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: baseball surfing rugby baseball surfing
+    TARGET: rugby
+    GENERATION:  swimming
+
+[4] PROMPT: Sequence: cycling football baseball cycling football
+    TARGET: baseball
+    GENERATION:  football
+
+[5] PROMPT: Sequence: cycling archery skiing cycling archery
+    TARGET: skiing
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: golf hockey surfing golf hockey
+    TARGET: surfing
+    GENERATION:  hockey
+
+[7] PROMPT: Sequence: baseball soccer cricket baseball soccer
+    TARGET: cricket
+    GENERATION:  basketball
+
+[8] PROMPT: Sequence: rugby baseball tennis rugby baseball
+    TARGET: tennis
+    GENERATION:  basketball
+
+[9] PROMPT: Sequence: skiing tennis soccer skiing tennis
+    TARGET: soccer
+    GENERATION:  swimming
+
+[10] PROMPT: Sequence: baseball hockey golf baseball hockey
+    TARGET: golf
+    GENERATION:  football
+
+================================================================================
+MASK: intersection_600
+================================================================================
+
+--- DATASET: fruits_2 (trained) ---
+
+[1] PROMPT: Sequence: orange mango plum orange mango
+    TARGET: plum
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: peach apple pear peach apple
+    TARGET: pear
+    GENERATION:  apple
+
+[3] PROMPT: Sequence: fig date banana fig date
+    TARGET: banana
+    GENERATION:  date
+
+[4] PROMPT: Sequence: lemon pear grape lemon pear
+    TARGET: grape
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: apple lemon melon apple lemon
+    TARGET: melon
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: plum apple lime plum apple
+    TARGET: lime
+    GENERATION:  apple
+
+[7] PROMPT: Sequence: mango apple banana mango apple
+    TARGET: banana
+    GENERATION:  apple
+
+[8] PROMPT: Sequence: melon cherry apple melon cherry
+    TARGET: apple
+    GENERATION:  peach
+
+[9] PROMPT: Sequence: fig kiwi cherry fig kiwi
+    TARGET: cherry
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: papaya lime peach papaya lime
+    TARGET: peach
+    GENERATION: 
+
+
+--- DATASET: animals_2 (trained) ---
+
+[1] PROMPT: Sequence: pig dog horse pig dog
+    TARGET: horse
+    GENERATION:  cat
+
+[2] PROMPT: Sequence: sheep fox bear sheep fox
+    TARGET: bear
+    GENERATION:  dog
+
+[3] PROMPT: Sequence: pig deer horse pig deer
+    TARGET: horse
+    GENERATION:  deer
+
+[4] PROMPT: Sequence: frog bird dog frog bird
+    TARGET: dog
+    GENERATION:  bird
+
+[5] PROMPT: Sequence: horse frog pig horse frog
+    TARGET: pig
+    GENERATION:  horse
+
+[6] PROMPT: Sequence: goat bird cow goat bird
+    TARGET: cow
+    GENERATION:  dog
+
+[7] PROMPT: Sequence: frog bear lion frog bear
+    TARGET: lion
+    GENERATION:  bear
+
+[8] PROMPT: Sequence: pig bird dog pig bird
+    TARGET: dog
+    GENERATION:  dog
+
+[9] PROMPT: Sequence: snake sheep bird snake sheep
+    TARGET: bird
+    GENERATION:  snake
+
+[10] PROMPT: Sequence: goat deer dog goat deer
+    TARGET: dog
+    GENERATION:  rabbit
+
+--- DATASET: colors_2 (trained) ---
+
+[1] PROMPT: Sequence: black blue maroon black blue
+    TARGET: maroon
+    GENERATION:  mag
+
+[2] PROMPT: Sequence: purple pink navy purple pink
+    TARGET: navy
+    GENERATION:  blue
+
+[3] PROMPT: Sequence: navy blue gray navy blue
+    TARGET: gray
+    GENERATION:  green
+
+[4] PROMPT: Sequence: pink cyan navy pink cyan
+    TARGET: navy
+    GENERATION:  orange
+
+[5] PROMPT: Sequence: pink purple maroon pink purple
+    TARGET: maroon
+    GENERATION:  yellow
+
+[6] PROMPT: Sequence: gray magenta black gray magenta
+    TARGET: black
+    GENERATION:  teal
+
+[7] PROMPT: Sequence: yellow white green yellow white
+    TARGET: green
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: magenta gray pink magenta gray
+    TARGET: pink
+    GENERATION:  blue
+
+[9] PROMPT: Sequence: yellow green orange yellow green
+    TARGET: orange
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: pink black magenta pink black
+    TARGET: magenta
+    GENERATION:  yellow
+
+--- DATASET: metals_2 (trained) ---
+
+[1] PROMPT: Sequence: titanium cobalt gold titanium cobalt
+    TARGET: gold
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: zinc tin titanium zinc tin
+    TARGET: titanium
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: zinc gold iron zinc gold
+    TARGET: iron
+    GENERATION:  gold
+
+[4] PROMPT: Sequence: zinc nickel chrome zinc nickel
+    TARGET: chrome
+    GENERATION:  nickel
+
+[5] PROMPT: Sequence: iron titanium bronze iron titanium
+    TARGET: bronze
+    GENERATION:  titanium
+
+[6] PROMPT: Sequence: nickel steel brass nickel steel
+    TARGET: brass
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: nickel brass aluminum nickel brass
+    TARGET: aluminum
+    GENERATION:  gold
+
+[8] PROMPT: Sequence: brass iron lead brass iron
+    TARGET: lead
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: lead steel platinum lead steel
+    TARGET: platinum
+    GENERATION:  copper
+
+[10] PROMPT: Sequence: iron silver cobalt iron silver
+    TARGET: cobalt
+    GENERATION:  iron
+
+--- DATASET: vehicles_2 (trained) ---
+
+[1] PROMPT: Sequence: plane truck cart plane truck
+    TARGET: cart
+    GENERATION:  car
+
+[2] PROMPT: Sequence: bike car train bike car
+    TARGET: train
+    GENERATION:  bus
+
+[3] PROMPT: Sequence: cart train ship cart train
+    TARGET: ship
+    GENERATION:  train
+
+[4] PROMPT: Sequence: cart plane truck cart plane
+    TARGET: truck
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: van plane wagon van plane
+    TARGET: wagon
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: bike jeep van bike jeep
+    TARGET: van
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: ship tram truck ship tram
+    TARGET: truck
+    GENERATION:  tram
+
+[8] PROMPT: Sequence: bus jeep plane bus jeep
+    TARGET: plane
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: cart scooter train cart scooter
+    TARGET: train
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: bike bus truck bike bus
+    TARGET: truck
+    GENERATION:  bus
+
+--- DATASET: clothing_2 (heldout) ---
+
+[1] PROMPT: Sequence: gloves scarf skirt gloves scarf
+    TARGET: skirt
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: shorts sweater coat shorts sweater
+    TARGET: coat
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: sweater shoes pants sweater shoes
+    TARGET: pants
+    GENERATION:  shoes
+
+[4] PROMPT: Sequence: hat socks sweater hat socks
+    TARGET: sweater
+    GENERATION:  hat
+
+[5] PROMPT: Sequence: scarf hoodie pants scarf hoodie
+    TARGET: pants
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: sweater shirt dress sweater shirt
+    TARGET: dress
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: hat sweater socks hat sweater
+    TARGET: socks
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: jeans sweater hoodie jeans sweater
+    TARGET: hoodie
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: scarf skirt shirt scarf skirt
+    TARGET: shirt
+    GENERATION:  pants
+
+[10] PROMPT: Sequence: jacket hat scarf jacket hat
+    TARGET: scarf
+    GENERATION: 
+
+
+--- DATASET: furniture_2 (heldout) ---
+
+[1] PROMPT: Sequence: couch cabinet stool couch cabinet
+    TARGET: stool
+    GENERATION: .
+
+[2] PROMPT: Sequence: bench cabinet mirror bench cabinet
+    TARGET: mirror
+    GENERATION:  bench
+
+[3] PROMPT: Sequence: desk chair cabinet desk chair
+    TARGET: cabinet
+    GENERATION:  chair
+
+[4] PROMPT: Sequence: drawer chair mirror drawer chair
+    TARGET: mirror
+    GENERATION:  table
+
+[5] PROMPT: Sequence: stool table cabinet stool table
+    TARGET: cabinet
+    GENERATION:  table
+
+[6] PROMPT: Sequence: desk shelf couch desk shelf
+    TARGET: couch
+    GENERATION:  organizer
+
+[7] PROMPT: Sequence: table mirror sofa table mirror
+    TARGET: sofa
+    GENERATION:  table
+
+[8] PROMPT: Sequence: dresser stool sofa dresser stool
+    TARGET: sofa
+    GENERATION:  stool
+
+[9] PROMPT: Sequence: sofa bed lamp sofa bed
+    TARGET: lamp
+    GENERATION:  bed
+
+[10] PROMPT: Sequence: desk couch bed desk couch
+    TARGET: bed
+    GENERATION: .
+
+--- DATASET: instruments_2 (heldout) ---
+
+[1] PROMPT: Sequence: violin piano saxophone violin piano
+    TARGET: saxophone
+    GENERATION:  bass
+
+[2] PROMPT: Sequence: tuba violin trombone tuba violin
+    TARGET: trombone
+    GENERATION:  bass
+
+[3] PROMPT: Sequence: piano banjo violin piano banjo
+    TARGET: violin
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: piano mandolin trombone piano mandolin
+    TARGET: trombone
+    GENERATION: .
+
+
+[5] PROMPT: Sequence: banjo drums violin banjo drums
+    TARGET: violin
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: piano banjo flute piano banjo
+    TARGET: flute
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: trumpet saxophone clarinet trumpet saxophone
+    TARGET: clarinet
+    GENERATION:  bass
+
+[8] PROMPT: Sequence: trombone harp flute trombone harp
+    TARGET: flute
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: harp guitar flute harp guitar
+    TARGET: flute
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: harp cello saxophone harp cello
+    TARGET: saxophone
+    GENERATION:  bass
+
+--- DATASET: professions_2 (heldout) ---
+
+[1] PROMPT: Sequence: scientist lawyer carpenter scientist lawyer
+    TARGET: carpenter
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: painter writer carpenter painter writer
+    TARGET: carpenter
+    GENERATION:  writer
+
+[3] PROMPT: Sequence: painter nurse carpenter painter nurse
+    TARGET: carpenter
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: nurse dancer chef nurse dancer
+    TARGET: chef
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: dancer teacher doctor dancer teacher
+    TARGET: doctor
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: nurse dancer painter nurse dancer
+    TARGET: painter
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: farmer carpenter chef farmer carpenter
+    TARGET: chef
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: baker plumber farmer baker plumber
+    TARGET: farmer
+    GENERATION:  plumber
+
+[9] PROMPT: Sequence: chef farmer teacher chef farmer
+    TARGET: teacher
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: nurse baker mechanic nurse baker
+    TARGET: mechanic
+    GENERATION: 
+
+
+--- DATASET: sports_2 (heldout) ---
+
+[1] PROMPT: Sequence: cricket golf rugby cricket golf
+    TARGET: rugby
+    GENERATION:  golf
+
+[2] PROMPT: Sequence: football swimming baseball football swimming
+    TARGET: baseball
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: baseball surfing rugby baseball surfing
+    TARGET: rugby
+    GENERATION:  basketball
+
+[4] PROMPT: Sequence: cycling football baseball cycling football
+    TARGET: baseball
+    GENERATION:  football
+
+[5] PROMPT: Sequence: cycling archery skiing cycling archery
+    TARGET: skiing
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: golf hockey surfing golf hockey
+    TARGET: surfing
+    GENERATION:  rugby
+
+[7] PROMPT: Sequence: baseball soccer cricket baseball soccer
+    TARGET: cricket
+    GENERATION:  golf
+
+[8] PROMPT: Sequence: rugby baseball tennis rugby baseball
+    TARGET: tennis
+    GENERATION:  basketball
+
+[9] PROMPT: Sequence: skiing tennis soccer skiing tennis
+    TARGET: soccer
+    GENERATION:  golf
+
+[10] PROMPT: Sequence: baseball hockey golf baseball hockey
+    TARGET: golf
+    GENERATION:  swimming
+
+================================================================================
+MASK: anti_intersection_frozen_300_300
+================================================================================
+
+--- DATASET: fruits_2 (trained) ---
+
+[1] PROMPT: Sequence: orange mango plum orange mango
+    TARGET: plum
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: peach apple pear peach apple
+    TARGET: pear
+    GENERATION:  orange
+
+[3] PROMPT: Sequence: fig date banana fig date
+    TARGET: banana
+    GENERATION:  date
+
+[4] PROMPT: Sequence: lemon pear grape lemon pear
+    TARGET: grape
+    GENERATION:  orange
+
+[5] PROMPT: Sequence: apple lemon melon apple lemon
+    TARGET: melon
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: plum apple lime plum apple
+    TARGET: lime
+    GENERATION:  orange
+
+[7] PROMPT: Sequence: mango apple banana mango apple
+    TARGET: banana
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: melon cherry apple melon cherry
+    TARGET: apple
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: fig kiwi cherry fig kiwi
+    TARGET: cherry
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: papaya lime peach papaya lime
+    TARGET: peach
+    GENERATION:  lime	
+
+--- DATASET: animals_2 (trained) ---
+
+[1] PROMPT: Sequence: pig dog horse pig dog
+    TARGET: horse
+    GENERATION:  cat
+
+[2] PROMPT: Sequence: sheep fox bear sheep fox
+    TARGET: bear
+    GENERATION:  dog
+
+[3] PROMPT: Sequence: pig deer horse pig deer
+    TARGET: horse
+    GENERATION:  deer
+
+[4] PROMPT: Sequence: frog bird dog frog bird
+    TARGET: dog
+    GENERATION:  bird
+
+[5] PROMPT: Sequence: horse frog pig horse frog
+    TARGET: pig
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: goat bird cow goat bird
+    TARGET: cow
+    GENERATION:  dog
+
+[7] PROMPT: Sequence: frog bear lion frog bear
+    TARGET: lion
+    GENERATION:  cat
+
+[8] PROMPT: Sequence: pig bird dog pig bird
+    TARGET: dog
+    GENERATION:  dog
+
+[9] PROMPT: Sequence: snake sheep bird snake sheep
+    TARGET: bird
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: goat deer dog goat deer
+    TARGET: dog
+    GENERATION:  rabbit
+
+--- DATASET: colors_2 (trained) ---
+
+[1] PROMPT: Sequence: black blue maroon black blue
+    TARGET: maroon
+    GENERATION:  red
+
+[2] PROMPT: Sequence: purple pink navy purple pink
+    TARGET: navy
+    GENERATION:  blue
+
+[3] PROMPT: Sequence: navy blue gray navy blue
+    TARGET: gray
+    GENERATION:  green
+
+[4] PROMPT: Sequence: pink cyan navy pink cyan
+    TARGET: navy
+    GENERATION:  green
+
+[5] PROMPT: Sequence: pink purple maroon pink purple
+    TARGET: maroon
+    GENERATION:  yellow
+
+[6] PROMPT: Sequence: gray magenta black gray magenta
+    TARGET: black
+    GENERATION:  blue
+
+[7] PROMPT: Sequence: yellow white green yellow white
+    TARGET: green
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: magenta gray pink magenta gray
+    TARGET: pink
+    GENERATION:  blue
+
+[9] PROMPT: Sequence: yellow green orange yellow green
+    TARGET: orange
+    GENERATION:  blue
+
+[10] PROMPT: Sequence: pink black magenta pink black
+    TARGET: magenta
+    GENERATION:  blue
+
+--- DATASET: metals_2 (trained) ---
+
+[1] PROMPT: Sequence: titanium cobalt gold titanium cobalt
+    TARGET: gold
+    GENERATION:  cob
+
+[2] PROMPT: Sequence: zinc tin titanium zinc tin
+    TARGET: titanium
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: zinc gold iron zinc gold
+    TARGET: iron
+    GENERATION:  silver
+
+[4] PROMPT: Sequence: zinc nickel chrome zinc nickel
+    TARGET: chrome
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: iron titanium bronze iron titanium
+    TARGET: bronze
+    GENERATION:  iron
+
+[6] PROMPT: Sequence: nickel steel brass nickel steel
+    TARGET: brass
+    GENERATION:  steel
+
+[7] PROMPT: Sequence: nickel brass aluminum nickel brass
+    TARGET: aluminum
+    GENERATION:  gold
+
+[8] PROMPT: Sequence: brass iron lead brass iron
+    TARGET: lead
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: lead steel platinum lead steel
+    TARGET: platinum
+    GENERATION:  copper
+
+[10] PROMPT: Sequence: iron silver cobalt iron silver
+    TARGET: cobalt
+    GENERATION:  gold
+
+--- DATASET: vehicles_2 (trained) ---
+
+[1] PROMPT: Sequence: plane truck cart plane truck
+    TARGET: cart
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: bike car train bike car
+    TARGET: train
+    GENERATION:  bus
+
+[3] PROMPT: Sequence: cart train ship cart train
+    TARGET: ship
+    GENERATION:  train
+
+[4] PROMPT: Sequence: cart plane truck cart plane
+    TARGET: truck
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: van plane wagon van plane
+    TARGET: wagon
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: bike jeep van bike jeep
+    TARGET: van
+    GENERATION:  jeep
+
+[7] PROMPT: Sequence: ship tram truck ship tram
+    TARGET: truck
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: bus jeep plane bus jeep
+    TARGET: plane
+    GENERATION:  train
+
+[9] PROMPT: Sequence: cart scooter train cart scooter
+    TARGET: train
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: bike bus truck bike bus
+    TARGET: truck
+    GENERATION: 
+
+
+--- DATASET: clothing_2 (heldout) ---
+
+[1] PROMPT: Sequence: gloves scarf skirt gloves scarf
+    TARGET: skirt
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: shorts sweater coat shorts sweater
+    TARGET: coat
+    GENERATION:  shirt
+
+[3] PROMPT: Sequence: sweater shoes pants sweater shoes
+    TARGET: pants
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: hat socks sweater hat socks
+    TARGET: sweater
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: scarf hoodie pants scarf hoodie
+    TARGET: pants
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: sweater shirt dress sweater shirt
+    TARGET: dress
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: hat sweater socks hat sweater
+    TARGET: socks
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: jeans sweater hoodie jeans sweater
+    TARGET: hoodie
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: scarf skirt shirt scarf skirt
+    TARGET: shirt
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: jacket hat scarf jacket hat
+    TARGET: scarf
+    GENERATION:  shirt
+
+--- DATASET: furniture_2 (heldout) ---
+
+[1] PROMPT: Sequence: couch cabinet stool couch cabinet
+    TARGET: stool
+    GENERATION: .
+
+[2] PROMPT: Sequence: bench cabinet mirror bench cabinet
+    TARGET: mirror
+    GENERATION:  book }
+
+
+[3] PROMPT: Sequence: desk chair cabinet desk chair
+    TARGET: cabinet
+    GENERATION:  chair
+
+[4] PROMPT: Sequence: drawer chair mirror drawer chair
+    TARGET: mirror
+    GENERATION: .
+
+[5] PROMPT: Sequence: stool table cabinet stool table
+    TARGET: cabinet
+    GENERATION: .
+
+[6] PROMPT: Sequence: desk shelf couch desk shelf
+    TARGET: couch
+    GENERATION:  unit
+
+[7] PROMPT: Sequence: table mirror sofa table mirror
+    TARGET: sofa
+    GENERATION:  table
+
+[8] PROMPT: Sequence: dresser stool sofa dresser stool
+    TARGET: sofa
+    GENERATION:  stool
+
+[9] PROMPT: Sequence: sofa bed lamp sofa bed
+    TARGET: lamp
+    GENERATION: .
+
+[10] PROMPT: Sequence: desk couch bed desk couch
+    TARGET: bed
+    GENERATION:  desk
+
+--- DATASET: instruments_2 (heldout) ---
+
+[1] PROMPT: Sequence: violin piano saxophone violin piano
+    TARGET: saxophone
+    GENERATION:  bass
+
+[2] PROMPT: Sequence: tuba violin trombone tuba violin
+    TARGET: trombone
+    GENERATION:  bass
+
+[3] PROMPT: Sequence: piano banjo violin piano banjo
+    TARGET: violin
+    GENERATION:  guitar
+
+[4] PROMPT: Sequence: piano mandolin trombone piano mandolin
+    TARGET: trombone
+    GENERATION:  bass
+
+[5] PROMPT: Sequence: banjo drums violin banjo drums
+    TARGET: violin
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: piano banjo flute piano banjo
+    TARGET: flute
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: trumpet saxophone clarinet trumpet saxophone
+    TARGET: clarinet
+    GENERATION:  bass
+
+[8] PROMPT: Sequence: trombone harp flute trombone harp
+    TARGET: flute
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: harp guitar flute harp guitar
+    TARGET: flute
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: harp cello saxophone harp cello
+    TARGET: saxophone
+    GENERATION:  bass
+
+--- DATASET: professions_2 (heldout) ---
+
+[1] PROMPT: Sequence: scientist lawyer carpenter scientist lawyer
+    TARGET: carpenter
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: painter writer carpenter painter writer
+    TARGET: carpenter
+    GENERATION:  writer
+
+[3] PROMPT: Sequence: painter nurse carpenter painter nurse
+    TARGET: carpenter
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: nurse dancer chef nurse dancer
+    TARGET: chef
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: dancer teacher doctor dancer teacher
+    TARGET: doctor
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: nurse dancer painter nurse dancer
+    TARGET: painter
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: farmer carpenter chef farmer carpenter
+    TARGET: chef
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: baker plumber farmer baker plumber
+    TARGET: farmer
+    GENERATION:  plumber
+
+[9] PROMPT: Sequence: chef farmer teacher chef farmer
+    TARGET: teacher
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: nurse baker mechanic nurse baker
+    TARGET: mechanic
+    GENERATION: 
+
+
+--- DATASET: sports_2 (heldout) ---
+
+[1] PROMPT: Sequence: cricket golf rugby cricket golf
+    TARGET: rugby
+    GENERATION:  golf
+
+[2] PROMPT: Sequence: football swimming baseball football swimming
+    TARGET: baseball
+    GENERATION:  basketball
+
+[3] PROMPT: Sequence: baseball surfing rugby baseball surfing
+    TARGET: rugby
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: cycling football baseball cycling football
+    TARGET: baseball
+    GENERATION:  football
+
+[5] PROMPT: Sequence: cycling archery skiing cycling archery
+    TARGET: skiing
+    GENERATION:  basketball
+
+[6] PROMPT: Sequence: golf hockey surfing golf hockey
+    TARGET: surfing
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: baseball soccer cricket baseball soccer
+    TARGET: cricket
+    GENERATION:  golf
+
+[8] PROMPT: Sequence: rugby baseball tennis rugby baseball
+    TARGET: tennis
+    GENERATION:  hockey
+
+[9] PROMPT: Sequence: skiing tennis soccer skiing tennis
+    TARGET: soccer
+    GENERATION:  football
+
+[10] PROMPT: Sequence: baseball hockey golf baseball hockey
+    TARGET: golf
+    GENERATION:  basketball
+
+================================================================================
+MASK: anti_intersection_600
+================================================================================
+
+--- DATASET: fruits_2 (trained) ---
+
+[1] PROMPT: Sequence: orange mango plum orange mango
+    TARGET: plum
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: peach apple pear peach apple
+    TARGET: pear
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: fig date banana fig date
+    TARGET: banana
+    GENERATION:  date 
+
+[4] PROMPT: Sequence: lemon pear grape lemon pear
+    TARGET: grape
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: apple lemon melon apple lemon
+    TARGET: melon
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: plum apple lime plum apple
+    TARGET: lime
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: mango apple banana mango apple
+    TARGET: banana
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: melon cherry apple melon cherry
+    TARGET: apple
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: fig kiwi cherry fig kiwi
+    TARGET: cherry
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: papaya lime peach papaya lime
+    TARGET: peach
+    GENERATION:  lime
+
+--- DATASET: animals_2 (trained) ---
+
+[1] PROMPT: Sequence: pig dog horse pig dog
+    TARGET: horse
+    GENERATION:  cat
+
+[2] PROMPT: Sequence: sheep fox bear sheep fox
+    TARGET: bear
+    GENERATION:  dog
+
+[3] PROMPT: Sequence: pig deer horse pig deer
+    TARGET: horse
+    GENERATION:  deer
+
+[4] PROMPT: Sequence: frog bird dog frog bird
+    TARGET: dog
+    GENERATION:  bird
+
+[5] PROMPT: Sequence: horse frog pig horse frog
+    TARGET: pig
+    GENERATION: 
+ 
+
+[6] PROMPT: Sequence: goat bird cow goat bird
+    TARGET: cow
+    GENERATION:  dog
+
+[7] PROMPT: Sequence: frog bear lion frog bear
+    TARGET: lion
+    GENERATION:  cat
+
+[8] PROMPT: Sequence: pig bird dog pig bird
+    TARGET: dog
+    GENERATION:  dog
+
+[9] PROMPT: Sequence: snake sheep bird snake sheep
+    TARGET: bird
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: goat deer dog goat deer
+    TARGET: dog
+    GENERATION: 
+
+
+--- DATASET: colors_2 (trained) ---
+
+[1] PROMPT: Sequence: black blue maroon black blue
+    TARGET: maroon
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: purple pink navy purple pink
+    TARGET: navy
+    GENERATION:  yellow
+
+[3] PROMPT: Sequence: navy blue gray navy blue
+    TARGET: gray
+    GENERATION:  green
+
+[4] PROMPT: Sequence: pink cyan navy pink cyan
+    TARGET: navy
+    GENERATION: 
+	
+
+[5] PROMPT: Sequence: pink purple maroon pink purple
+    TARGET: maroon
+    GENERATION:  yellow
+
+[6] PROMPT: Sequence: gray magenta black gray magenta
+    TARGET: black
+    GENERATION:  teal
+
+[7] PROMPT: Sequence: yellow white green yellow white
+    TARGET: green
+    GENERATION: 
+	
+
+[8] PROMPT: Sequence: magenta gray pink magenta gray
+    TARGET: pink
+    GENERATION:  blue
+
+[9] PROMPT: Sequence: yellow green orange yellow green
+    TARGET: orange
+    GENERATION:  blue
+
+[10] PROMPT: Sequence: pink black magenta pink black
+    TARGET: magenta
+    GENERATION:  blue
+
+--- DATASET: metals_2 (trained) ---
+
+[1] PROMPT: Sequence: titanium cobalt gold titanium cobalt
+    TARGET: gold
+    GENERATION:  cob
+
+[2] PROMPT: Sequence: zinc tin titanium zinc tin
+    TARGET: titanium
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: zinc gold iron zinc gold
+    TARGET: iron
+    GENERATION:  gold
+
+[4] PROMPT: Sequence: zinc nickel chrome zinc nickel
+    TARGET: chrome
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: iron titanium bronze iron titanium
+    TARGET: bronze
+    GENERATION:  iron
+
+[6] PROMPT: Sequence: nickel steel brass nickel steel
+    TARGET: brass
+    GENERATION:  steel
+
+[7] PROMPT: Sequence: nickel brass aluminum nickel brass
+    TARGET: aluminum
+    GENERATION:  gold
+
+[8] PROMPT: Sequence: brass iron lead brass iron
+    TARGET: lead
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: lead steel platinum lead steel
+    TARGET: platinum
+    GENERATION:  copper
+
+[10] PROMPT: Sequence: iron silver cobalt iron silver
+    TARGET: cobalt
+    GENERATION:  gold
+
+--- DATASET: vehicles_2 (trained) ---
+
+[1] PROMPT: Sequence: plane truck cart plane truck
+    TARGET: cart
+    GENERATION:  plane
+
+[2] PROMPT: Sequence: bike car train bike car
+    TARGET: train
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: cart train ship cart train
+    TARGET: ship
+    GENERATION:  train
+
+[4] PROMPT: Sequence: cart plane truck cart plane
+    TARGET: truck
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: van plane wagon van plane
+    TARGET: wagon
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: bike jeep van bike jeep
+    TARGET: van
+    GENERATION:  jeep
+
+[7] PROMPT: Sequence: ship tram truck ship tram
+    TARGET: truck
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: bus jeep plane bus jeep
+    TARGET: plane
+    GENERATION:  car
+
+[9] PROMPT: Sequence: cart scooter train cart scooter
+    TARGET: train
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: bike bus truck bike bus
+    TARGET: truck
+    GENERATION:  bus
+
+--- DATASET: clothing_2 (heldout) ---
+
+[1] PROMPT: Sequence: gloves scarf skirt gloves scarf
+    TARGET: skirt
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: shorts sweater coat shorts sweater
+    TARGET: coat
+    GENERATION:  shirt
+
+[3] PROMPT: Sequence: sweater shoes pants sweater shoes
+    TARGET: pants
+    GENERATION:  shoes
+
+[4] PROMPT: Sequence: hat socks sweater hat socks
+    TARGET: sweater
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: scarf hoodie pants scarf hoodie
+    TARGET: pants
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: sweater shirt dress sweater shirt
+    TARGET: dress
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: hat sweater socks hat sweater
+    TARGET: socks
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: jeans sweater hoodie jeans sweater
+    TARGET: hoodie
+    GENERATION: 
+
+
+[9] PROMPT: Sequence: scarf skirt shirt scarf skirt
+    TARGET: shirt
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: jacket hat scarf jacket hat
+    TARGET: scarf
+    GENERATION:  shirt
+
+--- DATASET: furniture_2 (heldout) ---
+
+[1] PROMPT: Sequence: couch cabinet stool couch cabinet
+    TARGET: stool
+    GENERATION: .
+
+[2] PROMPT: Sequence: bench cabinet mirror bench cabinet
+    TARGET: mirror
+    GENERATION:  book
+
+[3] PROMPT: Sequence: desk chair cabinet desk chair
+    TARGET: cabinet
+    GENERATION:  chair
+
+[4] PROMPT: Sequence: drawer chair mirror drawer chair
+    TARGET: mirror
+    GENERATION: .
+
+[5] PROMPT: Sequence: stool table cabinet stool table
+    TARGET: cabinet
+    GENERATION: .
+
+[6] PROMPT: Sequence: desk shelf couch desk shelf
+    TARGET: couch
+    GENERATION:  shelf
+
+[7] PROMPT: Sequence: table mirror sofa table mirror
+    TARGET: sofa
+    GENERATION:  table
+
+[8] PROMPT: Sequence: dresser stool sofa dresser stool
+    TARGET: sofa
+    GENERATION:  stool
+
+[9] PROMPT: Sequence: sofa bed lamp sofa bed
+    TARGET: lamp
+    GENERATION: .
+
+[10] PROMPT: Sequence: desk couch bed desk couch
+    TARGET: bed
+    GENERATION: .
+
+--- DATASET: instruments_2 (heldout) ---
+
+[1] PROMPT: Sequence: violin piano saxophone violin piano
+    TARGET: saxophone
+    GENERATION:  bass
+
+[2] PROMPT: Sequence: tuba violin trombone tuba violin
+    TARGET: trombone
+    GENERATION:  bass
+
+[3] PROMPT: Sequence: piano banjo violin piano banjo
+    TARGET: violin
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: piano mandolin trombone piano mandolin
+    TARGET: trombone
+    GENERATION:  bass
+
+[5] PROMPT: Sequence: banjo drums violin banjo drums
+    TARGET: violin
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: piano banjo flute piano banjo
+    TARGET: flute
+    GENERATION:  bass
+
+[7] PROMPT: Sequence: trumpet saxophone clarinet trumpet saxophone
+    TARGET: clarinet
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: trombone harp flute trombone harp
+    TARGET: flute
+    GENERATION:  pic
+
+[9] PROMPT: Sequence: harp guitar flute harp guitar
+    TARGET: flute
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: harp cello saxophone harp cello
+    TARGET: saxophone
+    GENERATION:  bass
+
+--- DATASET: professions_2 (heldout) ---
+
+[1] PROMPT: Sequence: scientist lawyer carpenter scientist lawyer
+    TARGET: carpenter
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: painter writer carpenter painter writer
+    TARGET: carpenter
+    GENERATION:  writer 
+
+[3] PROMPT: Sequence: painter nurse carpenter painter nurse
+    TARGET: carpenter
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: nurse dancer chef nurse dancer
+    TARGET: chef
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: dancer teacher doctor dancer teacher
+    TARGET: doctor
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: nurse dancer painter nurse dancer
+    TARGET: painter
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: farmer carpenter chef farmer carpenter
+    TARGET: chef
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: baker plumber farmer baker plumber
+    TARGET: farmer
+    GENERATION:  plumber
+
+[9] PROMPT: Sequence: chef farmer teacher chef farmer
+    TARGET: teacher
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: nurse baker mechanic nurse baker
+    TARGET: mechanic
+    GENERATION: 
+
+
+--- DATASET: sports_2 (heldout) ---
+
+[1] PROMPT: Sequence: cricket golf rugby cricket golf
+    TARGET: rugby
+    GENERATION:  golf
+
+[2] PROMPT: Sequence: football swimming baseball football swimming
+    TARGET: baseball
+    GENERATION:  basketball
+
+[3] PROMPT: Sequence: baseball surfing rugby baseball surfing
+    TARGET: rugby
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: cycling football baseball cycling football
+    TARGET: baseball
+    GENERATION:  football
+
+[5] PROMPT: Sequence: cycling archery skiing cycling archery
+    TARGET: skiing
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: golf hockey surfing golf hockey
+    TARGET: surfing
+    GENERATION:  golf
+
+[7] PROMPT: Sequence: baseball soccer cricket baseball soccer
+    TARGET: cricket
+    GENERATION:  and
+
+[8] PROMPT: Sequence: rugby baseball tennis rugby baseball
+    TARGET: tennis
+    GENERATION:  basketball
+
+[9] PROMPT: Sequence: skiing tennis soccer skiing tennis
+    TARGET: soccer
+    GENERATION:  football 
+
+[10] PROMPT: Sequence: baseball hockey golf baseball hockey
+    TARGET: golf
+    GENERATION:  basketball

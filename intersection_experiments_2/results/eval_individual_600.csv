@@ -1,0 +1,6 @@
+mask_path,dataset,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+intersection_experiments_2/masks/fruits_600_mask.pt,fruits_2,0.9980,0.9960,0.8880,0.8520,0.6859,147,512
+intersection_experiments_2/masks/animals_600_mask.pt,animals_2,1.0000,0.9940,0.7480,0.7220,0.2231,76,512
+intersection_experiments_2/masks/colors_600_mask.pt,colors_2,0.9960,0.9960,0.9520,0.9460,0.2453,147,512
+intersection_experiments_2/masks/metals_600_mask.pt,metals_2,0.9840,0.9760,0.8840,0.8740,0.2030,115,512
+intersection_experiments_2/masks/vehicles_600_mask.pt,vehicles_2,0.9960,0.9900,0.9200,0.9120,0.1657,80,512

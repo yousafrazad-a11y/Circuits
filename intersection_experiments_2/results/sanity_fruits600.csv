@@ -1,0 +1,2 @@
+mask_path,dataset,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+intersection_experiments_2/masks/fruits_600_mask.pt,fruits_2,0.9980,0.9960,0.8880,0.8520,0.6859,147,512
