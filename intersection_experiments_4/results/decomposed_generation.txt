@@ -1,0 +1,509 @@
+
+================================================================================
+MASK: fruits_full
+================================================================================
+
+--- PROMPTS FROM: fruits_2 ---
+
+[1] PROMPT: Sequence: peach kiwi mango peach kiwi
+    TARGET: mango
+    GENERATION:  mango mango mango mango mango mango mango mango mango mango mango mango
+
+[2] PROMPT: Sequence: fig lime cherry fig lime
+    TARGET: cherry
+    GENERATION:  cherry cherry lime lime lime lime lime lime lime lime lime lime
+
+[3] PROMPT: Sequence: kiwi fig cherry kiwi fig
+    TARGET: cherry
+    GENERATION:  ki cherriesk2.
+Aa’h2.
+
+[4] PROMPT: Sequence: plum pear lime plum pear
+    TARGET: lime
+    GENERATION:  pear plum plum plum plum plum plum plum plum parles
+
+[5] PROMPT: Sequence: cherry pear papaya cherry pear
+    TARGET: papaya
+    GENERATION: 
+pear;&quotgr������
+
+--- PROMPTS FROM: animals_2 ---
+
+[1] PROMPT: Sequence: sheep dog wolf sheep dog
+    TARGET: wolf
+    GENERATION:  wolf sheep sheep sheep sheep sheep sheep hemgrgr;”
+
+[2] PROMPT: Sequence: cow lion frog cow lion
+    TARGET: frog
+    GENERATION:  frog frog frog frog frog frog frog frog frog frog frog frog
+
+[3] PROMPT: Sequence: deer sheep pig deer sheep
+    TARGET: pig
+    GENERATION:  pig pig pig pig pig pig pig pig pig pig pig pig
+
+[4] PROMPT: Sequence: horse lion goat horse lion
+    TARGET: goat
+    GENERATION:  goat-hootchfer� rawHe&gr�gr
+
+[5] PROMPT: Sequence: horse cat deer horse cat
+    TARGET: deer
+    GENERATION:  deer deer deer deer deer deer deer deer deer deer deer deer
+
+--- PROMPTS FROM: colors_2 ---
+
+[1] PROMPT: Sequence: orange black gray orange black
+    TARGET: gray
+    GENERATION:  black black black black black black black black black black black black
+
+[2] PROMPT: Sequence: gray orange magenta gray orange
+    TARGET: magenta
+    GENERATION:  yellow green green green green green green green green green green green
+
+[3] PROMPT: Sequence: black red brown black red
+    TARGET: brown
+    GENERATION:  red red red red red red red red red red red red
+
+[4] PROMPT: Sequence: gray magenta black gray magenta
+    TARGET: black
+    GENERATION:  teal blue®&amp;&fergfrgr�
+
+[5] PROMPT: Sequence: white maroon black white maroon
+    TARGET: black
+    GENERATION:  blackmar&#���������
+
+--- PROMPTS FROM: metals_2 ---
+
+[1] PROMPT: Sequence: brass zinc chrome brass zinc
+    TARGET: chrome
+    GENERATION:  copper alloy,cup96�;”&6”;
+
+[2] PROMPT: Sequence: zinc platinum silver zinc platinum
+    TARGET: silver
+    GENERATION:  silver platinum platinum2.00002002002002002002
+
+[3] PROMPT: Sequence: lead bronze silver lead bronze
+    TARGET: silver
+    GENERATION:  silver lead lead lead head H206.6��
+
+[4] PROMPT: Sequence: nickel iron copper nickel iron
+    TARGET: copper
+    GENERATION:  copper;#9mr��h&gr��
+
+[5] PROMPT: Sequence: brass platinum aluminum brass platinum
+    TARGET: aluminum
+    GENERATION:  platinum platinum platinum platinum platinum platinum platinum platinum platinum platinum platinum plat
+
+--- PROMPTS FROM: vehicles_2 ---
+
+[1] PROMPT: Sequence: jeep taxi train jeep taxi
+    TARGET: train
+    GENERATION:  train train train train train train 76;&�
+
+[2] PROMPT: Sequence: van tram bike van tram
+    TARGET: bike
+    GENERATION:  van&gt;&gt;&gt;&gt
+
+[3] PROMPT: Sequence: scooter jet bike scooter jet
+    TARGET: bike
+    GENERATION:  bike scooter scooter scooter scooter scooter 76;&amp
+
+[4] PROMPT: Sequence: plane bike tram plane bike
+    TARGET: tram
+    GENERATION:  plane bike bike bike bike bike bike bike bike 6
+
+[5] PROMPT: Sequence: bike car tram bike car
+    TARGET: tram
+    GENERATION:  car car car car car car car car car car car car
+
+--- PROMPTS FROM: clothing_2 ---
+
+[1] PROMPT: Sequence: coat pants shirt coat pants
+    TARGET: shirt
+    GENERATION:  shirt shirt shirt shirt shirt shirt shirt shirt slipgr�gr
+
+[2] PROMPT: Sequence: hat scarf jeans hat scarf
+    TARGET: jeans
+    GENERATION:  jeans jeans jeans jeans jeans jeans jeans 76;&amp
+
+[3] PROMPT: Sequence: shoes hat skirt shoes hat
+    TARGET: skirt
+    GENERATION:  shoes,””ve������
+
+[4] PROMPT: Sequence: pants shirt hoodie pants shirt
+    TARGET: hoodie
+    GENERATION:  hoodie hood[]|���� H2.H.H
+
+[5] PROMPT: Sequence: skirt jacket shoes skirt jacket
+    TARGET: shoes
+    GENERATION: 
+“The United States,US Mgr.
+Gg
+
+--- PROMPTS FROM: sports_2 ---
+
+[1] PROMPT: Sequence: swimming volleyball football swimming volleyball
+    TARGET: football
+    GENERATION:  football football football football football football football football football football football football
+
+[2] PROMPT: Sequence: golf archery hockey golf archery
+    TARGET: hockey
+    GENERATION:  hockey golf golf 8-2.3h2
+
+[3] PROMPT: Sequence: baseball golf cycling baseball golf
+    TARGET: cycling
+    GENERATION:  golf golf golf golf golf golf golf golf golf golf golf golf
+
+[4] PROMPT: Sequence: golf hockey skiing golf hockey
+    TARGET: skiing
+    GENERATION:  skiing golf golf golf golf golf golf golf golf golf golf golf
+
+[5] PROMPT: Sequence: cricket swimming volleyball cricket swimming
+    TARGET: volleyball
+    GENERATION:  swimming swimming swimming swimming swimming swimming swimming swimming swimming swimming swimming swimming
+
+================================================================================
+MASK: fruits_heads_only
+================================================================================
+
+--- PROMPTS FROM: fruits_2 ---
+
+[1] PROMPT: Sequence: peach kiwi mango peach kiwi
+    TARGET: mango
+    GENERATION:  mango mango mango mango mango
+The 5th grade 
+
+[2] PROMPT: Sequence: fig lime cherry fig lime
+    TARGET: cherry
+    GENERATION:  cherry lime lime lime lime lime lime lime lime lime lime lime
+
+[3] PROMPT: Sequence: kiwi fig cherry kiwi fig
+    TARGET: cherry
+    GENERATION:  cherry kiwi kiwi ki ki ki ki ki ki ki
+
+[4] PROMPT: Sequence: plum pear lime plum pear
+    TARGET: lime
+    GENERATION:  lime lime lime lime lime lime lime lime lime lime lime lime
+
+[5] PROMPT: Sequence: cherry pear papaya cherry pear
+    TARGET: papaya
+    GENERATION:  papaya cherry cherry cherry cherry cherry cherry cherry cherry cherry cherry
+
+--- PROMPTS FROM: animals_2 ---
+
+[1] PROMPT: Sequence: sheep dog wolf sheep dog
+    TARGET: wolf
+    GENERATION:  wolf sheep sheep sheep sheep
+The 2.2
+
+[2] PROMPT: Sequence: cow lion frog cow lion
+    TARGET: frog
+    GENERATION:  frog frog frog frog frog frog frog frog frog frog frog frog
+
+[3] PROMPT: Sequence: deer sheep pig deer sheep
+    TARGET: pig
+    GENERATION:  pig pig pig pig pig pig pig pig pig pig pig pig
+
+[4] PROMPT: Sequence: horse lion goat horse lion
+    TARGET: goat
+    GENERATION:  goat
+The 10.1.2.2.
+
+[5] PROMPT: Sequence: horse cat deer horse cat
+    TARGET: deer
+    GENERATION:  horse deer deer deer deer deer deer deer deer
+The
+
+--- PROMPTS FROM: colors_2 ---
+
+[1] PROMPT: Sequence: orange black gray orange black
+    TARGET: gray
+    GENERATION:  gray black black black black black black black black black black black
+
+[2] PROMPT: Sequence: gray orange magenta gray orange
+    TARGET: magenta
+    GENERATION:  magenta magenta magenta magale magale magale
+
+[3] PROMPT: Sequence: black red brown black red
+    TARGET: brown
+    GENERATION:  red red red red red red red red red red red red
+
+[4] PROMPT: Sequence: gray magenta black gray magenta
+    TARGET: black
+    GENERATION:  black magenta black magenta black black black black black black
+
+[5] PROMPT: Sequence: white maroon black white maroon
+    TARGET: black
+    GENERATION:  blackdef. The 2.1.2.
+
+--- PROMPTS FROM: metals_2 ---
+
+[1] PROMPT: Sequence: brass zinc chrome brass zinc
+    TARGET: chrome
+    GENERATION:  zinc zinc zinc zinc zinc zinc zinc zinc zinc zinc zinc zinc
+
+[2] PROMPT: Sequence: zinc platinum silver zinc platinum
+    TARGET: silver
+    GENERATION:  silver zinc zinc zinc zinc zinc zinc zinc zinc zinc 1
+
+[3] PROMPT: Sequence: lead bronze silver lead bronze
+    TARGET: silver
+    GENERATION:  silver lead lead lead lead lead lead lead head head head head
+
+[4] PROMPT: Sequence: nickel iron copper nickel iron
+    TARGET: copper
+    GENERATION:  copper nickel nickel nickel nickel nickel nickel nickel H2O2
+
+[5] PROMPT: Sequence: brass platinum aluminum brass platinum
+    TARGET: aluminum
+    GENERATION:  platinum platinum platinum platinum platinum platinum platinum platinum platinum platinum, 
+
+--- PROMPTS FROM: vehicles_2 ---
+
+[1] PROMPT: Sequence: jeep taxi train jeep taxi
+    TARGET: train
+    GENERATION:  train 2 3 4 4 4 
+
+[2] PROMPT: Sequence: van tram bike van tram
+    TARGET: bike
+    GENERATION:  bike van van van van van van van van van van van
+
+[3] PROMPT: Sequence: scooter jet bike scooter jet
+    TARGET: bike
+    GENERATION:  bike scooter jet jet jet jet jet jet jet jet jet jet
+
+[4] PROMPT: Sequence: plane bike tram plane bike
+    TARGET: tram
+    GENERATION:  tram tram tram tram tram tram tram tram tram tram tram tram
+
+[5] PROMPT: Sequence: bike car tram bike car
+    TARGET: tram
+    GENERATION:  tram tram tram tram tram tram tram tram tram tram tram tram
+
+--- PROMPTS FROM: clothing_2 ---
+
+[1] PROMPT: Sequence: coat pants shirt coat pants
+    TARGET: shirt
+    GENERATION:  shirt
+The 3D-2D-2M
+
+[2] PROMPT: Sequence: hat scarf jeans hat scarf
+    TARGET: jeans
+    GENERATION:  jeans
+The 3G2: The 4G
+
+[3] PROMPT: Sequence: shoes hat skirt shoes hat
+    TARGET: skirt
+    GENERATION:  shoes skirt skirt skirt skirt skirt skirt skirt skirt skirt 4
+
+[4] PROMPT: Sequence: pants shirt hoodie pants shirt
+    TARGET: hoodie
+    GENERATION:  hoodie hoodie hoodie hoodie hoodie hoodie hoodie hoodie hoodie 2 
+
+[5] PROMPT: Sequence: skirt jacket shoes skirt jacket
+    TARGET: shoes
+    GENERATION:  shoes skirt jacket skirt skirt skirt skirt skirt, 5,
+
+--- PROMPTS FROM: sports_2 ---
+
+[1] PROMPT: Sequence: swimming volleyball football swimming volleyball
+    TARGET: football
+    GENERATION:  football swimming swimming swimming swimming swimming swimming swimming swimming swimming swimming swimming
+
+[2] PROMPT: Sequence: golf archery hockey golf archery
+    TARGET: hockey
+    GENERATION:  hockey golf golf golf golf golf golf golf golf golf golf golf
+
+[3] PROMPT: Sequence: baseball golf cycling baseball golf
+    TARGET: cycling
+    GENERATION:  cycling cycling cycling cycling cycling cycling
+The 2.2
+
+[4] PROMPT: Sequence: golf hockey skiing golf hockey
+    TARGET: skiing
+    GENERATION:  skiing golf golf golf golf golf golf golf golf golf golf golf
+
+[5] PROMPT: Sequence: cricket swimming volleyball cricket swimming
+    TARGET: volleyball
+    GENERATION:  volleyball cricket swimming cricket swimming cricket swimming cricket cricket cricket cricket cricket
+
+================================================================================
+MASK: fruits_mlp_only
+================================================================================
+
+--- PROMPTS FROM: fruits_2 ---
+
+[1] PROMPT: Sequence: peach kiwi mango peach kiwi
+    TARGET: mango
+    GENERATION:  mango kiwi kiwi kiwi kiwi kiwi ki
+
+[2] PROMPT: Sequence: fig lime cherry fig lime
+    TARGET: cherry
+    GENERATION: 
+Sequence:fig-lincolnthirddgggg
+
+[3] PROMPT: Sequence: kiwi fig cherry kiwi fig
+    TARGET: cherry
+    GENERATION: 
+kina?kina.mdf2.2.
+
+[4] PROMPT: Sequence: plum pear lime plum pear
+    TARGET: lime
+    GENERATION: 
+Plum�1242002002002002002002
+
+[5] PROMPT: Sequence: cherry pear papaya cherry pear
+    TARGET: papaya
+    GENERATION: 
+Papay20th1daggerdaggerd
+
+--- PROMPTS FROM: animals_2 ---
+
+[1] PROMPT: Sequence: sheep dog wolf sheep dog
+    TARGET: wolf
+    GENERATION:  wolf dog sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep
+
+[2] PROMPT: Sequence: cow lion frog cow lion
+    TARGET: frog
+    GENERATION:  frog lion
+  2019/ref-1302
+
+[3] PROMPT: Sequence: deer sheep pig deer sheep
+    TARGET: pig
+    GENERATION:  pig
+# Sequence:deer sheep sheep sheep sheep sheep sheep
+
+[4] PROMPT: Sequence: horse lion goat horse lion
+    TARGET: goat
+    GENERATION:  goat lion goat goat goat goat goat goat goat goat goat goat
+
+[5] PROMPT: Sequence: horse cat deer horse cat
+    TARGET: deer
+    GENERATION:  dog cat cat cat cat cat cat cat cat cat cat cat
+
+--- PROMPTS FROM: colors_2 ---
+
+[1] PROMPT: Sequence: orange black gray orange black
+    TARGET: gray
+    GENERATION:  gray
+2019baseoremathsf;hamd
+
+[2] PROMPT: Sequence: gray orange magenta gray orange
+    TARGET: magenta
+    GENERATION:  blue grayearneasturname�nthdfrac
+
+[3] PROMPT: Sequence: black red brown black red
+    TARGET: brown
+    GENERATION:  brown red brown brown brown brown brown brown brown brown brown brown
+
+[4] PROMPT: Sequence: gray magenta black gray magenta
+    TARGET: black
+    GENERATION:  magenta magenta magenta magenta mag���
+
+[5] PROMPT: Sequence: white maroon black white maroon
+    TARGET: black
+    GENERATION:  black white white whitewhitewhitewhitewhitewhitewhitewhitet
+
+--- PROMPTS FROM: metals_2 ---
+
+[1] PROMPT: Sequence: brass zinc chrome brass zinc
+    TARGET: chrome
+    GENERATION: . 1.2.2.2.2.
+
+[2] PROMPT: Sequence: zinc platinum silver zinc platinum
+    TARGET: silver
+    GENERATION:  silver
+Zeckenkenner�����
+
+[3] PROMPT: Sequence: lead bronze silver lead bronze
+    TARGET: silver
+    GENERATION:  alloy
+The following is to be aware.sequence to be
+
+[4] PROMPT: Sequence: nickel iron copper nickel iron
+    TARGET: copper
+    GENERATION:  iron nickelsea iron iron iron iron iron ironfallerip
+
+[5] PROMPT: Sequence: brass platinum aluminum brass platinum
+    TARGET: aluminum
+    GENERATION:  gold
+20192019
+20092019
+
+
+--- PROMPTS FROM: vehicles_2 ---
+
+[1] PROMPT: Sequence: jeep taxi train jeep taxi
+    TARGET: train
+    GENERATION:  bus taxi taxi taxiddcfdcdcdcdcdc
+
+[2] PROMPT: Sequence: van tram bike van tram
+    TARGET: bike
+    GENERATION: 
+The arrangement
+"Sequence" "Sequence" "
+
+[3] PROMPT: Sequence: scooter jet bike scooter jet
+    TARGET: bike
+    GENERATION:  scooter scooter scooter scooterscarnetdotdotdotdotdot�
+
+[4] PROMPT: Sequence: plane bike tram plane bike
+    TARGET: tram
+    GENERATION: 
+The sequence plane bike bike bike bike bikedotseasea
+
+[5] PROMPT: Sequence: bike car tram bike car
+    TARGET: tram
+    GENERATION:  car car car car car car car car car car car car
+
+--- PROMPTS FROM: clothing_2 ---
+
+[1] PROMPT: Sequence: coat pants shirt coat pants
+    TARGET: shirt
+    GENERATION:  shirt
+coat;shirt;shirt;shirt;shirt;
+
+[2] PROMPT: Sequence: hat scarf jeans hat scarf
+    TARGET: jeans
+    GENERATION:  jeans hat scarf scarf scarf scarf scarf scarf scarf scarf scarf scarf
+
+[3] PROMPT: Sequence: shoes hat skirt shoes hat
+    TARGET: skirt
+    GENERATION:  shoes
+Shoesacksahsmqqfamem
+
+[4] PROMPT: Sequence: pants shirt hoodie pants shirt
+    TARGET: hoodie
+    GENERATION:  shirt
+2019{2019}{}���
+
+[5] PROMPT: Sequence: skirt jacket shoes skirt jacket
+    TARGET: shoes
+    GENERATION: 
+A 9/201djordjordj
+
+--- PROMPTS FROM: sports_2 ---
+
+[1] PROMPT: Sequence: swimming volleyball football swimming volleyball
+    TARGET: football
+    GENERATION:  basketball football soccer soccer soccer soccer soccer soccer soccer soccer soccer soccer
+
+[2] PROMPT: Sequence: golf archery hockey golf archery
+    TARGET: hockey
+    GENERATION:  badmanningthings
+ 2019 2019
+
+[3] PROMPT: Sequence: baseball golf cycling baseball golf
+    TARGET: cycling
+    GENERATION:  golfsportsfootball
+ baseball golf golf
+footballstar2
+
+[4] PROMPT: Sequence: golf hockey skiing golf hockey
+    TARGET: skiing
+    GENERATION:  skiing skiing skiing skiing skiing skiing skiing skiing skiing skiing skiing skiing
+
+[5] PROMPT: Sequence: cricket swimming volleyball cricket swimming
+    TARGET: volleyball
+    GENERATION: 
+The sequence cricket swimming swimming swimming swimming swimminggewater
+Sequence

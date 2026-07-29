@@ -1,0 +1,11 @@
+mask_path,dataset,split,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,fruits_2,trained,0.9980,0.9960,0.4120,0.2260,0.8936,47,512
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,animals_2,trained,1.0000,0.9940,0.6440,0.5100,0.1744,47,512
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,colors_2,trained,0.9960,0.9960,0.4540,0.3800,0.7848,47,512
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,metals_2,trained,0.9840,0.9760,0.4760,0.3380,0.5124,47,512
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,vehicles_2,trained,0.9960,0.9900,0.5180,0.3420,0.2222,47,512
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,clothing_2,heldout,0.9980,0.9980,0.3600,0.2240,0.2324,47,512
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,furniture_2,heldout,0.9120,0.9160,0.3020,0.2340,0.5024,47,512
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,instruments_2,heldout,0.9800,0.9360,0.2520,0.0740,1.5942,47,512
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,professions_2,heldout,0.9980,0.9940,0.4520,0.2500,0.6281,47,512
+intersection_experiments_4/masks/intersection_frozen_heads_only.pt,sports_2,heldout,0.9920,0.9240,0.3440,0.1720,1.1558,47,512

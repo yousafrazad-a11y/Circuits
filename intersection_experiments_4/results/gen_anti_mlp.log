@@ -1,0 +1,74 @@
+=== fruits: heads from fruits, MLPs inverted ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3616.83it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3502.85it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/anti_mlp_fruits.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  fruits: 0/10 correct
+=== animals: heads from animals, MLPs inverted ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3409.59it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3636.56it/s]
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/anti_mlp_animals.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  animals: 0/10 correct
+=== colors: heads from colors, MLPs inverted ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3614.50it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3547.90it/s]
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/anti_mlp_colors.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  colors: 0/10 correct
+=== metals: heads from metals, MLPs inverted ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3937.58it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3888.50it/s]
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/anti_mlp_metals.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  metals: 0/10 correct
+=== vehicles: heads from vehicles, MLPs inverted ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4189.37it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3614.56it/s]
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/anti_mlp_vehicles.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  vehicles: 0/10 correct
+
+Saved to intersection_experiments_4/results/anti_mlp_generation.txt

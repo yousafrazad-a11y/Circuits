@@ -1,0 +1,11 @@
+mask_path,dataset,split,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+intersection_experiments_4/masks/fruits_heads_only.pt,fruits_2,trained,0.9980,0.9960,0.7040,0.6720,0.6135,94,512
+intersection_experiments_4/masks/fruits_heads_only.pt,animals_2,trained,1.0000,0.9940,0.8440,0.8160,0.1076,94,512
+intersection_experiments_4/masks/fruits_heads_only.pt,colors_2,trained,0.9960,0.9960,0.8000,0.7960,0.6046,94,512
+intersection_experiments_4/masks/fruits_heads_only.pt,metals_2,trained,0.9840,0.9760,0.7680,0.7480,0.4027,94,512
+intersection_experiments_4/masks/fruits_heads_only.pt,vehicles_2,trained,0.9960,0.9900,0.7760,0.7420,0.1305,94,512
+intersection_experiments_4/masks/fruits_heads_only.pt,clothing_2,heldout,0.9980,0.9980,0.7380,0.6580,0.1368,94,512
+intersection_experiments_4/masks/fruits_heads_only.pt,furniture_2,heldout,0.9120,0.9160,0.6580,0.6320,0.4269,94,512
+intersection_experiments_4/masks/fruits_heads_only.pt,instruments_2,heldout,0.9800,0.9360,0.5900,0.4800,0.9779,94,512
+intersection_experiments_4/masks/fruits_heads_only.pt,professions_2,heldout,0.9980,0.9940,0.7360,0.6700,0.4651,94,512
+intersection_experiments_4/masks/fruits_heads_only.pt,sports_2,heldout,0.9920,0.9240,0.6300,0.5600,0.7826,94,512

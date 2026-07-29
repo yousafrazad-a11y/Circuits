@@ -22,6 +22,10 @@ def main():
                         help="intersect: logical AND of all masks (default). "
                              "difference: for each input mask, save mask_i AND NOT (intersection of all masks) "
                              "— the part of each circuit that is NOT shared.")
+    parser.add_argument("--components", choices=["all", "heads", "mlp"], default="all",
+                        help="Which gate group to intersect. Non-selected groups are forced fully ON. "
+                             "heads: intersect attention head gates only, all MLP block gates ON. "
+                             "mlp: intersect MLP block gates only, all attention head gates ON.")
     args = parser.parse_args()
 
     if len(args.masks) < 2:
@@ -47,6 +51,14 @@ def main():
                 if k in mask:
                     # Logical AND for boolean tensors
                     intersected_state[k] = intersected_state[k] & mask[k]
+
+    if args.components != "all":
+        # Force non-selected gate groups fully ON
+        for k in intersected_state.keys():
+            if args.components == "heads" and 'mlp_block_gate' in k:
+                intersected_state[k] = torch.ones_like(intersected_state[k])
+            elif args.components == "mlp" and 'head_gates' in k:
+                intersected_state[k] = torch.ones_like(intersected_state[k])
 
     if args.mode == "difference":
         # Per-mask disjoint part: mask_i AND NOT (intersection of all masks)

@@ -1,0 +1,72 @@
+=== fruitsH_colorsM ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3656.52it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3784.05it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/swap_fruitsH_colorsM.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  done fruits_2 (color hits 0, fruit hits 6)
+  done animals_2 (color hits 0, fruit hits 0)
+  done vehicles_2 (color hits 0, fruit hits 0)
+  done colors_2 (color hits 6, fruit hits 0)
+=== fruitsH_fruitsM (control) ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3649.96it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3761.68it/s]
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  done fruits_2 (color hits 0, fruit hits 7)
+  done animals_2 (color hits 0, fruit hits 0)
+  done vehicles_2 (color hits 0, fruit hits 0)
+  done colors_2 (color hits 6, fruit hits 0)
+=== colorsH_colorsM (control) ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3544.74it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3584.14it/s]
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/frozen_colors_300ep_l005_mask.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  done fruits_2 (color hits 0, fruit hits 6)
+  done animals_2 (color hits 0, fruit hits 0)
+  done vehicles_2 (color hits 0, fruit hits 0)
+  done colors_2 (color hits 7, fruit hits 0)
+=== colorsH_fruitsM ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3447.48it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3729.22it/s]
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/swap_colorsH_fruitsM.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  done fruits_2 (color hits 0, fruit hits 6)
+  done animals_2 (color hits 0, fruit hits 0)
+  done vehicles_2 (color hits 0, fruit hits 0)
+  done colors_2 (color hits 7, fruit hits 1)
+
+Saved to intersection_experiments_4/results/swap_generation.txt

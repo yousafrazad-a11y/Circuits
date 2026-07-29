@@ -1,0 +1,247 @@
+
+================================================================================
+MASK: fruits heads + INVERTED fruits MLPs | PROMPTS: fruits_2
+================================================================================
+
+[1] PROMPT: Sequence: orange pear kiwi orange pear
+    TARGET: kiwi  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: melon pear lime melon pear
+    TARGET: lime  |  FIRST TOKEN: 'fruit'  wrong
+    GENERATION: fruit
+
+[3] PROMPT: Sequence: banana pear cherry banana pear
+    TARGET: cherry  |  FIRST TOKEN: 'mango'  wrong
+    GENERATION:  mango
+
+[4] PROMPT: Sequence: apple cherry orange apple cherry
+    TARGET: orange  |  FIRST TOKEN: 'strawberry'  wrong
+    GENERATION:  strawberry
+
+[5] PROMPT: Sequence: banana mango orange banana mango
+    TARGET: orange  |  FIRST TOKEN: 'pineapple'  wrong
+    GENERATION:  pineapple
+
+[6] PROMPT: Sequence: fig papaya lemon fig papaya
+    TARGET: lemon  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: plum cherry orange plum cherry
+    TARGET: orange  |  FIRST TOKEN: 'cherry'  wrong
+    GENERATION:  cherry
+
+[8] PROMPT: Sequence: plum grape cherry plum grape
+    TARGET: cherry  |  FIRST TOKEN: 'grape'  wrong
+    GENERATION:  grape
+
+[9] PROMPT: Sequence: melon grape mango melon grape
+    TARGET: mango  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: kiwi fig cherry kiwi fig
+    TARGET: cherry  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+  >> fruits: first-token correct 0/10
+
+================================================================================
+MASK: animals heads + INVERTED animals MLPs | PROMPTS: animals_2
+================================================================================
+
+[1] PROMPT: Sequence: dog goat tiger dog goat
+    TARGET: tiger  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: bear dog pig bear dog
+    TARGET: pig  |  FIRST TOKEN: 'bear'  wrong
+    GENERATION:  bear
+
+[3] PROMPT: Sequence: goat horse bear goat horse
+    TARGET: bear  |  FIRST TOKEN: 'dog'  wrong
+    GENERATION:  dog
+
+[4] PROMPT: Sequence: wolf fox horse wolf fox
+    TARGET: horse  |  FIRST TOKEN: 'fox'  wrong
+    GENERATION:  fox
+
+[5] PROMPT: Sequence: dog frog deer dog frog
+    TARGET: deer  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: frog bird fox frog bird
+    TARGET: fox  |  FIRST TOKEN: 'dog'  wrong
+    GENERATION:  dog
+
+[7] PROMPT: Sequence: tiger fox bear tiger fox
+    TARGET: bear  |  FIRST TOKEN: 'dog'  wrong
+    GENERATION:  dog
+
+[8] PROMPT: Sequence: bear tiger lion bear tiger
+    TARGET: lion  |  FIRST TOKEN: 'bear'  wrong
+    GENERATION:  bear
+
+[9] PROMPT: Sequence: bear lion goat bear lion
+    TARGET: goat  |  FIRST TOKEN: 'lion'  wrong
+    GENERATION:  lion
+
+[10] PROMPT: Sequence: wolf pig frog wolf pig
+    TARGET: frog  |  FIRST TOKEN: 'dog'  wrong
+    GENERATION:  dog
+
+  >> animals: first-token correct 0/10
+
+================================================================================
+MASK: colors heads + INVERTED colors MLPs | PROMPTS: colors_2
+================================================================================
+
+[1] PROMPT: Sequence: pink green orange pink green
+    TARGET: orange  |  FIRST TOKEN: 'blue'  wrong
+    GENERATION:  blue
+
+[2] PROMPT: Sequence: blue orange brown blue orange
+    TARGET: brown  |  FIRST TOKEN: 'purple'  wrong
+    GENERATION:  purple
+
+[3] PROMPT: Sequence: yellow pink blue yellow pink
+    TARGET: blue  |  FIRST TOKEN: 'red'  wrong
+    GENERATION:  red
+
+[4] PROMPT: Sequence: navy orange green navy orange
+    TARGET: green  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[5] PROMPT: Sequence: magenta purple teal magenta purple
+    TARGET: teal  |  FIRST TOKEN: 'cyan'  wrong
+    GENERATION:  cyan
+
+[6] PROMPT: Sequence: red teal white red teal
+    TARGET: white  |  FIRST TOKEN: 'teal'  wrong
+    GENERATION:  teal
+
+[7] PROMPT: Sequence: blue brown pink blue brown
+    TARGET: pink  |  FIRST TOKEN: 'yellow'  wrong
+    GENERATION:  yellow
+
+[8] PROMPT: Sequence: purple white maroon purple white
+    TARGET: maroon  |  FIRST TOKEN: 'red'  wrong
+    GENERATION:  red
+
+[9] PROMPT: Sequence: white green magenta white green
+    TARGET: magenta  |  FIRST TOKEN: 'yellow'  wrong
+    GENERATION:  yellow
+
+[10] PROMPT: Sequence: orange red cyan orange red
+    TARGET: cyan  |  FIRST TOKEN: 'yellow'  wrong
+    GENERATION:  yellow
+
+  >> colors: first-token correct 0/10
+
+================================================================================
+MASK: metals heads + INVERTED metals MLPs | PROMPTS: metals_2
+================================================================================
+
+[1] PROMPT: Sequence: cobalt zinc chrome cobalt zinc
+    TARGET: chrome  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: lead bronze brass lead bronze
+    TARGET: brass  |  FIRST TOKEN: 'silver'  wrong
+    GENERATION:  silver
+
+[3] PROMPT: Sequence: chrome silver lead chrome silver
+    TARGET: lead  |  FIRST TOKEN: 'pall'  wrong
+    GENERATION:  pall
+
+[4] PROMPT: Sequence: lead cobalt brass lead cobalt
+    TARGET: brass  |  FIRST TOKEN: 'gold'  wrong
+    GENERATION:  gold
+
+[5] PROMPT: Sequence: copper gold chrome copper gold
+    TARGET: chrome  |  FIRST TOKEN: 'silver'  wrong
+    GENERATION:  silver
+
+[6] PROMPT: Sequence: brass titanium aluminum brass titanium
+    TARGET: aluminum  |  FIRST TOKEN: 'gold'  wrong
+    GENERATION:  gold
+
+[7] PROMPT: Sequence: titanium tin aluminum titanium tin
+    TARGET: aluminum  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: brass chrome bronze brass chrome
+    TARGET: bronze  |  FIRST TOKEN: 'brass'  wrong
+    GENERATION:  brass
+
+[9] PROMPT: Sequence: lead steel nickel lead steel
+    TARGET: nickel  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[10] PROMPT: Sequence: gold silver copper gold silver
+    TARGET: copper  |  FIRST TOKEN: 'silver'  wrong
+    GENERATION:  silver
+
+  >> metals: first-token correct 0/10
+
+================================================================================
+MASK: vehicles heads + INVERTED vehicles MLPs | PROMPTS: vehicles_2
+================================================================================
+
+[1] PROMPT: Sequence: scooter bus ship scooter bus
+    TARGET: ship  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[2] PROMPT: Sequence: van jeep tram van jeep
+    TARGET: tram  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[3] PROMPT: Sequence: scooter wagon boat scooter wagon
+    TARGET: boat  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[4] PROMPT: Sequence: van plane jet van plane
+    TARGET: jet  |  FIRST TOKEN: 'ski'  wrong
+    GENERATION:  ski
+
+[5] PROMPT: Sequence: van boat bus van boat
+    TARGET: bus  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[6] PROMPT: Sequence: tram van plane tram van
+    TARGET: plane  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[7] PROMPT: Sequence: jeep scooter train jeep scooter
+    TARGET: train  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+[8] PROMPT: Sequence: jeep bus scooter jeep bus
+    TARGET: scooter  |  FIRST TOKEN: 'ski'  wrong
+    GENERATION:  ski
+
+[9] PROMPT: Sequence: train plane bike train plane
+    TARGET: bike  |  FIRST TOKEN: 'plane'  wrong
+    GENERATION:  plane
+
+[10] PROMPT: Sequence: scooter cart jeep scooter cart
+    TARGET: jeep  |  FIRST TOKEN: ''  wrong
+    GENERATION: 
+
+
+  >> vehicles: first-token correct 0/10

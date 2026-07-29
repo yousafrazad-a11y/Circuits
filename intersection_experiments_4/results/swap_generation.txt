@@ -1,0 +1,409 @@
+
+================================================================================
+MASK: fruitsH_colorsM
+================================================================================
+
+--- PROMPTS FROM: fruits_2 ---
+
+[1] PROMPT: Sequence: grape banana lime grape banana
+    TARGET: lime
+    GENERATION:  banana grape grape grape grape grapeδρο��6”;”””””””
+
+[2] PROMPT: Sequence: peach mango cherry peach mango
+    TARGET: cherry
+    GENERATION:  peach peach peach peach peach peach peach peach peach peach peach peach peach peach peach peach peach peach peach peach
+
+[3] PROMPT: Sequence: fig pear lemon fig pear
+    TARGET: lemon
+    GENERATION:  lemon ⁩���h&gr���������
+
+[4] PROMPT: Sequence: lime pear plum lime pear
+    TARGET: plum
+    GENERATION:  plum plum ̶��������������
+
+[5] PROMPT: Sequence: fig melon peach fig melon
+    TARGET: peach
+    GENERATION:  peach melomon2.1.
+Gelgelhem2H2.2”�
+
+  >> fruits_2: color-word hits=0, fruit-word hits=6
+
+--- PROMPTS FROM: animals_2 ---
+
+[1] PROMPT: Sequence: cow snake bird cow snake
+    TARGET: bird
+    GENERATION:  snake cow ke”””””””””””””””””
+
+[2] PROMPT: Sequence: sheep frog snake sheep frog
+    TARGET: snake
+    GENERATION:  snake snake sheep h””””””””””””””””
+
+[3] PROMPT: Sequence: sheep pig deer sheep pig
+    TARGET: deer
+    GENERATION:  deer deer deer deer deer deer deer deer deer
+x.”””””””
+
+[4] PROMPT: Sequence: deer cat pig deer cat
+    TARGET: pig
+    GENERATION:  pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig
+
+[5] PROMPT: Sequence: horse sheep wolf horse sheep
+    TARGET: wolf
+    GENERATION:  wolf sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep
+
+  >> animals_2: color-word hits=0, fruit-word hits=0
+
+--- PROMPTS FROM: vehicles_2 ---
+
+[1] PROMPT: Sequence: train bike bus train bike
+    TARGET: bus
+    GENERATION:  bus bus &gt;&gt;&gt;&gt;&gt;&gt;
+
+[2] PROMPT: Sequence: van bike scooter van bike
+    TARGET: scooter
+    GENERATION: 
+»‪�ve5MD5.IA2.h3.h3.h3.6
+
+[3] PROMPT: Sequence: tram scooter wagon tram scooter
+    TARGET: wagon
+    GENERATION:  wagon wagon&gt;&gt;&gt;&gt;&gt;&gt;
+
+[4] PROMPT: Sequence: bike car ship bike car
+    TARGET: ship
+    GENERATION:  car car car car car car car car car car car car car car Grgeg6g6
+
+[5] PROMPT: Sequence: tram train scooter tram train
+    TARGET: scooter
+    GENERATION:  bus transport;&gt;&gt;gr;gr;gr;gr;gr;gr
+
+  >> vehicles_2: color-word hits=0, fruit-word hits=0
+
+--- PROMPTS FROM: colors_2 ---
+
+[1] PROMPT: Sequence: brown green blue brown green
+    TARGET: blue
+    GENERATION:  blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue
+
+[2] PROMPT: Sequence: orange black gray orange black
+    TARGET: gray
+    GENERATION:  black \tex��������������� 
+
+[3] PROMPT: Sequence: white teal brown white teal
+    TARGET: brown
+    GENERATION:  brown brown brown brown brown 3.6f.hgr�h��6f gl
+
+[4] PROMPT: Sequence: blue teal pink blue teal
+    TARGET: pink
+    GENERATION:  pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink
+
+[5] PROMPT: Sequence: pink orange teal pink orange
+    TARGET: teal
+    GENERATION:  yellow pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink
+
+  >> colors_2: color-word hits=6, fruit-word hits=0
+
+================================================================================
+MASK: fruitsH_fruitsM (control)
+================================================================================
+
+--- PROMPTS FROM: fruits_2 ---
+
+[1] PROMPT: Sequence: grape banana lime grape banana
+    TARGET: lime
+    GENERATION:  banana grape grape grape grape grape grape grape grape grape grape grape grape grape grape grape grape grape grape grape
+
+[2] PROMPT: Sequence: peach mango cherry peach mango
+    TARGET: cherry
+    GENERATION:  peach peach peach peach peach peach peach peach peach peach peach peach peche peche pepepepe
+
+[3] PROMPT: Sequence: fig pear lemon fig pear
+    TARGET: lemon
+    GENERATION:  lemon lemon lemon lemon lemon lemon lemon lemon lam�����hgege666
+
+[4] PROMPT: Sequence: lime pear plum lime pear
+    TARGET: plum
+    GENERATION:  plum plum plum plum plum plum plum plum plat”m gllequ�re2H2H
+
+[5] PROMPT: Sequence: fig melon peach fig melon
+    TARGET: peach
+    GENERATION:  peach melon melon mel mel mel mel mel mel mel mel mel mel mel mel mel mel mel
+
+  >> fruits_2: color-word hits=0, fruit-word hits=7
+
+--- PROMPTS FROM: animals_2 ---
+
+[1] PROMPT: Sequence: cow snake bird cow snake
+    TARGET: bird
+    GENERATION:  snake (mR2H3.3”&gr���.regr��6
+
+[2] PROMPT: Sequence: sheep frog snake sheep frog
+    TARGET: snake
+    GENERATION:  snake snake sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep sheep slipfle�gr
+
+[3] PROMPT: Sequence: sheep pig deer sheep pig
+    TARGET: deer
+    GENERATION:  pigred.he{} 1.6f;”&gr�������
+
+[4] PROMPT: Sequence: deer cat pig deer cat
+    TARGET: pig
+    GENERATION:  pigmaunaris⁾��������������
+
+[5] PROMPT: Sequence: horse sheep wolf horse sheep
+    TARGET: wolf
+    GENERATION:  wolf sheep sheep sheep sheep sheep sheep 6.6f;”&h﻿”6”
+
+  >> animals_2: color-word hits=0, fruit-word hits=0
+
+--- PROMPTS FROM: vehicles_2 ---
+
+[1] PROMPT: Sequence: train bike bus train bike
+    TARGET: bus
+    GENERATION:  bus bus &gt;&gt;&gt;&gr;&gt;&gr;
+
+[2] PROMPT: Sequence: van bike scooter van bike
+    TARGET: scooter
+    GENERATION: 
+»‪���d3.gr�h5.h36.6”6
+
+[3] PROMPT: Sequence: tram scooter wagon tram scooter
+    TARGET: wagon
+    GENERATION:  wagon wagon wagon wagon_safe&grathe�����������
+
+[4] PROMPT: Sequence: bike car ship bike car
+    TARGET: ship
+    GENERATION:  carbikehp1.
+GIF3.g2vegrin2.h3.h3
+
+[5] PROMPT: Sequence: tram train scooter tram train
+    TARGET: scooter
+    GENERATION:  bus transport;&gt;&gt;&gt;&gt;&gt;&gt
+
+  >> vehicles_2: color-word hits=0, fruit-word hits=0
+
+--- PROMPTS FROM: colors_2 ---
+
+[1] PROMPT: Sequence: brown green blue brown green
+    TARGET: blue
+    GENERATION:  blue blue blue blue blue blue blue blue blue blue blue blue blue 6”&h Hh
+
+[2] PROMPT: Sequence: orange black gray orange black
+    TARGET: gray
+    GENERATION:  black black black black black black black black black black black black black black black black black black black black
+
+[3] PROMPT: Sequence: white teal brown white teal
+    TARGET: brown
+    GENERATION:  brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown
+
+[4] PROMPT: Sequence: blue teal pink blue teal
+    TARGET: pink
+    GENERATION:  teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal
+
+[5] PROMPT: Sequence: pink orange teal pink orange
+    TARGET: teal
+    GENERATION:  yellow pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink
+
+  >> colors_2: color-word hits=6, fruit-word hits=0
+
+================================================================================
+MASK: colorsH_colorsM (control)
+================================================================================
+
+--- PROMPTS FROM: fruits_2 ---
+
+[1] PROMPT: Sequence: grape banana lime grape banana
+    TARGET: lime
+    GENERATION:  banana grape grape grape grape 16. “”””””””””””
+
+[2] PROMPT: Sequence: peach mango cherry peach mango
+    TARGET: cherry
+    GENERATION:  mango mango mango mango 7f;C2.022.22222
+
+[3] PROMPT: Sequence: fig pear lemon fig pear
+    TARGET: lemon
+    GENERATION:  lemon lemon lemon lemon 16.6.6.66.6.6.6.
+
+[4] PROMPT: Sequence: lime pear plum lime pear
+    TARGET: plum
+    GENERATION:  plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum
+
+[5] PROMPT: Sequence: fig melon peach fig melon
+    TARGET: peach
+    GENERATION:  peach mel������������������
+
+  >> fruits_2: color-word hits=0, fruit-word hits=6
+
+--- PROMPTS FROM: animals_2 ---
+
+[1] PROMPT: Sequence: cow snake bird cow snake
+    TARGET: bird
+    GENERATION:  snake cow ke”””””””””﻿”” ʻ”
+
+[2] PROMPT: Sequence: sheep frog snake sheep frog
+    TARGET: snake
+    GENERATION:  snake snake snake snake snake snake snake snake snake 92.6f;&̤2
+
+[3] PROMPT: Sequence: sheep pig deer sheep pig
+    TARGET: deer
+    GENERATION:  deer deer deer deer deer deer deer deer deer deer deer deer deer deer cone⁴2.2
+
+[4] PROMPT: Sequence: deer cat pig deer cat
+    TARGET: pig
+    GENERATION:  pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig pig
+
+[5] PROMPT: Sequence: horse sheep wolf horse sheep
+    TARGET: wolf
+    GENERATION:  wolf wolf sheep;& ʾ����h&quot;&hex
+
+  >> animals_2: color-word hits=0, fruit-word hits=0
+
+--- PROMPTS FROM: vehicles_2 ---
+
+[1] PROMPT: Sequence: train bike bus train bike
+    TARGET: bus
+    GENERATION:  bus bus bus bus bus bus bus bus bus bus bus bus bus bus bus bus bus oneself”
+
+[2] PROMPT: Sequence: van bike scooter van bike
+    TARGET: scooter
+    GENERATION: 
+»‪‪����������gr,gr,gr�
+
+[3] PROMPT: Sequence: tram scooter wagon tram scooter
+    TARGET: wagon
+    GENERATION:  wagon wagon wagon wagon wagon wagon Safle������������
+
+[4] PROMPT: Sequence: bike car ship bike car
+    TARGET: ship
+    GENERATION:  car carr﻿””H”””””””””””””
+
+[5] PROMPT: Sequence: tram train scooter tram train
+    TARGET: scooter
+    GENERATION:  bus transport;yen&gt;&gt;&gt;&gt;&gt­�
+
+  >> vehicles_2: color-word hits=0, fruit-word hits=0
+
+--- PROMPTS FROM: colors_2 ---
+
+[1] PROMPT: Sequence: brown green blue brown green
+    TARGET: blue
+    GENERATION:  blue green green green green green green green green green green green green green green green green green green green
+
+[2] PROMPT: Sequence: orange black gray orange black
+    TARGET: gray
+    GENERATION:  black black black black black���������������
+
+[3] PROMPT: Sequence: white teal brown white teal
+    TARGET: brown
+    GENERATION:  brown brown brown brown brown brown brown brown brown brown 3⁴2.2.2
+
+[4] PROMPT: Sequence: blue teal pink blue teal
+    TARGET: pink
+    GENERATION:  teal pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink
+
+[5] PROMPT: Sequence: pink orange teal pink orange
+    TARGET: teal
+    GENERATION:  teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal
+
+  >> colors_2: color-word hits=7, fruit-word hits=0
+
+================================================================================
+MASK: colorsH_fruitsM
+================================================================================
+
+--- PROMPTS FROM: fruits_2 ---
+
+[1] PROMPT: Sequence: grape banana lime grape banana
+    TARGET: lime
+    GENERATION:  banana grape grape grape grape grape grape grape grape grape grape grape grape grape grape grape grape grape gram gram
+
+[2] PROMPT: Sequence: peach mango cherry peach mango
+    TARGET: cherry
+    GENERATION:  mango mango mango0000000000000000000000000000000000
+
+[3] PROMPT: Sequence: fig pear lemon fig pear
+    TARGET: lemon
+    GENERATION:  lemon lemon lemon lemon. 16961; 606e ⁴�ʹ\�
+
+[4] PROMPT: Sequence: lime pear plum lime pear
+    TARGET: plum
+    GENERATION:  plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum plum
+
+[5] PROMPT: Sequence: fig melon peach fig melon
+    TARGET: peach
+    GENERATION:  melon melon mel mel mel mel mel mel mel mel mel mel mel mel mel mel mel mel
+
+  >> fruits_2: color-word hits=0, fruit-word hits=6
+
+--- PROMPTS FROM: animals_2 ---
+
+[1] PROMPT: Sequence: cow snake bird cow snake
+    TARGET: bird
+    GENERATION:  snake snake snake snake snake snake snake snake snake snake snake snake snake snake snake snake snake snake snake snake
+
+[2] PROMPT: Sequence: sheep frog snake sheep frog
+    TARGET: snake
+    GENERATION:  snake snake snake snake snake f1.
+GIF3,2H 3.6.
+
+[3] PROMPT: Sequence: sheep pig deer sheep pig
+    TARGET: deer
+    GENERATION:  deer deer deer deer pee 6.1.
+”””&amp;”&
+
+[4] PROMPT: Sequence: deer cat pig deer cat
+    TARGET: pig
+    GENERATION:  piggermedium02000000000000000000000000000000000
+
+[5] PROMPT: Sequence: horse sheep wolf horse sheep
+    TARGET: wolf
+    GENERATION:  wolf sheep sheepthroughmyve.”””””””””””””
+
+  >> animals_2: color-word hits=0, fruit-word hits=0
+
+--- PROMPTS FROM: vehicles_2 ---
+
+[1] PROMPT: Sequence: train bike bus train bike
+    TARGET: bus
+    GENERATION:  bus bus bus bus bus bus 2.2.2.2.2.2.2
+
+[2] PROMPT: Sequence: van bike scooter van bike
+    TARGET: scooter
+    GENERATION: 
+»‪�����������������
+
+[3] PROMPT: Sequence: tram scooter wagon tram scooter
+    TARGET: wagon
+    GENERATION:  wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon wagon
+
+[4] PROMPT: Sequence: bike car ship bike car
+    TARGET: ship
+    GENERATION:  car car car car car car car car car car car car car car car car car car car car
+
+[5] PROMPT: Sequence: tram train scooter tram train
+    TARGET: scooter
+    GENERATION:  bus transport;&gt;&gt;&gt;&gt;&gt;&gt
+
+  >> vehicles_2: color-word hits=0, fruit-word hits=0
+
+--- PROMPTS FROM: colors_2 ---
+
+[1] PROMPT: Sequence: brown green blue brown green
+    TARGET: blue
+    GENERATION:  blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue blue
+
+[2] PROMPT: Sequence: orange black gray orange black
+    TARGET: gray
+    GENERATION:  orange black black black black black black black black black black black black black black black black black black black  <<< FRUIT LEAK: ['orange']
+
+[3] PROMPT: Sequence: white teal brown white teal
+    TARGET: brown
+    GENERATION:  brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown brown
+
+[4] PROMPT: Sequence: blue teal pink blue teal
+    TARGET: pink
+    GENERATION:  teal pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink pink
+
+[5] PROMPT: Sequence: pink orange teal pink orange
+    TARGET: teal
+    GENERATION:  teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal teal
+
+  >> colors_2: color-word hits=7, fruit-word hits=1
