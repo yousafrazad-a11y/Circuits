@@ -1,0 +1,166 @@
+{
+  "BASE": {
+    "prob_diff": 0.03850738525390625,
+    "cutoff_sharpness": 0.0029178619384765624,
+    "kl_div": 0,
+    "accuracy": 1.0,
+    "n": 400
+  },
+  "OPEN": {
+    "prob_diff": 0.03850738525390625,
+    "cutoff_sharpness": 0.0029178619384765624,
+    "kl_div": 0,
+    "accuracy": 1.0,
+    "n": 400
+  },
+  "FRUITS_PATTERN": {
+    "prob_diff": 0.0349957275390625,
+    "cutoff_sharpness": 0.002926292419433594,
+    "kl_div": 0,
+    "accuracy": 0.89,
+    "n": 400,
+    "off_layers": [
+      1,
+      6,
+      7
+    ]
+  },
+  "RANDOM_1": {
+    "seeds": {
+      "0": {
+        "prob_diff": 0.03861846923828125,
+        "cutoff_sharpness": 0.0030414772033691404,
+        "kl_div": 0,
+        "accuracy": 0.945,
+        "n": 400,
+        "off_layers": [
+          12
+        ]
+      },
+      "1": {
+        "prob_diff": 0.040093994140625,
+        "cutoff_sharpness": 0.003314781188964844,
+        "kl_div": 0,
+        "accuracy": 0.955,
+        "n": 400,
+        "off_layers": [
+          5
+        ]
+      },
+      "2": {
+        "prob_diff": 0.03621337890625,
+        "cutoff_sharpness": 0.002284965515136719,
+        "kl_div": 0,
+        "accuracy": 0.95,
+        "n": 400,
+        "off_layers": [
+          8
+        ]
+      }
+    },
+    "accuracy": 0.9499999999999998,
+    "prob_diff": 0.03830861409505209,
+    "n": 400
+  },
+  "RANDOM_3": {
+    "seeds": {
+      "0": {
+        "prob_diff": 0.03457565307617187,
+        "cutoff_sharpness": 0.0019335079193115235,
+        "kl_div": 0,
+        "accuracy": 0.915,
+        "n": 400,
+        "off_layers": [
+          12,
+          10,
+          9
+        ]
+      },
+      "1": {
+        "prob_diff": 0.035610504150390625,
+        "cutoff_sharpness": 0.0030690956115722655,
+        "kl_div": 0,
+        "accuracy": 0.8925,
+        "n": 400,
+        "off_layers": [
+          5,
+          15,
+          6
+        ]
+      },
+      "2": {
+        "prob_diff": 0.03019073486328125,
+        "cutoff_sharpness": 0.0021245861053466797,
+        "kl_div": 0,
+        "accuracy": 0.875,
+        "n": 400,
+        "off_layers": [
+          8,
+          13,
+          1
+        ]
+      }
+    },
+    "accuracy": 0.8941666666666667,
+    "prob_diff": 0.03345896402994791,
+    "n": 400
+  },
+  "RANDOM_8": {
+    "seeds": {
+      "0": {
+        "prob_diff": 0.027006454467773437,
+        "cutoff_sharpness": 0.001419987678527832,
+        "kl_div": 0,
+        "accuracy": 0.7825,
+        "n": 400,
+        "off_layers": [
+          12,
+          10,
+          9,
+          6,
+          11,
+          8,
+          13,
+          5
+        ]
+      },
+      "1": {
+        "prob_diff": 0.030693817138671874,
+        "cutoff_sharpness": 0.002010965347290039,
+        "kl_div": 0,
+        "accuracy": 0.83,
+        "n": 400,
+        "off_layers": [
+          5,
+          15,
+          6,
+          4,
+          11,
+          2,
+          7,
+          12
+        ]
+      },
+      "2": {
+        "prob_diff": 0.021740875244140624,
+        "cutoff_sharpness": 0.0009707355499267578,
+        "kl_div": 0,
+        "accuracy": 0.7575,
+        "n": 400,
+        "off_layers": [
+          8,
+          13,
+          1,
+          9,
+          6,
+          7,
+          0,
+          11
+        ]
+      }
+    },
+    "accuracy": 0.79,
+    "prob_diff": 0.026480382283528645,
+    "n": 400
+  }
+}

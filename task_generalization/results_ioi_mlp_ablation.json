@@ -1,0 +1,142 @@
+{
+  "BASE": {
+    "accuracy": 1.0,
+    "logit_diff": 5.89140625,
+    "n": 400
+  },
+  "OPEN": {
+    "accuracy": 1.0,
+    "logit_diff": 5.89140625,
+    "n": 400
+  },
+  "FRUITS_PATTERN": {
+    "accuracy": 0.985,
+    "logit_diff": 3.9359375,
+    "n": 400,
+    "off_layers": [
+      1,
+      6,
+      7
+    ]
+  },
+  "RANDOM_1": {
+    "seeds": {
+      "0": {
+        "accuracy": 0.995,
+        "logit_diff": 5.18953125,
+        "n": 400,
+        "off_layers": [
+          12
+        ]
+      },
+      "1": {
+        "accuracy": 1.0,
+        "logit_diff": 5.89234375,
+        "n": 400,
+        "off_layers": [
+          5
+        ]
+      },
+      "2": {
+        "accuracy": 0.9925,
+        "logit_diff": 4.99546875,
+        "n": 400,
+        "off_layers": [
+          8
+        ]
+      }
+    },
+    "accuracy": 0.9958333333333332,
+    "logit_diff": 5.359114583333334,
+    "n": 400
+  },
+  "RANDOM_3": {
+    "seeds": {
+      "0": {
+        "accuracy": 0.73,
+        "logit_diff": 1.02625,
+        "n": 400,
+        "off_layers": [
+          12,
+          10,
+          9
+        ]
+      },
+      "1": {
+        "accuracy": 0.99,
+        "logit_diff": 5.7665625,
+        "n": 400,
+        "off_layers": [
+          5,
+          15,
+          6
+        ]
+      },
+      "2": {
+        "accuracy": 0.9325,
+        "logit_diff": 2.481875,
+        "n": 400,
+        "off_layers": [
+          8,
+          13,
+          1
+        ]
+      }
+    },
+    "accuracy": 0.8841666666666667,
+    "logit_diff": 3.0915625,
+    "n": 400
+  },
+  "RANDOM_8": {
+    "seeds": {
+      "0": {
+        "accuracy": 0.12,
+        "logit_diff": -2.579765625,
+        "n": 400,
+        "off_layers": [
+          12,
+          10,
+          9,
+          6,
+          11,
+          8,
+          13,
+          5
+        ]
+      },
+      "1": {
+        "accuracy": 0.385,
+        "logit_diff": -0.75390625,
+        "n": 400,
+        "off_layers": [
+          5,
+          15,
+          6,
+          4,
+          11,
+          2,
+          7,
+          12
+        ]
+      },
+      "2": {
+        "accuracy": 0.0,
+        "logit_diff": -6.62984375,
+        "n": 400,
+        "off_layers": [
+          8,
+          13,
+          1,
+          9,
+          6,
+          7,
+          0,
+          11
+        ]
+      }
+    },
+    "accuracy": 0.16833333333333333,
+    "logit_diff": -3.3211718749999997,
+    "n": 400
+  }
+}
