@@ -38,8 +38,16 @@ Compared two pipelines:
 
 ## 4. Experiment folders
 
-- `intersection_experiments_2/` — **CURRENT ACTIVE FOLDER**: attention heads + MLP blocks
-  pruning (nothing else). This is where the retrain with fixed code is running now.
+- `intersection_experiments_4/` — **CURRENT ACTIVE FOLDER**: heads + MLP blocks,
+  redo of exp_2 with NORMAL lambdas (combined λ=0.1, frozen λ=0.05, individual 600
+  λ=0.05 default). Launched 05:29 UTC Jul 29 in screens `exp4_screen_1..6`:
+  screen_1 = combined 5x`_1` 300ep λ=0.1 (output `all_300ep_l01`),
+  screens_2-6 = per-category 600ep λ=0.05 (output `{cat}_600`).
+  Phase 2 (frozen, λ=0.05, output `frozen_{cat}_300ep_l005`) still to launch when
+  combined finishes. Logs: `intersection_experiments_4/masks/nohup_*.log`.
+- `intersection_experiments_2/` — heads + MLP blocks run with 1.5x lambdas
+  (combined λ=0.15, frozen λ=0.075): OVER-PRUNED, all intersections failed.
+  Full write-up: `intersection_experiments_2/results/RESULTS_heads_mlp_run.md`.
 - `intersection_experiments_2_full/` — older full-granularity run (heads + MLP + neurons).
 - `intersection_experiments_3/` — dual-init (Ns/Dn) union method experiment
   (gates-init-open vs gates-init-closed, union of both masks = complete+faithful circuit).

@@ -1,0 +1,359 @@
+GT:
+
+📍 GLOBAL COMPONENTS:
+  - Embedding Gate: Active
+
+📍 LAYER-LEVEL PRUNING:
+  - Active Layers: 48/48 (100.0%)
+
+📍 DETAILED LAYER REPORT:
+Layer  | Status   | Attn Block  | MLP Block  | Attn Heads   | Attn Neurons    | MLP Hidden      | MLP Output     
+-----------------------------------------------------------------------------------------------------------------
+0      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 4372/6400       | 1598/1600      
+1      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2737/6400       | 1578/1600      
+2      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3306/6400       | 1557/1600      
+3      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3270/6400       | 1549/1600      
+4      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3111/6400       | 1538/1600      
+5      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3179/6400       | 1541/1600      
+6      | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+7      | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+8      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2770/6400       | 1518/1600      
+9      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2782/6400       | 1522/1600      
+10     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+11     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+12     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+13     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+14     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+15     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+16     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+17     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+18     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+19     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+20     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+21     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+22     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+23     | Active   | Active      | Pruned     | 25/25        | 1559/1600       | 0/6400          | 0/1600         
+24     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+25     | Active   | Active      | Pruned     | 25/25        | 1562/1600       | 0/6400          | 0/1600         
+26     | Active   | Active      | Pruned     | 25/25        | 1557/1600       | 0/6400          | 0/1600         
+27     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+28     | Active   | Active      | Pruned     | 25/25        | 1553/1600       | 0/6400          | 0/1600         
+29     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+30     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2774/6400       | 1557/1600      
+31     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2789/6400       | 1565/1600      
+32     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3003/6400       | 1554/1600      
+33     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3016/6400       | 1579/1600      
+34     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3030/6400       | 1555/1600      
+35     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3222/6400       | 1570/1600      
+36     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3287/6400       | 1567/1600      
+37     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3321/6400       | 1558/1600      
+38     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3349/6400       | 1571/1600      
+39     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3330/6400       | 1563/1600      
+40     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3069/6400       | 1549/1600      
+41     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3024/6400       | 1565/1600      
+42     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2952/6400       | 1554/1600      
+43     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2714/6400       | 1533/1600      
+44     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2446/6400       | 1519/1600      
+45     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2336/6400       | 1495/1600      
+46     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+47     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+
+================================================================================
+  PRUNING SUMMARY BY GRANULARITY
+================================================================================
+
+Embedding:
+  - Active: 1 / 1  (100.0%)
+  - Pruned: 0 (0.0%)
+
+Layer Level:
+  - Active: 48 / 48  (100.0%)
+  - Pruned: 0 (0.0%)
+
+Attention Blocks:
+  - Active: 4 / 48  (8.3%)
+  - Pruned: 44 (91.7%)
+
+Mlp Blocks:
+  - Active: 24 / 48  (50.0%)
+  - Pruned: 24 (50.0%)
+
+Attention Heads:
+  - Active: 100 / 1,200  (8.3%)
+  - Pruned: 1,100 (91.7%)
+
+Attention Neurons:
+  - Active: 6,231 / 76,800  (8.1%)
+  - Pruned: 70,569 (91.9%)
+
+Mlp Hidden:
+  - Active: 73,189 / 307,200  (23.8%)
+  - Pruned: 234,011 (76.2%)
+
+Mlp Output:
+  - Active: 37,255 / 76,800  (48.5%)
+  - Pruned: 39,545 (51.5%)
+
+🎯 PRUNABLE PARAMETER BOTTOM LINE:
+  - Circuit uses 270,873,212 out of 1,475,251,200 prunable parameters
+  - Prunable compression: 5.4x
+  - Prunable reduction: 81.6%
+================================================================================
+
+✅ Model remains in 'Final Circuit Mode' for evaluation.
+
+==================================================
+  EVALUATING: Final Pruned Circuit (Optimal Thresholds) (with Re-Normalization)
+==================================================
+                                                                                                                                                                                                           
+Processed 12256 valid samples.
+
+==================================================
+Final Pruned Circuit (Optimal Thresholds) Evaluation Summary (Re-Normalized):
+  - Faithfulness (Windowed KL Div): 0.0047
+  - Performance (Prob Diff):         0.4562
+  - Performance (Cutoff Sharpness):  0.0441
+  - Accuracy:                         0.9501
+==================================================
+Baseline Results: {'prob_diff': 0.4613979131141752, 'cutoff_sharpness': 0.054336438554986, 'kl_div': 0}
+
+GP:
+
+
+📍 DETAILED LAYER REPORT:
+Layer  | Status   | Attn Block  | MLP Block  | Attn Heads   | Attn Neurons    | MLP Hidden      | MLP Output     
+-----------------------------------------------------------------------------------------------------------------
+0      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 4058/6400       | 1358/1600      
+1      | Active   | Active      | Active     | 5/25         | 234/1600        | 1669/6400       | 708/1600       
+2      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 1460/6400       | 513/1600       
+3      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 1337/6400       | 404/1600       
+4      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 1341/6400       | 348/1600       
+5      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 1173/6400       | 264/1600       
+6      | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+7      | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+8      | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+9      | Active   | Active      | Pruned     | 1/25         | 48/1600         | 0/6400          | 0/1600         
+10     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+11     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+12     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+13     | Active   | Active      | Pruned     | 2/25         | 89/1600         | 0/6400          | 0/1600         
+14     | Active   | Active      | Pruned     | 4/25         | 178/1600        | 0/6400          | 0/1600         
+15     | Active   | Active      | Pruned     | 4/25         | 183/1600        | 0/6400          | 0/1600         
+16     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+17     | Active   | Active      | Pruned     | 3/25         | 144/1600        | 0/6400          | 0/1600         
+18     | Active   | Active      | Pruned     | 6/25         | 277/1600        | 0/6400          | 0/1600         
+19     | Active   | Active      | Pruned     | 6/25         | 263/1600        | 0/6400          | 0/1600         
+20     | Active   | Active      | Pruned     | 4/25         | 174/1600        | 0/6400          | 0/1600         
+21     | Active   | Active      | Pruned     | 4/25         | 182/1600        | 0/6400          | 0/1600         
+22     | Active   | Active      | Active     | 6/25         | 288/1600        | 818/6400        | 409/1600       
+23     | Active   | Active      | Pruned     | 3/25         | 131/1600        | 0/6400          | 0/1600         
+24     | Active   | Active      | Pruned     | 5/25         | 219/1600        | 0/6400          | 0/1600         
+25     | Active   | Active      | Pruned     | 4/25         | 180/1600        | 0/6400          | 0/1600         
+26     | Active   | Active      | Pruned     | 3/25         | 138/1600        | 0/6400          | 0/1600         
+27     | Active   | Active      | Pruned     | 1/25         | 35/1600         | 0/6400          | 0/1600         
+28     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+29     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+30     | Active   | Active      | Active     | 1/25         | 36/1600         | 827/6400        | 547/1600       
+31     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 775/6400        | 467/1600       
+32     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 698/6400        | 341/1600       
+33     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 627/6400        | 490/1600       
+34     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+35     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 684/6400        | 477/1600       
+36     | Active   | Active      | Active     | 1/25         | 29/1600         | 591/6400        | 530/1600       
+37     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 548/6400        | 322/1600       
+38     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 531/6400        | 410/1600       
+39     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 572/6400        | 552/1600       
+40     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 414/6400        | 434/1600       
+41     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 529/6400        | 357/1600       
+42     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 514/6400        | 302/1600       
+43     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 537/6400        | 468/1600       
+44     | Active   | Active      | Pruned     | 1/25         | 24/1600         | 0/6400          | 0/1600         
+45     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 510/6400        | 308/1600       
+46     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+47     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+
+================================================================================
+  PRUNING SUMMARY BY GRANULARITY
+================================================================================
+
+Embedding:
+  - Active: 1 / 1  (100.0%)
+  - Pruned: 0 (0.0%)
+
+Layer Level:
+  - Active: 48 / 48  (100.0%)
+  - Pruned: 0 (0.0%)
+
+Attention Blocks:
+  - Active: 19 / 48  (39.6%)
+  - Pruned: 29 (60.4%)
+
+Mlp Blocks:
+  - Active: 21 / 48  (43.8%)
+  - Pruned: 27 (56.2%)
+
+Attention Heads:
+  - Active: 64 / 1,200  (5.3%)
+  - Pruned: 1,136 (94.7%)
+
+Attention Neurons:
+  - Active: 2,852 / 76,800  (3.7%)
+  - Pruned: 73,948 (96.3%)
+
+Mlp Hidden:
+  - Active: 20,213 / 307,200  (6.6%)
+  - Pruned: 286,987 (93.4%)
+
+Mlp Output:
+  - Active: 10,009 / 76,800  (13.0%)
+  - Pruned: 66,791 (87.0%)
+
+🎯 PRUNABLE PARAMETER BOTTOM LINE:
+  - Circuit uses 63,396,327 out of 1,475,251,200 prunable parameters
+  - Prunable compression: 23.3x
+  - Prunable reduction: 95.7%
+================================================================================
+
+✅ Model remains in 'Final Circuit Mode' for evaluation.
+
+--- Final evaluation on test set ---
+
+==================================================
+  EVALUATING: Final Pruned Circuit (Optimal Thresholds)
+==================================================
+Acc: 0.980, LD: 4.594: : 247it [00:03, 71.13it/s]                                                                                                                                                                        
+
+Processed 247 valid samples.
+
+==================================================
+Final Pruned Circuit (Optimal Thresholds) Evaluation Summary:
+  - Accuracy:              0.9798
+  - Logit Difference:      4.5936
+  - KL Divergence:         0.2336
+  - Exact Match:           0.9312
+==================================================
+
+============================================================
+FINAL SUMMARY - Gender Pronouns Circuit Discovery
+============================================================
+Baseline Accuracy: 1.0000
+Baseline Logit Diff: 4.2842
+Final Circuit Accuracy: 0.9798 (drop: 0.0202)
+Final Circuit Logit Diff: 4.5936
+Final KL Divergence: 0.2336
+Exact Match Rate: 0.9312
+
+
+ioi:
+
+📍 DETAILED LAYER REPORT:
+Layer  | Status   | Attn Block  | MLP Block  | Attn Heads   | Attn Neurons    | MLP Hidden      | MLP Output     
+-----------------------------------------------------------------------------------------------------------------
+0      | Active   | Active      | Active     | 2/25         | 59/1600         | 5851/6400       | 1600/1600      
+1      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 3232/6400       | 1555/1600      
+2      | Active   | Active      | Active     | 6/25         | 254/1600        | 3051/6400       | 1461/1600      
+3      | Active   | Active      | Active     | 7/25         | 299/1600        | 2905/6400       | 1388/1600      
+4      | Active   | Active      | Active     | 7/25         | 318/1600        | 2789/6400       | 1198/1600      
+5      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2649/6400       | 1064/1600      
+6      | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+7      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2459/6400       | 867/1600       
+8      | Active   | Active      | Pruned     | 6/25         | 293/1600        | 0/6400          | 0/1600         
+9      | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2353/6400       | 760/1600       
+10     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+11     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+12     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+13     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+14     | Active   | Active      | Pruned     | 4/25         | 210/1600        | 0/6400          | 0/1600         
+15     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+16     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2326/6400       | 778/1600       
+17     | Active   | Active      | Pruned     | 9/25         | 359/1600        | 0/6400          | 0/1600         
+18     | Active   | Active      | Active     | 10/25        | 404/1600        | 2341/6400       | 871/1600       
+19     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2520/6400       | 985/1600       
+20     | Active   | Active      | Active     | 6/25         | 231/1600        | 2542/6400       | 1055/1600      
+21     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2574/6400       | 1045/1600      
+22     | Active   | Active      | Active     | 8/25         | 324/1600        | 2377/6400       | 959/1600       
+23     | Active   | Active      | Active     | 8/25         | 318/1600        | 2473/6400       | 967/1600       
+24     | Active   | Active      | Active     | 7/25         | 265/1600        | 2403/6400       | 922/1600       
+25     | Active   | Active      | Active     | 11/25        | 439/1600        | 2527/6400       | 957/1600       
+26     | Active   | Active      | Active     | 10/25        | 376/1600        | 2383/6400       | 908/1600       
+27     | Active   | Active      | Pruned     | 8/25         | 292/1600        | 0/6400          | 0/1600         
+28     | Active   | Active      | Active     | 10/25        | 372/1600        | 2347/6400       | 844/1600       
+29     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+30     | Active   | Active      | Active     | 9/25         | 334/1600        | 2083/6400       | 743/1600       
+31     | Active   | Active      | Active     | 10/25        | 422/1600        | 2063/6400       | 768/1600       
+32     | Active   | Active      | Pruned     | 10/25        | 376/1600        | 0/6400          | 0/1600         
+33     | Active   | Active      | Pruned     | 14/25        | 527/1600        | 0/6400          | 0/1600         
+34     | Active   | Pruned      | Pruned     | 0/25         | 0/1600          | 0/6400          | 0/1600         
+35     | Active   | Active      | Active     | 10/25        | 363/1600        | 1889/6400       | 783/1600       
+36     | Active   | Active      | Active     | 10/25        | 384/1600        | 1976/6400       | 804/1600       
+37     | Active   | Active      | Active     | 9/25         | 316/1600        | 1963/6400       | 812/1600       
+38     | Active   | Active      | Active     | 13/25        | 483/1600        | 1878/6400       | 779/1600       
+39     | Active   | Active      | Active     | 15/25        | 576/1600        | 1903/6400       | 765/1600       
+40     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2019/6400       | 785/1600       
+41     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2020/6400       | 778/1600       
+42     | Active   | Active      | Active     | 12/25        | 423/1600        | 2157/6400       | 809/1600       
+43     | Active   | Active      | Active     | 10/25        | 334/1600        | 2104/6400       | 802/1600       
+44     | Active   | Active      | Active     | 10/25        | 340/1600        | 2238/6400       | 833/1600       
+45     | Active   | Active      | Active     | 9/25         | 290/1600        | 2331/6400       | 806/1600       
+46     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2429/6400       | 846/1600       
+47     | Active   | Pruned      | Active     | 0/25         | 0/1600          | 2551/6400       | 886/1600       
+
+================================================================================
+  PRUNING SUMMARY BY GRANULARITY
+================================================================================
+
+Embedding:
+  - Active: 1 / 1  (100.0%)
+  - Pruned: 0 (0.0%)
+
+Layer Level:
+  - Active: 48 / 48  (100.0%)
+  - Pruned: 0 (0.0%)
+
+Attention Blocks:
+  - Active: 29 / 48  (60.4%)
+  - Pruned: 19 (39.6%)
+
+Mlp Blocks:
+  - Active: 34 / 48  (70.8%)
+  - Pruned: 14 (29.2%)
+
+Attention Heads:
+  - Active: 260 / 1,200  (21.7%)
+  - Pruned: 940 (78.3%)
+
+Attention Neurons:
+  - Active: 9,981 / 76,800  (13.0%)
+  - Pruned: 66,819 (87.0%)
+
+Mlp Hidden:
+  - Active: 83,706 / 307,200  (27.2%)
+  - Pruned: 223,494 (72.8%)
+
+Mlp Output:
+  - Active: 32,183 / 76,800  (41.9%)
+  - Pruned: 44,617 (58.1%)
+
+🎯 PRUNABLE PARAMETER BOTTOM LINE:
+  - Circuit uses 281,468,797 out of 1,475,251,200 prunable parameters
+  - Prunable compression: 5.2x
+  - Prunable reduction: 80.9%
+================================================================================
+
+✅ Model remains in 'Final Circuit Mode' for evaluation.
+
+--- Final evaluation on test set ---
+
+==================================================
+  EVALUATING: Final Pruned Circuit
+==================================================
+                                                                                                                                                                   
+Processed 968 valid samples.
+
+==================================================
+Final Pruned Circuit Evaluation Summary:
+  - Accuracy:              0.9752
+  - Logit Difference:      4.2321
+  - Faithfulness (KL Div): 0.5568
+  - Exact Match Rate:      0.4545
+==================================================
