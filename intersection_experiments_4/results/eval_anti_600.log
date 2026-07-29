@@ -1,0 +1,86 @@
+Loading mask from intersection_experiments_4/masks/anti_intersection_600.pt...
+Mask contains mlp_block_gate entries -> enabling MLP block pruning.
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3482.39it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3777.37it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from intersection_experiments_4/masks/anti_intersection_600.pt
+Active Heads in mask: 477/512
+
+--- EVALUATING FRUITS_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 3.2103
+fruits_2 (trained) | Base P/G: 0.9980/0.9960 | Circ P/G: 0.0480/0.0100 | KL: 3.2103
+
+--- EVALUATING ANIMALS_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 0.5623
+animals_2 (trained) | Base P/G: 1.0000/0.9940 | Circ P/G: 0.0480/0.0380 | KL: 0.5623
+
+--- EVALUATING COLORS_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 2.6853
+colors_2 (trained) | Base P/G: 0.9960/0.9960 | Circ P/G: 0.0700/0.0620 | KL: 2.6853
+
+--- EVALUATING METALS_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 1.7445
+metals_2 (trained) | Base P/G: 0.9840/0.9760 | Circ P/G: 0.0660/0.0400 | KL: 1.7445
+
+--- EVALUATING VEHICLES_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 0.6328
+vehicles_2 (trained) | Base P/G: 0.9960/0.9900 | Circ P/G: 0.0460/0.0160 | KL: 0.6328
+
+--- EVALUATING CLOTHING_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 0.4241
+clothing_2 (heldout) | Base P/G: 0.9980/0.9980 | Circ P/G: 0.0400/0.0180 | KL: 0.4241
+
+--- EVALUATING FURNITURE_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 1.4010
+furniture_2 (heldout) | Base P/G: 0.9120/0.9160 | Circ P/G: 0.0380/0.0100 | KL: 1.4010
+
+--- EVALUATING INSTRUMENTS_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 5.3460
+instruments_2 (heldout) | Base P/G: 0.9800/0.9360 | Circ P/G: 0.0560/0.0020 | KL: 5.3460
+
+--- EVALUATING PROFESSIONS_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 1.8238
+professions_2 (heldout) | Base P/G: 0.9980/0.9940 | Circ P/G: 0.0520/0.0020 | KL: 1.8238
+
+--- EVALUATING SPORTS_2 ---
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Evaluated KL Divergence: 3.0664
+sports_2 (heldout) | Base P/G: 0.9920/0.9240 | Circ P/G: 0.0440/0.0140 | KL: 3.0664
+
+All results written to intersection_experiments_4/results/eval_anti_600.csv
