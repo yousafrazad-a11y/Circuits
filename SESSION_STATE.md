@@ -34,14 +34,14 @@ the shared category-agnostic core; anti-masks (NOT circuit) test necessity.
 
 ## 4. Experiment folders and status
 
-- `intersection_experiments_4/` — **MAIN RESULTS, COMPLETE.** Heads + MLP-block gating,
+- `exp4_heads_mlp_main/` — **MAIN RESULTS, COMPLETE.** Heads + MLP-block gating,
   normal lambdas (combined λ=0.10, frozen λ=0.05, 600ep λ=0.05).
-  Full write-up with every number: `intersection_experiments_4/results/RESULTS_heads_mlp_normal_lambda.md` (sections 1-10).
-- `intersection_experiments_2/` — same setup with 1.5x lambdas: OVER-PRUNED, failed.
-  Write-up: `intersection_experiments_2/results/RESULTS_heads_mlp_run.md`.
-- `intersection_experiments_2_full/` — older full-granularity run (heads+MLP+neurons).
-- `intersection_experiments_3/` — dual-init (Ns/Dn) union method (gates init open vs closed).
-- `intersection_experiments/` — oldest heads-only experiments; `intersection_report.md` at root.
+  Full write-up with every number: `exp4_heads_mlp_main/results/RESULTS_heads_mlp_normal_lambda.md` (sections 1-10).
+- `exp2_heads_mlp_overpruned/` — same setup with 1.5x lambdas: OVER-PRUNED, failed.
+  Write-up: `exp2_heads_mlp_overpruned/results/RESULTS_heads_mlp_run.md`.
+- `exp2full_heads_mlp_neurons/` — older full-granularity run (heads+MLP+neurons).
+- `exp3_dual_init_union/` — dual-init (Ns/Dn) union method (gates init open vs closed).
+- `exp1_heads_only_original/` — oldest heads-only experiments; `intersection_report.md` at root.
 
 ## 5. MAIN FINDINGS (exp_4, all numbers in the results doc)
 

@@ -63,7 +63,7 @@ def generate_batch(model, batch, tokenizer, n_tokens, device, use_corrupted):
 def main():
     parser = argparse.ArgumentParser(description="Sample N examples per category, generate with disjoint-part masks, save for inspection.")
     parser.add_argument("--exp_dir", type=str, required=True,
-                        help="Experiment folder, e.g. intersection_experiments_2 or intersection_experiments_2_full")
+                        help="Experiment folder, e.g. exp2_heads_mlp_overpruned or exp2full_heads_mlp_neurons")
     parser.add_argument("--mask_dir", type=str, default=None,
                         help="Directory containing the *_minus_intersection.pt masks (default: <exp_dir>/masks/disjoint)")
     parser.add_argument("--n", type=int, default=10, help="Number of random examples per dataset.")

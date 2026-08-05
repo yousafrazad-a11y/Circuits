@@ -1,0 +1,64 @@
+=== fruits_full ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3443.60it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3606.05it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from exp4_heads_mlp_main/masks/frozen_fruits_300ep_l005_mask.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  done fruits_2
+  done animals_2
+  done colors_2
+  done metals_2
+  done vehicles_2
+  done clothing_2
+  done sports_2
+=== fruits_heads_only ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3362.00it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3349.02it/s]
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from exp4_heads_mlp_main/masks/fruits_heads_only.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  done fruits_2
+  done animals_2
+  done colors_2
+  done metals_2
+  done vehicles_2
+  done clothing_2
+  done sports_2
+=== fruits_mlp_only ===
+Initializing Prunable Llama...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3446.89it/s]
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3361.82it/s]
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+Masks loaded from exp4_heads_mlp_main/masks/fruits_mlp_only.pt
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+  done fruits_2
+  done animals_2
+  done colors_2
+  done metals_2
+  done vehicles_2
+  done clothing_2
+  done sports_2
+
+Saved to exp4_heads_mlp_main/results/decomposed_generation.txt

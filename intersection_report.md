@@ -267,4 +267,4 @@ Motivation: if pairwise intersections are very similar to each other, the inters
 - Per-category **delta analysis** on the nested frozen masks (which heads/dims each category keeps beyond the shared core).
 - Save/report via PDF (this file is self-contained for conversion).
 
-*Data sources: `intersection_experiments_2/results/*.csv`, `intersection_experiments_2_full/results/*.csv` (all evaluated on held-out `_1` datasets). Mask files in respective `masks/` dirs.*
+*Data sources: `exp2_heads_mlp_overpruned/results/*.csv`, `exp2full_heads_mlp_neurons/results/*.csv` (all evaluated on held-out `_1` datasets). Mask files in respective `masks/` dirs.*

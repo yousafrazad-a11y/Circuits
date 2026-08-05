@@ -1,0 +1,11 @@
+mask_path,dataset,split,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,fruits_2,trained,0.9980,0.9960,0.6320,0.5780,0.9623,95,512
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,animals_2,trained,1.0000,0.9940,0.8580,0.8020,0.1217,95,512
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,colors_2,trained,0.9960,0.9960,0.6420,0.6000,0.8002,95,512
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,metals_2,trained,0.9840,0.9760,0.6300,0.6200,0.5342,95,512
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,vehicles_2,trained,0.9960,0.9900,0.6520,0.5860,0.1825,95,512
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,clothing_2,heldout,0.9980,0.9980,0.6340,0.6020,0.1644,95,512
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,furniture_2,heldout,0.9120,0.9160,0.4020,0.3800,0.5790,95,512
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,instruments_2,heldout,0.9800,0.9360,0.4740,0.2240,1.6269,95,512
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,professions_2,heldout,0.9980,0.9940,0.5300,0.3460,0.6490,95,512
+exp4_heads_mlp_main/masks/all_300ep_l01_mask.pt,sports_2,heldout,0.9920,0.9240,0.5000,0.4200,1.1826,95,512

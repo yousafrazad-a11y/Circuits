@@ -1,0 +1,11 @@
+mask_path,dataset,split,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+exp4_heads_mlp_main/masks/intersection_600.pt,fruits_2,trained,0.9980,0.9960,0.0740,0.0300,3.1126,35,512
+exp4_heads_mlp_main/masks/intersection_600.pt,animals_2,trained,1.0000,0.9940,0.1180,0.1020,0.4180,35,512
+exp4_heads_mlp_main/masks/intersection_600.pt,colors_2,trained,0.9960,0.9960,0.0960,0.0640,2.5040,35,512
+exp4_heads_mlp_main/masks/intersection_600.pt,metals_2,trained,0.9840,0.9760,0.1080,0.0840,1.6045,35,512
+exp4_heads_mlp_main/masks/intersection_600.pt,vehicles_2,trained,0.9960,0.9900,0.0420,0.0160,0.5600,35,512
+exp4_heads_mlp_main/masks/intersection_600.pt,clothing_2,heldout,0.9980,0.9980,0.0640,0.0260,0.3925,35,512
+exp4_heads_mlp_main/masks/intersection_600.pt,furniture_2,heldout,0.9120,0.9160,0.0340,0.0160,1.3307,35,512
+exp4_heads_mlp_main/masks/intersection_600.pt,instruments_2,heldout,0.9800,0.9360,0.0760,0.0040,5.1203,35,512
+exp4_heads_mlp_main/masks/intersection_600.pt,professions_2,heldout,0.9980,0.9940,0.0520,0.0120,1.6979,35,512
+exp4_heads_mlp_main/masks/intersection_600.pt,sports_2,heldout,0.9920,0.9240,0.0740,0.0300,2.8805,35,512

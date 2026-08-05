@@ -1,96 +1,0 @@
-=== intersection_frozen_300_300 ===
-Initializing Prunable Llama...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3489.58it/s]
-Llama model successfully adapted for pruning with block-level gates.
-Initializing Baseline Llama (for KL divergence)...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3962.47it/s]
-[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
-[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-Masks loaded from intersection_experiments_2/masks/intersection_frozen_300_300.pt
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-  done fruits_2
-  done animals_2
-  done colors_2
-  done metals_2
-  done vehicles_2
-  done clothing_2
-  done furniture_2
-  done instruments_2
-  done professions_2
-  done sports_2
-=== intersection_600 ===
-Initializing Prunable Llama...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3280.91it/s]
-Llama model successfully adapted for pruning with block-level gates.
-Initializing Baseline Llama (for KL divergence)...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3404.18it/s]
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-Masks loaded from intersection_experiments_2/masks/intersection_600.pt
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-  done fruits_2
-  done animals_2
-  done colors_2
-  done metals_2
-  done vehicles_2
-  done clothing_2
-  done furniture_2
-  done instruments_2
-  done professions_2
-  done sports_2
-=== anti_intersection_frozen_300_300 ===
-Initializing Prunable Llama...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4457.45it/s]
-Llama model successfully adapted for pruning with block-level gates.
-Initializing Baseline Llama (for KL divergence)...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4091.59it/s]
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-Masks loaded from intersection_experiments_2/masks/anti_intersection_frozen_300_300.pt
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-  done fruits_2
-  done animals_2
-  done colors_2
-  done metals_2
-  done vehicles_2
-  done clothing_2
-  done furniture_2
-  done instruments_2
-  done professions_2
-  done sports_2
-=== anti_intersection_600 ===
-Initializing Prunable Llama...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3423.42it/s]
-Llama model successfully adapted for pruning with block-level gates.
-Initializing Baseline Llama (for KL divergence)...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3468.96it/s]
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-Masks loaded from intersection_experiments_2/masks/anti_intersection_600.pt
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-  done fruits_2
-  done animals_2
-  done colors_2
-  done metals_2
-  done vehicles_2
-  done clothing_2
-  done furniture_2
-  done instruments_2
-  done professions_2
-  done sports_2
-
-Saved to intersection_experiments_2/results/generation_probes.txt

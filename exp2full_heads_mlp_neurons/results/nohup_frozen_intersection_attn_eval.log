@@ -1,0 +1,140 @@
+=== fruits ===
+Loading mask from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt...
+Initializing Prunable Llama...
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Masks loaded from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt
+Active Heads in mask: 52/512
+
+--- EVALUATING FRUITS ---
+Evaluating Base Model...
+Evaluating Circuit Model...
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Evaluating KL Divergence...
+Evaluated KL Divergence: 1.0560
+
+Results for fruits:
+Base Prob: 0.9980 | Base Gen: 0.9960
+Circ Prob: 0.0840 | Circ Gen: 0.0100
+KL Div: 1.0560
+
+Results appended to exp2full_heads_mlp_neurons/results/frozen_intersection_attn_eval.csv
+=== animals ===
+Loading mask from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt...
+Initializing Prunable Llama...
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Masks loaded from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt
+Active Heads in mask: 52/512
+
+--- EVALUATING ANIMALS ---
+Evaluating Base Model...
+Evaluating Circuit Model...
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Evaluating KL Divergence...
+Evaluated KL Divergence: 0.3848
+
+Results for animals:
+Base Prob: 1.0000 | Base Gen: 0.9940
+Circ Prob: 0.1740 | Circ Gen: 0.0540
+KL Div: 0.3848
+
+Results appended to exp2full_heads_mlp_neurons/results/frozen_intersection_attn_eval.csv
+=== colors ===
+Loading mask from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt...
+Initializing Prunable Llama...
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Masks loaded from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt
+Active Heads in mask: 52/512
+
+--- EVALUATING COLORS ---
+Evaluating Base Model...
+Evaluating Circuit Model...
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Evaluating KL Divergence...
+Evaluated KL Divergence: 0.8444
+
+Results for colors:
+Base Prob: 1.0000 | Base Gen: 1.0000
+Circ Prob: 0.1000 | Circ Gen: 0.0620
+KL Div: 0.8444
+
+Results appended to exp2full_heads_mlp_neurons/results/frozen_intersection_attn_eval.csv
+=== metals ===
+Loading mask from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt...
+Initializing Prunable Llama...
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Masks loaded from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt
+Active Heads in mask: 52/512
+
+--- EVALUATING METALS ---
+Evaluating Base Model...
+Evaluating Circuit Model...
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Evaluating KL Divergence...
+Evaluated KL Divergence: 0.6800
+
+Results for metals:
+Base Prob: 0.9840 | Base Gen: 0.9780
+Circ Prob: 0.1320 | Circ Gen: 0.0620
+KL Div: 0.6800
+
+Results appended to exp2full_heads_mlp_neurons/results/frozen_intersection_attn_eval.csv
+=== vehicles ===
+Loading mask from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt...
+Initializing Prunable Llama...
+Llama model successfully adapted for pruning with block-level gates.
+Initializing Baseline Llama (for KL divergence)...
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Masks loaded from exp2full_heads_mlp_neurons/masks/frozen_intersection_attn_mask.pt
+Active Heads in mask: 52/512
+
+--- EVALUATING VEHICLES ---
+Evaluating Base Model...
+Evaluating Circuit Model...
+
+--- Setting final circuit mode to: True ---
+    Updated 64 HardConcreteGate modules.
+Evaluating KL Divergence...
+Evaluated KL Divergence: 0.3957
+
+Results for vehicles:
+Base Prob: 0.9940 | Base Gen: 0.9900
+Circ Prob: 0.1020 | Circ Gen: 0.0200
+KL Div: 0.3957
+
+Results appended to exp2full_heads_mlp_neurons/results/frozen_intersection_attn_eval.csv

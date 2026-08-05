@@ -1,0 +1,6 @@
+mask_path,dataset,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+exp2full_heads_mlp_neurons/masks/anti_frozen_intersection_mask.pt,fruits_1,0.9980,0.9980,0.0520,0.0120,3.3954,460,512
+exp2full_heads_mlp_neurons/masks/anti_frozen_intersection_mask.pt,animals_1,1.0000,0.9980,0.0600,0.0340,0.5416,460,512
+exp2full_heads_mlp_neurons/masks/anti_frozen_intersection_mask.pt,colors_1,0.9980,1.0000,0.0540,0.0440,3.0134,460,512
+exp2full_heads_mlp_neurons/masks/anti_frozen_intersection_mask.pt,metals_1,0.9940,0.9900,0.0540,0.0360,2.0525,460,512
+exp2full_heads_mlp_neurons/masks/anti_frozen_intersection_mask.pt,vehicles_1,0.9940,0.9780,0.0640,0.0360,0.5808,460,512

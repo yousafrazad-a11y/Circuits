@@ -1,6 +1,0 @@
-mask_path,dataset,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
-intersection_experiments_2_full/masks/frozen_intersection_hm_mask.pt,fruits_1,0.9980,0.9980,0.0260,0.0080,3.4726,52,512
-intersection_experiments_2_full/masks/frozen_intersection_hm_mask.pt,animals_1,1.0000,0.9980,0.0560,0.0540,0.5270,52,512
-intersection_experiments_2_full/masks/frozen_intersection_hm_mask.pt,colors_1,0.9980,1.0000,0.0360,0.0360,3.0047,52,512
-intersection_experiments_2_full/masks/frozen_intersection_hm_mask.pt,metals_1,0.9940,0.9900,0.0300,0.0160,2.1261,52,512
-intersection_experiments_2_full/masks/frozen_intersection_hm_mask.pt,vehicles_1,0.9940,0.9780,0.0340,0.0320,0.6385,52,512

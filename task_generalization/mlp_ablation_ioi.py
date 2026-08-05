@@ -38,7 +38,7 @@ from dataset.ioi_llama import (
 )
 
 MODEL_NAME = "meta-llama/Llama-3.2-1B"
-MASK_PATH = "/home/exouser/pruning/intersection_experiments_4/masks/frozen_fruits_300ep_l005_mask.pt"
+MASK_PATH = "/home/exouser/pruning/exp4_heads_mlp_main/masks/frozen_fruits_300ep_l005_mask.pt"
 OUT_PATH = "/home/exouser/pruning/task_generalization/results_ioi_mlp_ablation.json"
 
 NUM_GENERATE = 900        # candidates before correctness filtering

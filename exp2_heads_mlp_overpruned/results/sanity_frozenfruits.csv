@@ -1,0 +1,2 @@
+mask_path,dataset,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+exp2_heads_mlp_overpruned/masks/frozen_fruits_300ep_l0075_mask.pt,fruits_2,0.9980,0.9960,0.5040,0.3540,1.0088,83,512

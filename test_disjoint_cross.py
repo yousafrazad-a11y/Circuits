@@ -13,7 +13,7 @@ ALL_CATS = BASE_CATS + ["instruments", "sports", "professions", "clothing", "fur
 
 def main():
     parser = argparse.ArgumentParser(description="Test each category's disjoint (anti-intersection) mask on a random OTHER dataset.")
-    parser.add_argument("--exp_dir", type=str, default="intersection_experiments_2")
+    parser.add_argument("--exp_dir", type=str, default="exp2_heads_mlp_overpruned")
     parser.add_argument("--split", type=str, default="2", help="Dataset version to sample test examples from.")
     parser.add_argument("--n", type=int, default=10, help="Examples per test.")
     parser.add_argument("--gen_tokens", type=int, default=6)

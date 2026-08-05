@@ -111,11 +111,11 @@ Epoch 100/100 | Loss: 3.265 | KL: 0.307 | Task: 0.556 | Sparsity: 2.248
 PHASE 3: 5-WAY GLOBAL INTERSECTION
 ============================================================
 The 5-Way Universal Circuit contains 45 active components.
-Saved animals specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
-Saved colors specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
-Saved fruits specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
-Saved metals specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
-Saved vehicles specific circuit to /home/exouser/pruning/intersection_experiments/results_5way
-Saved global 5-way circuit to /home/exouser/pruning/intersection_experiments/results_5way/5WAY_GLOBAL_CIRCUIT.pt
+Saved animals specific circuit to /home/exouser/pruning/exp1_heads_only_original/results_5way
+Saved colors specific circuit to /home/exouser/pruning/exp1_heads_only_original/results_5way
+Saved fruits specific circuit to /home/exouser/pruning/exp1_heads_only_original/results_5way
+Saved metals specific circuit to /home/exouser/pruning/exp1_heads_only_original/results_5way
+Saved vehicles specific circuit to /home/exouser/pruning/exp1_heads_only_original/results_5way
+Saved global 5-way circuit to /home/exouser/pruning/exp1_heads_only_original/results_5way/5WAY_GLOBAL_CIRCUIT.pt
 
 All 5-way processing completed perfectly.

@@ -1,40 +1,0 @@
-=== heads_intersection (47) ===
-Initializing Prunable Llama...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3852.58it/s]
-Llama model successfully adapted for pruning with block-level gates.
-Initializing Baseline Llama (for KL divergence)...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3638.66it/s]
-[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
-[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-Masks loaded from intersection_experiments_4/masks/intersection_frozen_heads_only.pt
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-  fruits_2: {'correct': 5, 'in_category': 5, 'off_category': 9, 'empty': 1}
-  animals_2: {'correct': 6, 'in_category': 7, 'off_category': 6, 'empty': 1}
-  colors_2: {'correct': 5, 'in_category': 7, 'off_category': 5, 'empty': 3}
-  metals_2: {'correct': 4, 'in_category': 7, 'off_category': 8, 'empty': 1}
-  vehicles_2: {'correct': 12, 'in_category': 1, 'off_category': 7, 'empty': 0}
-=== fruits_heads_only (94) ===
-Initializing Prunable Llama...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3530.01it/s]
-Llama model successfully adapted for pruning with block-level gates.
-Initializing Baseline Llama (for KL divergence)...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3691.10it/s]
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-Masks loaded from intersection_experiments_4/masks/fruits_heads_only.pt
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-  fruits_2: {'correct': 15, 'in_category': 5, 'off_category': 0, 'empty': 0}
-  animals_2: {'correct': 16, 'in_category': 2, 'off_category': 2, 'empty': 0}
-  colors_2: {'correct': 16, 'in_category': 3, 'off_category': 0, 'empty': 1}
-  metals_2: {'correct': 14, 'in_category': 5, 'off_category': 1, 'empty': 0}
-  vehicles_2: {'correct': 15, 'in_category': 4, 'off_category': 1, 'empty': 0}
-
-Saved to intersection_experiments_4/results/error_analysis.txt

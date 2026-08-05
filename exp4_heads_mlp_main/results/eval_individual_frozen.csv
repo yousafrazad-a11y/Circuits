@@ -1,0 +1,6 @@
+mask_path,dataset,base_prob_acc,base_gen_acc,circ_prob_acc,circ_gen_acc,kl_divergence,active_heads,total_heads
+exp4_heads_mlp_main/masks/frozen_fruits_300ep_l005_mask.pt,fruits_2,0.9980,0.9960,0.5780,0.5260,0.9621,94,512
+exp4_heads_mlp_main/masks/frozen_animals_300ep_l005_mask.pt,animals_2,1.0000,0.9940,0.5520,0.5400,0.2864,52,512
+exp4_heads_mlp_main/masks/frozen_colors_300ep_l005_mask.pt,colors_2,0.9960,0.9960,0.6580,0.6120,0.7979,92,512
+exp4_heads_mlp_main/masks/frozen_metals_300ep_l005_mask.pt,metals_2,0.9840,0.9760,0.6300,0.6200,0.5343,94,512
+exp4_heads_mlp_main/masks/frozen_vehicles_300ep_l005_mask.pt,vehicles_2,0.9960,0.9900,0.5700,0.3240,0.2544,62,512

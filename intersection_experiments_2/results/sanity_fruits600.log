@@ -1,30 +1,0 @@
-Loading mask from intersection_experiments_2/masks/fruits_600_mask.pt...
-Mask contains mlp_block_gate entries -> enabling MLP block pruning.
-Initializing Prunable Llama...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3453.83it/s]
-Llama model successfully adapted for pruning with block-level gates.
-Initializing Baseline Llama (for KL divergence)...
-Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3260.09it/s]
-[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
-[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-Masks loaded from intersection_experiments_2/masks/fruits_600_mask.pt
-Active Heads in mask: 147/512
-
---- EVALUATING FRUITS_2 ---
-Evaluating Base Model...
-Evaluating Circuit Model...
-
---- Setting final circuit mode to: True ---
-    Updated 32 HardConcreteGate modules.
-Evaluating KL Divergence...
-Evaluated KL Divergence: 0.6859
-
-Results for fruits_2:
-Base Prob: 0.9980 | Base Gen: 0.9960
-Circ Prob: 0.8880 | Circ Gen: 0.8520
-KL Div: 0.6859
-
-Results appended to intersection_experiments_2/results/sanity_fruits600.csv

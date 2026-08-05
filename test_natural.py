@@ -45,7 +45,7 @@ def generate_batch(model, batch, tokenizer, n_tokens, device, use_corrupted):
 
 def main():
     parser = argparse.ArgumentParser(description="Generate continuations for natural-language tracking prompts with full model + circuit masks.")
-    parser.add_argument("--exp_dir", type=str, default="intersection_experiments_3")
+    parser.add_argument("--exp_dir", type=str, default="exp3_dual_init_union")
     parser.add_argument("--data", type=str, default=None, help="JSONL with prompt/corr_prompt/target fields (default: <exp_dir>/natural_tracking_test.jsonl)")
     parser.add_argument("--masks", type=str, nargs='+', default=["union_ns_dn_fruits_300", "anti_union_ns_dn_fruits_300"],
                         help="Mask base names in <exp_dir>/masks/ to evaluate alongside the full model.")
