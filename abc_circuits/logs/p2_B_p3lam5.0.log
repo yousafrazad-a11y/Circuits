@@ -1,0 +1,72 @@
+device: cuda | suffix: '_p3lam5.0'
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4211.18it/s]
+
+########## PHASE 2: finetune on B (lambda=5.0) ##########
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3754.10it/s]
+Llama model successfully adapted for pruning with block-level gates.
+  finetune start: 22 gates open (trainable), 490 locked off <- masks_abc/combined_lam3_checkpoint.pt
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[B_p3lam5.0] epoch 1/50 | KL 0.2602 | hinge 0.4420 | sparse 0.2691 | active 22
+[B_p3lam5.0] epoch 2/50 | KL 0.2525 | hinge 0.5114 | sparse 0.8235 | active 22
+[B_p3lam5.0] epoch 3/50 | KL 0.2574 | hinge 0.4666 | sparse 1.3792 | active 22
+[B_p3lam5.0] epoch 4/50 | KL 0.2623 | hinge 0.4423 | sparse 1.9340 | active 22
+[B_p3lam5.0] epoch 5/50 | KL 0.2578 | hinge 0.4702 | sparse 2.4864 | active 22
+[B_p3lam5.0] epoch 6/50 | KL 0.2584 | hinge 0.4618 | sparse 3.0052 | active 21
+[B_p3lam5.0] epoch 7/50 | KL 0.2561 | hinge 0.4644 | sparse 3.3130 | active 21
+[B_p3lam5.0] epoch 8/50 | KL 0.2495 | hinge 0.4885 | sparse 3.3169 | active 21
+[B_p3lam5.0] epoch 9/50 | KL 0.2499 | hinge 0.4711 | sparse 3.3143 | active 21
+[B_p3lam5.0] epoch 10/50 | KL 0.2484 | hinge 0.5013 | sparse 3.3007 | active 20
+[B_p3lam5.0] epoch 11/50 | KL 0.2479 | hinge 0.5021 | sparse 3.2023 | active 20
+[B_p3lam5.0] epoch 12/50 | KL 0.2452 | hinge 0.5200 | sparse 3.1629 | active 20
+[B_p3lam5.0] epoch 13/50 | KL 0.2517 | hinge 0.4836 | sparse 3.1596 | active 20
+[B_p3lam5.0] epoch 14/50 | KL 0.2449 | hinge 0.5234 | sparse 3.1535 | active 20
+[B_p3lam5.0] epoch 15/50 | KL 0.2502 | hinge 0.4852 | sparse 3.0631 | active 19
+[B_p3lam5.0] epoch 16/50 | KL 0.2439 | hinge 0.5344 | sparse 3.0050 | active 19
+[B_p3lam5.0] epoch 17/50 | KL 0.2436 | hinge 0.5021 | sparse 3.0012 | active 19
+[B_p3lam5.0] epoch 18/50 | KL 0.2418 | hinge 0.5184 | sparse 2.9960 | active 19
+[B_p3lam5.0] epoch 19/50 | KL 0.2309 | hinge 0.5816 | sparse 2.9449 | active 18
+[B_p3lam5.0] epoch 20/50 | KL 0.2336 | hinge 0.5627 | sparse 2.8552 | active 18
+[B_p3lam5.0] epoch 21/50 | KL 0.2320 | hinge 0.5931 | sparse 2.8503 | active 18
+[B_p3lam5.0] epoch 22/50 | KL 0.2393 | hinge 0.5317 | sparse 2.8498 | active 18
+[B_p3lam5.0] epoch 23/50 | KL 0.2302 | hinge 0.6008 | sparse 2.8460 | active 18
+[B_p3lam5.0] epoch 24/50 | KL 0.2330 | hinge 0.5635 | sparse 2.8326 | active 17
+[B_p3lam5.0] epoch 25/50 | KL 0.2295 | hinge 0.6006 | sparse 2.7431 | active 17
+[B_p3lam5.0] epoch 26/50 | KL 0.2299 | hinge 0.5762 | sparse 2.7009 | active 17
+[B_p3lam5.0] epoch 27/50 | KL 0.2265 | hinge 0.6272 | sparse 2.6989 | active 17
+[B_p3lam5.0] epoch 28/50 | KL 0.2273 | hinge 0.5982 | sparse 2.6983 | active 17
+[B_p3lam5.0] epoch 29/50 | KL 0.2318 | hinge 0.5740 | sparse 2.6984 | active 17
+[B_p3lam5.0] epoch 30/50 | KL 0.2236 | hinge 0.6362 | sparse 2.6980 | active 17
+[B_p3lam5.0] epoch 31/50 | KL 0.2271 | hinge 0.5867 | sparse 2.6976 | active 17
+[B_p3lam5.0] epoch 32/50 | KL 0.2355 | hinge 0.5783 | sparse 2.6979 | active 17
+[B_p3lam5.0] epoch 33/50 | KL 0.2278 | hinge 0.5922 | sparse 2.6981 | active 17
+[B_p3lam5.0] epoch 34/50 | KL 0.2299 | hinge 0.5997 | sparse 2.6979 | active 17
+[B_p3lam5.0] epoch 35/50 | KL 0.2303 | hinge 0.5863 | sparse 2.6978 | active 17
+[B_p3lam5.0] epoch 36/50 | KL 0.2273 | hinge 0.6145 | sparse 2.6978 | active 17
+[B_p3lam5.0] epoch 37/50 | KL 0.2290 | hinge 0.5970 | sparse 2.6975 | active 17
+[B_p3lam5.0] epoch 38/50 | KL 0.2275 | hinge 0.5829 | sparse 2.6979 | active 17
+[B_p3lam5.0] epoch 39/50 | KL 0.2294 | hinge 0.5766 | sparse 2.6979 | active 17
+[B_p3lam5.0] epoch 40/50 | KL 0.2301 | hinge 0.5692 | sparse 2.6978 | active 17
+[B_p3lam5.0] epoch 41/50 | KL 0.2295 | hinge 0.5820 | sparse 2.6976 | active 17
+[B_p3lam5.0] epoch 42/50 | KL 0.2273 | hinge 0.5942 | sparse 2.6976 | active 17
+[B_p3lam5.0] epoch 43/50 | KL 0.2316 | hinge 0.5833 | sparse 2.6975 | active 17
+[B_p3lam5.0] epoch 44/50 | KL 0.2257 | hinge 0.6180 | sparse 2.6972 | active 17
+[B_p3lam5.0] epoch 45/50 | KL 0.2286 | hinge 0.5961 | sparse 2.6971 | active 17
+[B_p3lam5.0] epoch 46/50 | KL 0.2294 | hinge 0.5923 | sparse 2.6969 | active 17
+[B_p3lam5.0] epoch 47/50 | KL 0.2266 | hinge 0.6049 | sparse 2.6974 | active 17
+[B_p3lam5.0] epoch 48/50 | KL 0.2288 | hinge 0.5734 | sparse 2.6976 | active 17
+[B_p3lam5.0] epoch 49/50 | KL 0.2324 | hinge 0.5613 | sparse 2.6974 | active 17
+[B_p3lam5.0] epoch 50/50 | KL 0.2301 | hinge 0.5865 | sparse 2.6968 | active 17
+
+=== B_p3lam5.0 mask on val === (active heads: 17)
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+A             0.948      0.952      0.984      0.984
+B             0.988      0.992      1.000      0.996
+C             0.952      0.920      0.992      0.992
+
+--- Setting final circuit mode to: False ---
+    Updated 16 HardConcreteGate modules.
+
+Done. Gates in masks_abc/  (suffix '_p3lam5.0')

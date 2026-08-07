@@ -1,0 +1,45 @@
+device: cuda
+
+=== mask sizes ===
+  A         85
+  B         84
+  C         82
+  combined  91
+  A^B       79
+
+Jaccard(A,B)               = 0.878
+C contained in A^B         = 71/82 (86.6%)
+A^B contained in C         = 71/79 (89.9%)
+
+heads in C but NOT in A^B : ['L1.H12', 'L1.H20', 'L10.H20', 'L10.H21', 'L13.H27', 'L14.H16', 'L15.H10', 'L3.H20', 'L8.H17', 'L8.H25', 'L9.H9']
+heads in A^B but NOT in C : ['L10.H26', 'L10.H9', 'L11.H27', 'L13.H26', 'L13.H31', 'L2.H3', 'L4.H13', 'L5.H17']
+heads only in A           : ['L1.H12', 'L1.H20', 'L10.H20', 'L15.H10', 'L8.H25', 'L9.H9']
+heads only in B           : ['L10.H21', 'L12.H2', 'L13.H27', 'L14.H16', 'L8.H17']
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3622.90it/s]
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3753.36it/s]
+Llama model successfully adapted for pruning with block-level gates.
+
+=== pairwise accuracy: mask x dataset (clean/corr) ===
+mask                     A               B               C
+base        0.948/0.952     0.988/0.992     0.952/0.920   
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+combined    0.996/0.996     1.000/1.000     0.996/1.000   
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+A           1.000/1.000     1.000/1.000     0.996/1.000   
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+B           0.996/0.996     1.000/1.000     0.996/1.000   
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+C           0.996/0.996     1.000/1.000     0.996/1.000   
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+A^B         0.996/1.000     1.000/1.000     0.996/1.000   

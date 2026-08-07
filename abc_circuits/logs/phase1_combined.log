@@ -1,0 +1,62 @@
+device: cuda
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3966.48it/s]
+
+########## PHASE 1: combined (3000 rows) ##########
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3471.95it/s]
+Llama model successfully adapted for pruning with block-level gates.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[combined] epoch 1/40 | KL 0.0497 | hinge 1.4521 | sparse 0.0769 | active 502
+[combined] epoch 2/40 | KL 0.2249 | hinge 0.5122 | sparse 0.2286 | active 487
+[combined] epoch 3/40 | KL 0.2969 | hinge 0.3277 | sparse 0.3740 | active 465
+[combined] epoch 4/40 | KL 0.3070 | hinge 0.3021 | sparse 0.5073 | active 436
+[combined] epoch 5/40 | KL 0.2855 | hinge 0.2917 | sparse 0.6098 | active 389
+[combined] epoch 6/40 | KL 0.2790 | hinge 0.2850 | sparse 0.6802 | active 357
+[combined] epoch 7/40 | KL 0.2974 | hinge 0.2765 | sparse 0.7390 | active 319
+[combined] epoch 8/40 | KL 0.3084 | hinge 0.2461 | sparse 0.7776 | active 281
+[combined] epoch 9/40 | KL 0.2974 | hinge 0.2516 | sparse 0.7839 | active 247
+[combined] epoch 10/40 | KL 0.2983 | hinge 0.2515 | sparse 0.7818 | active 222
+[combined] epoch 11/40 | KL 0.2799 | hinge 0.2581 | sparse 0.7757 | active 206
+[combined] epoch 12/40 | KL 0.2788 | hinge 0.2467 | sparse 0.7158 | active 190
+[combined] epoch 13/40 | KL 0.2803 | hinge 0.2427 | sparse 0.6648 | active 176
+[combined] epoch 14/40 | KL 0.2811 | hinge 0.2362 | sparse 0.6142 | active 156
+[combined] epoch 15/40 | KL 0.2894 | hinge 0.2520 | sparse 0.5532 | active 139
+[combined] epoch 16/40 | KL 0.2936 | hinge 0.2410 | sparse 0.5095 | active 130
+[combined] epoch 17/40 | KL 0.2985 | hinge 0.2331 | sparse 0.4791 | active 125
+[combined] epoch 18/40 | KL 0.2908 | hinge 0.2296 | sparse 0.4583 | active 120
+[combined] epoch 19/40 | KL 0.2899 | hinge 0.2578 | sparse 0.4427 | active 117
+[combined] epoch 20/40 | KL 0.2997 | hinge 0.2362 | sparse 0.4323 | active 114
+[combined] epoch 21/40 | KL 0.2915 | hinge 0.2270 | sparse 0.4229 | active 108
+[combined] epoch 22/40 | KL 0.2842 | hinge 0.2435 | sparse 0.4093 | active 107
+[combined] epoch 23/40 | KL 0.2877 | hinge 0.2385 | sparse 0.3979 | active 104
+[combined] epoch 24/40 | KL 0.2828 | hinge 0.2473 | sparse 0.3890 | active 101
+[combined] epoch 25/40 | KL 0.2846 | hinge 0.2612 | sparse 0.3798 | active 99
+[combined] epoch 26/40 | KL 0.2837 | hinge 0.2613 | sparse 0.3736 | active 99
+[combined] epoch 27/40 | KL 0.2848 | hinge 0.2526 | sparse 0.3698 | active 97
+[combined] epoch 28/40 | KL 0.2939 | hinge 0.2375 | sparse 0.3649 | active 96
+[combined] epoch 29/40 | KL 0.2893 | hinge 0.2361 | sparse 0.3600 | active 95
+[combined] epoch 30/40 | KL 0.2923 | hinge 0.2422 | sparse 0.3566 | active 96
+[combined] epoch 31/40 | KL 0.2924 | hinge 0.2429 | sparse 0.3543 | active 95
+[combined] epoch 32/40 | KL 0.2833 | hinge 0.2499 | sparse 0.3532 | active 94
+[combined] epoch 33/40 | KL 0.2890 | hinge 0.2578 | sparse 0.3511 | active 91
+[combined] epoch 34/40 | KL 0.2837 | hinge 0.2521 | sparse 0.3463 | active 91
+[combined] epoch 35/40 | KL 0.2986 | hinge 0.2433 | sparse 0.3442 | active 91
+[combined] epoch 36/40 | KL 0.2891 | hinge 0.2502 | sparse 0.3430 | active 91
+[combined] epoch 37/40 | KL 0.2884 | hinge 0.2462 | sparse 0.3419 | active 91
+[combined] epoch 38/40 | KL 0.2845 | hinge 0.2502 | sparse 0.3414 | active 91
+[combined] epoch 39/40 | KL 0.2953 | hinge 0.2421 | sparse 0.3404 | active 91
+[combined] epoch 40/40 | KL 0.2866 | hinge 0.2473 | sparse 0.3400 | active 91
+
+=== combined mask on val ===
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+A             0.948      0.952      0.996      0.996
+B             0.988      0.992      1.000      1.000
+C             0.952      0.920      0.996      1.000
+
+--- Setting final circuit mode to: False ---
+    Updated 16 HardConcreteGate modules.
+
+Done. Gates in masks_abc/  (masks = binarized, checkpoints = continuous)
+Next: A_mask AND B_mask, evaluate on C — that's the intersection test.

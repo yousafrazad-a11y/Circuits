@@ -1,0 +1,618 @@
+{
+  "model_name": "meta-llama/Llama-3.1-8B",
+  "data_dir": "datasets_8b_base_all",
+  "gate_pairwise": 0.75,
+  "gate_correct": 0.6,
+  "results": {
+    "A": {
+      "n": 250,
+      "pairwise": 0.996,
+      "picks": {
+        "correct": 0.936,
+        "corrupt": 0.0,
+        "naive": 0.0,
+        "other": 0.064
+      },
+      "gate": "PASS",
+      "other_top": [
+        [
+          " me",
+          11
+        ],
+        [
+          " the",
+          5
+        ]
+      ]
+    },
+    "C": {
+      "n": 250,
+      "pairwise": 1.0,
+      "picks": {
+        "correct": 0.964,
+        "corrupt": 0.0,
+        "naive": 0.0,
+        "other": 0.036
+      },
+      "gate": "PASS",
+      "other_top": [
+        [
+          " j",
+          2
+        ],
+        [
+          " dy",
+          1
+        ],
+        [
+          " y",
+          1
+        ],
+        [
+          " cy",
+          1
+        ],
+        [
+          " fs",
+          1
+        ],
+        [
+          " ta",
+          1
+        ],
+        [
+          " en",
+          1
+        ],
+        [
+          " ov",
+          1
+        ]
+      ]
+    },
+    "B_chain": {
+      "n": 250,
+      "pairwise": 0.032,
+      "picks": {
+        "correct": 0.012,
+        "corrupt": 0.888,
+        "naive": 0.0,
+        "other": 0.1
+      },
+      "gate": "FAIL",
+      "other_top": [
+        [
+          " bu",
+          4
+        ],
+        [
+          " ob",
+          3
+        ],
+        [
+          " j",
+          3
+        ],
+        [
+          " y",
+          3
+        ],
+        [
+          " gy",
+          3
+        ],
+        [
+          " q",
+          2
+        ],
+        [
+          " en",
+          2
+        ],
+        [
+          " hy",
+          1
+        ],
+        [
+          " ub",
+          1
+        ],
+        [
+          " ja",
+          1
+        ]
+      ]
+    },
+    "B2_calendar": {
+      "n": 250,
+      "pairwise": 0.932,
+      "picks": {
+        "correct": 0.376,
+        "corrupt": 0.02,
+        "naive": 0.096,
+        "other": 0.508
+      },
+      "gate": "FAIL",
+      "other_top": [
+        [
+          " ",
+          85
+        ],
+        [
+          " the",
+          16
+        ],
+        [
+          " not",
+          10
+        ],
+        [
+          " mp",
+          1
+        ],
+        [
+          " \"",
+          1
+        ],
+        [
+          " ot",
+          1
+        ],
+        [
+          " cy",
+          1
+        ],
+        [
+          " tu",
+          1
+        ],
+        [
+          " cp",
+          1
+        ],
+        [
+          " ap",
+          1
+        ]
+      ]
+    },
+    "B3_explicit": {
+      "n": 250,
+      "pairwise": 0.904,
+      "picks": {
+        "correct": 0.788,
+        "corrupt": 0.068,
+        "naive": 0.0,
+        "other": 0.144
+      },
+      "gate": "PASS",
+      "other_top": [
+        [
+          " ve",
+          3
+        ],
+        [
+          " four",
+          2
+        ],
+        [
+          " fi",
+          2
+        ],
+        [
+          " ev",
+          2
+        ],
+        [
+          " eb",
+          2
+        ],
+        [
+          " ub",
+          2
+        ],
+        [
+          " three",
+          2
+        ],
+        [
+          " vo",
+          2
+        ],
+        [
+          " bu",
+          2
+        ],
+        [
+          " seven",
+          2
+        ]
+      ]
+    },
+    "B1": {
+      "n": 250,
+      "pairwise": 0.496,
+      "picks": {
+        "correct": 0.308,
+        "corrupt": 0.376,
+        "naive": 0.0,
+        "other": 0.316
+      },
+      "gate": "FAIL",
+      "other_top": [
+        [
+          " y",
+          9
+        ],
+        [
+          " en",
+          9
+        ],
+        [
+          " j",
+          7
+        ],
+        [
+          " z",
+          6
+        ],
+        [
+          " cy",
+          5
+        ],
+        [
+          " de",
+          4
+        ],
+        [
+          " ja",
+          3
+        ],
+        [
+          " ru",
+          3
+        ],
+        [
+          " ",
+          2
+        ],
+        [
+          " sv",
+          2
+        ]
+      ]
+    },
+    "B4": {
+      "n": 250,
+      "pairwise": 0.576,
+      "picks": {
+        "correct": 0.168,
+        "corrupt": 0.14,
+        "naive": 0.0,
+        "other": 0.692
+      },
+      "gate": "FAIL",
+      "other_top": [
+        [
+          " j",
+          16
+        ],
+        [
+          " en",
+          13
+        ],
+        [
+          " y",
+          13
+        ],
+        [
+          " de",
+          10
+        ],
+        [
+          " ka",
+          6
+        ],
+        [
+          " ja",
+          6
+        ],
+        [
+          " ap",
+          5
+        ],
+        [
+          " gu",
+          5
+        ],
+        [
+          " hy",
+          5
+        ],
+        [
+          " sy",
+          5
+        ]
+      ]
+    },
+    "B5": {
+      "n": 250,
+      "pairwise": 0.948,
+      "picks": {
+        "correct": 0.136,
+        "corrupt": 0.004,
+        "naive": 0.0,
+        "other": 0.86
+      },
+      "gate": "FAIL",
+      "other_top": [
+        [
+          " now",
+          204
+        ],
+        [
+          " ",
+          4
+        ],
+        [
+          " also",
+          3
+        ],
+        [
+          " the",
+          2
+        ],
+        [
+          " a",
+          1
+        ],
+        [
+          ":",
+          1
+        ]
+      ]
+    },
+    "B5c": {
+      "n": 250,
+      "pairwise": 0.656,
+      "picks": {
+        "correct": 0.66,
+        "corrupt": 0.336,
+        "naive": 0.0,
+        "other": 0.004
+      },
+      "gate": "FAIL",
+      "other_top": [
+        [
+          " ",
+          1
+        ]
+      ]
+    },
+    "B5d": {
+      "n": 250,
+      "pairwise": 0.24,
+      "picks": {
+        "correct": 0.24,
+        "corrupt": 0.648,
+        "naive": 0.0,
+        "other": 0.112
+      },
+      "gate": "FAIL",
+      "other_top": [
+        [
+          " changed",
+          23
+        ],
+        [
+          " is",
+          3
+        ],
+        [
+          " eb",
+          1
+        ],
+        [
+          "gu",
+          1
+        ]
+      ]
+    },
+    "B6": {
+      "n": 250,
+      "pairwise": 0.468,
+      "picks": {
+        "correct": 0.36,
+        "corrupt": 0.404,
+        "naive": 0.0,
+        "other": 0.236
+      },
+      "gate": "FAIL",
+      "other_top": [
+        [
+          " y",
+          10
+        ],
+        [
+          " j",
+          9
+        ],
+        [
+          " de",
+          3
+        ],
+        [
+          " di",
+          3
+        ],
+        [
+          " gy",
+          3
+        ],
+        [
+          " en",
+          3
+        ],
+        [
+          " ru",
+          2
+        ],
+        [
+          " or",
+          2
+        ],
+        [
+          " fo",
+          1
+        ],
+        [
+          " ty",
+          1
+        ]
+      ]
+    },
+    "B7": {
+      "n": 250,
+      "pairwise": 0.28,
+      "picks": {
+        "correct": 0.228,
+        "corrupt": 0.636,
+        "naive": 0.0,
+        "other": 0.136
+      },
+      "gate": "FAIL",
+      "other_top": [
+        [
+          " en",
+          3
+        ],
+        [
+          " gy",
+          3
+        ],
+        [
+          " j",
+          3
+        ],
+        [
+          " y",
+          3
+        ],
+        [
+          " ja",
+          2
+        ],
+        [
+          " gu",
+          2
+        ],
+        [
+          " de",
+          2
+        ],
+        [
+          " hy",
+          2
+        ],
+        [
+          " z",
+          2
+        ],
+        [
+          " ty",
+          1
+        ]
+      ]
+    },
+    "B9": {
+      "n": 250,
+      "pairwise": 0.936,
+      "picks": {
+        "correct": 0.924,
+        "corrupt": 0.044,
+        "naive": 0.0,
+        "other": 0.032
+      },
+      "gate": "PASS",
+      "other_top": [
+        [
+          " ",
+          2
+        ],
+        [
+          " sv",
+          2
+        ],
+        [
+          " the",
+          1
+        ],
+        [
+          " in",
+          1
+        ],
+        [
+          " ol",
+          1
+        ],
+        [
+          " je",
+          1
+        ]
+      ]
+    },
+    "B9f": {
+      "n": 250,
+      "pairwise": 0.792,
+      "picks": {
+        "correct": 0.724,
+        "corrupt": 0.188,
+        "naive": 0.0,
+        "other": 0.088
+      },
+      "gate": "PASS",
+      "other_top": [
+        [
+          " fi",
+          5
+        ],
+        [
+          " hy",
+          3
+        ],
+        [
+          " ja",
+          2
+        ],
+        [
+          " cy",
+          1
+        ],
+        [
+          " ff",
+          1
+        ],
+        [
+          " tu",
+          1
+        ],
+        [
+          " vo",
+          1
+        ],
+        [
+          " ol",
+          1
+        ],
+        [
+          " gy",
+          1
+        ],
+        [
+          " gu",
+          1
+        ]
+      ]
+    }
+  }
+}

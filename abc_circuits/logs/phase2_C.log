@@ -1,0 +1,51 @@
+device: cuda
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4742.01it/s]
+
+########## PHASE 2: finetune on C ##########
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4362.65it/s]
+Llama model successfully adapted for pruning with block-level gates.
+  finetune start: 91 gates open (trainable), 421 locked off
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[C] epoch 1/30 | KL 0.2809 | hinge 0.2888 | sparse 0.0114 | active 91
+[C] epoch 2/30 | KL 0.2691 | hinge 0.3618 | sparse 0.0348 | active 91
+[C] epoch 3/30 | KL 0.2764 | hinge 0.2991 | sparse 0.0582 | active 91
+[C] epoch 4/30 | KL 0.2817 | hinge 0.3278 | sparse 0.0816 | active 91
+[C] epoch 5/30 | KL 0.2774 | hinge 0.3244 | sparse 0.1051 | active 91
+[C] epoch 6/30 | KL 0.2782 | hinge 0.3038 | sparse 0.1285 | active 91
+[C] epoch 7/30 | KL 0.2912 | hinge 0.2661 | sparse 0.1456 | active 91
+[C] epoch 8/30 | KL 0.2793 | hinge 0.3031 | sparse 0.1464 | active 91
+[C] epoch 9/30 | KL 0.2849 | hinge 0.2714 | sparse 0.1464 | active 91
+[C] epoch 10/30 | KL 0.2861 | hinge 0.3030 | sparse 0.1464 | active 91
+[C] epoch 11/30 | KL 0.2972 | hinge 0.2658 | sparse 0.1463 | active 91
+[C] epoch 12/30 | KL 0.3000 | hinge 0.2765 | sparse 0.1463 | active 91
+[C] epoch 13/30 | KL 0.2904 | hinge 0.2694 | sparse 0.1462 | active 91
+[C] epoch 14/30 | KL 0.2860 | hinge 0.3011 | sparse 0.1461 | active 91
+[C] epoch 15/30 | KL 0.3098 | hinge 0.2689 | sparse 0.1459 | active 91
+[C] epoch 16/30 | KL 0.3112 | hinge 0.2609 | sparse 0.1456 | active 90
+[C] epoch 17/30 | KL 0.3103 | hinge 0.2534 | sparse 0.1454 | active 90
+[C] epoch 18/30 | KL 0.3129 | hinge 0.2587 | sparse 0.1452 | active 89
+[C] epoch 19/30 | KL 0.3014 | hinge 0.2595 | sparse 0.1449 | active 88
+[C] epoch 20/30 | KL 0.2937 | hinge 0.2805 | sparse 0.1444 | active 88
+[C] epoch 21/30 | KL 0.3171 | hinge 0.2534 | sparse 0.1434 | active 88
+[C] epoch 22/30 | KL 0.3070 | hinge 0.2464 | sparse 0.1424 | active 86
+[C] epoch 23/30 | KL 0.2985 | hinge 0.2612 | sparse 0.1409 | active 86
+[C] epoch 24/30 | KL 0.3170 | hinge 0.2523 | sparse 0.1393 | active 83
+[C] epoch 25/30 | KL 0.3038 | hinge 0.2550 | sparse 0.1382 | active 83
+[C] epoch 26/30 | KL 0.3161 | hinge 0.2401 | sparse 0.1374 | active 83
+[C] epoch 27/30 | KL 0.3129 | hinge 0.2837 | sparse 0.1369 | active 84
+[C] epoch 28/30 | KL 0.3121 | hinge 0.2458 | sparse 0.1364 | active 84
+[C] epoch 29/30 | KL 0.3068 | hinge 0.2430 | sparse 0.1361 | active 84
+[C] epoch 30/30 | KL 0.2989 | hinge 0.2710 | sparse 0.1357 | active 82
+
+=== C mask on val ===
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+C             0.952      0.920      0.996      1.000
+
+--- Setting final circuit mode to: False ---
+    Updated 16 HardConcreteGate modules.
+
+Done. Gates in masks_abc/  (masks = binarized, checkpoints = continuous)
+Next: A_mask AND B_mask, evaluate on C — that's the intersection test.

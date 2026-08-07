@@ -1,0 +1,72 @@
+device: cuda | suffix: '_lam0.60'
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4210.57it/s]
+
+########## PHASE 2: finetune on B (lambda=0.6) ##########
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4356.20it/s]
+Llama model successfully adapted for pruning with block-level gates.
+  finetune start: 91 gates open (trainable), 421 locked off <- masks_abc/combined_checkpoint.pt
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[B_lam0.60] epoch 1/50 | KL 0.2601 | hinge 0.1400 | sparse 0.1362 | active 91
+[B_lam0.60] epoch 2/50 | KL 0.2360 | hinge 0.2314 | sparse 0.4167 | active 91
+[B_lam0.60] epoch 3/50 | KL 0.2484 | hinge 0.1687 | sparse 0.6970 | active 91
+[B_lam0.60] epoch 4/50 | KL 0.2514 | hinge 0.1594 | sparse 0.9740 | active 90
+[B_lam0.60] epoch 5/50 | KL 0.2520 | hinge 0.1898 | sparse 1.2417 | active 89
+[B_lam0.60] epoch 6/50 | KL 0.2495 | hinge 0.1651 | sparse 1.4840 | active 84
+[B_lam0.60] epoch 7/50 | KL 0.2498 | hinge 0.1585 | sparse 1.6079 | active 80
+[B_lam0.60] epoch 8/50 | KL 0.2404 | hinge 0.1718 | sparse 1.5357 | active 77
+[B_lam0.60] epoch 9/50 | KL 0.2316 | hinge 0.1905 | sparse 1.4900 | active 75
+[B_lam0.60] epoch 10/50 | KL 0.2389 | hinge 0.1878 | sparse 1.4444 | active 70
+[B_lam0.60] epoch 11/50 | KL 0.2435 | hinge 0.1701 | sparse 1.3716 | active 66
+[B_lam0.60] epoch 12/50 | KL 0.2406 | hinge 0.1990 | sparse 1.2898 | active 64
+[B_lam0.60] epoch 13/50 | KL 0.2394 | hinge 0.1896 | sparse 1.2324 | active 61
+[B_lam0.60] epoch 14/50 | KL 0.2342 | hinge 0.2077 | sparse 1.1753 | active 59
+[B_lam0.60] epoch 15/50 | KL 0.2320 | hinge 0.1947 | sparse 1.1407 | active 59
+[B_lam0.60] epoch 16/50 | KL 0.2304 | hinge 0.2290 | sparse 1.1326 | active 59
+[B_lam0.60] epoch 17/50 | KL 0.2330 | hinge 0.2041 | sparse 1.1220 | active 57
+[B_lam0.60] epoch 18/50 | KL 0.2365 | hinge 0.2012 | sparse 1.0985 | active 57
+[B_lam0.60] epoch 19/50 | KL 0.2298 | hinge 0.2206 | sparse 1.0858 | active 54
+[B_lam0.60] epoch 20/50 | KL 0.2280 | hinge 0.2284 | sparse 1.0483 | active 54
+[B_lam0.60] epoch 21/50 | KL 0.2425 | hinge 0.2095 | sparse 1.0359 | active 54
+[B_lam0.60] epoch 22/50 | KL 0.2329 | hinge 0.2136 | sparse 1.0293 | active 53
+[B_lam0.60] epoch 23/50 | KL 0.2278 | hinge 0.2297 | sparse 1.0096 | active 51
+[B_lam0.60] epoch 24/50 | KL 0.2447 | hinge 0.2006 | sparse 0.9870 | active 51
+[B_lam0.60] epoch 25/50 | KL 0.2379 | hinge 0.2217 | sparse 0.9769 | active 50
+[B_lam0.60] epoch 26/50 | KL 0.2457 | hinge 0.1972 | sparse 0.9644 | active 49
+[B_lam0.60] epoch 27/50 | KL 0.2503 | hinge 0.2362 | sparse 0.9457 | active 49
+[B_lam0.60] epoch 28/50 | KL 0.2511 | hinge 0.2097 | sparse 0.9396 | active 49
+[B_lam0.60] epoch 29/50 | KL 0.2503 | hinge 0.1964 | sparse 0.9384 | active 49
+[B_lam0.60] epoch 30/50 | KL 0.2600 | hinge 0.2133 | sparse 0.9363 | active 48
+[B_lam0.60] epoch 31/50 | KL 0.2623 | hinge 0.2018 | sparse 0.9332 | active 48
+[B_lam0.60] epoch 32/50 | KL 0.2674 | hinge 0.1964 | sparse 0.9268 | active 48
+[B_lam0.60] epoch 33/50 | KL 0.2654 | hinge 0.2027 | sparse 0.9212 | active 48
+[B_lam0.60] epoch 34/50 | KL 0.2750 | hinge 0.1932 | sparse 0.9179 | active 47
+[B_lam0.60] epoch 35/50 | KL 0.2943 | hinge 0.1777 | sparse 0.9156 | active 48
+[B_lam0.60] epoch 36/50 | KL 0.2712 | hinge 0.1948 | sparse 0.9147 | active 47
+[B_lam0.60] epoch 37/50 | KL 0.2641 | hinge 0.2106 | sparse 0.9033 | active 47
+[B_lam0.60] epoch 38/50 | KL 0.2641 | hinge 0.2067 | sparse 0.8953 | active 46
+[B_lam0.60] epoch 39/50 | KL 0.2576 | hinge 0.2050 | sparse 0.8891 | active 45
+[B_lam0.60] epoch 40/50 | KL 0.2553 | hinge 0.2070 | sparse 0.8788 | active 45
+[B_lam0.60] epoch 41/50 | KL 0.2578 | hinge 0.2108 | sparse 0.8714 | active 44
+[B_lam0.60] epoch 42/50 | KL 0.2726 | hinge 0.1982 | sparse 0.8609 | active 44
+[B_lam0.60] epoch 43/50 | KL 0.2923 | hinge 0.2010 | sparse 0.8475 | active 43
+[B_lam0.60] epoch 44/50 | KL 0.2882 | hinge 0.1896 | sparse 0.8337 | active 43
+[B_lam0.60] epoch 45/50 | KL 0.2699 | hinge 0.2158 | sparse 0.8256 | active 42
+[B_lam0.60] epoch 46/50 | KL 0.2688 | hinge 0.2021 | sparse 0.8177 | active 41
+[B_lam0.60] epoch 47/50 | KL 0.2599 | hinge 0.2123 | sparse 0.8117 | active 41
+[B_lam0.60] epoch 48/50 | KL 0.2693 | hinge 0.2054 | sparse 0.8063 | active 41
+[B_lam0.60] epoch 49/50 | KL 0.2556 | hinge 0.2258 | sparse 0.8017 | active 41
+[B_lam0.60] epoch 50/50 | KL 0.2594 | hinge 0.2237 | sparse 0.7994 | active 41
+
+=== B_lam0.60 mask on val === (active heads: 41)
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+A             0.948      0.952      0.992      0.992
+B             0.988      0.992      1.000      1.000
+C             0.952      0.920      0.996      1.000
+
+--- Setting final circuit mode to: False ---
+    Updated 16 HardConcreteGate modules.
+
+Done. Gates in masks_abc/  (suffix '_lam0.60')

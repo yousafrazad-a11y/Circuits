@@ -1,0 +1,29 @@
+{
+  "dataset": "combined",
+  "suffix": "_b3lam3",
+  "lambda_combined": 3.0,
+  "epochs": 60,
+  "active": 27,
+  "train_kl": 0.20318607108543316,
+  "train_hinge": 0.7285416666666666,
+  "val": {
+    "A": {
+      "base_clean": 0.996,
+      "base_corr": 0.992,
+      "circ_clean": 1.0,
+      "circ_corr": 1.0
+    },
+    "B": {
+      "base_clean": 0.908,
+      "base_corr": 0.924,
+      "circ_clean": 0.872,
+      "circ_corr": 0.888
+    },
+    "C": {
+      "base_clean": 1.0,
+      "base_corr": 0.996,
+      "circ_clean": 0.996,
+      "circ_corr": 0.988
+    }
+  }
+}

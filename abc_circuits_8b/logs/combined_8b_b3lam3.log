@@ -1,0 +1,83 @@
+device: cuda | suffix: '_b3lam3'
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4554.08it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 4583.47it/s]
+
+########## PHASE 1: combined (3000 rows) ##########
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 3724.96it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 3539.90it/s]
+Llama model successfully adapted for pruning with block-level gates.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[combined_b3lam3] epoch 1/60 | KL 0.1944 | hinge 0.3851 | sparse 8.6666 | active 54
+[combined_b3lam3] epoch 2/60 | KL 0.2348 | hinge 0.4403 | sparse 6.8786 | active 36
+[combined_b3lam3] epoch 3/60 | KL 0.1960 | hinge 0.6342 | sparse 6.1600 | active 29
+[combined_b3lam3] epoch 4/60 | KL 0.1921 | hinge 0.6631 | sparse 5.9398 | active 29
+[combined_b3lam3] epoch 5/60 | KL 0.1928 | hinge 0.6601 | sparse 5.9411 | active 29
+[combined_b3lam3] epoch 6/60 | KL 0.1939 | hinge 0.6640 | sparse 5.9427 | active 29
+[combined_b3lam3] epoch 7/60 | KL 0.1918 | hinge 0.6603 | sparse 5.9433 | active 29
+[combined_b3lam3] epoch 8/60 | KL 0.1913 | hinge 0.6392 | sparse 5.9423 | active 29
+[combined_b3lam3] epoch 9/60 | KL 0.1936 | hinge 0.6675 | sparse 5.9439 | active 29
+[combined_b3lam3] epoch 10/60 | KL 0.1932 | hinge 0.6553 | sparse 5.9428 | active 29
+[combined_b3lam3] epoch 11/60 | KL 0.1955 | hinge 0.6630 | sparse 5.9434 | active 29
+[combined_b3lam3] epoch 12/60 | KL 0.1951 | hinge 0.6670 | sparse 5.9384 | active 29
+[combined_b3lam3] epoch 13/60 | KL 0.1929 | hinge 0.6603 | sparse 5.9433 | active 29
+[combined_b3lam3] epoch 14/60 | KL 0.1924 | hinge 0.6650 | sparse 5.9297 | active 28
+[combined_b3lam3] epoch 15/60 | KL 0.1943 | hinge 0.6975 | sparse 5.8513 | active 28
+[combined_b3lam3] epoch 16/60 | KL 0.1928 | hinge 0.6897 | sparse 5.8501 | active 28
+[combined_b3lam3] epoch 17/60 | KL 0.1947 | hinge 0.6878 | sparse 5.8503 | active 28
+[combined_b3lam3] epoch 18/60 | KL 0.1928 | hinge 0.6939 | sparse 5.8534 | active 28
+[combined_b3lam3] epoch 19/60 | KL 0.1917 | hinge 0.6924 | sparse 5.8497 | active 28
+[combined_b3lam3] epoch 20/60 | KL 0.1917 | hinge 0.6947 | sparse 5.8522 | active 28
+[combined_b3lam3] epoch 21/60 | KL 0.1903 | hinge 0.6813 | sparse 5.8511 | active 28
+[combined_b3lam3] epoch 22/60 | KL 0.1923 | hinge 0.6820 | sparse 5.8514 | active 28
+[combined_b3lam3] epoch 23/60 | KL 0.1897 | hinge 0.6969 | sparse 5.8501 | active 28
+[combined_b3lam3] epoch 24/60 | KL 0.1922 | hinge 0.6899 | sparse 5.8484 | active 28
+[combined_b3lam3] epoch 25/60 | KL 0.1901 | hinge 0.6865 | sparse 5.8493 | active 28
+[combined_b3lam3] epoch 26/60 | KL 0.1904 | hinge 0.6894 | sparse 5.8490 | active 28
+[combined_b3lam3] epoch 27/60 | KL 0.1921 | hinge 0.7023 | sparse 5.8492 | active 28
+[combined_b3lam3] epoch 28/60 | KL 0.1911 | hinge 0.6881 | sparse 5.8506 | active 28
+[combined_b3lam3] epoch 29/60 | KL 0.1901 | hinge 0.6886 | sparse 5.8499 | active 28
+[combined_b3lam3] epoch 30/60 | KL 0.1900 | hinge 0.6991 | sparse 5.8504 | active 28
+[combined_b3lam3] epoch 31/60 | KL 0.1889 | hinge 0.6956 | sparse 5.8501 | active 28
+[combined_b3lam3] epoch 32/60 | KL 0.1938 | hinge 0.6866 | sparse 5.8507 | active 28
+[combined_b3lam3] epoch 33/60 | KL 0.1908 | hinge 0.7025 | sparse 5.8511 | active 28
+[combined_b3lam3] epoch 34/60 | KL 0.1926 | hinge 0.6845 | sparse 5.8509 | active 28
+[combined_b3lam3] epoch 35/60 | KL 0.1939 | hinge 0.7018 | sparse 5.8508 | active 28
+[combined_b3lam3] epoch 36/60 | KL 0.1902 | hinge 0.6956 | sparse 5.8505 | active 28
+[combined_b3lam3] epoch 37/60 | KL 0.1937 | hinge 0.6866 | sparse 5.8498 | active 28
+[combined_b3lam3] epoch 38/60 | KL 0.1943 | hinge 0.7067 | sparse 5.8487 | active 28
+[combined_b3lam3] epoch 39/60 | KL 0.1940 | hinge 0.7020 | sparse 5.8514 | active 28
+[combined_b3lam3] epoch 40/60 | KL 0.1914 | hinge 0.6866 | sparse 5.8515 | active 28
+[combined_b3lam3] epoch 41/60 | KL 0.1910 | hinge 0.6807 | sparse 5.8492 | active 28
+[combined_b3lam3] epoch 42/60 | KL 0.1935 | hinge 0.7040 | sparse 5.8512 | active 28
+[combined_b3lam3] epoch 43/60 | KL 0.1897 | hinge 0.6936 | sparse 5.8499 | active 28
+[combined_b3lam3] epoch 44/60 | KL 0.1906 | hinge 0.6913 | sparse 5.8498 | active 28
+[combined_b3lam3] epoch 45/60 | KL 0.1963 | hinge 0.7141 | sparse 5.8468 | active 28
+[combined_b3lam3] epoch 46/60 | KL 0.1929 | hinge 0.6976 | sparse 5.8489 | active 28
+[combined_b3lam3] epoch 47/60 | KL 0.1913 | hinge 0.7014 | sparse 5.8492 | active 28
+[combined_b3lam3] epoch 48/60 | KL 0.1928 | hinge 0.7059 | sparse 5.8486 | active 28
+[combined_b3lam3] epoch 49/60 | KL 0.1917 | hinge 0.6962 | sparse 5.8495 | active 28
+[combined_b3lam3] epoch 50/60 | KL 0.1933 | hinge 0.6931 | sparse 5.8483 | active 28
+[combined_b3lam3] epoch 51/60 | KL 0.1944 | hinge 0.6996 | sparse 5.8442 | active 28
+[combined_b3lam3] epoch 52/60 | KL 0.1940 | hinge 0.7038 | sparse 5.8469 | active 28
+[combined_b3lam3] epoch 53/60 | KL 0.1898 | hinge 0.6817 | sparse 5.8483 | active 28
+[combined_b3lam3] epoch 54/60 | KL 0.1936 | hinge 0.6854 | sparse 5.8437 | active 28
+[combined_b3lam3] epoch 55/60 | KL 0.2002 | hinge 0.7262 | sparse 5.8040 | active 27
+[combined_b3lam3] epoch 56/60 | KL 0.2023 | hinge 0.7339 | sparse 5.7573 | active 27
+[combined_b3lam3] epoch 57/60 | KL 0.2009 | hinge 0.7239 | sparse 5.7546 | active 27
+[combined_b3lam3] epoch 58/60 | KL 0.2039 | hinge 0.7348 | sparse 5.7531 | active 27
+[combined_b3lam3] epoch 59/60 | KL 0.2016 | hinge 0.7390 | sparse 5.7527 | active 27
+[combined_b3lam3] epoch 60/60 | KL 0.2032 | hinge 0.7285 | sparse 5.7556 | active 27
+
+=== combined_b3lam3 mask on val === (active heads: 27)
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A             0.996      0.992      1.000      1.000
+B             0.908      0.924      0.872      0.888
+C             1.000      0.996      0.996      0.988
+
+--- Setting final circuit mode to: False ---
+    Updated 32 HardConcreteGate modules.
+
+Done. Gates in masks_abc_8b/  (suffix '_b3lam3')

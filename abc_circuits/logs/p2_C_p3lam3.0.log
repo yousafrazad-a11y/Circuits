@@ -1,0 +1,222 @@
+device: cuda | suffix: '_p3lam3.0'
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3796.24it/s]
+
+########## PHASE 2: finetune on C (lambda=3.0) ##########
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3954.49it/s]
+Llama model successfully adapted for pruning with block-level gates.
+  finetune start: 22 gates open (trainable), 490 locked off <- masks_abc/combined_lam3_checkpoint.pt
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[C_p3lam3.0] epoch 1/200 | KL 0.2614 | hinge 0.6992 | sparse 0.1614 | active 22
+[C_p3lam3.0] epoch 2/200 | KL 0.2516 | hinge 0.7726 | sparse 0.4942 | active 22
+[C_p3lam3.0] epoch 3/200 | KL 0.2621 | hinge 0.6887 | sparse 0.8280 | active 22
+[C_p3lam3.0] epoch 4/200 | KL 0.2622 | hinge 0.7216 | sparse 1.1621 | active 22
+[C_p3lam3.0] epoch 5/200 | KL 0.2560 | hinge 0.7283 | sparse 1.4962 | active 22
+[C_p3lam3.0] epoch 6/200 | KL 0.2615 | hinge 0.7069 | sparse 1.8300 | active 22
+[C_p3lam3.0] epoch 7/200 | KL 0.2618 | hinge 0.6844 | sparse 2.0739 | active 22
+[C_p3lam3.0] epoch 8/200 | KL 0.2591 | hinge 0.7037 | sparse 2.0857 | active 22
+[C_p3lam3.0] epoch 9/200 | KL 0.2609 | hinge 0.6822 | sparse 2.0858 | active 22
+[C_p3lam3.0] epoch 10/200 | KL 0.2609 | hinge 0.7036 | sparse 2.0859 | active 22
+[C_p3lam3.0] epoch 11/200 | KL 0.2639 | hinge 0.6803 | sparse 2.0860 | active 22
+[C_p3lam3.0] epoch 12/200 | KL 0.2638 | hinge 0.6868 | sparse 2.0862 | active 22
+[C_p3lam3.0] epoch 13/200 | KL 0.2630 | hinge 0.6803 | sparse 2.0864 | active 22
+[C_p3lam3.0] epoch 14/200 | KL 0.2584 | hinge 0.7243 | sparse 2.0864 | active 22
+[C_p3lam3.0] epoch 15/200 | KL 0.2666 | hinge 0.6887 | sparse 2.0864 | active 22
+[C_p3lam3.0] epoch 16/200 | KL 0.2630 | hinge 0.7026 | sparse 2.0862 | active 22
+[C_p3lam3.0] epoch 17/200 | KL 0.2640 | hinge 0.6678 | sparse 2.0862 | active 22
+[C_p3lam3.0] epoch 18/200 | KL 0.2665 | hinge 0.6639 | sparse 2.0863 | active 22
+[C_p3lam3.0] epoch 19/200 | KL 0.2633 | hinge 0.6808 | sparse 2.0864 | active 22
+[C_p3lam3.0] epoch 20/200 | KL 0.2643 | hinge 0.6879 | sparse 2.0866 | active 22
+[C_p3lam3.0] epoch 21/200 | KL 0.2632 | hinge 0.6978 | sparse 2.0868 | active 22
+[C_p3lam3.0] epoch 22/200 | KL 0.2679 | hinge 0.6625 | sparse 2.0869 | active 22
+[C_p3lam3.0] epoch 23/200 | KL 0.2627 | hinge 0.6884 | sparse 2.0870 | active 22
+[C_p3lam3.0] epoch 24/200 | KL 0.2671 | hinge 0.6628 | sparse 2.0869 | active 22
+[C_p3lam3.0] epoch 25/200 | KL 0.2673 | hinge 0.6574 | sparse 2.0869 | active 22
+[C_p3lam3.0] epoch 26/200 | KL 0.2670 | hinge 0.6603 | sparse 2.0870 | active 22
+[C_p3lam3.0] epoch 27/200 | KL 0.2672 | hinge 0.6871 | sparse 2.0869 | active 22
+[C_p3lam3.0] epoch 28/200 | KL 0.2662 | hinge 0.6641 | sparse 2.0871 | active 22
+[C_p3lam3.0] epoch 29/200 | KL 0.2656 | hinge 0.6652 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 30/200 | KL 0.2625 | hinge 0.7047 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 31/200 | KL 0.2612 | hinge 0.6828 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 32/200 | KL 0.2659 | hinge 0.6533 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 33/200 | KL 0.2640 | hinge 0.6859 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 34/200 | KL 0.2609 | hinge 0.7139 | sparse 2.0871 | active 22
+[C_p3lam3.0] epoch 35/200 | KL 0.2631 | hinge 0.6793 | sparse 2.0870 | active 22
+[C_p3lam3.0] epoch 36/200 | KL 0.2635 | hinge 0.6781 | sparse 2.0869 | active 22
+[C_p3lam3.0] epoch 37/200 | KL 0.2649 | hinge 0.6728 | sparse 2.0871 | active 22
+[C_p3lam3.0] epoch 38/200 | KL 0.2660 | hinge 0.6642 | sparse 2.0871 | active 22
+[C_p3lam3.0] epoch 39/200 | KL 0.2661 | hinge 0.6599 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 40/200 | KL 0.2668 | hinge 0.6579 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 41/200 | KL 0.2653 | hinge 0.6748 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 42/200 | KL 0.2641 | hinge 0.6729 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 43/200 | KL 0.2631 | hinge 0.7052 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 44/200 | KL 0.2639 | hinge 0.6866 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 45/200 | KL 0.2638 | hinge 0.6692 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 46/200 | KL 0.2695 | hinge 0.6541 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 47/200 | KL 0.2643 | hinge 0.6643 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 48/200 | KL 0.2640 | hinge 0.6776 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 49/200 | KL 0.2645 | hinge 0.6727 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 50/200 | KL 0.2656 | hinge 0.6773 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 51/200 | KL 0.2676 | hinge 0.6601 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 52/200 | KL 0.2657 | hinge 0.6537 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 53/200 | KL 0.2649 | hinge 0.6671 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 54/200 | KL 0.2616 | hinge 0.6738 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 55/200 | KL 0.2640 | hinge 0.6805 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 56/200 | KL 0.2666 | hinge 0.6575 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 57/200 | KL 0.2657 | hinge 0.6647 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 58/200 | KL 0.2665 | hinge 0.6826 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 59/200 | KL 0.2645 | hinge 0.6721 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 60/200 | KL 0.2657 | hinge 0.6558 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 61/200 | KL 0.2645 | hinge 0.6865 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 62/200 | KL 0.2686 | hinge 0.6597 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 63/200 | KL 0.2678 | hinge 0.6646 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 64/200 | KL 0.2651 | hinge 0.6689 | sparse 2.0871 | active 22
+[C_p3lam3.0] epoch 65/200 | KL 0.2632 | hinge 0.6699 | sparse 2.0870 | active 22
+[C_p3lam3.0] epoch 66/200 | KL 0.2623 | hinge 0.6849 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 67/200 | KL 0.2639 | hinge 0.6666 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 68/200 | KL 0.2651 | hinge 0.6733 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 69/200 | KL 0.2661 | hinge 0.6753 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 70/200 | KL 0.2660 | hinge 0.6677 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 71/200 | KL 0.2637 | hinge 0.6824 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 72/200 | KL 0.2597 | hinge 0.6822 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 73/200 | KL 0.2682 | hinge 0.6840 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 74/200 | KL 0.2667 | hinge 0.6683 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 75/200 | KL 0.2651 | hinge 0.6686 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 76/200 | KL 0.2619 | hinge 0.7003 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 77/200 | KL 0.2650 | hinge 0.6772 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 78/200 | KL 0.2672 | hinge 0.6656 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 79/200 | KL 0.2640 | hinge 0.6947 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 80/200 | KL 0.2637 | hinge 0.6735 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 81/200 | KL 0.2640 | hinge 0.6791 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 82/200 | KL 0.2632 | hinge 0.6719 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 83/200 | KL 0.2657 | hinge 0.6641 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 84/200 | KL 0.2629 | hinge 0.6767 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 85/200 | KL 0.2650 | hinge 0.6827 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 86/200 | KL 0.2605 | hinge 0.6974 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 87/200 | KL 0.2637 | hinge 0.6629 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 88/200 | KL 0.2638 | hinge 0.6894 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 89/200 | KL 0.2648 | hinge 0.6611 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 90/200 | KL 0.2663 | hinge 0.6692 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 91/200 | KL 0.2644 | hinge 0.6626 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 92/200 | KL 0.2646 | hinge 0.6664 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 93/200 | KL 0.2665 | hinge 0.6628 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 94/200 | KL 0.2643 | hinge 0.6746 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 95/200 | KL 0.2660 | hinge 0.6655 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 96/200 | KL 0.2633 | hinge 0.6760 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 97/200 | KL 0.2642 | hinge 0.6864 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 98/200 | KL 0.2688 | hinge 0.6741 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 99/200 | KL 0.2659 | hinge 0.6594 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 100/200 | KL 0.2663 | hinge 0.6655 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 101/200 | KL 0.2636 | hinge 0.6771 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 102/200 | KL 0.2698 | hinge 0.6622 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 103/200 | KL 0.2639 | hinge 0.6571 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 104/200 | KL 0.2620 | hinge 0.6851 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 105/200 | KL 0.2676 | hinge 0.6503 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 106/200 | KL 0.2613 | hinge 0.6907 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 107/200 | KL 0.2649 | hinge 0.6782 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 108/200 | KL 0.2658 | hinge 0.6743 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 109/200 | KL 0.2627 | hinge 0.6685 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 110/200 | KL 0.2650 | hinge 0.6578 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 111/200 | KL 0.2653 | hinge 0.6651 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 112/200 | KL 0.2689 | hinge 0.6819 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 113/200 | KL 0.2660 | hinge 0.6686 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 114/200 | KL 0.2631 | hinge 0.6716 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 115/200 | KL 0.2652 | hinge 0.6763 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 116/200 | KL 0.2653 | hinge 0.6715 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 117/200 | KL 0.2660 | hinge 0.6757 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 118/200 | KL 0.2700 | hinge 0.6572 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 119/200 | KL 0.2650 | hinge 0.6649 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 120/200 | KL 0.2687 | hinge 0.6606 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 121/200 | KL 0.2645 | hinge 0.6719 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 122/200 | KL 0.2658 | hinge 0.6672 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 123/200 | KL 0.2659 | hinge 0.6621 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 124/200 | KL 0.2632 | hinge 0.6827 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 125/200 | KL 0.2653 | hinge 0.6832 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 126/200 | KL 0.2631 | hinge 0.6818 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 127/200 | KL 0.2670 | hinge 0.6595 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 128/200 | KL 0.2660 | hinge 0.6704 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 129/200 | KL 0.2704 | hinge 0.6583 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 130/200 | KL 0.2655 | hinge 0.6542 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 131/200 | KL 0.2651 | hinge 0.6746 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 132/200 | KL 0.2591 | hinge 0.7130 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 133/200 | KL 0.2606 | hinge 0.7086 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 134/200 | KL 0.2651 | hinge 0.6577 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 135/200 | KL 0.2664 | hinge 0.6600 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 136/200 | KL 0.2625 | hinge 0.6721 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 137/200 | KL 0.2627 | hinge 0.6816 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 138/200 | KL 0.2622 | hinge 0.6829 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 139/200 | KL 0.2643 | hinge 0.6687 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 140/200 | KL 0.2691 | hinge 0.6573 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 141/200 | KL 0.2665 | hinge 0.6628 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 142/200 | KL 0.2647 | hinge 0.6603 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 143/200 | KL 0.2704 | hinge 0.6742 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 144/200 | KL 0.2676 | hinge 0.6577 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 145/200 | KL 0.2697 | hinge 0.6700 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 146/200 | KL 0.2654 | hinge 0.6677 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 147/200 | KL 0.2640 | hinge 0.6708 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 148/200 | KL 0.2663 | hinge 0.6639 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 149/200 | KL 0.2642 | hinge 0.6691 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 150/200 | KL 0.2640 | hinge 0.6606 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 151/200 | KL 0.2645 | hinge 0.6659 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 152/200 | KL 0.2692 | hinge 0.6750 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 153/200 | KL 0.2666 | hinge 0.6703 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 154/200 | KL 0.2657 | hinge 0.6704 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 155/200 | KL 0.2658 | hinge 0.6610 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 156/200 | KL 0.2638 | hinge 0.6636 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 157/200 | KL 0.2629 | hinge 0.6624 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 158/200 | KL 0.2695 | hinge 0.6700 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 159/200 | KL 0.2651 | hinge 0.6578 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 160/200 | KL 0.2639 | hinge 0.6971 | sparse 2.0878 | active 22
+[C_p3lam3.0] epoch 161/200 | KL 0.2650 | hinge 0.6712 | sparse 2.0879 | active 22
+[C_p3lam3.0] epoch 162/200 | KL 0.2644 | hinge 0.6669 | sparse 2.0879 | active 22
+[C_p3lam3.0] epoch 163/200 | KL 0.2669 | hinge 0.6763 | sparse 2.0879 | active 22
+[C_p3lam3.0] epoch 164/200 | KL 0.2661 | hinge 0.6578 | sparse 2.0879 | active 22
+[C_p3lam3.0] epoch 165/200 | KL 0.2659 | hinge 0.6723 | sparse 2.0878 | active 22
+[C_p3lam3.0] epoch 166/200 | KL 0.2657 | hinge 0.6698 | sparse 2.0878 | active 22
+[C_p3lam3.0] epoch 167/200 | KL 0.2655 | hinge 0.6684 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 168/200 | KL 0.2635 | hinge 0.6789 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 169/200 | KL 0.2649 | hinge 0.6682 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 170/200 | KL 0.2661 | hinge 0.6780 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 171/200 | KL 0.2610 | hinge 0.6918 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 172/200 | KL 0.2609 | hinge 0.6691 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 173/200 | KL 0.2669 | hinge 0.6536 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 174/200 | KL 0.2621 | hinge 0.6772 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 175/200 | KL 0.2641 | hinge 0.6602 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 176/200 | KL 0.2627 | hinge 0.6846 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 177/200 | KL 0.2647 | hinge 0.6635 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 178/200 | KL 0.2657 | hinge 0.6904 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 179/200 | KL 0.2622 | hinge 0.6823 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 180/200 | KL 0.2613 | hinge 0.7016 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 181/200 | KL 0.2623 | hinge 0.6638 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 182/200 | KL 0.2684 | hinge 0.6613 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 183/200 | KL 0.2646 | hinge 0.6909 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 184/200 | KL 0.2647 | hinge 0.6655 | sparse 2.0877 | active 22
+[C_p3lam3.0] epoch 185/200 | KL 0.2651 | hinge 0.6794 | sparse 2.0876 | active 22
+[C_p3lam3.0] epoch 186/200 | KL 0.2632 | hinge 0.6718 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 187/200 | KL 0.2659 | hinge 0.6609 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 188/200 | KL 0.2676 | hinge 0.6654 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 189/200 | KL 0.2670 | hinge 0.6647 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 190/200 | KL 0.2631 | hinge 0.6792 | sparse 2.0871 | active 22
+[C_p3lam3.0] epoch 191/200 | KL 0.2684 | hinge 0.6614 | sparse 2.0871 | active 22
+[C_p3lam3.0] epoch 192/200 | KL 0.2630 | hinge 0.7100 | sparse 2.0871 | active 22
+[C_p3lam3.0] epoch 193/200 | KL 0.2637 | hinge 0.6667 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 194/200 | KL 0.2626 | hinge 0.6931 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 195/200 | KL 0.2636 | hinge 0.6702 | sparse 2.0872 | active 22
+[C_p3lam3.0] epoch 196/200 | KL 0.2676 | hinge 0.6685 | sparse 2.0873 | active 22
+[C_p3lam3.0] epoch 197/200 | KL 0.2655 | hinge 0.6573 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 198/200 | KL 0.2678 | hinge 0.6637 | sparse 2.0874 | active 22
+[C_p3lam3.0] epoch 199/200 | KL 0.2677 | hinge 0.6775 | sparse 2.0875 | active 22
+[C_p3lam3.0] epoch 200/200 | KL 0.2665 | hinge 0.6662 | sparse 2.0875 | active 22
+
+=== C_p3lam3.0 mask on val === (active heads: 22)
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+A             0.948      0.952      0.984      0.988
+B             0.988      0.992      1.000      0.996
+C             0.952      0.920      0.996      1.000
+
+--- Setting final circuit mode to: False ---
+    Updated 16 HardConcreteGate modules.
+
+Done. Gates in masks_abc/  (suffix '_p3lam3.0')

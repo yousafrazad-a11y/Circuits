@@ -1,0 +1,29 @@
+{
+  "dataset": "C",
+  "suffix": "_p3lam3.0",
+  "lambda_finetune": 3.0,
+  "epochs": 200,
+  "active": 22,
+  "train_kl": 0.26654840586706996,
+  "train_hinge": 0.66619873046875,
+  "val": {
+    "A": {
+      "base_clean": 0.948,
+      "base_corr": 0.952,
+      "circ_clean": 0.984,
+      "circ_corr": 0.988
+    },
+    "B": {
+      "base_clean": 0.988,
+      "base_corr": 0.992,
+      "circ_clean": 1.0,
+      "circ_corr": 0.996
+    },
+    "C": {
+      "base_clean": 0.952,
+      "base_corr": 0.92,
+      "circ_clean": 0.996,
+      "circ_corr": 1.0
+    }
+  }
+}

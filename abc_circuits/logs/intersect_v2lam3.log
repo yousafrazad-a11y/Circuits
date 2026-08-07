@@ -1,0 +1,20 @@
+device: cuda | suffix: '_v2lam8'
+Traceback (most recent call last):
+  File "/home/exouser/pruning/abc_circuits/intersect_abc.py", line 278, in <module>
+    main()
+  File "/home/exouser/pruning/abc_circuits/intersect_abc.py", line 161, in main
+    masks["combined"] = load_mask(os.path.join(args.out_dir, f"combined{sfx}_mask.pt"))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/exouser/pruning/abc_circuits/intersect_abc.py", line 44, in load_mask
+    return torch.load(path, weights_only=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/exouser/pruning/venv/lib/python3.12/site-packages/torch/serialization.py", line 1530, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/exouser/pruning/venv/lib/python3.12/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/exouser/pruning/venv/lib/python3.12/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'masks_abc/combined_v2lam8_mask.pt'

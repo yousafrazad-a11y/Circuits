@@ -1,0 +1,81 @@
+device: cuda | suffix: '_v2lam3'
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4114.94it/s]
+
+########## PHASE 1: combined (3000 rows) ##########
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3779.61it/s]
+Llama model successfully adapted for pruning with block-level gates.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[combined_v2lam3] epoch 1/60 | KL 0.0454 | hinge 1.0529 | sparse 2.2893 | active 482
+[combined_v2lam3] epoch 2/60 | KL 0.1909 | hinge 0.3724 | sparse 5.8482 | active 301
+[combined_v2lam3] epoch 3/60 | KL 0.2677 | hinge 0.2180 | sparse 5.9507 | active 169
+[combined_v2lam3] epoch 4/60 | KL 0.2699 | hinge 0.2251 | sparse 4.9905 | active 101
+[combined_v2lam3] epoch 5/60 | KL 0.2623 | hinge 0.2482 | sparse 4.1883 | active 64
+[combined_v2lam3] epoch 6/60 | KL 0.2441 | hinge 0.3010 | sparse 3.6069 | active 49
+[combined_v2lam3] epoch 7/60 | KL 0.2611 | hinge 0.2712 | sparse 3.5696 | active 43
+[combined_v2lam3] epoch 8/60 | KL 0.2496 | hinge 0.2828 | sparse 3.8475 | active 39
+[combined_v2lam3] epoch 9/60 | KL 0.2431 | hinge 0.3272 | sparse 4.0463 | active 34
+[combined_v2lam3] epoch 10/60 | KL 0.2443 | hinge 0.3506 | sparse 4.1535 | active 32
+[combined_v2lam3] epoch 11/60 | KL 0.2443 | hinge 0.3449 | sparse 4.4686 | active 32
+[combined_v2lam3] epoch 12/60 | KL 0.2459 | hinge 0.3463 | sparse 4.5553 | active 32
+[combined_v2lam3] epoch 13/60 | KL 0.2440 | hinge 0.3516 | sparse 4.5546 | active 32
+[combined_v2lam3] epoch 14/60 | KL 0.2470 | hinge 0.3521 | sparse 4.5542 | active 32
+[combined_v2lam3] epoch 15/60 | KL 0.2488 | hinge 0.3592 | sparse 4.5557 | active 32
+[combined_v2lam3] epoch 16/60 | KL 0.2451 | hinge 0.3655 | sparse 4.5133 | active 31
+[combined_v2lam3] epoch 17/60 | KL 0.2436 | hinge 0.3658 | sparse 4.4638 | active 31
+[combined_v2lam3] epoch 18/60 | KL 0.2460 | hinge 0.3587 | sparse 4.4593 | active 31
+[combined_v2lam3] epoch 19/60 | KL 0.2392 | hinge 0.4109 | sparse 4.3670 | active 29
+[combined_v2lam3] epoch 20/60 | KL 0.2379 | hinge 0.4142 | sparse 4.2802 | active 29
+[combined_v2lam3] epoch 21/60 | KL 0.2378 | hinge 0.4329 | sparse 4.2460 | active 28
+[combined_v2lam3] epoch 22/60 | KL 0.2403 | hinge 0.4292 | sparse 4.1956 | active 28
+[combined_v2lam3] epoch 23/60 | KL 0.2406 | hinge 0.4316 | sparse 4.1914 | active 28
+[combined_v2lam3] epoch 24/60 | KL 0.2436 | hinge 0.4227 | sparse 4.1898 | active 28
+[combined_v2lam3] epoch 25/60 | KL 0.2490 | hinge 0.4394 | sparse 4.1099 | active 27
+[combined_v2lam3] epoch 26/60 | KL 0.2480 | hinge 0.4537 | sparse 4.1020 | active 27
+[combined_v2lam3] epoch 27/60 | KL 0.2466 | hinge 0.4566 | sparse 4.1025 | active 27
+[combined_v2lam3] epoch 28/60 | KL 0.2487 | hinge 0.4431 | sparse 4.1023 | active 27
+[combined_v2lam3] epoch 29/60 | KL 0.2485 | hinge 0.4316 | sparse 4.1020 | active 27
+[combined_v2lam3] epoch 30/60 | KL 0.2456 | hinge 0.4557 | sparse 4.1016 | active 27
+[combined_v2lam3] epoch 31/60 | KL 0.2456 | hinge 0.4582 | sparse 4.1018 | active 27
+[combined_v2lam3] epoch 32/60 | KL 0.2469 | hinge 0.4554 | sparse 4.1020 | active 27
+[combined_v2lam3] epoch 33/60 | KL 0.2480 | hinge 0.4479 | sparse 4.1019 | active 27
+[combined_v2lam3] epoch 34/60 | KL 0.2448 | hinge 0.4608 | sparse 4.1037 | active 27
+[combined_v2lam3] epoch 35/60 | KL 0.2482 | hinge 0.4450 | sparse 4.1025 | active 27
+[combined_v2lam3] epoch 36/60 | KL 0.2459 | hinge 0.4467 | sparse 4.1020 | active 27
+[combined_v2lam3] epoch 37/60 | KL 0.2483 | hinge 0.4482 | sparse 4.1021 | active 27
+[combined_v2lam3] epoch 38/60 | KL 0.2476 | hinge 0.4444 | sparse 4.1026 | active 27
+[combined_v2lam3] epoch 39/60 | KL 0.2474 | hinge 0.4414 | sparse 4.1030 | active 27
+[combined_v2lam3] epoch 40/60 | KL 0.2485 | hinge 0.4556 | sparse 4.1020 | active 27
+[combined_v2lam3] epoch 41/60 | KL 0.2504 | hinge 0.4511 | sparse 4.1016 | active 27
+[combined_v2lam3] epoch 42/60 | KL 0.2489 | hinge 0.4626 | sparse 4.1023 | active 27
+[combined_v2lam3] epoch 43/60 | KL 0.2464 | hinge 0.4548 | sparse 4.1029 | active 27
+[combined_v2lam3] epoch 44/60 | KL 0.2461 | hinge 0.4513 | sparse 4.1032 | active 27
+[combined_v2lam3] epoch 45/60 | KL 0.2497 | hinge 0.4452 | sparse 4.1026 | active 27
+[combined_v2lam3] epoch 46/60 | KL 0.2504 | hinge 0.4475 | sparse 4.1026 | active 27
+[combined_v2lam3] epoch 47/60 | KL 0.2499 | hinge 0.4450 | sparse 4.1024 | active 27
+[combined_v2lam3] epoch 48/60 | KL 0.2494 | hinge 0.4373 | sparse 4.1025 | active 27
+[combined_v2lam3] epoch 49/60 | KL 0.2471 | hinge 0.4511 | sparse 4.1018 | active 27
+[combined_v2lam3] epoch 50/60 | KL 0.2425 | hinge 0.4685 | sparse 4.1022 | active 27
+[combined_v2lam3] epoch 51/60 | KL 0.2455 | hinge 0.4510 | sparse 4.1022 | active 27
+[combined_v2lam3] epoch 52/60 | KL 0.2480 | hinge 0.4459 | sparse 4.1024 | active 27
+[combined_v2lam3] epoch 53/60 | KL 0.2492 | hinge 0.4580 | sparse 4.1013 | active 27
+[combined_v2lam3] epoch 54/60 | KL 0.2479 | hinge 0.4435 | sparse 4.1014 | active 27
+[combined_v2lam3] epoch 55/60 | KL 0.2459 | hinge 0.4557 | sparse 4.1020 | active 27
+[combined_v2lam3] epoch 56/60 | KL 0.2457 | hinge 0.4787 | sparse 4.1022 | active 27
+[combined_v2lam3] epoch 57/60 | KL 0.2505 | hinge 0.4333 | sparse 4.1026 | active 27
+[combined_v2lam3] epoch 58/60 | KL 0.2486 | hinge 0.4653 | sparse 4.1030 | active 27
+[combined_v2lam3] epoch 59/60 | KL 0.2489 | hinge 0.4452 | sparse 4.1024 | active 27
+[combined_v2lam3] epoch 60/60 | KL 0.2443 | hinge 0.4535 | sparse 4.1024 | active 27
+
+=== combined_v2lam3 mask on val === (active heads: 27)
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 16 HardConcreteGate modules.
+A             0.996      0.996      0.988      0.976
+B             0.972      0.960      1.000      1.000
+C             0.948      0.972      0.988      0.988
+
+--- Setting final circuit mode to: False ---
+    Updated 16 HardConcreteGate modules.
+
+Done. Gates in masks_abc/  (suffix '_v2lam3')

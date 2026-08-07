@@ -1,0 +1,150 @@
+device: cuda | suffix: '_b3lam3'
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 55188.21it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 3649.90it/s]
+
+########## PHASE 2: finetune on A (lambda=3.0) ##########
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4535.61it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 3381.18it/s]
+Llama model successfully adapted for pruning with block-level gates.
+  finetune start: 27 gates open (trainable), 997 locked off <- masks_abc_8b/combined_b3lam3_checkpoint.pt
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[A_b3lam3] epoch 1/30 | KL 0.2032 | hinge 0.1489 | sparse 1.4494 | active 22
+[A_b3lam3] epoch 2/30 | KL 0.2040 | hinge 0.1721 | sparse 2.0389 | active 21
+[A_b3lam3] epoch 3/30 | KL 0.2105 | hinge 0.1447 | sparse 1.9285 | active 20
+[A_b3lam3] epoch 4/30 | KL 0.2117 | hinge 0.1423 | sparse 1.9023 | active 20
+[A_b3lam3] epoch 5/30 | KL 0.2134 | hinge 0.1507 | sparse 1.9036 | active 20
+[A_b3lam3] epoch 6/30 | KL 0.2176 | hinge 0.1491 | sparse 1.8992 | active 20
+[A_b3lam3] epoch 7/30 | KL 0.2150 | hinge 0.1599 | sparse 1.8299 | active 19
+[A_b3lam3] epoch 8/30 | KL 0.2186 | hinge 0.1731 | sparse 1.8119 | active 19
+[A_b3lam3] epoch 9/30 | KL 0.2144 | hinge 0.1594 | sparse 1.8037 | active 18
+[A_b3lam3] epoch 10/30 | KL 0.2063 | hinge 0.2134 | sparse 1.6966 | active 17
+[A_b3lam3] epoch 11/30 | KL 0.2038 | hinge 0.2135 | sparse 1.6310 | active 17
+[A_b3lam3] epoch 12/30 | KL 0.2037 | hinge 0.2149 | sparse 1.6293 | active 17
+[A_b3lam3] epoch 13/30 | KL 0.2077 | hinge 0.2377 | sparse 1.6307 | active 17
+[A_b3lam3] epoch 14/30 | KL 0.2069 | hinge 0.2240 | sparse 1.6292 | active 17
+[A_b3lam3] epoch 15/30 | KL 0.2041 | hinge 0.2100 | sparse 1.6285 | active 17
+[A_b3lam3] epoch 16/30 | KL 0.2028 | hinge 0.2178 | sparse 1.6276 | active 17
+[A_b3lam3] epoch 17/30 | KL 0.2047 | hinge 0.2188 | sparse 1.6279 | active 17
+[A_b3lam3] epoch 18/30 | KL 0.2056 | hinge 0.2257 | sparse 1.6276 | active 17
+[A_b3lam3] epoch 19/30 | KL 0.2045 | hinge 0.2111 | sparse 1.6271 | active 17
+[A_b3lam3] epoch 20/30 | KL 0.2043 | hinge 0.2277 | sparse 1.6263 | active 17
+[A_b3lam3] epoch 21/30 | KL 0.2052 | hinge 0.2220 | sparse 1.6262 | active 17
+[A_b3lam3] epoch 22/30 | KL 0.2032 | hinge 0.2077 | sparse 1.6266 | active 17
+[A_b3lam3] epoch 23/30 | KL 0.2033 | hinge 0.2201 | sparse 1.6257 | active 17
+[A_b3lam3] epoch 24/30 | KL 0.2054 | hinge 0.2152 | sparse 1.6248 | active 17
+[A_b3lam3] epoch 25/30 | KL 0.2066 | hinge 0.2261 | sparse 1.6248 | active 17
+[A_b3lam3] epoch 26/30 | KL 0.2053 | hinge 0.2228 | sparse 1.6255 | active 17
+[A_b3lam3] epoch 27/30 | KL 0.2083 | hinge 0.2291 | sparse 1.6273 | active 17
+[A_b3lam3] epoch 28/30 | KL 0.2078 | hinge 0.2203 | sparse 1.6271 | active 17
+[A_b3lam3] epoch 29/30 | KL 0.2027 | hinge 0.2106 | sparse 1.6263 | active 17
+[A_b3lam3] epoch 30/30 | KL 0.2032 | hinge 0.2131 | sparse 1.6266 | active 17
+
+=== A_b3lam3 mask on val === (active heads: 17)
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A             0.996      0.992      1.000      0.988
+B             0.908      0.924      0.600      0.640
+C             1.000      0.996      0.328      0.268
+
+--- Setting final circuit mode to: False ---
+    Updated 32 HardConcreteGate modules.
+
+########## PHASE 2: finetune on B (lambda=3.0) ##########
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 4460.84it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 4195.67it/s]
+Llama model successfully adapted for pruning with block-level gates.
+  finetune start: 27 gates open (trainable), 997 locked off <- masks_abc_8b/combined_b3lam3_checkpoint.pt
+[B_b3lam3] epoch 1/30 | KL 0.2688 | hinge 1.2724 | sparse 1.5086 | active 26
+[B_b3lam3] epoch 2/30 | KL 0.2694 | hinge 1.1751 | sparse 2.1629 | active 20
+[B_b3lam3] epoch 3/30 | KL 0.2749 | hinge 1.1261 | sparse 1.9155 | active 20
+[B_b3lam3] epoch 4/30 | KL 0.2722 | hinge 1.1032 | sparse 1.9141 | active 20
+[B_b3lam3] epoch 5/30 | KL 0.2740 | hinge 1.1253 | sparse 1.9137 | active 20
+[B_b3lam3] epoch 6/30 | KL 0.2711 | hinge 1.1146 | sparse 1.9120 | active 20
+[B_b3lam3] epoch 7/30 | KL 0.2707 | hinge 1.1145 | sparse 1.9108 | active 20
+[B_b3lam3] epoch 8/30 | KL 0.2745 | hinge 1.1156 | sparse 1.9111 | active 20
+[B_b3lam3] epoch 9/30 | KL 0.2698 | hinge 1.1221 | sparse 1.8876 | active 18
+[B_b3lam3] epoch 10/30 | KL 0.2726 | hinge 1.1677 | sparse 1.7251 | active 18
+[B_b3lam3] epoch 11/30 | KL 0.2730 | hinge 1.1509 | sparse 1.7197 | active 18
+[B_b3lam3] epoch 12/30 | KL 0.2710 | hinge 1.1774 | sparse 1.7169 | active 18
+[B_b3lam3] epoch 13/30 | KL 0.2716 | hinge 1.1718 | sparse 1.7112 | active 18
+[B_b3lam3] epoch 14/30 | KL 0.2709 | hinge 1.1848 | sparse 1.6574 | active 17
+[B_b3lam3] epoch 15/30 | KL 0.2711 | hinge 1.1909 | sparse 1.6273 | active 17
+[B_b3lam3] epoch 16/30 | KL 0.2710 | hinge 1.1959 | sparse 1.6257 | active 17
+[B_b3lam3] epoch 17/30 | KL 0.2715 | hinge 1.2016 | sparse 1.6259 | active 17
+[B_b3lam3] epoch 18/30 | KL 0.2706 | hinge 1.1940 | sparse 1.6256 | active 17
+[B_b3lam3] epoch 19/30 | KL 0.2735 | hinge 1.1767 | sparse 1.6247 | active 17
+[B_b3lam3] epoch 20/30 | KL 0.2692 | hinge 1.1771 | sparse 1.6245 | active 17
+[B_b3lam3] epoch 21/30 | KL 0.2728 | hinge 1.1904 | sparse 1.6243 | active 17
+[B_b3lam3] epoch 22/30 | KL 0.2682 | hinge 1.1975 | sparse 1.6247 | active 17
+[B_b3lam3] epoch 23/30 | KL 0.2706 | hinge 1.1934 | sparse 1.6246 | active 17
+[B_b3lam3] epoch 24/30 | KL 0.2699 | hinge 1.1875 | sparse 1.6243 | active 17
+[B_b3lam3] epoch 25/30 | KL 0.2697 | hinge 1.1879 | sparse 1.6238 | active 17
+[B_b3lam3] epoch 26/30 | KL 0.2728 | hinge 1.1925 | sparse 1.6239 | active 17
+[B_b3lam3] epoch 27/30 | KL 0.2693 | hinge 1.1885 | sparse 1.6240 | active 17
+[B_b3lam3] epoch 28/30 | KL 0.2707 | hinge 1.2038 | sparse 1.6238 | active 17
+[B_b3lam3] epoch 29/30 | KL 0.2701 | hinge 1.1776 | sparse 1.6231 | active 17
+[B_b3lam3] epoch 30/30 | KL 0.2722 | hinge 1.1917 | sparse 1.6228 | active 17
+
+=== B_b3lam3 mask on val === (active heads: 17)
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A             0.996      0.992      0.644      0.636
+B             0.908      0.924      0.920      0.916
+C             1.000      0.996      0.644      0.600
+
+--- Setting final circuit mode to: False ---
+    Updated 32 HardConcreteGate modules.
+
+########## PHASE 2: finetune on C (lambda=3.0) ##########
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 3249.51it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 3459.78it/s]
+Llama model successfully adapted for pruning with block-level gates.
+  finetune start: 27 gates open (trainable), 997 locked off <- masks_abc_8b/combined_b3lam3_checkpoint.pt
+[C_b3lam3] epoch 1/30 | KL 0.1325 | hinge 0.7149 | sparse 1.4959 | active 25
+[C_b3lam3] epoch 2/30 | KL 0.1469 | hinge 0.6284 | sparse 2.3993 | active 25
+[C_b3lam3] epoch 3/30 | KL 0.1470 | hinge 0.6210 | sparse 2.3971 | active 25
+[C_b3lam3] epoch 4/30 | KL 0.1475 | hinge 0.6111 | sparse 2.3963 | active 25
+[C_b3lam3] epoch 5/30 | KL 0.1473 | hinge 0.6166 | sparse 2.3957 | active 25
+[C_b3lam3] epoch 6/30 | KL 0.1466 | hinge 0.6130 | sparse 2.3959 | active 25
+[C_b3lam3] epoch 7/30 | KL 0.1468 | hinge 0.6165 | sparse 2.3957 | active 25
+[C_b3lam3] epoch 8/30 | KL 0.1478 | hinge 0.6141 | sparse 2.3958 | active 25
+[C_b3lam3] epoch 9/30 | KL 0.1474 | hinge 0.6230 | sparse 2.3960 | active 25
+[C_b3lam3] epoch 10/30 | KL 0.1482 | hinge 0.6039 | sparse 2.3965 | active 25
+[C_b3lam3] epoch 11/30 | KL 0.1487 | hinge 0.6021 | sparse 2.3962 | active 25
+[C_b3lam3] epoch 12/30 | KL 0.1483 | hinge 0.6044 | sparse 2.3959 | active 25
+[C_b3lam3] epoch 13/30 | KL 0.1476 | hinge 0.6124 | sparse 2.3961 | active 25
+[C_b3lam3] epoch 14/30 | KL 0.1480 | hinge 0.6086 | sparse 2.3959 | active 25
+[C_b3lam3] epoch 15/30 | KL 0.1475 | hinge 0.6166 | sparse 2.3959 | active 25
+[C_b3lam3] epoch 16/30 | KL 0.1472 | hinge 0.6188 | sparse 2.3961 | active 25
+[C_b3lam3] epoch 17/30 | KL 0.1479 | hinge 0.6162 | sparse 2.3960 | active 25
+[C_b3lam3] epoch 18/30 | KL 0.1483 | hinge 0.6068 | sparse 2.3961 | active 25
+[C_b3lam3] epoch 19/30 | KL 0.1469 | hinge 0.6149 | sparse 2.3963 | active 25
+[C_b3lam3] epoch 20/30 | KL 0.1480 | hinge 0.6044 | sparse 2.3961 | active 25
+[C_b3lam3] epoch 21/30 | KL 0.1481 | hinge 0.6088 | sparse 2.3959 | active 25
+[C_b3lam3] epoch 22/30 | KL 0.1480 | hinge 0.6081 | sparse 2.3958 | active 25
+[C_b3lam3] epoch 23/30 | KL 0.1485 | hinge 0.6070 | sparse 2.3961 | active 25
+[C_b3lam3] epoch 24/30 | KL 0.1478 | hinge 0.6052 | sparse 2.3961 | active 25
+[C_b3lam3] epoch 25/30 | KL 0.1474 | hinge 0.6114 | sparse 2.3960 | active 25
+[C_b3lam3] epoch 26/30 | KL 0.1478 | hinge 0.6132 | sparse 2.3959 | active 25
+[C_b3lam3] epoch 27/30 | KL 0.1472 | hinge 0.6080 | sparse 2.3961 | active 25
+[C_b3lam3] epoch 28/30 | KL 0.1477 | hinge 0.6102 | sparse 2.3961 | active 25
+[C_b3lam3] epoch 29/30 | KL 0.1477 | hinge 0.6117 | sparse 2.3961 | active 25
+[C_b3lam3] epoch 30/30 | KL 0.1476 | hinge 0.6163 | sparse 2.3959 | active 25
+
+=== C_b3lam3 mask on val === (active heads: 25)
+dataset  base clean  base corr circ clean  circ corr
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A             0.996      0.992      0.756      0.724
+B             0.908      0.924      0.916      0.920
+C             1.000      0.996      1.000      1.000
+
+--- Setting final circuit mode to: False ---
+    Updated 32 HardConcreteGate modules.
+
+Done. Gates in masks_abc_8b/  (suffix '_b3lam3')
