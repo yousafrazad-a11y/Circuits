@@ -1,0 +1,12 @@
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights:   6%|▌         | 9/146 [00:00<00:01, 78.68it/s]Loading weights:  14%|█▎        | 20/146 [00:00<00:01, 70.34it/s]Loading weights:  19%|█▉        | 28/146 [00:00<00:01, 73.65it/s]Loading weights:  29%|██▉       | 42/146 [00:00<00:01, 89.13it/s]Loading weights:  38%|███▊      | 55/146 [00:00<00:00, 94.65it/s]Loading weights:  45%|████▍     | 65/146 [00:00<00:00, 96.20it/s]Loading weights:  52%|█████▏    | 76/146 [00:00<00:00, 86.87it/s]Loading weights:  59%|█████▉    | 86/146 [00:00<00:00, 88.85it/s]Loading weights:  69%|██████▉   | 101/146 [00:01<00:00, 101.74it/s]Loading weights:  79%|███████▉  | 115/146 [00:01<00:00, 93.92it/s] Loading weights:  86%|████████▌ | 125/146 [00:01<00:00, 89.66it/s]Loading weights: 100%|██████████| 146/146 [00:01<00:00, 98.42it/s]
+model=meta-llama/Llama-3.2-1B  n=200 per cell
+template     boxes swaps hops cln_cand cln_vocab cor_cand cor_vocab
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+swapbox_ans_q_fs16_uq_c1     3     2    2     0.99      1.00     1.00      1.00
+swapbox_ans_q_fs16_uq_c1     4     2    2     0.47      0.48     0.76      0.79
+swapbox_ans_q_fs32_uq     3     2    2     1.00      1.00     1.00      1.00
+swapbox_ans_q_fs32_uq     4     2    2     0.67      0.67     0.56      0.54
+swapbox_ans_q_fs16_uq_s7     3     2    2     1.00      1.00     0.96      0.99
+swapbox_ans_q_fs16_uq_s7     4     2    2     0.43      0.43     0.70      0.72
+swapbox_ans_q_fs16_uq_s777     3     2    2     1.00      1.00     0.98      0.98
+swapbox_ans_q_fs16_uq_s777     4     2    2     0.44      0.43     0.52      0.58

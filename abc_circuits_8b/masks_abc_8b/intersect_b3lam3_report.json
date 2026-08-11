@@ -1,0 +1,892 @@
+{
+  "model_name": "meta-llama/Llama-3.1-8B",
+  "data_dir": "datasets",
+  "out_dir": "masks_abc_8b",
+  "suffix": "_b3lam3",
+  "combined_suffix": "_b3lam3",
+  "set_sizes": {
+    "A": 17,
+    "B": 17,
+    "C": 25,
+    "combined": 27,
+    "A^B": 13,
+    "A^C": 15,
+    "B^C": 17,
+    "AUB": 21,
+    "rand1": 13,
+    "rand2": 13,
+    "rand3": 13
+  },
+  "random_overlap_nulls": {
+    "A^B": 10.703703703703704,
+    "A^C": 15.74074074074074,
+    "B^C": 15.74074074074074
+  },
+  "heads_outside_parent": {
+    "A": 0,
+    "B": 0,
+    "C": 0
+  },
+  "venn_regions": {
+    "A^B^C  (shared core)": {
+      "size": 13,
+      "heads": [
+        "L16.H1",
+        "L16.H22",
+        "L22.H19",
+        "L24.H27",
+        "L26.H29",
+        "L26.H3",
+        "L27.H22",
+        "L27.H23",
+        "L27.H4",
+        "L27.H7",
+        "L30.H21",
+        "L30.H24",
+        "L31.H0"
+      ]
+    },
+    "A^B\\C  (shared extras)": {
+      "size": 0,
+      "heads": []
+    },
+    "A^C\\B  (core closed by B)": {
+      "size": 2,
+      "heads": [
+        "L25.H12",
+        "L26.H13"
+      ]
+    },
+    "B^C\\A  (core closed by A)": {
+      "size": 4,
+      "heads": [
+        "L17.H24",
+        "L24.H25",
+        "L25.H15",
+        "L31.H1"
+      ]
+    },
+    "A only  (A-specific)": {
+      "size": 2,
+      "heads": [
+        "L17.H27",
+        "L18.H29"
+      ]
+    },
+    "B only  (B-specific)": {
+      "size": 0,
+      "heads": []
+    },
+    "C only  (C-specific)": {
+      "size": 6,
+      "heads": [
+        "L13.H4",
+        "L15.H30",
+        "L16.H20",
+        "L20.H1",
+        "L25.H6",
+        "L30.H15"
+      ]
+    }
+  },
+  "cells": {
+    "A": {
+      "base": {
+        "pairwise": 0.996,
+        "top1_target": 0.936,
+        "top1_distractor": 0.0,
+        "top1_other": 0.064,
+        "margin": 5.8561875,
+        "kl": 0.0,
+        "other_top": [
+          [
+            757,
+            11
+          ],
+          [
+            279,
+            5
+          ]
+        ]
+      },
+      "combined": {
+        "pairwise": 1.0,
+        "top1_target": 0.96,
+        "top1_distractor": 0.0,
+        "top1_other": 0.04,
+        "margin": 7.1953125,
+        "kl": 0.21819416666030883,
+        "other_top": [
+          [
+            757,
+            6
+          ],
+          [
+            279,
+            4
+          ]
+        ]
+      },
+      "A": {
+        "pairwise": 1.0,
+        "top1_target": 0.948,
+        "top1_distractor": 0.0,
+        "top1_other": 0.052,
+        "margin": 5.9090625,
+        "kl": 0.20761693316698074,
+        "other_top": [
+          [
+            279,
+            7
+          ],
+          [
+            757,
+            6
+          ]
+        ]
+      },
+      "B": {
+        "pairwise": 0.644,
+        "top1_target": 0.472,
+        "top1_distractor": 0.152,
+        "top1_other": 0.376,
+        "margin": 0.651375,
+        "kl": 0.6443758623600007,
+        "other_top": [
+          [
+            279,
+            59
+          ],
+          [
+            757,
+            32
+          ],
+          [
+            264,
+            3
+          ]
+        ]
+      },
+      "C": {
+        "pairwise": 0.756,
+        "top1_target": 0.568,
+        "top1_distractor": 0.12,
+        "top1_other": 0.312,
+        "margin": 1.427875,
+        "kl": 0.5035153140723705,
+        "other_top": [
+          [
+            279,
+            51
+          ],
+          [
+            757,
+            25
+          ],
+          [
+            264,
+            2
+          ]
+        ]
+      },
+      "A^B": {
+        "pairwise": 0.744,
+        "top1_target": 0.492,
+        "top1_distractor": 0.136,
+        "top1_other": 0.372,
+        "margin": 1.184875,
+        "kl": 0.552998910188675,
+        "other_top": [
+          [
+            279,
+            64
+          ],
+          [
+            757,
+            27
+          ],
+          [
+            264,
+            2
+          ]
+        ]
+      },
+      "A^C": {
+        "pairwise": 0.82,
+        "top1_target": 0.588,
+        "top1_distractor": 0.104,
+        "top1_other": 0.308,
+        "margin": 1.727375,
+        "kl": 0.4655641356110573,
+        "other_top": [
+          [
+            279,
+            55
+          ],
+          [
+            757,
+            21
+          ],
+          [
+            264,
+            1
+          ]
+        ]
+      },
+      "B^C": {
+        "pairwise": 0.644,
+        "top1_target": 0.472,
+        "top1_distractor": 0.152,
+        "top1_other": 0.376,
+        "margin": 0.651375,
+        "kl": 0.6443758623600007,
+        "other_top": [
+          [
+            279,
+            59
+          ],
+          [
+            757,
+            32
+          ],
+          [
+            264,
+            3
+          ]
+        ]
+      },
+      "AUB": {
+        "pairwise": 0.996,
+        "top1_target": 0.944,
+        "top1_distractor": 0.0,
+        "top1_other": 0.056,
+        "margin": 6.7195625,
+        "kl": 0.21185861772298814,
+        "other_top": [
+          [
+            279,
+            8
+          ],
+          [
+            757,
+            6
+          ]
+        ]
+      },
+      "rand1": {
+        "pairwise": 0.008,
+        "top1_target": 0.0,
+        "top1_distractor": 0.916,
+        "top1_other": 0.084,
+        "margin": -4.84375,
+        "kl": 2.737481275558472,
+        "other_top": [
+          [
+            757,
+            13
+          ],
+          [
+            279,
+            7
+          ],
+          [
+            264,
+            1
+          ]
+        ]
+      },
+      "rand2": {
+        "pairwise": 0.252,
+        "top1_target": 0.144,
+        "top1_distractor": 0.452,
+        "top1_other": 0.404,
+        "margin": -1.605125,
+        "kl": 1.3652192087173463,
+        "other_top": [
+          [
+            279,
+            60
+          ],
+          [
+            757,
+            37
+          ],
+          [
+            264,
+            4
+          ]
+        ]
+      },
+      "rand3": {
+        "pairwise": 0.016,
+        "top1_target": 0.008,
+        "top1_distractor": 0.864,
+        "top1_other": 0.128,
+        "margin": -4.32925,
+        "kl": 2.4741303215026855,
+        "other_top": [
+          [
+            757,
+            19
+          ],
+          [
+            279,
+            12
+          ],
+          [
+            264,
+            1
+          ]
+        ]
+      }
+    },
+    "B": {
+      "base": {
+        "pairwise": 0.908,
+        "top1_target": 0.792,
+        "top1_distractor": 0.068,
+        "top1_other": 0.14,
+        "margin": 3.114125,
+        "kl": 0.0,
+        "other_top": [
+          [
+            5320,
+            3
+          ],
+          [
+            3116,
+            2
+          ],
+          [
+            13892,
+            2
+          ]
+        ]
+      },
+      "combined": {
+        "pairwise": 0.872,
+        "top1_target": 0.78,
+        "top1_distractor": 0.1,
+        "top1_other": 0.12,
+        "margin": 4.3495,
+        "kl": 0.2706377995014191,
+        "other_top": [
+          [
+            3116,
+            3
+          ],
+          [
+            5320,
+            3
+          ],
+          [
+            220,
+            3
+          ]
+        ]
+      },
+      "A": {
+        "pairwise": 0.6,
+        "top1_target": 0.46,
+        "top1_distractor": 0.28,
+        "top1_other": 0.26,
+        "margin": 0.81025,
+        "kl": 0.4053342760801315,
+        "other_top": [
+          [
+            220,
+            8
+          ],
+          [
+            3116,
+            3
+          ],
+          [
+            13892,
+            3
+          ]
+        ]
+      },
+      "B": {
+        "pairwise": 0.92,
+        "top1_target": 0.808,
+        "top1_distractor": 0.048,
+        "top1_other": 0.144,
+        "margin": 4.008375,
+        "kl": 0.2591666315793991,
+        "other_top": [
+          [
+            220,
+            5
+          ],
+          [
+            3116,
+            4
+          ],
+          [
+            1891,
+            3
+          ]
+        ]
+      },
+      "C": {
+        "pairwise": 0.916,
+        "top1_target": 0.84,
+        "top1_distractor": 0.048,
+        "top1_other": 0.112,
+        "margin": 4.68,
+        "kl": 0.29707363712787627,
+        "other_top": [
+          [
+            3116,
+            4
+          ],
+          [
+            220,
+            3
+          ],
+          [
+            5320,
+            2
+          ]
+        ]
+      },
+      "A^B": {
+        "pairwise": 0.664,
+        "top1_target": 0.52,
+        "top1_distractor": 0.224,
+        "top1_other": 0.256,
+        "margin": 1.09075,
+        "kl": 0.3296209064722061,
+        "other_top": [
+          [
+            220,
+            7
+          ],
+          [
+            5320,
+            4
+          ],
+          [
+            3116,
+            3
+          ]
+        ]
+      },
+      "A^C": {
+        "pairwise": 0.688,
+        "top1_target": 0.552,
+        "top1_distractor": 0.22,
+        "top1_other": 0.228,
+        "margin": 1.325875,
+        "kl": 0.3213750092983246,
+        "other_top": [
+          [
+            220,
+            7
+          ],
+          [
+            5320,
+            4
+          ],
+          [
+            3116,
+            3
+          ]
+        ]
+      },
+      "B^C": {
+        "pairwise": 0.92,
+        "top1_target": 0.808,
+        "top1_distractor": 0.048,
+        "top1_other": 0.144,
+        "margin": 4.008375,
+        "kl": 0.2591666315793991,
+        "other_top": [
+          [
+            220,
+            5
+          ],
+          [
+            3116,
+            4
+          ],
+          [
+            1891,
+            3
+          ]
+        ]
+      },
+      "AUB": {
+        "pairwise": 0.876,
+        "top1_target": 0.772,
+        "top1_distractor": 0.092,
+        "top1_other": 0.136,
+        "margin": 4.011875,
+        "kl": 0.2602461134195328,
+        "other_top": [
+          [
+            220,
+            5
+          ],
+          [
+            3116,
+            3
+          ],
+          [
+            3930,
+            2
+          ]
+        ]
+      },
+      "rand1": {
+        "pairwise": 0.072,
+        "top1_target": 0.036,
+        "top1_distractor": 0.724,
+        "top1_other": 0.24,
+        "margin": -2.3635,
+        "kl": 1.088832453727722,
+        "other_top": [
+          [
+            220,
+            8
+          ],
+          [
+            3116,
+            4
+          ],
+          [
+            1891,
+            3
+          ]
+        ]
+      },
+      "rand2": {
+        "pairwise": 0.396,
+        "top1_target": 0.3,
+        "top1_distractor": 0.376,
+        "top1_other": 0.324,
+        "margin": -0.389125,
+        "kl": 0.5327446423768997,
+        "other_top": [
+          [
+            220,
+            15
+          ],
+          [
+            1891,
+            5
+          ],
+          [
+            3116,
+            4
+          ]
+        ]
+      },
+      "rand3": {
+        "pairwise": 0.088,
+        "top1_target": 0.044,
+        "top1_distractor": 0.668,
+        "top1_other": 0.288,
+        "margin": -1.97225,
+        "kl": 0.9810423336029053,
+        "other_top": [
+          [
+            220,
+            8
+          ],
+          [
+            3116,
+            4
+          ],
+          [
+            1891,
+            4
+          ]
+        ]
+      }
+    },
+    "C": {
+      "base": {
+        "pairwise": 1.0,
+        "top1_target": 0.964,
+        "top1_distractor": 0.0,
+        "top1_other": 0.036,
+        "margin": 2.707,
+        "kl": 0.0,
+        "other_top": [
+          [
+            503,
+            2
+          ],
+          [
+            14282,
+            1
+          ],
+          [
+            379,
+            1
+          ]
+        ]
+      },
+      "combined": {
+        "pairwise": 0.996,
+        "top1_target": 0.976,
+        "top1_distractor": 0.004,
+        "top1_other": 0.02,
+        "margin": 3.908625,
+        "kl": 0.13142053073644638,
+        "other_top": [
+          [
+            379,
+            2
+          ],
+          [
+            1536,
+            1
+          ],
+          [
+            3930,
+            1
+          ]
+        ]
+      },
+      "A": {
+        "pairwise": 0.328,
+        "top1_target": 0.304,
+        "top1_distractor": 0.56,
+        "top1_other": 0.136,
+        "margin": -0.45775,
+        "kl": 0.15134641122817993,
+        "other_top": [
+          [
+            379,
+            12
+          ],
+          [
+            2874,
+            4
+          ],
+          [
+            477,
+            2
+          ]
+        ]
+      },
+      "B": {
+        "pairwise": 0.644,
+        "top1_target": 0.54,
+        "top1_distractor": 0.244,
+        "top1_other": 0.216,
+        "margin": 0.58075,
+        "kl": 0.11514849436283112,
+        "other_top": [
+          [
+            379,
+            20
+          ],
+          [
+            9693,
+            4
+          ],
+          [
+            503,
+            3
+          ]
+        ]
+      },
+      "C": {
+        "pairwise": 1.0,
+        "top1_target": 0.984,
+        "top1_distractor": 0.0,
+        "top1_other": 0.016,
+        "margin": 4.1345,
+        "kl": 0.14810320004820823,
+        "other_top": [
+          [
+            379,
+            2
+          ],
+          [
+            3930,
+            1
+          ],
+          [
+            12657,
+            1
+          ]
+        ]
+      },
+      "A^B": {
+        "pairwise": 0.424,
+        "top1_target": 0.34,
+        "top1_distractor": 0.46,
+        "top1_other": 0.2,
+        "margin": -0.1365,
+        "kl": 0.1358957490324974,
+        "other_top": [
+          [
+            379,
+            19
+          ],
+          [
+            9693,
+            5
+          ],
+          [
+            1891,
+            4
+          ]
+        ]
+      },
+      "A^C": {
+        "pairwise": 0.48,
+        "top1_target": 0.416,
+        "top1_distractor": 0.4,
+        "top1_other": 0.184,
+        "margin": 0.07225,
+        "kl": 0.12673643285036088,
+        "other_top": [
+          [
+            379,
+            19
+          ],
+          [
+            9693,
+            4
+          ],
+          [
+            1536,
+            3
+          ]
+        ]
+      },
+      "B^C": {
+        "pairwise": 0.644,
+        "top1_target": 0.54,
+        "top1_distractor": 0.244,
+        "top1_other": 0.216,
+        "margin": 0.58075,
+        "kl": 0.11514849436283112,
+        "other_top": [
+          [
+            379,
+            20
+          ],
+          [
+            9693,
+            4
+          ],
+          [
+            503,
+            3
+          ]
+        ]
+      },
+      "AUB": {
+        "pairwise": 0.536,
+        "top1_target": 0.472,
+        "top1_distractor": 0.352,
+        "top1_other": 0.176,
+        "margin": 0.2575,
+        "kl": 0.12415698510408402,
+        "other_top": [
+          [
+            379,
+            15
+          ],
+          [
+            9693,
+            4
+          ],
+          [
+            1891,
+            3
+          ]
+        ]
+      },
+      "rand1": {
+        "pairwise": 0.136,
+        "top1_target": 0.108,
+        "top1_distractor": 0.756,
+        "top1_other": 0.136,
+        "margin": -1.10225,
+        "kl": 0.18612769478559493,
+        "other_top": [
+          [
+            379,
+            11
+          ],
+          [
+            9693,
+            3
+          ],
+          [
+            2874,
+            2
+          ]
+        ]
+      },
+      "rand2": {
+        "pairwise": 0.804,
+        "top1_target": 0.664,
+        "top1_distractor": 0.112,
+        "top1_other": 0.224,
+        "margin": 1.1835,
+        "kl": 0.08584091752767563,
+        "other_top": [
+          [
+            379,
+            11
+          ],
+          [
+            503,
+            5
+          ],
+          [
+            9693,
+            5
+          ]
+        ]
+      },
+      "rand3": {
+        "pairwise": 0.568,
+        "top1_target": 0.5,
+        "top1_distractor": 0.34,
+        "top1_other": 0.16,
+        "margin": 0.18025,
+        "kl": 0.11690521639585495,
+        "other_top": [
+          [
+            379,
+            12
+          ],
+          [
+            9693,
+            6
+          ],
+          [
+            1891,
+            2
+          ]
+        ]
+      }
+    }
+  },
+  "automated_reading": {
+    "A^B_on_A": "MIXED \u2014 target 0.492, distractor 0.136, other 0.372",
+    "A^B_on_B": "MIXED \u2014 target 0.520, distractor 0.224, other 0.256",
+    "A^B_on_C": "MIXED \u2014 target 0.340, distractor 0.460, other 0.200"
+  },
+  "functional_containment_on_C": {
+    "C_mask_on_C": 0.984,
+    "A_mask_on_C": 0.304,
+    "B_mask_on_C": 0.54,
+    "AUB_on_C": 0.472
+  },
+  "random_reference_on_C": [
+    0.108,
+    0.664,
+    0.5
+  ]
+}

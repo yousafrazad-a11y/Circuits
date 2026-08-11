@@ -1,0 +1,36 @@
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4948.15it/s]
+model=meta-llama/Llama-3.2-1B  n=200 per cell
+template     boxes swaps hops cln_cand cln_vocab cor_cand cor_vocab
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+itemloc_q        5     3    2     0.01      0.01     0.90      0.86
+itemloc_q        5     2    2     0.02      0.01     0.92      0.88
+itemloc_q        4     3    2     0.04      0.04     0.68      0.72
+itemloc_q        4     2    2     0.04      0.04     0.79      0.80
+boxcont_q        5     3    2     0.05      0.06     0.72      0.74
+boxcont_q        5     2    2     0.08      0.08     0.69      0.69
+boxcont_q        4     3    2     0.14      0.14     0.61      0.59
+boxcont_q        4     2    2     0.14      0.15     0.59      0.59
+itemloc_pre      5     3    2     0.07      0.07     0.73      0.77
+itemloc_pre      5     2    2     0.07      0.07     0.89      0.90
+itemloc_pre      4     3    2     0.14      0.14     0.47      0.51
+itemloc_pre      4     2    2     0.10      0.08     0.69      0.72
+person_cont_v1     5     3    2     0.20      0.19     0.36      0.36
+person_cont_v1     5     2    2     0.24      0.24     0.40      0.40
+person_cont_v1     4     3    2     0.26      0.26     0.26      0.28
+person_cont_v1     4     2    2     0.23      0.24     0.27      0.27
+person_cont_v2     5     3    2     0.14      0.14     0.56      0.56
+person_cont_v2     5     2    2     0.15      0.15     0.64      0.65
+person_cont_v2     4     3    2     0.23      0.23     0.52      0.52
+person_cont_v2     4     2    2     0.18      0.18     0.62      0.60
+person_cont_q     5     3    2     0.04      0.04     0.76      0.76
+person_cont_q     5     2    2     0.05      0.04     0.83      0.84
+person_cont_q     4     3    2     0.14      0.14     0.70      0.69
+person_cont_q     4     2    2     0.11      0.11     0.78      0.76
+person_itemloc     5     3    2     0.19      0.19     0.21      0.21
+person_itemloc     5     2    2     0.21      0.22     0.27      0.27
+person_itemloc     4     3    2     0.26      0.26     0.20      0.17
+person_itemloc     4     2    2     0.30      0.32     0.17      0.17
+person_itemloc_q     5     3    2     0.18      0.18     0.21      0.21
+person_itemloc_q     5     2    2     0.20      0.20     0.25      0.27
+person_itemloc_q     4     3    2     0.24      0.24     0.25      0.26
+person_itemloc_q     4     2    2     0.29      0.28     0.21      0.23

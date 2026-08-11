@@ -1,0 +1,16 @@
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4653.68it/s]
+[1] minimality: token diff median=2 max=4 | word diff median=2 max=4 (prompt ~628 words)
+[2] structural: 0/256 pass (0-hop corrupt, >=2-hop clean, answers re-derive, clean!=corrupt)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[0] baseline: clean=1.0000 corrupt=1.0000 (cand-acc, n=256)
+[3] zero-swap probe on corrupt: acc=0.6758 (must be ~1.0: swaps causally irrelevant to corrupt answer)
+[4] scramble probe on corrupt: accs=['1.000', '1.000', '1.000', '1.000'] (answer invariant by construction; must stay ~1.0)
+[5] sensitivity on clean: acc-vs-new-truth=['1.000', '1.000', '1.000', '1.000'] flip-rate=['1.000', '1.000', '1.000', '1.000']
+    (high acc vs new truth = model routes answer through swaps)
+[6] balance: clean={' A': 92, ' B': 87, ' C': 77} corrupt={' A': 83, ' B': 84, ' C': 89}
+=========== GPT2 (informative) ===========
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3229.61it/s]
+NOTE: ITEM_POOL dropped (not single-token for gpt2): ['vase']
+file=datasets/multihop_swapmv_ans_q_fs16_uq_l_3b1s1h_test.jsonl  model=gpt2  n=256
+clean:   cand-acc=0.1719  vocab-acc=0.1719
+corrupt: cand-acc=0.6758  vocab-acc=0.6758

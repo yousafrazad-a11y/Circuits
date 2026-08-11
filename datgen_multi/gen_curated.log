@@ -1,0 +1,8 @@
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4589.99it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+train round 0: kept 1433/1433 (total 1433/1024)
+wrote 1024 -> datasets/multihop_swapmv_ans_q_fs16_uq_l_3b1s1h_train.jsonl
+val round 0: kept 358/358 (total 358/256)
+wrote 256 -> datasets/multihop_swapmv_ans_q_fs16_uq_l_3b1s1h_val.jsonl
+test round 0: kept 358/358 (total 358/256)
+wrote 256 -> datasets/multihop_swapmv_ans_q_fs16_uq_l_3b1s1h_test.jsonl

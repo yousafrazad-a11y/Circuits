@@ -1,0 +1,23 @@
+loading...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4952.43it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+T1-no-distractor-2moves gold C pred ' A'
+T1-no-distractor-2moves gold B pred ' A'
+T1-no-distractor-2moves gold D pred ' A'
+T1-no-distractor-2moves gold C pred ' A'
+T1-no-distractor-2moves acc 3/18
+T2-interleaved-2moves gold C pred ' A'
+T2-interleaved-2moves gold B pred ' A'
+T2-interleaved-2moves gold D pred ' A'
+T2-interleaved-2moves gold C pred ' A'
+T2-interleaved-2moves acc 0/18
+T3-blocked-2moves gold C pred ' A'
+T3-blocked-2moves gold B pred ' A'
+T3-blocked-2moves gold D pred ' A'
+T3-blocked-2moves gold C pred ' A'
+T3-blocked-2moves acc 0/18
+T4-no-distractor-3moves gold C pred ' A'
+T4-no-distractor-3moves gold B pred ' A'
+T4-no-distractor-3moves gold D pred ' A'
+T4-no-distractor-3moves gold C pred ' A'
+T4-no-distractor-3moves acc 3/18

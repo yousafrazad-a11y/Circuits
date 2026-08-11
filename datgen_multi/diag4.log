@@ -1,0 +1,9 @@
+loading...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 5204.03it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+T5-isnow-echo acc 2/6 preds: ['D', 'B', 'C', 'D', 'B', 'E']
+T6-uniform-repeat acc 2/6 preds: ['D', 'B', 'A', 'D', 'B', 'E']
+T7-pronoun acc 0/6 preds: ['A', 'C', 'C', 'D', 'A', 'C']
+T8-arrow acc 0/6 preds: ['A', 'A', 'A', 'A', 'A', 'A']
+T9-instruction acc 1/6 preds: ['B', 'A', 'A', 'A', 'B', 'A']
+T10-isnow-where acc 1/6 preds: ['A', 'A', 'A', 'A', 'B', 'A']

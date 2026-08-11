@@ -1,0 +1,17 @@
+loading model...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3039.31it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+min_hops=1 clean acc cand=0.30 vocab=0.28 errors: initial-box=8 other=20
+min_hops=2 clean acc cand=0.10 vocab=0.05 errors: initial-box=16 other=20
+BAD gold ' B' pred ' A' | x A and box D are swapped. The items in box A and box B are swapped. Where is the ball now
+BAD gold ' D' pred ' A' | x A and box C are swapped. The items in box A and box D are swapped. Where is the drum now
+BAD gold ' D' pred ' A' | x B and box C are swapped. The items in box C and box D are swapped. Where is the bell now
+BAD gold ' C' pred ' A' | x A and box D are swapped. The items in box A and box C are swapped. Where is the vase now
+BAD gold ' D' pred ' A' | x A and box C are swapped. The items in box A and box D are swapped. Where is the coin now
+BAD gold ' D' pred ' A' | x B and box C are swapped. The items in box B and box D are swapped. Where is the fork now
+BAD gold ' A' pred ' C' | ox C and box D are swapped. The items in box A and box D are swapped. Where is the egg now
+BAD gold ' B' pred ' A' | x A and box C are swapped. The items in box B and box C are swapped. Where is the drum now
+OK  gold ' A' pred ' A' | ox B and box C are swapped. The items in box A and box C are swapped. Where is the cup now
+BAD gold ' B' pred ' D' | x A and box D are swapped. The items in box A and box B are swapped. Where is the coin now
+BAD gold ' B' pred ' A' | x C and box D are swapped. The items in box B and box D are swapped. Where is the rope now
+BAD gold ' D' pred ' A' | ox B and box C are swapped. The items in box C and box D are swapped. Where is the cup now

@@ -1,0 +1,125 @@
+{
+  "model_name": "meta-llama/Llama-3.1-8B",
+  "data_dir": "datasets/ioi_successor_partner",
+  "gate_pairwise": 0.9,
+  "gate_correct": 0.75,
+  "results": {
+    "A": {
+      "gate": "FAIL",
+      "clean": {
+        "n": 250,
+        "pairwise": 0.952,
+        "picks": {
+          "correct": 0.0,
+          "corrupt": 0.0,
+          "core": 0.964,
+          "naive": 0.0,
+          "other": 0.036
+        },
+        "other_top": [
+          [
+            " Carol",
+            5
+          ],
+          [
+            " ",
+            3
+          ],
+          [
+            " Alice",
+            1
+          ]
+        ]
+      },
+      "corrupt": {
+        "n": 250,
+        "pairwise": 0.916,
+        "picks": {
+          "correct": 0.0,
+          "corrupt": 0.0,
+          "core": 0.928,
+          "naive": 0.0,
+          "other": 0.072
+        },
+        "other_top": [
+          [
+            " Carol",
+            13
+          ],
+          [
+            " ",
+            5
+          ]
+        ]
+      }
+    },
+    "B": {
+      "gate": "FAIL",
+      "clean": {
+        "n": 250,
+        "pairwise": 0.576,
+        "picks": {
+          "correct": 0.244,
+          "corrupt": 0.236,
+          "core": 0.136,
+          "naive": 0.164,
+          "other": 0.22
+        },
+        "other_top": [
+          [
+            " Carol",
+            53
+          ],
+          [
+            " Dave",
+            2
+          ]
+        ]
+      },
+      "corrupt": {
+        "n": 250,
+        "pairwise": 0.508,
+        "picks": {
+          "correct": 0.244,
+          "corrupt": 0.244,
+          "core": 0.22,
+          "naive": 0.156,
+          "other": 0.136
+        },
+        "other_top": [
+          [
+            " Carol",
+            34
+          ]
+        ]
+      }
+    },
+    "C": {
+      "gate": "PASS",
+      "clean": {
+        "n": 250,
+        "pairwise": 1.0,
+        "picks": {
+          "correct": 0.956,
+          "corrupt": 0.0,
+          "core": 0.0,
+          "naive": 0.044,
+          "other": 0.0
+        },
+        "other_top": []
+      },
+      "corrupt": {
+        "n": 250,
+        "pairwise": 1.0,
+        "picks": {
+          "correct": 0.96,
+          "corrupt": 0.0,
+          "core": 0.0,
+          "naive": 0.04,
+          "other": 0.0
+        },
+        "other_top": []
+      }
+    }
+  }
+}

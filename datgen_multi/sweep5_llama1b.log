@@ -1,0 +1,24 @@
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4981.64it/s]
+model=meta-llama/Llama-3.2-1B  n=150 per cell
+template     boxes swaps hops cln_cand cln_vocab cor_cand cor_vocab
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+swapmv_then_q     3     2    2     0.30      0.27     0.81      0.85
+swapmv_then_q     4     2    2     0.19      0.15     0.93      0.94
+swapmv_then_q     5     3    2     0.13      0.12     0.97      0.98
+swapmv_then_q     5     4    3     0.21      0.19     0.95      0.95
+swapmv_end_q     3     2    2     0.31      0.27     0.98      0.98
+swapmv_end_q     4     2    2     0.27      0.25     0.98      0.98
+swapmv_end_q     5     3    2     0.17      0.15     1.00      1.00
+swapmv_end_q     5     4    3     0.25      0.24     0.97      0.97
+swapmv_q_fs2m     3     2    2     0.43      0.48     1.00      1.00
+swapmv_q_fs2m     4     2    2     0.31      0.31     0.23      0.24
+swapmv_q_fs2m     5     3    2     0.19      0.19     0.47      0.52
+swapmv_q_fs2m     5     4    3     0.17      0.17     0.88      0.87
+swapmv_q_fs4m     3     2    2     0.31      0.35     0.89      0.92
+swapmv_q_fs4m     4     2    2     0.30      0.30     0.17      0.17
+swapmv_q_fs4m     5     3    2     0.22      0.19     0.63      0.65
+swapmv_q_fs4m     5     4    3     0.56      0.53     0.64      0.59
+swapmv_then_q_fs4m     3     2    2     0.40      0.41     0.93      0.92
+swapmv_then_q_fs4m     4     2    2     0.30      0.30     0.17      0.17
+swapmv_then_q_fs4m     5     3    2     0.24      0.23     0.53      0.53
+swapmv_then_q_fs4m     5     4    3     0.59      0.57     0.59      0.58

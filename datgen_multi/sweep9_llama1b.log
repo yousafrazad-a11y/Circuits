@@ -1,0 +1,16 @@
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 4838.33it/s]
+model=meta-llama/Llama-3.2-1B  n=150 per cell
+template     boxes swaps hops cln_cand cln_vocab cor_cand cor_vocab
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+swapmv_end_q_fs8m_u     3     2    2     0.58      0.66     0.72      0.67
+swapmv_end_q_fs8m_u     4     2    2     0.46      0.45     0.49      0.45
+swapmv_end_q_fs8m_u     5     3    2     0.31      0.33     0.38      0.47
+swapmv_end_q_fs12m_u     3     2    2     0.65      0.63     0.79      0.69
+swapmv_end_q_fs12m_u     4     2    2     0.45      0.44     0.43      0.42
+swapmv_end_q_fs12m_u     5     3    2     0.29      0.29     0.46      0.40
+swapmv_end_q_fs16m_u     3     2    2     0.55      0.39     0.66      0.56
+swapmv_end_q_fs16m_u     4     2    2     0.31      0.31     0.35      0.33
+swapmv_end_q_fs16m_u     5     3    2     0.29      0.28     0.47      0.41
+swapmv_end_q_fs12m     3     2    2     0.74      0.72     0.83      0.75
+swapmv_end_q_fs12m     4     2    2     0.45      0.45     0.14      0.14
+swapmv_end_q_fs12m     5     3    2     0.46      0.43     0.27      0.27

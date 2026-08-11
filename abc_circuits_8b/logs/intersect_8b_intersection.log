@@ -1,0 +1,207 @@
+device: cuda
+child suffix: '_b3lam3' | combined suffix: '_b3lam3'
+model: meta-llama/Llama-3.1-8B
+
+=== mask sizes (heads) ===
+  combined  27
+  A         17
+  B         17
+  C         25
+  A^B       13
+  A^C       15
+  B^C       17
+  AUB       21
+
+=== subset sanity (expect 0 outside combined) ===
+  A heads outside combined: 0
+  B heads outside combined: 0
+  C heads outside combined: 0
+
+=== random-overlap nulls: E|X∩Y| = |X||Y|/P ===
+  A^B : observed  13 | random null  10.7 | delta  +2.3
+  A^C : observed  15 | random null  15.7 | delta  -0.7
+  B^C : observed  17 | random null  15.7 | delta  +1.3
+
+Jaccard(A,B)       = 0.619
+C contained in A^B = 13/25 (52.0%)
+C contained in A   = 15/25 (60.0%)
+C contained in B   = 17/25 (68.0%)
+A^B contained in C = 13/13 (100.0%)
+
+=== Venn decomposition ===
+  A^B^C  (shared core)            13  ['L16.H1', 'L16.H22', 'L22.H19', 'L24.H27', 'L26.H29', 'L26.H3', 'L27.H22', 'L27.H23', 'L27.H4', 'L27.H7', 'L30.H21', 'L30.H24', 'L31.H0']
+  A^B\C  (shared extras)           0  
+  A^C\B  (core closed by B)        2  ['L25.H12', 'L26.H13']
+  B^C\A  (core closed by A)        4  ['L17.H24', 'L24.H25', 'L25.H15', 'L31.H1']
+  A only  (A-specific)             2  ['L17.H27', 'L18.H29']
+  B only  (B-specific)             0  
+  C only  (C-specific)             6  ['L13.H4', 'L15.H30', 'L16.H20', 'L20.H1', 'L25.H6', 'L30.H15']
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 6932.73it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   3%|▎         | 10/291 [00:00<00:05, 54.23it/s]Loading weights:   5%|▌         | 16/291 [00:00<00:06, 42.23it/s]Loading weights:  11%|█         | 32/291 [00:00<00:04, 57.53it/s]Loading weights:  13%|█▎        | 38/291 [00:00<00:04, 54.84it/s]Loading weights:  15%|█▌        | 44/291 [00:00<00:04, 52.75it/s]Loading weights:  21%|██        | 60/291 [00:00<00:03, 74.16it/s]Loading weights:  23%|██▎       | 68/291 [00:01<00:04, 55.36it/s]Loading weights:  31%|███▏      | 91/291 [00:01<00:02, 89.55it/s]Loading weights:  35%|███▌      | 102/291 [00:01<00:02, 89.15it/s]Loading weights:  39%|███▉      | 113/291 [00:01<00:02, 66.49it/s]Loading weights:  42%|████▏     | 122/291 [00:01<00:02, 62.37it/s]Loading weights:  45%|████▌     | 132/291 [00:02<00:03, 52.18it/s]Loading weights:  49%|████▉     | 144/291 [00:02<00:02, 62.97it/s]Loading weights:  52%|█████▏    | 152/291 [00:02<00:02, 66.20it/s]Loading weights:  56%|█████▌    | 162/291 [00:02<00:01, 65.94it/s]Loading weights:  58%|█████▊    | 170/291 [00:02<00:01, 67.09it/s]Loading weights:  62%|██████▏   | 180/291 [00:02<00:01, 72.89it/s]Loading weights:  66%|██████▌   | 192/291 [00:02<00:01, 73.06it/s]Loading weights:  70%|███████   | 204/291 [00:03<00:01, 77.20it/s]Loading weights:  73%|███████▎  | 213/291 [00:03<00:00, 79.89it/s]Loading weights:  76%|███████▋  | 222/291 [00:03<00:00, 76.51it/s]Loading weights:  79%|███████▉  | 230/291 [00:03<00:00, 75.73it/s]Loading weights:  82%|████████▏ | 238/291 [00:03<00:00, 68.82it/s]Loading weights:  86%|████████▌ | 249/291 [00:03<00:00, 71.29it/s]Loading weights:  88%|████████▊ | 257/291 [00:03<00:00, 57.35it/s]Loading weights:  93%|█████████▎| 271/291 [00:04<00:00, 66.18it/s]Loading weights:  97%|█████████▋| 282/291 [00:04<00:00, 72.26it/s]Loading weights: 100%|██████████| 291/291 [00:04<00:00, 69.16it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 6202.30it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 5042.50it/s]
+Llama model successfully adapted for pruning with block-level gates.
+
+=== on A_val ===
+mask       pairwise  top1tgt  top1dis  top1oth   margin      KL  other-top
+base          0.996    0.936    0.000    0.064    5.856   0.000
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+combined      1.000    0.960    0.000    0.040    7.195   0.218  ' me'x6, ' the'x4
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A             1.000    0.948    0.000    0.052    5.909   0.208  ' the'x7, ' me'x6
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+B             0.644    0.472    0.152    0.376    0.651   0.644  ' the'x59, ' me'x32, ' a'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+C             0.756    0.568    0.120    0.312    1.428   0.504  ' the'x51, ' me'x25, ' a'x2
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A^B           0.744    0.492    0.136    0.372    1.185   0.553  ' the'x64, ' me'x27, ' a'x2
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A^C           0.820    0.588    0.104    0.308    1.727   0.466  ' the'x55, ' me'x21, ' a'x1
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+B^C           0.644    0.472    0.152    0.376    0.651   0.644  ' the'x59, ' me'x32, ' a'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+AUB           0.996    0.944    0.000    0.056    6.720   0.212  ' the'x8, ' me'x6
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+rand1         0.008    0.000    0.916    0.084   -4.844   2.737  ' me'x13, ' the'x7, ' a'x1
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+rand2         0.252    0.144    0.452    0.404   -1.605   1.365  ' the'x60, ' me'x37, ' a'x4
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+rand3         0.016    0.008    0.864    0.128   -4.329   2.474  ' me'x19, ' the'x12, ' a'x1
+
+=== on B_val ===
+mask       pairwise  top1tgt  top1dis  top1oth   margin      KL  other-top
+base          0.908    0.792    0.068    0.140    3.114   0.000
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+combined      0.872    0.780    0.100    0.120    4.349   0.271  ' four'x3, ' ve'x3, ' 'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A             0.600    0.460    0.280    0.260    0.810   0.405  ' 'x8, ' four'x3, ' ty'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+B             0.920    0.808    0.048    0.144    4.008   0.259  ' 'x5, ' four'x4, ' di'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+C             0.916    0.840    0.048    0.112    4.680   0.297  ' four'x4, ' 'x3, ' ve'x2
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A^B           0.664    0.520    0.224    0.256    1.091   0.330  ' 'x7, ' ve'x4, ' four'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A^C           0.688    0.552    0.220    0.228    1.326   0.321  ' 'x7, ' ve'x4, ' four'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+B^C           0.920    0.808    0.048    0.144    4.008   0.259  ' 'x5, ' four'x4, ' di'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+AUB           0.876    0.772    0.092    0.136    4.012   0.260  ' 'x5, ' four'x3, ' du'x2
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+rand1         0.072    0.036    0.724    0.240   -2.364   1.089  ' 'x8, ' four'x4, ' di'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+rand2         0.396    0.300    0.376    0.324   -0.389   0.533  ' 'x15, ' di'x5, ' four'x4
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+rand3         0.088    0.044    0.668    0.288   -1.972   0.981  ' 'x8, ' four'x4, ' di'x4
+
+=== on C_val ===
+mask       pairwise  top1tgt  top1dis  top1oth   margin      KL  other-top
+base          1.000    0.964    0.000    0.036    2.707   0.000
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+combined      0.996    0.976    0.004    0.020    3.909   0.131  ' y'x2, ' ob'x1, ' du'x1
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A             0.328    0.304    0.560    0.136   -0.458   0.151  ' y'x12, ' q'x4, ' or'x2
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+B             0.644    0.540    0.244    0.216    0.581   0.115  ' y'x20, ' cy'x4, ' j'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+C             1.000    0.984    0.000    0.016    4.135   0.148  ' y'x2, ' du'x1, ' az'x1
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A^B           0.424    0.340    0.460    0.200   -0.137   0.136  ' y'x19, ' cy'x5, ' di'x4
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+A^C           0.480    0.416    0.400    0.184    0.072   0.127  ' y'x19, ' cy'x4, ' ob'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+B^C           0.644    0.540    0.244    0.216    0.581   0.115  ' y'x20, ' cy'x4, ' j'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+AUB           0.536    0.472    0.352    0.176    0.258   0.124  ' y'x15, ' cy'x4, ' di'x3
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+rand1         0.136    0.108    0.756    0.136   -1.102   0.186  ' y'x11, ' cy'x3, ' q'x2
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+rand2         0.804    0.664    0.112    0.224    1.183   0.086  ' y'x11, ' j'x5, ' cy'x5
+
+--- Setting final circuit mode to: True ---
+    Updated 32 HardConcreteGate modules.
+rand3         0.568    0.500    0.340    0.160    0.180   0.117  ' y'x12, ' cy'x6, ' di'x2
+
+=== automated reading ===
+  A^B on A: MIXED — target 0.492, distractor 0.136, other 0.372
+  A^B on B: MIXED — target 0.520, distractor 0.224, other 0.256
+  A^B on C: MIXED — target 0.340, distractor 0.460, other 0.200
+
+=== functional containment on C ===
+  C mask on C: 0.984
+  A mask on C: 0.304 (30.9% of C-mask performance)
+  B mask on C: 0.540 (54.9% of C-mask performance)
+  WARNING: AUB fails B; mask application or eval may be broken.
+  containment note: AUB scores 0.472 on C and there are 6 C-only heads; this can be legitimate missing containment, not necessarily broken eval.
+  diagnosis: both parents miss core heads -> genuinely different circuits.
+  random-mask reference on C: ['0.108', '0.664', '0.500']
+  A^B must clearly beat these random same-sized parent subsets on C.
+
+A∩B mask saved: masks_abc_8b/ABint_b3lam3_mask.pt
+report saved:  masks_abc_8b/intersect_b3lam3_report.json
