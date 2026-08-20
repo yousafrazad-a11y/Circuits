@@ -1,0 +1,23 @@
+200 candidate pairs -> 400 unique prompts
+loading meta-llama/Llama-3.2-3B-Instruct ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:55,  2.19it/s]Loading weights:   3%|▎         | 8/254 [00:00<00:13, 18.15it/s]Loading weights:   7%|▋         | 17/254 [00:00<00:06, 34.97it/s]Loading weights:  10%|█         | 26/254 [00:00<00:04, 48.94it/s]Loading weights:  15%|█▌        | 39/254 [00:00<00:03, 69.27it/s]Loading weights:  19%|█▉        | 49/254 [00:00<00:02, 77.62it/s]Loading weights:  25%|██▍       | 63/254 [00:01<00:02, 93.39it/s]Loading weights:  30%|███       | 77/254 [00:01<00:01, 101.28it/s]Loading weights:  37%|███▋      | 93/254 [00:01<00:01, 116.92it/s]Loading weights:  42%|████▏     | 106/254 [00:01<00:01, 119.09it/s]Loading weights:  47%|████▋     | 120/254 [00:01<00:01, 119.49it/s]Loading weights:  56%|█████▋    | 143/254 [00:01<00:00, 149.71it/s]Loading weights:  71%|███████▏  | 181/254 [00:01<00:00, 214.32it/s]Loading weights:  85%|████████▍ | 215/254 [00:01<00:00, 250.16it/s]Loading weights: 100%|██████████| 254/254 [00:01<00:00, 131.19it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  generated 32/400
+  generated 64/400
+  generated 96/400
+  generated 128/400
+  generated 160/400
+  generated 192/400
+  generated 224/400
+  generated 256/400
+  generated 288/400
+  generated 320/400
+  generated 352/400
+  generated 384/400
+  generated 400/400
+wrote elevator_3b-raw.jsonl
+train: kept 79 verified pairs -> elevator_3b-train.jsonl
+test: kept 88 verified pairs -> elevator_3b-test.jsonl
+rejected pairs (model wrong on >= 1 side): 33
+WARNING: not enough verified pairs; raise --train/--test or inspect rejections.

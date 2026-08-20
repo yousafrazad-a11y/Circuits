@@ -1,0 +1,44 @@
+checkpoint: /home/exouser/pruning/elevator_experiment/masks/heads_only.ep15.pt (epoch 15, heads_only=True)
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 43919.41it/s]
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 4671.60it/s]
+Llama model successfully adapted for pruning with block-level gates.
+loaded /home/exouser/pruning/elevator_experiment/masks/heads_only.ep15.pt | locked 633 closed gates (log_alpha=-1000000.0, grad=0, reopen-proof)
+gates open: 67/700 (9.57%)
+evaluating 18500 example pairs from 21 file(s) ...
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+  1600/18500 acc=1.0000
+  3200/18500 acc=0.8438
+  4800/18500 acc=0.7710
+  6400/18500 acc=0.7861
+  8000/18500 acc=0.7664
+  9600/18500 acc=0.7541
+  11200/18500 acc=0.7641
+  12800/18500 acc=0.7465
+  14400/18500 acc=0.7469
+  16000/18500 acc=0.7544
+  17600/18500 acc=0.7619
+
+OVERALL: 13887/18500 = 0.7506
+
+division                               acc   n
+test_00_start_word.jsonl            1.0000   500
+test_01_start_sep.jsonl             1.0000   500
+test_02_start_floor.jsonl           1.0000   1500
+test_03_step_1_word.jsonl           0.0000   500
+test_04_step_1_sep.jsonl            1.0000   500
+test_05_step_1_floor.jsonl          0.5393   1500
+test_06_step_2_word.jsonl           1.0000   500
+test_07_step_2_sep.jsonl            1.0000   500
+test_08_step_2_floor.jsonl          0.5480   1500
+test_09_step_3_word.jsonl           1.0000   500
+test_10_step_3_sep.jsonl            1.0000   500
+test_11_step_3_floor.jsonl          0.5453   1500
+test_12_step_4_word.jsonl           1.0000   500
+test_13_step_4_sep.jsonl            1.0000   500
+test_14_step_4_floor.jsonl          0.5373   1500
+test_15_step_5_word.jsonl           1.0000   500
+test_16_step_5_sep.jsonl            1.0000   500
+test_17_step_5_floor.jsonl          0.5440   1500
+test_18_final_word.jsonl            1.0000   1500
+test_19_final_sep.jsonl             1.0000   500
+test_20_final_floor.jsonl           0.5440   1500

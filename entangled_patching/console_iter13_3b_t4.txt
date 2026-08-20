@@ -1,0 +1,28 @@
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 3420.63it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+======================================================================
+PROCEDURAL ITERATION REPORT #13
+Dataset Family Tested: Template 4: Simple Boolean Comparison with Override (BYPASS->AUTO)
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (90 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 100.0% (50/50)
+- Corrupt Prompt Accuracy: 100.0% (50/50)
+- Tricked / Fallback Error Rate: 0.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: no failures
+- If Corrupt < 90%: no failures
+
+NEXT STEP / PROPOSED MODIFICATION:
+- none — family passes; archive dataset
+======================================================================
+
+log written: /home/exouser/pruning/entangled_patching/logs/iter13_Llama-3.2-3B-Instruct.json
+
+==== SUMMARY ====
+PASS  t4_boolean_override          clean=100.0%  corrupt=100.0%  tricked=  0.0%  align=ok

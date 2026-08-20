@@ -1,0 +1,135 @@
+2000 candidate pairs -> 4000 unique prompts
+loading Qwen/Qwen2.5-7B-Instruct ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<00:57,  5.87it/s]Loading weights:   9%|▊         | 29/339 [00:00<00:02, 124.37it/s]Loading weights:  17%|█▋        | 58/339 [00:00<00:01, 186.31it/s]Loading weights:  26%|██▌       | 88/339 [00:00<00:01, 225.18it/s]Loading weights:  34%|███▎      | 114/339 [00:00<00:00, 228.39it/s]Loading weights:  44%|████▎     | 148/339 [00:00<00:00, 259.16it/s]Loading weights:  52%|█████▏    | 175/339 [00:00<00:00, 253.72it/s]Loading weights:  61%|██████    | 207/339 [00:00<00:00, 270.19it/s]Loading weights:  69%|██████▉   | 235/339 [00:01<00:00, 264.44it/s]Loading weights:  79%|███████▉  | 268/339 [00:01<00:00, 269.06it/s]Loading weights:  88%|████████▊ | 298/339 [00:01<00:00, 277.12it/s]Loading weights:  96%|█████████▌| 326/339 [00:01<00:00, 276.54it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 245.70it/s]
+  generated 32/4000
+  generated 64/4000
+  generated 96/4000
+  generated 128/4000
+  generated 160/4000
+  generated 192/4000
+  generated 224/4000
+  generated 256/4000
+  generated 288/4000
+  generated 320/4000
+  generated 352/4000
+  generated 384/4000
+  generated 416/4000
+  generated 448/4000
+  generated 480/4000
+  generated 512/4000
+  generated 544/4000
+  generated 576/4000
+  generated 608/4000
+  generated 640/4000
+  generated 672/4000
+  generated 704/4000
+  generated 736/4000
+  generated 768/4000
+  generated 800/4000
+  generated 832/4000
+  generated 864/4000
+  generated 896/4000
+  generated 928/4000
+  generated 960/4000
+  generated 992/4000
+  generated 1024/4000
+  generated 1056/4000
+  generated 1088/4000
+  generated 1120/4000
+  generated 1152/4000
+  generated 1184/4000
+  generated 1216/4000
+  generated 1248/4000
+  generated 1280/4000
+  generated 1312/4000
+  generated 1344/4000
+  generated 1376/4000
+  generated 1408/4000
+  generated 1440/4000
+  generated 1472/4000
+  generated 1504/4000
+  generated 1536/4000
+  generated 1568/4000
+  generated 1600/4000
+  generated 1632/4000
+  generated 1664/4000
+  generated 1696/4000
+  generated 1728/4000
+  generated 1760/4000
+  generated 1792/4000
+  generated 1824/4000
+  generated 1856/4000
+  generated 1888/4000
+  generated 1920/4000
+  generated 1952/4000
+  generated 1984/4000
+  generated 2016/4000
+  generated 2048/4000
+  generated 2080/4000
+  generated 2112/4000
+  generated 2144/4000
+  generated 2176/4000
+  generated 2208/4000
+  generated 2240/4000
+  generated 2272/4000
+  generated 2304/4000
+  generated 2336/4000
+  generated 2368/4000
+  generated 2400/4000
+  generated 2432/4000
+  generated 2464/4000
+  generated 2496/4000
+  generated 2528/4000
+  generated 2560/4000
+  generated 2592/4000
+  generated 2624/4000
+  generated 2656/4000
+  generated 2688/4000
+  generated 2720/4000
+  generated 2752/4000
+  generated 2784/4000
+  generated 2816/4000
+  generated 2848/4000
+  generated 2880/4000
+  generated 2912/4000
+  generated 2944/4000
+  generated 2976/4000
+  generated 3008/4000
+  generated 3040/4000
+  generated 3072/4000
+  generated 3104/4000
+  generated 3136/4000
+  generated 3168/4000
+  generated 3200/4000
+  generated 3232/4000
+  generated 3264/4000
+  generated 3296/4000
+  generated 3328/4000
+  generated 3360/4000
+  generated 3392/4000
+  generated 3424/4000
+  generated 3456/4000
+  generated 3488/4000
+  generated 3520/4000
+  generated 3552/4000
+  generated 3584/4000
+  generated 3616/4000
+  generated 3648/4000
+  generated 3680/4000
+  generated 3712/4000
+  generated 3744/4000
+  generated 3776/4000
+  generated 3808/4000
+  generated 3840/4000
+  generated 3872/4000
+  generated 3904/4000
+  generated 3936/4000
+  generated 3968/4000
+  generated 4000/4000
+wrote all3_qwen7b-raw.jsonl
+train: kept 1000 verified pairs -> all3_qwen7b-train.jsonl
+test: kept 0 verified pairs -> all3_qwen7b-test.jsonl
+rejected pairs (model wrong on >= 1 side): 97
+WARNING: not enough verified pairs; raise --train/--test or inspect rejections.

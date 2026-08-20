@@ -1,0 +1,58 @@
+[
+  {
+    "pair": 1,
+    "type": "clean",
+    "expected": "7th",
+    "max_new_tokens": 512,
+    "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor up, then one floor up, then one floor down, then one floor up, then one floor down, then one floor up. Max is now on"
+  },
+  {
+    "pair": 1,
+    "type": "corrupt",
+    "expected": "5th",
+    "max_new_tokens": 512,
+    "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor down, then one floor up, then one floor down, then one floor up, then one floor down, then one floor up. Max is now on"
+  },
+  {
+    "pair": 2,
+    "type": "clean",
+    "expected": "5th",
+    "max_new_tokens": 512,
+    "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor up, then one floor down, then one floor up, then one floor up, then one floor down, then one floor down. Max is now on"
+  },
+  {
+    "pair": 2,
+    "type": "corrupt",
+    "expected": "3rd",
+    "max_new_tokens": 512,
+    "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor down, then one floor down, then one floor up, then one floor up, then one floor down, then one floor down. Max is now on"
+  },
+  {
+    "pair": 3,
+    "type": "clean",
+    "expected": "7th",
+    "max_new_tokens": 512,
+    "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor up, then one floor up, then one floor up, then one floor down, then one floor down, then one floor up. Max is now on"
+  },
+  {
+    "pair": 3,
+    "type": "corrupt",
+    "expected": "5th",
+    "max_new_tokens": 512,
+    "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor down, then one floor up, then one floor up, then one floor down, then one floor down, then one floor up. Max is now on"
+  },
+  {
+    "pair": 4,
+    "type": "clean",
+    "expected": "5th",
+    "max_new_tokens": 512,
+    "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor up, then one floor down, then one floor down, then one floor up, then one floor up, then one floor down. Max is now on"
+  },
+  {
+    "pair": 4,
+    "type": "corrupt",
+    "expected": "3rd",
+    "max_new_tokens": 512,
+    "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor down, then one floor down, then one floor down, then one floor up, then one floor up, then one floor down. Max is now on"
+  }
+]

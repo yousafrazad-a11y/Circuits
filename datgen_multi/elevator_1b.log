@@ -1,0 +1,23 @@
+200 candidate pairs -> 400 unique prompts
+loading meta-llama/Llama-3.2-1B-Instruct ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights:  34%|███▎      | 49/146 [00:00<00:00, 488.62it/s]Loading weights:  80%|████████  | 117/146 [00:00<00:00, 598.69it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 623.44it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  generated 32/400
+  generated 64/400
+  generated 96/400
+  generated 128/400
+  generated 160/400
+  generated 192/400
+  generated 224/400
+  generated 256/400
+  generated 288/400
+  generated 320/400
+  generated 352/400
+  generated 384/400
+  generated 400/400
+wrote elevator_1b-raw.jsonl
+train: kept 14 verified pairs -> elevator_1b-train.jsonl
+test: kept 20 verified pairs -> elevator_1b-test.jsonl
+rejected pairs (model wrong on >= 1 side): 166
+WARNING: not enough verified pairs; raise --train/--test or inspect rejections.

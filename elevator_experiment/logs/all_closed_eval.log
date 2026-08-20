@@ -1,0 +1,30 @@
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 40721.40it/s]
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 4046.16it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+Llama model successfully adapted for pruning with block-level gates.
+forced ALL 402164 gates closed (log_alpha=-1000000.0)
+
+division                               acc   n
+test_00_start_word.jsonl            1.0000   500
+test_01_start_sep.jsonl             1.0000   500
+test_02_start_floor.jsonl           1.0000   1500
+test_03_step_1_word.jsonl           0.0000   500
+test_04_step_1_sep.jsonl            1.0000   500
+test_05_step_1_floor.jsonl          0.5393   1500
+test_06_step_2_word.jsonl           1.0000   500
+test_07_step_2_sep.jsonl            1.0000   500
+test_08_step_2_floor.jsonl          0.5480   1500
+test_09_step_3_word.jsonl           1.0000   500
+test_10_step_3_sep.jsonl            1.0000   500
+test_11_step_3_floor.jsonl          0.5453   1500
+test_12_step_4_word.jsonl           1.0000   500
+test_13_step_4_sep.jsonl            1.0000   500
+test_14_step_4_floor.jsonl          0.5373   1500
+test_15_step_5_word.jsonl           1.0000   500
+test_16_step_5_sep.jsonl            1.0000   500
+test_17_step_5_floor.jsonl          0.5440   1500
+test_18_final_word.jsonl            1.0000   1500
+test_19_final_sep.jsonl             1.0000   500
+test_20_final_floor.jsonl           0.5440   1500
+
+OVERALL 13887/18500 = 0.7506

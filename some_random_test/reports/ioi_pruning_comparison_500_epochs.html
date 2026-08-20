@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IOI Global vs Position-Aware Node Pruning</title>
+  <style>
+    @page { size: A4 landscape; margin: 14mm; }
+    body { font-family: Arial, sans-serif; color: #17202a; font-size: 10pt; line-height: 1.35; }
+    h1 { color: #17365d; margin-bottom: 4px; }
+    h2 { color: #1f4e78; margin-top: 18px; margin-bottom: 7px; }
+    .subtitle { color: #566573; margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; page-break-inside: avoid; }
+    th, td { border: 1px solid #aab7b8; padding: 5px 7px; text-align: right; }
+    th { background: #d9eaf7; color: #17365d; }
+    th:first-child, td:first-child { text-align: left; }
+    tr:nth-child(even) td { background: #f7f9f9; }
+    .summary { background: #edf6ec; border-left: 5px solid #4f8a4c; padding: 8px 12px; }
+    .note { background: #fff6df; border-left: 5px solid #d6a23c; padding: 8px 12px; }
+    code { font-family: monospace; }
+  </style>
+</head>
+<body>
+  <h1>IOI Global vs Position-Aware Node Pruning</h1>
+  <p class="subtitle">Finalized 500-epoch ABBA IOI runs · GPT-2 Small · hard-concrete masks · seed 42</p>
+
+  <div class="summary">
+    Both circuits retained 100% IOI pairwise accuracy. The global baseline patched 52.7459% of global
+    component paths to the corrupt stream. The position-aware circuit patched 79.7601% of
+    component-position paths, while 18.6662% of physical components were patched at every logical
+    position. These are causal activation-patching statistics, not model-compression statistics.
+  </div>
+
+  <div class="note">
+    <b>Meaning of a closed gate:</b>
+    <code>a_used = g × a_clean + (1 − g) × a_corrupt</code>.
+    An open gate uses the clean activation; a closed gate substitutes the aligned corrupt-stream
+    activation. Closed gates do not zero activations, remove weights, or skip computation. Both clean
+    and corrupt streams are required by the current implementation.
+  </div>
+
+  <h2>Final test performance</h2>
+  <table>
+    <tr><th>Metric</th><th>Global baseline</th><th>Position-aware</th></tr>
+    <tr><td>Accuracy</td><td>100.0000%</td><td>100.0000%</td></tr>
+    <tr><td>KL divergence</td><td>0.1576847</td><td>0.1960384</td></tr>
+    <tr><td>Mean correct-minus-wrong logit difference</td><td>5.8987041</td><td>6.0766717</td></tr>
+    <tr><td>Top-1 next-token agreement with GPT-2</td><td>91.1469%</td><td>87.3239%</td></tr>
+    <tr><td>Soft faithfulness</td><td>1.7040985</td><td>1.7555122</td></tr>
+  </table>
+
+  <h2>Final hierarchy-aware activation-patching masks</h2>
+  <table>
+    <tr>
+      <th>Component type</th>
+      <th>Baseline global paths patched</th>
+      <th>Position-aware slots patched</th>
+      <th>Position-aware patched at all positions</th>
+    </tr>
+    <tr><td>Attention blocks</td><td>0 / 12 · 0.0000%</td><td>39 / 96 · 40.6250%</td><td>0 / 12 · 0.0000%</td></tr>
+    <tr><td>MLP blocks/layers</td><td>0 / 12 · 0.0000%</td><td>46 / 96 · 47.9167%</td><td>0 / 12 · 0.0000%</td></tr>
+    <tr><td>Attention heads</td><td>65 / 144 · 45.1389%</td><td>889 / 1,152 · 77.1701%</td><td>39 / 144 · 27.0833%</td></tr>
+    <tr><td>Attention neurons</td><td>5,322 / 9,216 · 57.7474%</td><td>61,196 / 73,728 · 83.0024%</td><td>3,654 / 9,216 · 39.6484%</td></tr>
+    <tr><td>MLP hidden neurons</td><td>21,042 / 36,864 · 57.0801%</td><td>238,023 / 294,912 · 80.7098%</td><td>6,235 / 36,864 · 16.9135%</td></tr>
+    <tr><td>MLP output dimensions</td><td>2,826 / 9,216 · 30.6641%</td><td>53,712 / 73,728 · 72.8516%</td><td>425 / 9,216 · 4.6115%</td></tr>
+    <tr><td><b>All gate types</b></td><td><b>29,255 / 55,464 · 52.7459%</b></td><td><b>353,905 / 443,712 · 79.7601%</b></td><td><b>10,353 / 55,464 · 18.6662%</b></td></tr>
+  </table>
+
+  <h2>Position-aware paths patched by logical section</h2>
+  <table>
+    <tr><th>Mask / section</th><th>Attn blocks</th><th>MLP blocks</th><th>Heads</th><th>Attn neurons</th><th>MLP hidden</th><th>MLP output</th></tr>
+    <tr><td><b>Baseline global</b></td><td>0.0000%</td><td>0.0000%</td><td>45.1389%</td><td>57.7474%</td><td>57.0801%</td><td>30.6641%</td></tr>
+    <tr><td>Prefix</td><td>100.0000%</td><td>100.0000%</td><td>100.0000%</td><td>100.0000%</td><td>100.0000%</td><td>100.0000%</td></tr>
+    <tr><td>First name</td><td>41.6667%</td><td>8.3333%</td><td>79.1667%</td><td>83.5286%</td><td>50.1845%</td><td>28.1359%</td></tr>
+    <tr><td>Name connector</td><td>50.0000%</td><td>91.6667%</td><td>88.1944%</td><td>90.4297%</td><td>99.0207%</td><td>98.5894%</td></tr>
+    <tr><td>Second name</td><td>41.6667%</td><td>25.0000%</td><td>77.7778%</td><td>83.4852%</td><td>71.4383%</td><td>65.4622%</td></tr>
+    <tr><td>Shared context</td><td>8.3333%</td><td>50.0000%</td><td>66.6667%</td><td>72.8950%</td><td>90.5355%</td><td>85.0477%</td></tr>
+    <tr><td>Repeated subject</td><td>33.3333%</td><td>8.3333%</td><td>70.1389%</td><td>82.0313%</td><td>66.7318%</td><td>52.6367%</td></tr>
+    <tr><td>Final action</td><td>25.0000%</td><td>50.0000%</td><td>79.1667%</td><td>84.8199%</td><td>90.8474%</td><td>84.1580%</td></tr>
+    <tr><td>Prediction relation</td><td>25.0000%</td><td>50.0000%</td><td>56.2500%</td><td>66.8294%</td><td>76.9206%</td><td>68.7826%</td></tr>
+  </table>
+
+  <h2>Runtime and extraction interpretation</h2>
+  <table>
+    <tr><th>Property of the current code</th><th>Global baseline</th><th>Position-aware</th></tr>
+    <tr><td>Requires clean stream</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Requires corrupt stream</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Weights physically removed</td><td>0%</td><td>0%</td></tr>
+    <tr><td>Computation skipped by a closed gate</td><td>0%</td><td>0%</td></tr>
+    <tr><td>Runnable as a standalone extracted model</td><td>No</td><td>No</td></tr>
+    <tr><td>Mask granularity</td><td>One decision per component</td><td>One decision per component and logical section</td></tr>
+  </table>
+
+  <div class="note">
+    Parent closure was propagated before these mask counts were computed. A closed attention-block
+    gate makes its head and attention-neuron paths effectively use the corrupt stream; a closed head
+    does the same for its attention neurons; a closed MLP-block gate controls its hidden and output
+    paths. For position-aware masks this is enforced independently in every section. Full-transformer-
+    layer and embedding gating were disabled. Position-slot patching is an unweighted logical-section
+    statistic, not literal parameter removal, model compression, or token-weighted FLOP reduction.
+  </div>
+</body>
+</html>

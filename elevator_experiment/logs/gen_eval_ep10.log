@@ -1,0 +1,115 @@
+checkpoint: /home/exouser/pruning/elevator_experiment/masks/heads_only.ep10.pt (epoch 10)
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 42799.02it/s]
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 4774.18it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Llama model successfully adapted for pruning with block-level gates.
+loaded /home/exouser/pruning/elevator_experiment/masks/heads_only.ep10.pt | locked 525 closed gates (log_alpha=-1000000.0, grad=0, reopen-proof)
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   5%|▌         | 13/254 [00:00<00:01, 125.92it/s]Loading weights:  21%|██        | 53/254 [00:00<00:00, 284.42it/s]Loading weights:  37%|███▋      | 94/254 [00:00<00:00, 334.62it/s]Loading weights:  53%|█████▎    | 135/254 [00:00<00:00, 361.19it/s]Loading weights:  69%|██████▉   | 175/254 [00:00<00:00, 372.81it/s]Loading weights:  84%|████████▍ | 213/254 [00:00<00:00, 369.33it/s]Loading weights:  98%|█████████▊| 250/254 [00:00<00:00, 369.35it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 351.26it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+50/500 exact=0.9400 final=0.9400 full=1.0000
+100/500 exact=0.9100 final=0.9100 full=1.0000
+150/500 exact=0.9267 final=0.9267 full=1.0000
+200/500 exact=0.9200 final=0.9200 full=1.0000
+250/500 exact=0.9240 final=0.9240 full=1.0000
+300/500 exact=0.9300 final=0.9300 full=1.0000
+350/500 exact=0.9286 final=0.9286 full=1.0000
+400/500 exact=0.9250 final=0.9250 full=1.0000
+450/500 exact=0.9289 final=0.9289 full=1.0000
+500/500 exact=0.9220 final=0.9220 full=1.0000
+
+=== 500 pairs, checkpoint /home/exouser/pruning/elevator_experiment/masks/heads_only.ep10.pt ===
+generation exact-match vs full model: 461/500 = 0.9220
+pruned final-answer accuracy:         461/500 = 0.9220
+full-model final-answer accuracy:     500/500 = 1.0000
+
+--- mismatch pair train_00843 ---
+full:
+Start: 3rd
+up -> 4th
+down -> 3rd
+up -> 4th
+up -> 5th
+down -> 4th
+FINAL ANSWER: 4th
+pruned:
+Start: 3rd
+up -> 4th
+down -> 3rd
+up -> 4th
+up -> 5th
+down -> 5th
+FINAL ANSWER: 5th
+
+--- mismatch pair train_00894 ---
+full:
+Start: 7th
+up -> 8th
+up -> 9th
+down -> 8th
+up -> 9th
+down -> 8th
+FINAL ANSWER: 8th
+pruned:
+Start: 7th
+up -> 8th
+up -> 9th
+down -> 9th
+up -> 10th
+down -> 10th
+FINAL ANSWER: 10th
+
+--- mismatch pair train_00832 ---
+full:
+Start: 5th
+up -> 6th
+up -> 7th
+down -> 6th
+down -> 5th
+up -> 6th
+FINAL ANSWER: 6th
+pruned:
+Start: 5th
+up -> 6th
+up -> 7th
+down -> 7th
+down -> 6th
+up -> 7th
+FINAL ANSWER: 7th
+
+--- mismatch pair train_00368 ---
+full:
+Start: 6th
+down -> 5th
+up -> 6th
+up -> 7th
+down -> 6th
+up -> 7th
+FINAL ANSWER: 7th
+pruned:
+Start: 6th
+down -> 5th
+up -> 6th
+up -> 7th
+up -> 8th
+down -> 8th
+FINAL ANSWER: 8th
+
+--- mismatch pair train_00833 ---
+full:
+Start: 6th
+down -> 5th
+up -> 6th
+up -> 7th
+down -> 6th
+up -> 7th
+FINAL ANSWER: 7th
+pruned:
+Start: 6th
+down -> 5th
+up -> 6th
+up -> 7th
+up -> 8th
+down -> 8th
+FINAL ANSWER: 8th

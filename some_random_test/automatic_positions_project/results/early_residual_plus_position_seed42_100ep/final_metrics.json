@@ -1,0 +1,35 @@
+{
+  "router_test": {
+    "n_examples": 500,
+    "accuracy": 0.608,
+    "pairwise_accuracy": 0.994,
+    "logit_diff": 6.749134986877442,
+    "full_model_logit_diff": 4.267728103637696,
+    "soft_faithfulness": 1.5814350921570337,
+    "kl_div": 0.6023330020904542,
+    "exact_match": 0.608,
+    "assignment_entropy": 2.210481632805572e-10,
+    "raw_section_agreement": 0.11559709394350648,
+    "expert_usage": [
+      0.0,
+      0.22007454931735992,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0007809759117662907,
+      0.7791444659233093
+    ]
+  },
+  "human_section_oracle_test": {
+    "n_examples": 500,
+    "accuracy": 0.988,
+    "pairwise_accuracy": 1.0,
+    "logit_diff": 6.979100318908691,
+    "full_model_logit_diff": 4.267728103637696,
+    "soft_faithfulness": 1.6353198117190022,
+    "kl_div": 0.14307198977470398,
+    "exact_match": 0.988
+  }
+}

@@ -1,0 +1,819 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "iter": 8,
+  "families": {
+    "t4_boolean_override": {
+      "family": "Template 4: Simple Boolean Comparison with Override",
+      "n": 50,
+      "seq_len": 88,
+      "alignment_ok": true,
+      "clean_acc": 52.0,
+      "corrupt_acc": 100.0,
+      "tricked_pct": 0.0,
+      "clean_details": [
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 8, which is below the threshold of 32. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not output \"",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is 50, which is below the threshold of 55. The Override is NO, so",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but the override is YES. The override takes precedence. The rule that",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not output \"",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is 18, which is below the threshold of 38. The Override is NO, so",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not output \"",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 16, which is below the threshold of 36. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 6, which is below the threshold of 49. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, and Override is NO. Therefore, the score passes. BYPASS, PASS",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is 30, which is below the threshold of 51. The Override is NO, so",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but the override is YES. The override takes precedence. The rule that",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not need to",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 26, which is below the threshold of 70. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not need to",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 33, which is below the threshold of 58. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 58, which is below the threshold of 65. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not output \"",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is 45, which is below the threshold of 55. The Override is NO, so",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not need to",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but the override is YES. The override takes precedence. The score is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is 45, which is below the threshold of 50. The Override is NO, so",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is irrelevant because the Override is YES. The rule that matches the stated control value is \"If",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 28, which is below the threshold of 64. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not output \"",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is 32, which is below the threshold of 50. The Override is NO, so",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but the override is YES. The override takes precedence. The rule that",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, and Override is NO. Therefore, the score passes. The override is not",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but the override is YES. The override takes precedence. The rule that",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The rule for NO",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 49, which is below the threshold of 68. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not need to",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is irrelevant because the Override is YES. The rule that says \"If Override is YES, output",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 2, which is below the threshold of 41. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, and Override is NO. Therefore, the score passes. BYPASS, PASS",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but the override is YES. The override takes precedence. The score is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not output \"",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 9, which is below the threshold of 38. The Override is NO",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        }
+      ],
+      "corrupt_details": [
+        {
+          "raw": " BYPASS\nExplanation: The score is 85, which is above the threshold of 54. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 8, which is below the threshold of 32. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 98, which is above the threshold of 62. However, the override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 50, which is below the threshold of 55. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 84, which is above the threshold of 49. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 37, which is below the threshold of 52. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 80, which is above the threshold of 43. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 18, which is below the threshold of 38. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 91, which is above the threshold of 38. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 16, which is below the threshold of 36. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 78, which is above the threshold of 64. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 6, which is below the threshold of 49. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 96, which is above the threshold of 34. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 30, which is below the threshold of 51. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 73, which is above the threshold of 65. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 27, which is below the threshold of 52. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 94, which is above the threshold of 50. However, the override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 26, which is below the threshold of 70. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 85, which is above the threshold of 65. However, the override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 33, which is below the threshold of 58. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 54, which is above the threshold of 46. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 58, which is below the threshold of 65. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 46, which is above the threshold of 30. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 45, which is below the threshold of 55. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is above the threshold, but the override is YES. The override takes precedence. The score is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 63, which is below the threshold of 69. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 71, which is above the threshold of 51. However, the override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 45, which is below the threshold of 50. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 51, which is above the threshold of 34. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 14, which is below the threshold of 66. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 59, which is above the threshold of 45. However, the override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 28, which is below the threshold of 64. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 45, which is above the threshold of 35. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 32, which is below the threshold of 50. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 72, which is above the threshold of 61. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 35, which is below the threshold of 49. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 98, which is above the threshold of 48. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 21, which is below the threshold of 37. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 82, which is above the threshold of 64. However, the override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 36, which is below the threshold of 68. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 68, which is above the threshold of 58. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 49, which is below the threshold of 68. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 91, which is above the threshold of 50. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 18, which is below the threshold of 45. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 58, which is above the threshold of 41. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 2, which is below the threshold of 41. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 95, which is above the threshold of 69. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 30, which is below the threshold of 46. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 44, which is above the threshold of 34. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS\nExplanation: The score is 9, which is below the threshold of 38. However, the Override",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        }
+      ]
+    }
+  }
+}

@@ -5,7 +5,8 @@ Workflow:
        "a plain prompt string"
      or an object with optional overrides:
        {"prompt": "...", "system": "...", "max_new_tokens": 512, "raw": false}
-  2. Run:  ../venv/bin/python batch_chat.py
+  2. Run:  ../venv/bin/python batch_chat.py [model] [qfile]
+     (qfile defaults to queries.json)
   3. Read answers.json - list of {"query": ..., "answer": ...} aligned with
      queries.json. Unchanged queries reuse their previous answers; only new
      or edited queries are regenerated. Delete answers.json to force rerun.
@@ -16,7 +17,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 MODEL = sys.argv[1] if len(sys.argv) > 1 else "meta-llama/Llama-3.1-8B-Instruct"
-QFILE = "queries.json"
+QFILE = sys.argv[2] if len(sys.argv) > 2 else "queries.json"
 AFILE = "answers.json"
 
 queries = json.load(open(QFILE))

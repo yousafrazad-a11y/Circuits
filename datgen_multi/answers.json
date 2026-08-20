@@ -1,0 +1,98 @@
+[
+  {
+    "query": {
+      "pair": 1,
+      "type": "clean",
+      "expected": "7th",
+      "max_new_tokens": 512,
+      "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor up, then one floor up, then one floor down, then one floor up, then one floor down, then one floor up. Max is now on",
+      "system": null,
+      "raw": false
+    },
+    "answer": "up -> 6th\nup -> 7th\ndown -> 6th\nup -> 7th\ndown -> 6th\nup -> 7th\n\nFINAL ANSWER: 7th"
+  },
+  {
+    "query": {
+      "pair": 1,
+      "type": "corrupt",
+      "expected": "5th",
+      "max_new_tokens": 512,
+      "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor down, then one floor up, then one floor down, then one floor up, then one floor down, then one floor up. Max is now on",
+      "system": null,
+      "raw": false
+    },
+    "answer": "Here's the step-by-step tracking of the elevator floor:\n\n1. Max is on the 5th floor.\n2. down -> 4th\n3. up -> 5th\n4. down -> 4th\n5. up -> 5th\n6. down -> 4th\n7. up -> 5th\n\nFINAL ANSWER: 5th"
+  },
+  {
+    "query": {
+      "pair": 2,
+      "type": "clean",
+      "expected": "5th",
+      "max_new_tokens": 512,
+      "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor up, then one floor down, then one floor up, then one floor up, then one floor down, then one floor down. Max is now on",
+      "system": null,
+      "raw": false
+    },
+    "answer": "Here's the step-by-step tracking of the elevator floor:\n\n1. Max is on the 5th floor.\n2. up -> 6th\n3. down -> 5th\n4. up -> 6th\n5. up -> 7th\n6. down -> 6th\n7. down -> 5th\n\nFINAL ANSWER: 5th"
+  },
+  {
+    "query": {
+      "pair": 2,
+      "type": "corrupt",
+      "expected": "3rd",
+      "max_new_tokens": 512,
+      "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor down, then one floor down, then one floor up, then one floor up, then one floor down, then one floor down. Max is now on",
+      "system": null,
+      "raw": false
+    },
+    "answer": "up -> 5th\ndown -> 4th\ndown -> 3rd\nup -> 4th\nup -> 5th\ndown -> 4th\ndown -> 3rd\n\nFINAL ANSWER: 3rd"
+  },
+  {
+    "query": {
+      "pair": 3,
+      "type": "clean",
+      "expected": "7th",
+      "max_new_tokens": 512,
+      "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor up, then one floor up, then one floor up, then one floor down, then one floor down, then one floor up. Max is now on",
+      "system": null,
+      "raw": false
+    },
+    "answer": "up -> 6th\nup -> 7th\nup -> 8th\ndown -> 7th\ndown -> 6th\nup -> 7th\n\nFINAL ANSWER: 7th"
+  },
+  {
+    "query": {
+      "pair": 3,
+      "type": "corrupt",
+      "expected": "5th",
+      "max_new_tokens": 512,
+      "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor down, then one floor up, then one floor up, then one floor down, then one floor down, then one floor up. Max is now on",
+      "system": null,
+      "raw": false
+    },
+    "answer": "Here's the step-by-step tracking of the elevator floor:\n\n1. Max is on the 5th floor.\n2. down -> 4th\n3. up -> 5th\n4. up -> 6th\n5. down -> 5th\n6. down -> 4th\n7. up -> 5th\n\nFINAL ANSWER: 5th"
+  },
+  {
+    "query": {
+      "pair": 4,
+      "type": "clean",
+      "expected": "5th",
+      "max_new_tokens": 512,
+      "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor up, then one floor down, then one floor down, then one floor up, then one floor up, then one floor down. Max is now on",
+      "system": null,
+      "raw": false
+    },
+    "answer": "up -> 6th\ndown -> 5th\ndown -> 4th\nup -> 5th\nup -> 6th\ndown -> 5th\n\nFINAL ANSWER: 5th"
+  },
+  {
+    "query": {
+      "pair": 4,
+      "type": "corrupt",
+      "expected": "3rd",
+      "max_new_tokens": 512,
+      "prompt": "Track the elevator floor step by step (write each step, e.g., \"up -> 4th\"), then finish with a last line exactly like: FINAL ANSWER: 4th\n\nMax is on the 5th floor in an elevator. He goes one floor down, then one floor down, then one floor down, then one floor up, then one floor up, then one floor down. Max is now on",
+      "system": null,
+      "raw": false
+    },
+    "answer": "Here's the step-by-step tracking of the elevator floor:\n\n1. Max is on the 5th floor.\n2. down -> 4th\n3. down -> 3rd\n4. down -> 2nd\n5. up -> 3rd\n6. up -> 4th\n7. down -> 3rd\n\nFINAL ANSWER: 3rd"
+  }
+]

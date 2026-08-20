@@ -1,0 +1,33 @@
+loading meta-llama/Llama-3.2-3B-Instruct (prunable + frozen full) ...
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 21236.98it/s]
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 3722.49it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   7%|▋         | 17/254 [00:00<00:01, 168.97it/s]Loading weights:  21%|██        | 53/254 [00:00<00:00, 280.18it/s]Loading weights:  35%|███▌      | 89/254 [00:00<00:00, 313.41it/s]Loading weights:  49%|████▉     | 125/254 [00:00<00:00, 331.41it/s]Loading weights:  63%|██████▎   | 161/254 [00:00<00:00, 341.25it/s]Loading weights:  77%|███████▋  | 196/254 [00:00<00:00, 341.37it/s]Loading weights:  91%|█████████ | 231/254 [00:00<00:00, 331.36it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 325.70it/s]
+18500 example pairs total from 21 file(s):
+  train_00_start_word.jsonl: 500
+  train_01_start_sep.jsonl: 500
+  train_02_start_floor.jsonl: 1500
+  train_03_step_1_word.jsonl: 500
+  train_04_step_1_sep.jsonl: 500
+  train_05_step_1_floor.jsonl: 1500
+  train_06_step_2_word.jsonl: 500
+  train_07_step_2_sep.jsonl: 500
+  train_08_step_2_floor.jsonl: 1500
+  train_09_step_3_word.jsonl: 500
+  train_10_step_3_sep.jsonl: 500
+  train_11_step_3_floor.jsonl: 1500
+  train_12_step_4_word.jsonl: 500
+  train_13_step_4_sep.jsonl: 500
+  train_14_step_4_floor.jsonl: 1500
+  train_15_step_5_word.jsonl: 500
+  train_16_step_5_sep.jsonl: 500
+  train_17_step_5_floor.jsonl: 1500
+  train_18_final_word.jsonl: 1500
+  train_19_final_sep.jsonl: 500
+  train_20_final_floor.jsonl: 1500
+caching full-model logits ...
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+training: 50 epochs, lr=0.001, kl=1.0, task=1.0, lambda_mult=1.0
+[19:47:43] epoch 1/50 kl=2.3702 task=2.3814 sparsity=9.2450 train_acc=0.7881 gates_open=100.0% (841s) | val acc 0.9999

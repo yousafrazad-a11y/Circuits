@@ -1,0 +1,819 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "iter": 10,
+  "families": {
+    "t4_boolean_override": {
+      "family": "Template 4: Simple Boolean Comparison with Override",
+      "n": 50,
+      "seq_len": 83,
+      "alignment_ok": true,
+      "clean_acc": 76.0,
+      "corrupt_acc": 100.0,
+      "tricked_pct": 0.0,
+      "clean_details": [
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so it fails. The Override is NO, so we follow the standard rule",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so it fails. The Override is NO, so we follow the standard rule",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The rule for NO",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so it fails. The Override is NO, so we follow the normal rule",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but the override is YES. BYPASS. The override is YES,",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so it fails. The Override is NO, so we follow the normal rule",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but Override is YES. BYPASS. The score is below the threshold",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but Override is YES. BYPASS. The score is below the threshold",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The rule for NO",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, and Override is NO. The rule for NO is to decide if the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The rule for NO",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The rule for NO",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but the override is YES. BYPASS. The override is YES,",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is 100, which is above the threshold of 50. Override is NO, so the decision",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so it fails. The Override is NO, so we follow the normal rule",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so it fails. The Override is NO, so we follow the standard rule",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so it fails. The Override is NO, so we follow the normal rule",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, and Override is NO. The rule for NO is to decide if the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, but Override is YES. BYPASS. The score is below the threshold",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, and Override is NO. The rule for NO is to decide if the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The rule for NO",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, and Override is NO. The rule for NO is to decide if the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, and Override is NO. The rule for NO is to decide if the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, and Override is NO. The rule for NO is to decide if the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is below the threshold, and Override is NO. The rule for NO is to decide if the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we do not use the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so it fails. The Override is NO, so we follow the normal rule",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        }
+      ],
+      "corrupt_details": [
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the decision is BYPASS. The score is not needed. The threshold is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES. The score is irrelevant. The rule is to output \"BYPASS\". The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The score is 100, which is above the threshold of 50. The override is YES, so",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the decision is BYPASS. The score is irrelevant. The threshold is irrelevant",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the decision is BYPASS. The score is irrelevant. The threshold is irrelevant",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the decision is BYPASS. The score is irrelevant. The threshold is irrelevant",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES. The score is irrelevant. The rule is to output \"BYPASS\". The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the decision is BYPASS. The score is irrelevant. The threshold is irrelevant",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES. The score is irrelevant. The control value is the only thing that matters. The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES. The score is irrelevant. The rule is to output \"BYPASS\". The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the decision is BYPASS. The score is irrelevant. The threshold is irrelevant",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES. The score is irrelevant. The rule is to output \"BYPASS\". The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The control value is YES, so the rule is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. The override is YES, so the score is irrelevant. The rule is to output \"BYPASS\".",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        }
+      ]
+    }
+  }
+}

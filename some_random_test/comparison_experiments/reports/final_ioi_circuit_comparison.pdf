@@ -1,0 +1,197 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 4744 >>
+stream
+0.06 0.2 0.33 rg 0 519 842 76 re f
+BT /F2 20 Tf 1 1 1 rg 34 559 Td (Node-Pruning Comparison) Tj ET
+BT /F1 9 Tf 0.82 0.9 0.96 rg 34 538 Td (Normal node pruning at two operating points versus the final position-aware checkpoint) Tj ET
+BT /F2 13 Tf 0.12 0.15 0.2 rg 34 492 Td (Circuit sizes) Tj ET
+0.1 0.27 0.43 rg 34 453 815 27 re f
+BT /F2 6.8 Tf 1 1 1 rg 38 467 Td (Circuit) Tj ET
+BT /F2 6.8 Tf 1 1 1 rg 204 467 Td (High-level edges active/full) Tj ET
+BT /F2 6.8 Tf 1 1 1 rg 374 467 Td (Heads) Tj ET
+BT /F2 6.8 Tf 1 1 1 rg 440 467 Td (Attn neurons closed) Tj ET
+BT /F2 6.8 Tf 1 1 1 rg 534 467 Td (MLPs) Tj ET
+BT /F2 6.8 Tf 1 1 1 rg 589 467 Td (MLP hidden closed) Tj ET
+BT /F2 6.8 Tf 1 1 1 rg 680 467 Td (MLP output closed) Tj ET
+BT /F2 6.8 Tf 1 1 1 rg 771 467 Td (Model proxy closed) Tj ET
+0.94 0.96 0.98 rg 34 426 815 27 re f
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 38 440 Td (Normal - KL matched \(ep. 80\)) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 204 440 Td (2,008/11,754 \(82.9% closed\)) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 374 440 Td (51/144) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 440 440 Td (71.5%) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 534 440 Td (12/12) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 589 440 Td (83.5%) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 680 440 Td (66.2%) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 771 440 Td (56.2%) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 426 m 849 426 l S
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 38 413 Td (Normal - epoch matched \(final\)) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 204 413 Td (1,703/11,754 \(85.5% closed\)) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 374 413 Td (48/144) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 440 413 Td (73.8%) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 534 413 Td (10/12) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 589 413 Td (88.3%) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 680 413 Td (74.6%) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 771 413 Td (58.3%) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 399 m 849 399 l S
+0.94 0.96 0.98 rg 34 372 815 27 re f
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 38 386 Td (Position-aware - final) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 204 386 Td (1,276/109,722 \(98.8% closed\)) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 374 386 Td (75/1,296) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 440 386 Td (95.4%) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 534 386 Td (25/108) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 589 386 Td (95.6%) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 680 386 Td (91.2%) Tj ET
+BT /F1 6.8 Tf 0.12 0.15 0.2 rg 771 386 Td (49.8%) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 372 m 849 372 l S
+BT /F2 13 Tf 0.12 0.15 0.2 rg 34 349 Td (Performance on the shared 500-example test set) Tj ET
+0.1 0.27 0.43 rg 34 311 730 26 re f
+BT /F2 8 Tf 1 1 1 rg 38 324 Td (Circuit) Tj ET
+BT /F2 8 Tf 1 1 1 rg 243 324 Td (Accuracy) Tj ET
+BT /F2 8 Tf 1 1 1 rg 328 324 Td (Exact) Tj ET
+BT /F2 8 Tf 1 1 1 rg 408 324 Td (Pairwise) Tj ET
+BT /F2 8 Tf 1 1 1 rg 493 324 Td (KL) Tj ET
+BT /F2 8 Tf 1 1 1 rg 573 324 Td (Logit diff) Tj ET
+BT /F2 8 Tf 1 1 1 rg 668 324 Td (Faithfulness) Tj ET
+0.94 0.96 0.98 rg 34 285 730 26 re f
+BT /F1 8 Tf 0.12 0.15 0.2 rg 38 298 Td (Normal - KL matched \(ep. 80\)) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 243 298 Td (98.4%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 328 298 Td (98.4%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 408 298 Td (100.0%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 493 298 Td (0.154) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 573 298 Td (6.414) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 668 298 Td (1.503) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 285 m 764 285 l S
+BT /F1 8 Tf 0.12 0.15 0.2 rg 38 272 Td (Normal - epoch matched \(final\)) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 243 272 Td (97.2%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 328 272 Td (97.2%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 408 272 Td (100.0%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 493 272 Td (0.194) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 573 272 Td (6.525) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 668 272 Td (1.529) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 259 m 764 259 l S
+0.94 0.96 0.98 rg 34 233 730 26 re f
+BT /F1 8 Tf 0.12 0.15 0.2 rg 38 246 Td (Position-aware - final) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 243 246 Td (98.8%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 328 246 Td (98.8%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 408 246 Td (100.0%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 493 246 Td (0.143) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 573 246 Td (6.979) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 668 246 Td (1.635) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 233 m 764 233 l S
+BT /F1 8 Tf 0.12 0.15 0.2 rg 34 49 Td (All rows use hard, hierarchy-finalized gates. Epoch 80 is the closest tested normal-node KL match to the positional final circuit.) Tj ET
+0.75 0.78 0.82 RG 0.5 w 32 25 m 810 25 l S
+BT /F1 7 Tf 0.12 0.15 0.2 rg 34 12 Td (Generated from saved experiment JSON; GPT-2 small, IOI ABBA.) Tj ET
+BT /F1 7 Tf 0.12 0.15 0.2 rg 787 12 Td (1) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4265 >>
+stream
+0.06 0.2 0.33 rg 0 519 842 76 re f
+BT /F2 20 Tf 1 1 1 rg 34 559 Td (Position-Aware Node Pruning vs PEAP) Tj ET
+BT /F1 9 Tf 0.82 0.9 0.96 rg 34 538 Td (Final position-aware node checkpoint; two retained PEAP operating points) Tj ET
+BT /F2 13 Tf 0.12 0.15 0.2 rg 34 492 Td (Circuit sizes) Tj ET
+0.1 0.27 0.43 rg 34 453 780 27 re f
+BT /F2 8 Tf 1 1 1 rg 38 467 Td (Circuit) Tj ET
+BT /F2 8 Tf 1 1 1 rg 198 467 Td (Abstract edges active/full) Tj ET
+BT /F2 8 Tf 1 1 1 rg 383 467 Td (Edges closed) Tj ET
+BT /F2 8 Tf 1 1 1 rg 488 467 Td (High-level nodes) Tj ET
+BT /F2 8 Tf 1 1 1 rg 658 467 Td (Native PEAP token edges) Tj ET
+0.94 0.96 0.98 rg 34 426 780 27 re f
+BT /F1 8 Tf 0.12 0.15 0.2 rg 38 440 Td (Position-aware node) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 198 440 Td (1,276/109,722) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 383 440 Td (98.84%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 488 440 Td (100/1404 component slots) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 658 440 Td (--) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 426 m 814 426 l S
+BT /F1 8 Tf 0.12 0.15 0.2 rg 38 413 Td (PEAP top-5k) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 198 413 Td (4,529/109,722) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 383 413 Td (95.87%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 488 413 Td (734 selected nodes) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 658 413 Td (12,303.8/590,076.2) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 399 m 814 399 l S
+0.94 0.96 0.98 rg 34 372 780 27 re f
+BT /F1 8 Tf 0.12 0.15 0.2 rg 38 386 Td (PEAP top-10k) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 198 386 Td (9,369/109,722) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 383 386 Td (91.46%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 488 386 Td (1115 selected nodes) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 658 386 Td (27,316.3/590,076.2) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 372 m 814 372 l S
+BT /F2 13 Tf 0.12 0.15 0.2 rg 34 347 Td (Performance on the shared 500-example test set) Tj ET
+0.1 0.27 0.43 rg 34 309 730 26 re f
+BT /F2 8 Tf 1 1 1 rg 38 322 Td (Circuit) Tj ET
+BT /F2 8 Tf 1 1 1 rg 243 322 Td (Accuracy) Tj ET
+BT /F2 8 Tf 1 1 1 rg 328 322 Td (Exact) Tj ET
+BT /F2 8 Tf 1 1 1 rg 408 322 Td (Pairwise) Tj ET
+BT /F2 8 Tf 1 1 1 rg 493 322 Td (KL) Tj ET
+BT /F2 8 Tf 1 1 1 rg 573 322 Td (Logit diff) Tj ET
+BT /F2 8 Tf 1 1 1 rg 668 322 Td (Faithfulness) Tj ET
+0.94 0.96 0.98 rg 34 283 730 26 re f
+BT /F1 8 Tf 0.12 0.15 0.2 rg 38 296 Td (Position-aware node) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 243 296 Td (98.8%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 328 296 Td (98.8%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 408 296 Td (100.0%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 493 296 Td (0.143) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 573 296 Td (6.979) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 668 296 Td (1.635) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 283 m 764 283 l S
+BT /F1 8 Tf 0.12 0.15 0.2 rg 38 270 Td (PEAP top-5k) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 243 270 Td (89.2%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 328 270 Td (89.2%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 408 270 Td (99.4%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 493 270 Td (0.100) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 573 270 Td (3.637) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 668 270 Td (0.852) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 257 m 764 257 l S
+0.94 0.96 0.98 rg 34 231 730 26 re f
+BT /F1 8 Tf 0.12 0.15 0.2 rg 38 244 Td (PEAP top-10k) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 243 244 Td (97.4%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 328 244 Td (97.4%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 408 244 Td (99.4%) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 493 244 Td (0.029) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 573 244 Td (3.861) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 668 244 Td (0.905) Tj ET
+0.75 0.78 0.82 RG 0.5 w 34 231 m 764 231 l S
+BT /F1 8 Tf 0.12 0.15 0.2 rg 34 88 Td (Size rule: surviving nodes imply every valid incident edge, following circuit_pruning-argo. For PEAP compatibility, Q/K/V are) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 34 78 Td (collapsed into one abstract connection and causal logical-position transport is included.) Tj ET
+BT /F1 8 Tf 0.12 0.15 0.2 rg 34 43 Td (KL is D_KL\(full || circuit\); logit difference is IO minus distractor; faithfulness is circuit/full logit difference.) Tj ET
+0.75 0.78 0.82 RG 0.5 w 32 25 m 810 25 l S
+BT /F1 7 Tf 0.12 0.15 0.2 rg 34 12 Td (Generated from saved experiment JSON; GPT-2 small, IOI ABBA.) Tj ET
+BT /F1 7 Tf 0.12 0.15 0.2 rg 787 12 Td (2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 842 595] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000272 00000 n 
+0000005067 00000 n 
+0000005203 00000 n 
+0000009519 00000 n 
+trailer << /Size 9 /Root 1 0 R >>
+startxref
+9655
+%%EOF

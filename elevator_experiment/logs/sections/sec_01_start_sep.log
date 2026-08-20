@@ -1,0 +1,52 @@
+loading meta-llama/Llama-3.2-3B-Instruct (prunable + frozen full) ...
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 5729.92it/s]
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 4485.00it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   8%|▊         | 21/254 [00:00<00:01, 200.70it/s]Loading weights:  24%|██▍       | 61/254 [00:00<00:00, 315.66it/s]Loading weights:  41%|████      | 103/254 [00:00<00:00, 358.14it/s]Loading weights:  57%|█████▋    | 145/254 [00:00<00:00, 381.30it/s]Loading weights:  73%|███████▎  | 185/254 [00:00<00:00, 381.69it/s]Loading weights:  88%|████████▊ | 224/254 [00:00<00:00, 383.72it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 368.37it/s]
+500 example pairs total from 1 file(s):
+  train_01_start_sep.jsonl: 500
+caching full-model logits ...
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+training: 50 epochs, lr=0.0025, kl=1.0, task=1.0, lambda_mult=4.0
+[20:38:20] epoch 1/50 kl=0.0000 task=0.0000 sparsity=0.2524 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:38:50] epoch 2/50 kl=0.0000 task=0.0000 sparsity=0.7727 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:39:20] epoch 3/50 kl=0.0000 task=0.0000 sparsity=1.2914 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:39:51] epoch 4/50 kl=0.0000 task=0.0000 sparsity=1.8080 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:40:21] epoch 5/50 kl=0.0000 task=0.0000 sparsity=2.3219 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+saved masks/sections/sec_01_start_sep.ep5.pt | gates open: 402164/402164 (100.0%)
+[20:40:51] epoch 6/50 kl=0.0000 task=0.0000 sparsity=2.8323 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:41:22] epoch 7/50 kl=0.0000 task=0.0000 sparsity=3.3383 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:41:52] epoch 8/50 kl=0.0000 task=0.0000 sparsity=3.8389 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:42:22] epoch 9/50 kl=0.0000 task=0.0000 sparsity=4.3325 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:42:52] epoch 10/50 kl=0.0000 task=0.0000 sparsity=4.8174 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+saved masks/sections/sec_01_start_sep.ep10.pt | gates open: 402164/402164 (100.0%)
+[20:43:22] epoch 11/50 kl=0.0000 task=0.0000 sparsity=5.2913 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:43:53] epoch 12/50 kl=0.0000 task=0.0000 sparsity=5.7517 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:44:23] epoch 13/50 kl=0.0000 task=0.0000 sparsity=6.1952 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:44:53] epoch 14/50 kl=0.0000 task=0.0000 sparsity=6.6180 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:45:23] epoch 15/50 kl=0.0000 task=0.0000 sparsity=7.0154 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+saved masks/sections/sec_01_start_sep.ep15.pt | gates open: 402164/402164 (100.0%)
+[20:45:53] epoch 16/50 kl=0.0000 task=0.0000 sparsity=7.3823 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:46:24] epoch 17/50 kl=0.0000 task=0.0000 sparsity=7.7127 train_acc=1.0000 gates_open=100.0% (20s) | val acc 1.0000
+[20:46:54] epoch 18/50 kl=0.0000 task=0.0000 sparsity=8.0005 train_acc=1.0000 gates_open=99.7% (20s) | val acc 1.0000
+[20:47:24] epoch 19/50 kl=0.0000 task=0.0000 sparsity=8.2393 train_acc=1.0000 gates_open=96.2% (20s) | val acc 1.0000
+[20:47:55] epoch 20/50 kl=0.0000 task=0.0000 sparsity=8.4230 train_acc=1.0000 gates_open=87.8% (20s) | val acc 1.0000
+saved masks/sections/sec_01_start_sep.ep20.pt | gates open: 353266/402164 (87.8%)
+[20:48:25] epoch 21/50 kl=0.0000 task=0.0000 sparsity=8.5466 train_acc=1.0000 gates_open=73.4% (20s) | val acc 1.0000
+[20:48:56] epoch 22/50 kl=0.0000 task=0.0000 sparsity=8.6064 train_acc=1.0000 gates_open=59.2% (20s) | val acc 1.0000
+[20:49:26] epoch 23/50 kl=0.0000 task=0.0000 sparsity=8.6007 train_acc=1.0000 gates_open=45.3% (20s) | val acc 1.0000
+[20:49:57] epoch 24/50 kl=0.0000 task=0.0000 sparsity=8.5306 train_acc=1.0000 gates_open=31.6% (20s) | val acc 1.0000
+[20:50:27] epoch 25/50 kl=0.0000 task=0.0000 sparsity=8.3995 train_acc=1.0000 gates_open=20.7% (20s) | val acc 1.0000
+saved masks/sections/sec_01_start_sep.ep25.pt | gates open: 83223/402164 (20.7%)
+[20:50:58] epoch 26/50 kl=0.0000 task=0.0000 sparsity=8.2135 train_acc=1.0000 gates_open=10.7% (20s) | val acc 1.0000
+[20:51:28] epoch 27/50 kl=0.0000 task=0.0000 sparsity=7.9808 train_acc=1.0000 gates_open=1.2% (20s) | val acc 1.0000
+[20:51:59] epoch 28/50 kl=0.0000 task=0.0000 sparsity=7.7107 train_acc=1.0000 gates_open=0.0% (20s) | val acc 1.0000
+[20:52:30] epoch 29/50 kl=0.0000 task=0.0000 sparsity=7.4133 train_acc=1.0000 gates_open=0.0% (20s) | val acc 1.0000
+[20:53:00] epoch 30/50 kl=0.0000 task=0.0000 sparsity=7.0982 train_acc=1.0000 gates_open=0.0% (20s) | val acc 1.0000
+saved masks/sections/sec_01_start_sep.ep30.pt | gates open: 0/402164 (0.0%)
+[20:53:30] epoch 31/50 kl=0.0000 task=0.0000 sparsity=6.7743 train_acc=1.0000 gates_open=0.0% (20s) | val acc 1.0000
+[20:54:04] epoch 32/50 kl=0.0000 task=0.0000 sparsity=6.3955 train_acc=1.0000 gates_open=0.0% (20s) | val acc 1.0000
+[20:54:34] epoch 33/50 kl=0.0000 task=0.0000 sparsity=5.9043 train_acc=1.0000 gates_open=0.0% (20s) | val acc 1.0000
+[20:55:05] epoch 34/50 kl=0.0000 task=0.0000 sparsity=5.4547 train_acc=1.0000 gates_open=0.0% (20s) | val acc 1.0000

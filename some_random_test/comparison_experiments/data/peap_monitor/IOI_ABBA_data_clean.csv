@@ -1,0 +1,101 @@
+example_id,prompt,prompt_id,prefix,IO,and,S1,S1+1,action1,S2,action2,to,length,correct_token,wrong_token,IO_token,S1_token,S2_token,label,split,top_answer,base_logit_diff
+ioi_abba_0000,"While Joseph and Alicia were commuting to the house, Alicia gave a ring to",9,1,2,3,4,5,6,11,12,15,16, Joseph, Alicia, Joseph, Alicia, Alicia, Joseph,eval, Joseph,5.446510314941406
+ioi_abba_0001,"While Robert and Matthew were commuting to the store, Matthew gave a basketball to",9,1,2,3,4,5,6,11,12,15,16, Robert, Matthew, Robert, Matthew, Matthew, Robert,eval, Robert,3.4174575805664062
+ioi_abba_0002,"Then, Lindsey and Vanessa were thinking about going to the station. Vanessa wanted to give a computer to",3,1,3,4,5,6,7,14,15,20,21, Lindsey, Vanessa, Lindsey, Vanessa, Vanessa, Lindsey,eval, Lindsey,3.4252166748046875
+ioi_abba_0003,Friends Paul and James found a basketball at the office. James gave it to,14,1,2,3,4,5,6,12,13,15,16, Paul, James, Paul, James, James, Paul,eval, Paul,5.190277099609375
+ioi_abba_0004,"Then, Daniel and Shannon had a long argument. Afterwards Shannon said to",12,1,3,4,5,6,7,12,13,14,15, Daniel, Shannon, Daniel, Shannon, Shannon, Daniel,eval, Daniel,4.388252258300781
+ioi_abba_0005,"After the lunch, John and Elizabeth went to the office. Elizabeth gave a bone to",10,1,5,6,7,8,9,13,14,17,18, John, Elizabeth, John, Elizabeth, Elizabeth, John,eval, John,3.577186584472656
+ioi_abba_0006,"Afterwards, Richard and Jeffrey went to the garden. Jeffrey gave a bone to",11,1,4,5,6,7,8,12,13,16,17, Richard, Jeffrey, Richard, Jeffrey, Jeffrey, Richard,eval, Richard,3.56634521484375
+ioi_abba_0007,The store Lauren and Jesse went to had a necklace. Jesse gave it to,13,1,3,4,5,6,7,12,13,15,16, Lauren, Jesse, Lauren, Jesse, Jesse, Lauren,eval, Lauren,6.135425567626953
+ioi_abba_0008,Friends Steven and Tiffany found a basketball at the office. Tiffany gave it to,14,1,2,3,4,5,6,12,13,15,16, Steven, Tiffany, Steven, Tiffany, Tiffany, Steven,eval, Steven,7.141525268554688
+ioi_abba_0009,"Then, Erin and Lindsey were working at the hospital. Lindsey decided to give a bone to",2,1,3,4,5,6,7,12,13,18,19, Erin, Lindsey, Erin, Lindsey, Lindsey, Erin,eval, Erin,3.961982727050781
+ioi_abba_0010,"Afterwards, Cody and Megan went to the house. Megan gave a drink to",11,1,4,5,6,7,8,12,13,16,17, Cody, Megan, Cody, Megan, Megan, Cody,eval, Cody,6.043601989746094
+ioi_abba_0011,"Then, Eric and Kimberly had a lot of fun at the store. Kimberly gave a kiss to",1,1,3,4,5,6,7,15,16,19,20, Eric, Kimberly, Eric, Kimberly, Kimberly, Eric,eval, Eric,4.7084808349609375
+ioi_abba_0012,"While Lisa and Sarah were commuting to the garden, Sarah gave a drink to",9,1,2,3,4,5,6,11,12,15,16, Lisa, Sarah, Lisa, Sarah, Sarah, Lisa,eval, Lisa,2.724327087402344
+ioi_abba_0013,"While Gregory and Amy were working at the store, Amy gave a kiss to",8,1,2,3,4,5,6,11,12,15,16, Gregory, Amy, Gregory, Amy, Amy, Gregory,eval, Gregory,2.8515548706054688
+ioi_abba_0014,"After the lunch, Sara and Jesse went to the office. Jesse gave a kiss to",10,1,5,6,7,8,9,13,14,17,18, Sara, Jesse, Sara, Jesse, Jesse, Sara,eval, Sara,5.859779357910156
+ioi_abba_0015,Friends Bradley and Jeffrey found a necklace at the store. Jeffrey gave it to,14,1,2,3,4,5,6,12,13,15,16, Bradley, Jeffrey, Bradley, Jeffrey, Jeffrey, Bradley,eval, Bradley,2.8221969604492188
+ioi_abba_0016,"Then, Jessica and Sean were thinking about going to the store. Sean wanted to give a basketball to",3,1,3,4,5,6,7,14,15,20,21, Jessica, Sean, Jessica, Sean, Sean, Jessica,eval, Jessica,3.456283569335937
+ioi_abba_0017,"Then, James and Tyler had a long argument. Afterwards Tyler said to",12,1,3,4,5,6,7,12,13,14,15, James, Tyler, James, Tyler, Tyler, James,eval, James,2.7145538330078125
+ioi_abba_0018,"While Stephen and Kristen were working at the house, Kristen gave a basketball to",8,1,2,3,4,5,6,11,12,15,16, Stephen, Kristen, Stephen, Kristen, Kristen, Stephen,eval, Stephen,4.252212524414063
+ioi_abba_0019,"Afterwards, Allison and Dustin went to the hospital. Dustin gave a drink to",11,1,4,5,6,7,8,12,13,16,17, Allison, Dustin, Allison, Dustin, Dustin, Allison,eval, Allison,4.7521514892578125
+ioi_abba_0020,"When Lindsey and Jose got a basketball at the garden, Jose decided to give the basketball to",7,1,2,3,4,5,6,12,13,18,19, Lindsey, Jose, Lindsey, Jose, Jose, Lindsey,eval, Lindsey,5.241752624511719
+ioi_abba_0021,"While Daniel and Eric were working at the school, Eric gave a basketball to",8,1,2,3,4,5,6,11,12,15,16, Daniel, Eric, Daniel, Eric, Eric, Daniel,eval, Daniel,2.426132202148437
+ioi_abba_0022,"After the lunch, David and Amber went to the station. Amber gave a basketball to",10,1,5,6,7,8,9,13,14,17,18, David, Amber, David, Amber, Amber, David,eval, David,4.252113342285156
+ioi_abba_0023,"When John and Nicole got a snack at the house, Nicole decided to give it to",6,1,2,3,4,5,6,12,13,17,18, John, Nicole, John, Nicole, Nicole, John,eval, John,5.190223693847656
+ioi_abba_0024,"Then, Joshua and Christine had a lot of fun at the store. Christine gave a drink to",1,1,3,4,5,6,7,15,16,19,20, Joshua, Christine, Joshua, Christine, Christine, Joshua,eval, Joshua,4.648597717285156
+ioi_abba_0025,The garden Brian and Mark went to had a snack. Mark gave it to,13,1,3,4,5,6,7,12,13,15,16, Brian, Mark, Brian, Mark, Mark, Brian,eval, Brian,5.070980072021484
+ioi_abba_0026,The store John and Paul went to had a kiss. Paul gave it to,13,1,3,4,5,6,7,12,13,15,16, John, Paul, John, Paul, Paul, John,eval, John,3.5279617309570312
+ioi_abba_0027,"Then, Jonathan and Amanda had a long argument, and afterwards Amanda said to",4,1,3,4,5,6,7,13,14,15,16, Jonathan, Amanda, Jonathan, Amanda, Amanda, Jonathan,eval, Jonathan,5.240753173828125
+ioi_abba_0028,"Afterwards, Lindsay and Mark went to the station. Mark gave a bone to",11,1,4,5,6,7,8,12,13,16,17, Lindsay, Mark, Lindsay, Mark, Mark, Lindsay,eval, Lindsay,3.1086959838867188
+ioi_abba_0029,"Afterwards, Christina and Nicole went to the store. Nicole gave a necklace to",11,1,4,5,6,7,8,12,13,16,17, Christina, Nicole, Christina, Nicole, Nicole, Christina,eval, Christina,5.0321044921875
+ioi_abba_0030,Friends Joshua and Amanda found a ring at the restaurant. Amanda gave it to,14,1,2,3,4,5,6,12,13,15,16, Joshua, Amanda, Joshua, Amanda, Amanda, Joshua,eval, Joshua,5.184520721435547
+ioi_abba_0031,"Then, James and Kelly had a lot of fun at the school. Kelly gave a drink to",1,1,3,4,5,6,7,15,16,19,20, James, Kelly, James, Kelly, Kelly, James,eval, James,3.2586593627929688
+ioi_abba_0032,"Then, Tyler and Ryan went to the garden. Ryan gave a drink to",0,1,3,4,5,6,7,11,12,15,16, Tyler, Ryan, Tyler, Ryan, Ryan, Tyler,eval, Tyler,3.337432861328125
+ioi_abba_0033,"When Vanessa and Jose got a computer at the restaurant, Jose decided to give it to",6,1,2,3,4,5,6,12,13,17,18, Vanessa, Jose, Vanessa, Jose, Jose, Vanessa,eval, Vanessa,5.637466430664063
+ioi_abba_0034,"When Laura and Rebecca got a kiss at the garden, Rebecca decided to give the kiss to",7,1,2,3,4,5,6,12,13,18,19, Laura, Rebecca, Laura, Rebecca, Rebecca, Laura,eval, Laura,3.898002624511719
+ioi_abba_0035,Friends Heather and Sara found a kiss at the office. Sara gave it to,14,1,2,3,4,5,6,12,13,15,16, Heather, Sara, Heather, Sara, Sara, Heather,eval, Heather,4.776100158691406
+ioi_abba_0036,The hospital Jeffrey and Megan went to had a ring. Megan gave it to,13,1,3,4,5,6,7,12,13,15,16, Jeffrey, Megan, Jeffrey, Megan, Megan, Jeffrey,eval, Jeffrey,7.027961730957031
+ioi_abba_0037,Friends Paul and Jose found a computer at the restaurant. Jose gave it to,14,1,2,3,4,5,6,12,13,15,16, Paul, Jose, Paul, Jose, Jose, Paul,eval, Paul,4.491203308105469
+ioi_abba_0038,"Then, Joseph and Andrew had a long argument, and afterwards Andrew said to",4,1,3,4,5,6,7,13,14,15,16, Joseph, Andrew, Joseph, Andrew, Andrew, Joseph,eval, Joseph,4.698532104492188
+ioi_abba_0039,The hospital Brittany and Vanessa went to had a snack. Vanessa gave it to,13,1,3,4,5,6,7,12,13,15,16, Brittany, Vanessa, Brittany, Vanessa, Vanessa, Brittany,eval, Brittany,5.828800201416016
+ioi_abba_0040,The hospital Joshua and Melissa went to had a ring. Melissa gave it to,13,1,3,4,5,6,7,12,13,15,16, Joshua, Melissa, Joshua, Melissa, Melissa, Joshua,eval, Joshua,4.629016876220703
+ioi_abba_0041,"Then, Amber and Michael had a long argument, and afterwards Michael said to",4,1,3,4,5,6,7,13,14,15,16, Amber, Michael, Amber, Michael, Michael, Amber,eval, Amber,4.396903991699219
+ioi_abba_0042,"Then, Shannon and Paul had a lot of fun at the garden. Paul gave a bone to",1,1,3,4,5,6,7,15,16,19,20, Shannon, Paul, Shannon, Paul, Paul, Shannon,eval, Shannon,2.3116226196289062
+ioi_abba_0043,"After the lunch, Rachel and Jennifer went to the school. Jennifer gave a kiss to",10,1,5,6,7,8,9,13,14,17,18, Rachel, Jennifer, Rachel, Jennifer, Jennifer, Rachel,eval, Rachel,5.677581787109375
+ioi_abba_0044,"Then, Angela and Richard were working at the school. Richard decided to give a bone to",2,1,3,4,5,6,7,12,13,18,19, Angela, Richard, Angela, Richard, Richard, Angela,eval, Angela,1.5994949340820312
+ioi_abba_0045,"Then, Jeremy and Stephanie had a long argument. Afterwards Stephanie said to",12,1,3,4,5,6,7,12,13,14,15, Jeremy, Stephanie, Jeremy, Stephanie, Stephanie, Jeremy,eval, Jeremy,6.975616455078125
+ioi_abba_0046,The store William and Steven went to had a snack. Steven gave it to,13,1,3,4,5,6,7,12,13,15,16, William, Steven, William, Steven, Steven, William,eval, William,5.046314239501953
+ioi_abba_0047,The school Nicholas and Eric went to had a basketball. Eric gave it to,13,1,3,4,5,6,7,12,13,15,16, Nicholas, Eric, Nicholas, Eric, Eric, Nicholas,eval, Nicholas,4.938507080078125
+ioi_abba_0048,"Then, Kristen and Matthew had a long argument, and afterwards Matthew said to",4,1,3,4,5,6,7,13,14,15,16, Kristen, Matthew, Kristen, Matthew, Matthew, Kristen,eval, Kristen,4.8330841064453125
+ioi_abba_0049,The office Bryan and Danielle went to had a ring. Danielle gave it to,13,1,3,4,5,6,7,12,13,15,16, Bryan, Danielle, Bryan, Danielle, Danielle, Bryan,eval, Bryan,6.018573760986328
+ioi_abba_0050,"Then, Kevin and Andrew had a lot of fun at the house. Andrew gave a necklace to",1,1,3,4,5,6,7,15,16,19,20, Kevin, Andrew, Kevin, Andrew, Andrew, Kevin,eval, Kevin,4.801048278808594
+ioi_abba_0051,"Then, Laura and Christine had a lot of fun at the house. Christine gave a basketball to",1,1,3,4,5,6,7,15,16,19,20, Laura, Christine, Laura, Christine, Christine, Laura,eval, Laura,3.906585693359375
+ioi_abba_0052,"After Daniel and Emily went to the garden, Emily gave a computer to",5,1,2,3,4,5,6,10,11,14,15, Daniel, Emily, Daniel, Emily, Emily, Daniel,eval, Daniel,5.703926086425781
+ioi_abba_0053,"When Rachel and Jamie got a bone at the hospital, Jamie decided to give it to",6,1,2,3,4,5,6,12,13,17,18, Rachel, Jamie, Rachel, Jamie, Jamie, Rachel,eval, Rachel,5.6082611083984375
+ioi_abba_0054,"Afterwards, Benjamin and Nicole went to the restaurant. Nicole gave a computer to",11,1,4,5,6,7,8,12,13,16,17, Benjamin, Nicole, Benjamin, Nicole, Nicole, Benjamin,eval, Benjamin,7.419628143310547
+ioi_abba_0055,"Then, Paul and Tiffany were thinking about going to the house. Tiffany wanted to give a necklace to",3,1,3,4,5,6,7,14,15,20,21, Paul, Tiffany, Paul, Tiffany, Tiffany, Paul,eval, Paul,6.174888610839844
+ioi_abba_0056,"When Aaron and Jacob got a kiss at the restaurant, Jacob decided to give the kiss to",7,1,2,3,4,5,6,12,13,18,19, Aaron, Jacob, Aaron, Jacob, Jacob, Aaron,eval, Aaron,3.5605545043945312
+ioi_abba_0057,"After Kelly and Timothy went to the garden, Timothy gave a basketball to",5,1,2,3,4,5,6,10,11,14,15, Kelly, Timothy, Kelly, Timothy, Timothy, Kelly,eval, Kelly,1.2657928466796875
+ioi_abba_0058,"Then, Rachel and Alexander went to the store. Alexander gave a basketball to",0,1,3,4,5,6,7,11,12,15,16, Rachel, Alexander, Rachel, Alexander, Alexander, Rachel,eval, Rachel,5.064678192138672
+ioi_abba_0059,"When Mary and Stephen got a drink at the school, Stephen decided to give it to",6,1,2,3,4,5,6,12,13,17,18, Mary, Stephen, Mary, Stephen, Stephen, Mary,eval, Mary,4.402496337890625
+ioi_abba_0060,"Afterwards, Tiffany and Erin went to the store. Erin gave a kiss to",11,1,4,5,6,7,8,12,13,16,17, Tiffany, Erin, Tiffany, Erin, Erin, Tiffany,eval, Tiffany,5.502166748046875
+ioi_abba_0061,"When Eric and Mark got a basketball at the store, Mark decided to give the basketball to",7,1,2,3,4,5,6,12,13,18,19, Eric, Mark, Eric, Mark, Mark, Eric,eval, Eric,2.7170639038085938
+ioi_abba_0062,"While Rebecca and Ryan were working at the office, Ryan gave a snack to",8,1,2,3,4,5,6,11,12,15,16, Rebecca, Ryan, Rebecca, Ryan, Ryan, Rebecca,eval, Rebecca,3.22430419921875
+ioi_abba_0063,"When Courtney and Mary got a snack at the restaurant, Mary decided to give the snack to",7,1,2,3,4,5,6,12,13,18,19, Courtney, Mary, Courtney, Mary, Mary, Courtney,eval, Courtney,3.704132080078125
+ioi_abba_0064,"Then, Kevin and Charles had a long argument, and afterwards Charles said to",4,1,3,4,5,6,7,13,14,15,16, Kevin, Charles, Kevin, Charles, Charles, Kevin,eval, Kevin,4.0442657470703125
+ioi_abba_0065,"Then, Aaron and Thomas were thinking about going to the hospital. Thomas wanted to give a necklace to",3,1,3,4,5,6,7,14,15,20,21, Aaron, Thomas, Aaron, Thomas, Thomas, Aaron,eval, Aaron,1.0554428100585938
+ioi_abba_0066,"Then, Dustin and Laura were thinking about going to the house. Laura wanted to give a bone to",3,1,3,4,5,6,7,14,15,20,21, Dustin, Laura, Dustin, Laura, Laura, Dustin,eval, Dustin,5.901214599609375
+ioi_abba_0067,"After Heather and Shannon went to the station, Shannon gave a drink to",5,1,2,3,4,5,6,10,11,14,15, Heather, Shannon, Heather, Shannon, Shannon, Heather,eval, Heather,2.344757080078125
+ioi_abba_0068,"While Anthony and Amanda were commuting to the store, Amanda gave a drink to",9,1,2,3,4,5,6,11,12,15,16, Anthony, Amanda, Anthony, Amanda, Amanda, Anthony,eval, Anthony,2.887886047363281
+ioi_abba_0069,"When Michael and Patrick got a basketball at the house, Patrick decided to give it to",6,1,2,3,4,5,6,12,13,17,18, Michael, Patrick, Michael, Patrick, Patrick, Michael,eval, Michael,2.5009307861328125
+ioi_abba_0070,"When Eric and Sean got a drink at the office, Sean decided to give it to",6,1,2,3,4,5,6,12,13,17,18, Eric, Sean, Eric, Sean, Sean, Eric,eval, Eric,3.0043716430664062
+ioi_abba_0071,"While Jonathan and Courtney were working at the store, Courtney gave a drink to",8,1,2,3,4,5,6,11,12,15,16, Jonathan, Courtney, Jonathan, Courtney, Courtney, Jonathan,eval, Jonathan,1.7681732177734375
+ioi_abba_0072,"After the lunch, Tyler and Andrea went to the house. Andrea gave a bone to",10,1,5,6,7,8,9,13,14,17,18, Tyler, Andrea, Tyler, Andrea, Andrea, Tyler,eval, Tyler,3.217254638671875
+ioi_abba_0073,"After Brian and Jacob went to the school, Jacob gave a snack to",5,1,2,3,4,5,6,10,11,14,15, Brian, Jacob, Brian, Jacob, Jacob, Brian,eval, Brian,2.3841705322265625
+ioi_abba_0074,"Then, Brittany and Lauren had a long argument. Afterwards Lauren said to",12,1,3,4,5,6,7,12,13,14,15, Brittany, Lauren, Brittany, Lauren, Lauren, Brittany,eval, Brittany,3.3184356689453125
+ioi_abba_0075,"Then, Stephen and James went to the office. James gave a basketball to",0,1,3,4,5,6,7,11,12,15,16, Stephen, James, Stephen, James, James, Stephen,eval, Stephen,4.257484436035156
+ioi_abba_0076,"Then, Daniel and Lindsey were thinking about going to the school. Lindsey wanted to give a ring to",3,1,3,4,5,6,7,14,15,20,21, Daniel, Lindsey, Daniel, Lindsey, Lindsey, Daniel,eval, Daniel,4.456901550292969
+ioi_abba_0077,"After the lunch, Sarah and Travis went to the garden. Travis gave a basketball to",10,1,5,6,7,8,9,13,14,17,18, Sarah, Travis, Sarah, Travis, Travis, Sarah,eval, Sarah,4.682106018066406
+ioi_abba_0078,"Then, Lindsay and Jacob were working at the garden. Jacob decided to give a bone to",2,1,3,4,5,6,7,12,13,18,19, Lindsay, Jacob, Lindsay, Jacob, Jacob, Lindsay,eval, Lindsay,2.841705322265625
+ioi_abba_0079,"After the lunch, Joseph and Rachel went to the house. Rachel gave a drink to",10,1,5,6,7,8,9,13,14,17,18, Joseph, Rachel, Joseph, Rachel, Rachel, Joseph,eval, Joseph,3.0538253784179688
+ioi_abba_0080,The school Nicholas and Vanessa went to had a kiss. Vanessa gave it to,13,1,3,4,5,6,7,12,13,15,16, Nicholas, Vanessa, Nicholas, Vanessa, Vanessa, Nicholas,eval, Nicholas,8.35552978515625
+ioi_abba_0081,"Then, Samuel and Lindsay had a long argument. Afterwards Lindsay said to",12,1,3,4,5,6,7,12,13,14,15, Samuel, Lindsay, Samuel, Lindsay, Lindsay, Samuel,eval, Samuel,6.896339416503906
+ioi_abba_0082,"Then, Sara and Danielle had a lot of fun at the office. Danielle gave a ring to",1,1,3,4,5,6,7,15,16,19,20, Sara, Danielle, Sara, Danielle, Danielle, Sara,eval, Sara,2.1727828979492188
+ioi_abba_0083,"After the lunch, Sean and Benjamin went to the station. Benjamin gave a bone to",10,1,5,6,7,8,9,13,14,17,18, Sean, Benjamin, Sean, Benjamin, Benjamin, Sean,eval, Sean,1.6965255737304688
+ioi_abba_0084,"Then, Stephanie and Emily had a long argument, and afterwards Emily said to",4,1,3,4,5,6,7,13,14,15,16, Stephanie, Emily, Stephanie, Emily, Emily, Stephanie,eval, Stephanie,4.560905456542969
+ioi_abba_0085,The school Christine and Emily went to had a kiss. Emily gave it to,13,1,3,4,5,6,7,12,13,15,16, Christine, Emily, Christine, Emily, Emily, Christine,eval, Christine,3.3764190673828125
+ioi_abba_0086,"While Charles and Thomas were commuting to the house, Thomas gave a necklace to",9,1,2,3,4,5,6,11,12,15,16, Charles, Thomas, Charles, Thomas, Thomas, Charles,eval, Charles,1.6430130004882812
+ioi_abba_0087,"Then, Erin and Matthew were thinking about going to the office. Matthew wanted to give a computer to",3,1,3,4,5,6,7,14,15,20,21, Erin, Matthew, Erin, Matthew, Matthew, Erin,eval, Erin,6.639030456542969
+ioi_abba_0088,"Then, Thomas and Brittany went to the school. Brittany gave a kiss to",0,1,3,4,5,6,7,11,12,15,16, Thomas, Brittany, Thomas, Brittany, Brittany, Thomas,eval, Thomas,6.663795471191406
+ioi_abba_0089,"Then, Courtney and Adam had a long argument. Afterwards Adam said to",12,1,3,4,5,6,7,12,13,14,15, Courtney, Adam, Courtney, Adam, Adam, Courtney,eval, Courtney,4.983390808105469
+ioi_abba_0090,"Then, Vanessa and Bryan had a lot of fun at the hospital. Bryan gave a basketball to",1,1,3,4,5,6,7,15,16,19,20, Vanessa, Bryan, Vanessa, Bryan, Bryan, Vanessa,eval, Vanessa,5.208755493164063
+ioi_abba_0091,"While Katie and Tiffany were commuting to the office, Tiffany gave a snack to",9,1,2,3,4,5,6,11,12,15,16, Katie, Tiffany, Katie, Tiffany, Tiffany, Katie,eval, Katie,3.222236633300781
+ioi_abba_0092,"While Nathan and Paul were working at the office, Paul gave a necklace to",8,1,2,3,4,5,6,11,12,15,16, Nathan, Paul, Nathan, Paul, Paul, Nathan,eval, Nathan,2.3747482299804688
+ioi_abba_0093,"Then, Rebecca and Lindsay were thinking about going to the garden. Lindsay wanted to give a basketball to",3,1,3,4,5,6,7,14,15,20,21, Rebecca, Lindsay, Rebecca, Lindsay, Lindsay, Rebecca,eval, Rebecca,4.773933410644531
+ioi_abba_0094,"Afterwards, Ryan and Laura went to the restaurant. Laura gave a basketball to",11,1,4,5,6,7,8,12,13,16,17, Ryan, Laura, Ryan, Laura, Laura, Ryan,eval, Ryan,7.7714691162109375
+ioi_abba_0095,"While Alicia and Heather were commuting to the hospital, Heather gave a kiss to",9,1,2,3,4,5,6,11,12,15,16, Alicia, Heather, Alicia, Heather, Heather, Alicia,eval, Alicia,2.1776885986328125
+ioi_abba_0096,"Then, Christina and Nicole had a long argument, and afterwards Nicole said to",4,1,3,4,5,6,7,13,14,15,16, Christina, Nicole, Christina, Nicole, Nicole, Christina,eval, Christina,4.020805358886719
+ioi_abba_0097,"Afterwards, Jennifer and Thomas went to the restaurant. Thomas gave a snack to",11,1,4,5,6,7,8,12,13,16,17, Jennifer, Thomas, Jennifer, Thomas, Thomas, Jennifer,eval, Jennifer,3.966407775878906
+ioi_abba_0098,"When Christopher and Joseph got a necklace at the station, Joseph decided to give the necklace to",7,1,2,3,4,5,6,12,13,18,19, Christopher, Joseph, Christopher, Joseph, Joseph, Christopher,eval, Christopher,2.4540252685546875
+ioi_abba_0099,The garden Joshua and Brian went to had a drink. Brian gave it to,13,1,3,4,5,6,7,12,13,15,16, Joshua, Brian, Joshua, Brian, Brian, Joshua,eval, Joshua,4.634609222412109

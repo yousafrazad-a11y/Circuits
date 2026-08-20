@@ -1,0 +1,35 @@
+loading meta-llama/Llama-3.2-3B-Instruct (prunable + frozen full) ...
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 4642.28it/s]
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 4662.17it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   2%|▏         | 5/254 [00:00<00:05, 48.38it/s]Loading weights:  19%|█▉        | 48/254 [00:00<00:00, 266.48it/s]Loading weights:  34%|███▍      | 86/254 [00:00<00:00, 316.87it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 359.61it/s]Loading weights:  67%|██████▋   | 169/254 [00:00<00:00, 373.75it/s]Loading weights:  82%|████████▏ | 208/254 [00:00<00:00, 378.35it/s]Loading weights:  97%|█████████▋| 246/254 [00:00<00:00, 372.47it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 347.18it/s]
+loaded masks/sections/sec_03_step_1_word.pt | locked 632 closed gates (log_alpha=-1000000.0, grad=0, reopen-proof) | 140 gate groups not in checkpoint (fresh, open, trainable)
+500 example pairs total from 1 file(s):
+  train_03_step_1_word.jsonl: 500
+caching full-model logits ...
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+training: 200 epochs, lr=0.005, kl=1.0, task=1.0, lambda_mult=8.0
+[04:50:37] epoch 1/200 kl=9.0911 task=9.0927 sparsity=1.9188 train_acc=0.0664 gates_open=99.8% (20s) | val acc 1.0000
+[04:51:08] epoch 2/200 kl=8.0445 task=8.0460 sparsity=5.8755 train_acc=0.1016 gates_open=99.8% (20s) | val acc 1.0000
+[04:51:38] epoch 3/200 kl=8.3153 task=8.3168 sparsity=9.8277 train_acc=0.0938 gates_open=99.8% (20s) | val acc 1.0000
+[04:52:09] epoch 4/200 kl=8.4412 task=8.4428 sparsity=12.3136 train_acc=0.0781 gates_open=99.8% (20s) | val acc 1.0000
+[04:52:40] epoch 5/200 kl=7.8595 task=7.8610 sparsity=12.3388 train_acc=0.1680 gates_open=99.8% (20s) | val acc 1.0000
+[04:53:11] epoch 6/200 kl=8.5180 task=8.5195 sparsity=12.3210 train_acc=0.0859 gates_open=99.8% (20s) | val acc 1.0000
+[04:53:41] epoch 7/200 kl=7.4828 task=7.4842 sparsity=12.2975 train_acc=0.1895 gates_open=99.8% (20s) | val acc 1.0000
+[04:54:12] epoch 8/200 kl=8.1230 task=8.1245 sparsity=12.2663 train_acc=0.1855 gates_open=99.8% (20s) | val acc 1.0000
+[04:54:43] epoch 9/200 kl=8.0173 task=8.0188 sparsity=12.2237 train_acc=0.1250 gates_open=99.8% (20s) | val acc 1.0000
+[04:55:13] epoch 10/200 kl=8.0731 task=8.0746 sparsity=12.1672 train_acc=0.1504 gates_open=93.9% (20s) | val acc 1.0000
+[04:55:44] epoch 11/200 kl=8.0531 task=8.0546 sparsity=12.0920 train_acc=0.1367 gates_open=64.9% (20s) | val acc 1.0000
+[04:56:14] epoch 12/200 kl=7.0679 task=7.0693 sparsity=11.9952 train_acc=0.2207 gates_open=34.5% (20s) | val acc 1.0000
+[04:56:45] epoch 13/200 kl=7.5603 task=7.5618 sparsity=11.8753 train_acc=0.1777 gates_open=10.5% (20s) | val acc 1.0000
+[04:57:16] epoch 14/200 kl=9.0115 task=9.0131 sparsity=11.7318 train_acc=0.0605 gates_open=10.5% (20s) | val acc 1.0000
+[04:57:46] epoch 15/200 kl=7.6551 task=7.6565 sparsity=11.5709 train_acc=0.1914 gates_open=10.5% (20s) | val acc 1.0000
+[04:58:17] epoch 16/200 kl=7.3199 task=7.3213 sparsity=11.4018 train_acc=0.2441 gates_open=10.5% (20s) | val acc 1.0000
+[04:58:47] epoch 17/200 kl=8.5812 task=8.5827 sparsity=11.2356 train_acc=0.1152 gates_open=10.5% (20s) | val acc 1.0000
+[04:59:18] epoch 18/200 kl=7.7269 task=7.7284 sparsity=11.0823 train_acc=0.1504 gates_open=10.5% (20s) | val acc 1.0000
+[04:59:49] epoch 19/200 kl=7.6674 task=7.6687 sparsity=10.9470 train_acc=0.1660 gates_open=10.5% (20s) | val acc 1.0000
+[05:00:19] epoch 20/200 kl=5.0835 task=5.0846 sparsity=10.8320 train_acc=0.3535 gates_open=10.5% (20s) | val acc 1.0000
+saved masks/sections/sec_03_fine.ep20.pt | gates open: 42216/402164 (10.5%)
+[05:00:50] epoch 21/200 kl=6.3505 task=6.3517 sparsity=10.7358 train_acc=0.3340 gates_open=10.5% (20s) | val acc 1.0000

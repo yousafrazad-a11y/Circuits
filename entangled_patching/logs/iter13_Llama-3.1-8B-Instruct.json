@@ -1,0 +1,819 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "iter": 13,
+  "families": {
+    "t4_boolean_override": {
+      "family": "Template 4: Simple Boolean Comparison with Override (BYPASS->AUTO)",
+      "n": 50,
+      "seq_len": 90,
+      "alignment_ok": true,
+      "clean_acc": 100.0,
+      "corrupt_acc": 100.0,
+      "tricked_pct": 0.0,
+      "clean_details": [
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override value is NO, so we do not",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override value is NO, so the",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, and Override is NO. The score passes. The Override value is NO,",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override value is NO, so we do not",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override value is NO, so we do not",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, and Override is NO. The score passes. The Override value is NO,",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, and Override is NO. The score passes. The Override value is NO,",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, and Override is NO. The score passes. The Override value is NO,",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override value is NO, so we do not",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we do not output",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override value is NO, so we don't need",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, and Override is NO. The score does not pass. The Override value is",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        }
+      ],
+      "corrupt_details": [
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\". The score is irrelevant. The program does not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\". The score is not relevant. The program does",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\". The score is not relevant. The program does",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\". The score is irrelevant. The program does not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\". The score is not relevant. The program does",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The Override value is YES, so the program outputs \"AUTO\" regardless of the score.  The score",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\" regardless of the score. The score is not",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\". The score is not relevant. The program does",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The Override value is YES, so the program outputs \"AUTO\". The score is not relevant. The program does",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        }
+      ]
+    }
+  }
+}

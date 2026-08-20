@@ -1,0 +1,169 @@
+{
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "split": "test",
+  "seed": 0,
+  "samples": [
+    {
+      "id": "test_0432",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 298.\nOperations:\n1. Subtract 19\n2. Subtract 96\n3. Add 95\n4. Subtract 10",
+      "clean_generation": "Step 1: 298 - 19 = 279\nStep 2: 279 - 96 = 183\nStep 3: 183 + 95 = 278\nStep 4: 278 - 10 = 268\n\nFinal answer: 268",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number zfp.\nOperations:\n1. Subtract lmx\n2. Subtract vzc\n3. Add iud\n4. Subtract jxv",
+      "corrupted_generation": "Step 1: zfp - lmx = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "gold_output": "Step 1: 298 - 19 = 279\nStep 2: 279 - 96 = 183\nStep 3: 183 + 95 = 278\nStep 4: 278 - 10 = 268\nFinal answer: 268",
+      "final_answer": 268,
+      "operand_mapping": {
+        "298": "zfp",
+        "19": "lmx",
+        "96": "vzc",
+        "95": "iud",
+        "10": "jxv"
+      }
+    },
+    {
+      "id": "test_0197",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 393.\nOperations:\n1. Subtract 28\n2. Subtract 83\n3. Multiply by 7\n4. Multiply by 4\n5. Add 53",
+      "clean_generation": "Step 1: 393 - 28 = 365\nStep 2: 365 - 83 = 282\nStep 3: 282 * 7 = 1964\nStep 4: 1964 * 4 = 7848\nStep 5: 7848 + 53 = 7891\nFinal answer: 7891",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number fie.\nOperations:\n1. Subtract mny\n2. Subtract zum\n3. Multiply by sys\n4. Multiply by sur\n5. Add wal",
+      "corrupted_generation": "Step 1: fie - mny = 4\nStep 2: 4 - zum = -zum + 4\nStep 3: (-zum + 4) * sys = -zum * sys + 4 * sys\nStep 4: (-zum * sys + 4 * sys) * sur = -zum * sys * sur + 4 * sys * sur\nStep 5: -zum * sys * sur + 4 * sys * sur + wal = -zum * sys * sur + 4 * sys * sur + wal\n\nFinal answer: -zum * sys * sur + 4 * sys * sur + wal",
+      "gold_output": "Step 1: 393 - 28 = 365\nStep 2: 365 - 83 = 282\nStep 3: 282 * 7 = 1974\nStep 4: 1974 * 4 = 7896\nStep 5: 7896 + 53 = 7949\nFinal answer: 7949",
+      "final_answer": 7949,
+      "operand_mapping": {
+        "393": "fie",
+        "28": "mny",
+        "83": "zum",
+        "7": "sys",
+        "4": "sur",
+        "53": "wal"
+      }
+    },
+    {
+      "id": "test_0388",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 150.\nOperations:\n1. Add 11\n2. Multiply by 3\n3. Subtract 15\n4. Subtract 30\n5. Add 95",
+      "clean_generation": "Step 1: 150 + 11 = 161\nStep 2: 161 * 3 = 483\nStep 3: 483 - 15 = 468\nStep 4: 468 - 30 = 438\nStep 5: 438 + 95 = 533\nFinal answer: 533",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number zfw.\nOperations:\n1. Add hyi\n2. Multiply by kqn\n3. Subtract mav\n4. Subtract gzo\n5. Add aql",
+      "corrupted_generation": "Step 1: zfw + hyi = zfwhyi\n\nStep 2: (zwfyi) * kqn = zwfyi * kqnpn\n\nStep 3: (zwfyi * kqnpn) - mav = zwfyi * kqnpn - mav\n\nStep 4: (zwfyi * kqnpn - mav) - gzo = zwfyi * kqnpn - mav - gzo\n\nStep 5: (zwfyi * kqnpn - mav - gzo) + aql = zwfyi * kqnpn - mav - gzo + aql\n\nFinal answer: zwfyi * kqnpn - mav - gzo + aql",
+      "gold_output": "Step 1: 150 + 11 = 161\nStep 2: 161 * 3 = 483\nStep 3: 483 - 15 = 468\nStep 4: 468 - 30 = 438\nStep 5: 438 + 95 = 533\nFinal answer: 533",
+      "final_answer": 533,
+      "operand_mapping": {
+        "150": "zfw",
+        "11": "hyi",
+        "3": "kqn",
+        "15": "mav",
+        "30": "gzo",
+        "95": "aql"
+      }
+    },
+    {
+      "id": "test_0455",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 363.\nOperations:\n1. Divide by 3\n2. Subtract 37\n3. Divide by 4\n4. Divide by 3\n5. Multiply by 2",
+      "clean_generation": "Step 1: 363 / 3 = 121\nStep 2: 121 - 37 = 84\nStep 3: 84 / 4 = 21\nStep 4: 21 / 3 = 7\nStep 5: 7 * 2 = 14\n\nFinal answer: 14",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number koa.\nOperations:\n1. Divide by aac\n2. Subtract iwd\n3. Divide by mjf\n4. Divide by aac\n5. Multiply by buu",
+      "corrupted_generation": "Step 1: koa / aac = 0.5\nStep 2: 0.5 - iwd = 0.5 - 0.3\nStep 3: (0.5 - 0.3) / mjf = 0.2 / 0.05\nStep 4: (0.2 / 0.05) / aac = 4\nStep 5: 4 * buu = 4 * 2",
+      "gold_output": "Step 1: 363 / 3 = 121\nStep 2: 121 - 37 = 84\nStep 3: 84 / 4 = 21\nStep 4: 21 / 3 = 7\nStep 5: 7 * 2 = 14\nFinal answer: 14",
+      "final_answer": 14,
+      "operand_mapping": {
+        "363": "koa",
+        "3": "aac",
+        "37": "iwd",
+        "4": "mjf",
+        "2": "buu"
+      }
+    },
+    {
+      "id": "test_0215",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 210.\nOperations:\n1. Subtract 14\n2. Subtract 11\n3. Subtract 56\n4. Add 63\n5. Add 59",
+      "clean_generation": "Step 1: 210 - 14 = 196\nStep 2: 196 - 11 = 185\nStep 3: 185 - 56 = 129\nStep 4: 129 + 63 = 192\nStep 5: 192 + 59 = 251\nFinal answer: 251",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number lsj.\nOperations:\n1. Subtract rlz\n2. Subtract rbh\n3. Subtract jbs\n4. Add vtc\n5. Add aav",
+      "corrupted_generation": "Step 1: lsj - rlz = lsj - 2 = 123 - 2 = 121\n\nStep 2: 121 - rbh = 121 - 4 = 117\n\nStep 3: 117 - jbs = 117 - 7 = 110\n\nStep 4: 110 + vtc = 110 + 5 = 115\n\nStep 5: 115 + aav = 115 + 3 = 118\n\nFinal answer: 118",
+      "gold_output": "Step 1: 210 - 14 = 196\nStep 2: 196 - 11 = 185\nStep 3: 185 - 56 = 129\nStep 4: 129 + 63 = 192\nStep 5: 192 + 59 = 251\nFinal answer: 251",
+      "final_answer": 251,
+      "operand_mapping": {
+        "210": "lsj",
+        "14": "rlz",
+        "11": "rbh",
+        "56": "jbs",
+        "63": "vtc",
+        "59": "aav"
+      }
+    },
+    {
+      "id": "test_0020",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 280.\nOperations:\n1. Subtract 8\n2. Add 92\n3. Divide by 4\n4. Multiply by 2",
+      "clean_generation": "Step 1: 280 - 8 = 272\nStep 2: 272 + 92 = 364\nStep 3: 364 / 4 = 91\nStep 4: 91 * 2 = 182\n\nFinal answer: 182",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number lkm.\nOperations:\n1. Subtract ydn\n2. Add ogu\n3. Divide by igc\n4. Multiply by asw",
+      "corrupted_generation": "Step 1: lkm - ydn = 1234\nStep 2: 1234 + ogu = 1234 + 789 = 2023\nStep 3: 2023 / igc = 2023 / 4 = 505.75\nStep 4: 505.75 * asw = 505.75 * 2 = 1011.5\n\nFinal answer: 1011.5",
+      "gold_output": "Step 1: 280 - 8 = 272\nStep 2: 272 + 92 = 364\nStep 3: 364 / 4 = 91\nStep 4: 91 * 2 = 182\nFinal answer: 182",
+      "final_answer": 182,
+      "operand_mapping": {
+        "280": "lkm",
+        "8": "ydn",
+        "92": "ogu",
+        "4": "igc",
+        "2": "asw"
+      }
+    },
+    {
+      "id": "test_0132",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 466.\nOperations:\n1. Multiply by 6\n2. Subtract 53\n3. Subtract 93\n4. Multiply by 3",
+      "clean_generation": "Step 1: 466 * 6 = 2796\nStep 2: 2796 - 53 = 2743\nStep 3: 2743 - 93 = 2650\nStep 4: 2650 * 3 = 7950\nFinal answer: 7950",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number eht.\nOperations:\n1. Multiply by wuq\n2. Subtract jil\n3. Subtract gon\n4. Multiply by ttz",
+      "corrupted_generation": "Step 1: eht * wuq = ehtwuq\nStep 2: ehtwuq - jil = ehtwuq - jil\nStep 3: ehtwuq - jil - gon = ehtwuq - jil - gon\nStep 4: ehtwuq - jil - gon * ttz = ehtwuqttz - jilttz - gonttz",
+      "gold_output": "Step 1: 466 * 6 = 2796\nStep 2: 2796 - 53 = 2743\nStep 3: 2743 - 93 = 2650\nStep 4: 2650 * 3 = 7950\nFinal answer: 7950",
+      "final_answer": 7950,
+      "operand_mapping": {
+        "466": "eht",
+        "6": "wuq",
+        "53": "jil",
+        "93": "gon",
+        "3": "ttz"
+      }
+    },
+    {
+      "id": "test_0494",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 233.\nOperations:\n1. Add 21\n2. Subtract 18\n3. Subtract 17\n4. Add 9",
+      "clean_generation": "Step 1: 233 + 21 = 254\nStep 2: 254 - 18 = 236\nStep 3: 236 - 17 = 219\nStep 4: 219 + 9 = 228\n\nFinal answer: 228",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number nbw.\nOperations:\n1. Add hts\n2. Subtract ubt\n3. Subtract xes\n4. Add tzi",
+      "corrupted_generation": "Step 1: nbw + hts = nbwhts\n\nStep 2: nbwhts - ubt = nbwhts - ubt\n\nStep 3: nbwhts - ubt - xes = nbwhts - ubt - xes\n\nStep 4: nbwhts - ubt - xes + tzi = nbwhtstzi",
+      "gold_output": "Step 1: 233 + 21 = 254\nStep 2: 254 - 18 = 236\nStep 3: 236 - 17 = 219\nStep 4: 219 + 9 = 228\nFinal answer: 228",
+      "final_answer": 228,
+      "operand_mapping": {
+        "233": "nbw",
+        "21": "hts",
+        "18": "ubt",
+        "17": "xes",
+        "9": "tzi"
+      }
+    },
+    {
+      "id": "test_0261",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 302.\nOperations:\n1. Divide by 2\n2. Add 50\n3. Add 81\n4. Divide by 2\n5. Subtract 59",
+      "clean_generation": "Step 1: 302 / 2 = 151\nStep 2: 151 + 50 = 201\nStep 3: 201 + 81 = 282\nStep 4: 282 / 2 = 141\nStep 5: 141 - 59 = 82\n\nFinal answer: 82",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number mcd.\nOperations:\n1. Divide by izw\n2. Add ymq\n3. Add gdr\n4. Divide by izw\n5. Subtract obg",
+      "corrupted_generation": "Step 1: mcd / izw = mcd = 12 / 7\nStep 2: 12 / 7 + ymq = 12 / 7 + 5\nStep 3: 12 / 7 + 5 + gdr = 12 / 7 + 5 + 3\nStep 4: (12 / 7 + 5 + 3) / izw = (12 / 7 + 8) / 3\nStep 5: (12 / 7 + 8) / 3 - obg = (12 / 7 + 8) / 3 - 2\n\nFinal answer: 38/21",
+      "gold_output": "Step 1: 302 / 2 = 151\nStep 2: 151 + 50 = 201\nStep 3: 201 + 81 = 282\nStep 4: 282 / 2 = 141\nStep 5: 141 - 59 = 82\nFinal answer: 82",
+      "final_answer": 82,
+      "operand_mapping": {
+        "302": "mcd",
+        "2": "izw",
+        "50": "ymq",
+        "81": "gdr",
+        "59": "obg"
+      }
+    },
+    {
+      "id": "test_0248",
+      "clean_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number 459.\nOperations:\n1. Divide by 9\n2. Subtract 42\n3. Divide by 9\n4. Multiply by 9\n5. Add 36",
+      "clean_generation": "Step 1: 459 / 9 = 51.0\nStep 2: 51.0 - 42 = 9.0\nStep 3: 9.0 / 9 = 1.0\nStep 4: 1.0 * 9 = 9\nStep 5: 9 + 36 = 45\n\nFinal answer: 45",
+      "corrupted_prompt": "Solve the following multi-step calculation. Apply the operations one at a time, in the order given. After each operation, write the running result on its own line in the exact format 'Step <k>: <expression> = <result>'. After the last step, write the final result on a new line in the exact format 'Final answer: <result>'. Do not write anything else.\n\nStart with the number hfh.\nOperations:\n1. Divide by ffq\n2. Subtract rym\n3. Divide by ffq\n4. Multiply by ffq\n5. Add sug",
+      "corrupted_generation": "Step 1: hfh / ffq = 0.5\n\nStep 2: 0.5 - rym = 0.5 - 0.5 = 0\n\nStep 3: 0 / ffq = 0\n\nStep 4: 0 * ffq = 0\n\nStep 5: 0 + sug = 0 + 1 = 1\n\nFinal answer: 1",
+      "gold_output": "Step 1: 459 / 9 = 51\nStep 2: 51 - 42 = 9\nStep 3: 9 / 9 = 1\nStep 4: 1 * 9 = 9\nStep 5: 9 + 36 = 45\nFinal answer: 45",
+      "final_answer": 45,
+      "operand_mapping": {
+        "459": "hfh",
+        "9": "ffq",
+        "42": "rym",
+        "36": "sug"
+      }
+    }
+  ]
+}

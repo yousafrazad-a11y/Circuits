@@ -1,0 +1,819 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "iter": 9,
+  "families": {
+    "t4_boolean_override": {
+      "family": "Template 4: Simple Boolean Comparison with Override",
+      "n": 50,
+      "seq_len": 90,
+      "alignment_ok": true,
+      "clean_acc": 0.0,
+      "corrupt_acc": 100.0,
+      "tricked_pct": 0.0,
+      "clean_details": [
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 85, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 98 is above 62. The override is NO, so the check is run. The score passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 84 is above 49. The override is NO, so the check is run. The check passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 37 is below the threshold of 52. The Override is NO, so the check is run and",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 80, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 18, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 91, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 78, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 96 is above 34. The override is NO, so the check is run. The score passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so the check is run. The score is 30,",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 27, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 94 is above 50. The override is NO, so the check is run. The score passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 85, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 54 is above 46. The override is NO, so the check is run. The check passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 46 is above 30. The override is NO, so the check is run. The score passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 45, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 75 is above 70, but the Override is NO. The check is run, and the score",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 63 is below the threshold of 69. The Override is NO, so the check is run and",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 71 is above 51. The override is NO, so the check is run. The check passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so the check is run. The score is 45,",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 51 is above 34. The override is NO, so the check is run. The score passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 59, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 28, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 45, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 72, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 35 is below the threshold of 49. The Override is NO, so the check is run and",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 98 is above 48. The override is NO, so the check is run. The score passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 21, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 82, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 36, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 49, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 91, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so the check is run. The score is 18,",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so the check is run. The score is 58,",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 2 is less than 41. The score does not pass. Override is NO, so the check",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 95 is above 69. The override is NO, so the check is run. The score passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = NO, so run the check. The score is 30, which",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 44 is above 34. The override is NO, so the check is run. The score passes",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "pass",
+          "pass": false,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is Override = YES.  The rule is: If Override is YES, skip the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "fail",
+          "pass": false,
+          "tricked": false
+        }
+      ],
+      "corrupt_details": [
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is not needed.  The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is not needed.  The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 98 is above 62. The override is YES. The check is skipped. The answer is BY",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES. Therefore, the check is skipped and",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 84 is above 49. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 37 is less than 52. The override is YES, so the check is skipped. The answer",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is not needed.  The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped and the answer is BYPASS.  The score",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is irrelevant.  The answer",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES. Therefore, the check is skipped and",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 78 is above 64. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is irrelevant.  The answer",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 96 is above 34. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the override is YES.  Therefore, the check is skipped",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 73 is above 65. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES.  The rule is to output \"",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 94 is above 50. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 26 is below the threshold of 70. The Override is YES, so the check is skipped.",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is not needed.  The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES. Therefore, the check is skipped and",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 54 is above 46. The override is YES. The check is skipped. The answer is BY",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES. Therefore, the check is skipped and",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 46 is above 30. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the override is YES.  Therefore, the check is skipped",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 75 is above 70. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 63 is below the threshold of 69. The Override is YES, so the check is skipped.",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 71 is above 51. The override is YES, so the check is skipped. BYPASS.",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the override is YES.  Therefore, the check is skipped",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 51 is above 34. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The control value is YES, so the check is skipped.  The score is not considered. ",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 59 is above 45. The override is YES. The check is skipped. The answer is BY",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES.  The rule is to output \"",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is not needed.  The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES.  The rule is to output \"",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 72 is above 61. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 35 is less than 49. The score does not pass. The Override is YES, so the",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 98 is above 48. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES.  The rule is to output \"",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is not needed.  The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES. Therefore, the check is skipped and",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is not needed.  The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 49 is below the threshold of 68. The Override is YES, so the check is skipped.",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is irrelevant.  The answer",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES. Therefore, the check is skipped and",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is irrelevant.  The answer",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 2 is less than 41. The score does not pass. Override is YES. The check is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 95 is above 69. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The score is below the threshold, but the Override is YES.  Therefore, the check is skipped",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS. 44 is above 34. The override is YES, so the check is skipped. The answer is",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " BYPASS.  The override is YES, so the check is skipped.  The score is not needed.  The",
+          "pred": "bypass",
+          "pred_strict": "bypass",
+          "gold": "bypass",
+          "pass": true,
+          "tricked": false
+        }
+      ]
+    }
+  }
+}

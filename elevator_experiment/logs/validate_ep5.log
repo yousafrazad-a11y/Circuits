@@ -1,0 +1,44 @@
+checkpoint: masks/heads_only.ep5.pt (epoch 5, heads_only=True)
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 35696.20it/s]
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 3900.31it/s]
+Llama model successfully adapted for pruning with block-level gates.
+loaded masks/heads_only.ep5.pt | locked 419 closed gates (log_alpha=-1000000.0, grad=0, reopen-proof)
+gates open: 281/700 (40.14%)
+evaluating 18500 example pairs from 21 file(s) ...
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+  1600/18500 acc=1.0000
+  3200/18500 acc=1.0000
+  4800/18500 acc=1.0000
+  6400/18500 acc=1.0000
+  8000/18500 acc=1.0000
+  9600/18500 acc=1.0000
+  11200/18500 acc=1.0000
+  12800/18500 acc=1.0000
+  14400/18500 acc=0.9997
+  16000/18500 acc=0.9996
+  17600/18500 acc=0.9996
+
+OVERALL: 18493/18500 = 0.9996
+
+division                               acc   n
+test_00_start_word.jsonl            1.0000   500
+test_01_start_sep.jsonl             1.0000   500
+test_02_start_floor.jsonl           1.0000   1500
+test_03_step_1_word.jsonl           1.0000   500
+test_04_step_1_sep.jsonl            1.0000   500
+test_05_step_1_floor.jsonl          1.0000   1500
+test_06_step_2_word.jsonl           1.0000   500
+test_07_step_2_sep.jsonl            1.0000   500
+test_08_step_2_floor.jsonl          1.0000   1500
+test_09_step_3_word.jsonl           1.0000   500
+test_10_step_3_sep.jsonl            1.0000   500
+test_11_step_3_floor.jsonl          1.0000   1500
+test_12_step_4_word.jsonl           1.0000   500
+test_13_step_4_sep.jsonl            1.0000   500
+test_14_step_4_floor.jsonl          1.0000   1500
+test_15_step_5_word.jsonl           1.0000   500
+test_16_step_5_sep.jsonl            1.0000   500
+test_17_step_5_floor.jsonl          0.9953   1500
+test_18_final_word.jsonl            1.0000   1500
+test_19_final_sep.jsonl             1.0000   500
+test_20_final_floor.jsonl           1.0000   1500

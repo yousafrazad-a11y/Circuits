@@ -1,0 +1,180 @@
+loading meta-llama/Llama-3.2-3B-Instruct (prunable + frozen full) ...
+heads+mlp-blocks mode: attention head gates and MLP block gates are active
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 11110.74it/s]
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 3407.00it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   6%|▋         | 16/254 [00:00<00:01, 158.85it/s]Loading weights:  20%|██        | 52/254 [00:00<00:00, 275.84it/s]Loading weights:  34%|███▍      | 87/254 [00:00<00:00, 309.47it/s]Loading weights:  49%|████▉     | 124/254 [00:00<00:00, 333.30it/s]Loading weights:  63%|██████▎   | 161/254 [00:00<00:00, 343.27it/s]Loading weights:  78%|███████▊  | 197/254 [00:00<00:00, 345.73it/s]Loading weights:  91%|█████████▏| 232/254 [00:00<00:00, 339.64it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 328.32it/s]
+resumed log_alpha from masks/sections/sec_03_step_1_word.pt | 279 gates currently closed (still trainable, no locking)
+500 example pairs total from 1 file(s):
+  train_03_step_1_word.jsonl: 500
+caching full-model logits ...
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+training: 150 epochs, lr=0.0025, kl=1.0, task=1.0, lambda_mult=4.0
+[22:55:30] epoch 1/150 kl=0.0480 task=0.0481 sparsity=0.5262 train_acc=0.9922 gates_open=59.7% (17s) | val acc 1.0000
+[22:55:56] epoch 2/150 kl=0.5419 task=0.5421 sparsity=1.6081 train_acc=0.9277 gates_open=59.6% (17s) | val acc 1.0000
+[22:56:23] epoch 3/150 kl=0.1341 task=0.1342 sparsity=2.6818 train_acc=0.9844 gates_open=59.4% (17s) | val acc 1.0000
+[22:56:49] epoch 4/150 kl=0.0174 task=0.0174 sparsity=3.3484 train_acc=0.9961 gates_open=59.3% (17s) | val acc 1.0000
+[22:57:15] epoch 5/150 kl=0.1762 task=0.1763 sparsity=3.3441 train_acc=0.9746 gates_open=59.3% (17s) | val acc 1.0000
+[22:57:41] epoch 6/150 kl=0.0148 task=0.0149 sparsity=3.3313 train_acc=0.9961 gates_open=59.1% (17s) | val acc 1.0000
+[22:58:07] epoch 7/150 kl=0.0006 task=0.0005 sparsity=3.3188 train_acc=1.0000 gates_open=58.9% (17s) | val acc 1.0000
+[22:58:34] epoch 8/150 kl=0.1184 task=0.1184 sparsity=3.3060 train_acc=0.9688 gates_open=58.9% (17s) | val acc 1.0000
+[22:59:00] epoch 9/150 kl=0.1939 task=0.1940 sparsity=3.2935 train_acc=0.9512 gates_open=58.4% (17s) | val acc 1.0000
+[22:59:26] epoch 10/150 kl=0.0022 task=0.0022 sparsity=3.2816 train_acc=1.0000 gates_open=57.4% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep10.pt | gates open: 402/700 (57.4%)
+[22:59:52] epoch 11/150 kl=0.1045 task=0.1045 sparsity=3.2689 train_acc=0.9883 gates_open=57.1% (17s) | val acc 1.0000
+[23:00:18] epoch 12/150 kl=0.2737 task=0.2738 sparsity=3.2557 train_acc=0.9609 gates_open=57.0% (17s) | val acc 1.0000
+[23:00:45] epoch 13/150 kl=0.0118 task=0.0119 sparsity=3.2424 train_acc=0.9961 gates_open=56.7% (17s) | val acc 1.0000
+[23:01:11] epoch 14/150 kl=0.3857 task=0.3858 sparsity=3.2291 train_acc=0.9141 gates_open=56.0% (17s) | val acc 1.0000
+[23:01:37] epoch 15/150 kl=0.0085 task=0.0086 sparsity=3.2168 train_acc=0.9980 gates_open=55.6% (17s) | val acc 1.0000
+[23:02:03] epoch 16/150 kl=0.2161 task=0.2162 sparsity=3.2045 train_acc=0.9688 gates_open=55.3% (17s) | val acc 1.0000
+[23:02:29] epoch 17/150 kl=0.2325 task=0.2325 sparsity=3.1925 train_acc=0.9473 gates_open=55.1% (17s) | val acc 1.0000
+[23:02:55] epoch 18/150 kl=0.1256 task=0.1257 sparsity=3.1805 train_acc=0.9824 gates_open=54.9% (17s) | val acc 1.0000
+[23:03:22] epoch 19/150 kl=0.0028 task=0.0028 sparsity=3.1677 train_acc=1.0000 gates_open=54.6% (17s) | val acc 1.0000
+[23:03:48] epoch 20/150 kl=0.1824 task=0.1824 sparsity=3.1544 train_acc=0.9707 gates_open=54.3% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep20.pt | gates open: 380/700 (54.3%)
+[23:04:14] epoch 21/150 kl=0.0533 task=0.0533 sparsity=3.1416 train_acc=0.9844 gates_open=54.0% (17s) | val acc 1.0000
+[23:04:40] epoch 22/150 kl=0.0019 task=0.0019 sparsity=3.1284 train_acc=1.0000 gates_open=53.9% (17s) | val acc 1.0000
+[23:05:06] epoch 23/150 kl=0.0341 task=0.0342 sparsity=3.1150 train_acc=0.9883 gates_open=53.6% (17s) | val acc 1.0000
+[23:05:33] epoch 24/150 kl=0.0240 task=0.0239 sparsity=3.1020 train_acc=0.9883 gates_open=53.4% (17s) | val acc 1.0000
+[23:05:59] epoch 25/150 kl=0.0484 task=0.0485 sparsity=3.0885 train_acc=0.9785 gates_open=53.4% (17s) | val acc 1.0000
+[23:06:25] epoch 26/150 kl=0.0050 task=0.0051 sparsity=3.0748 train_acc=1.0000 gates_open=53.4% (17s) | val acc 1.0000
+[23:06:51] epoch 27/150 kl=0.0388 task=0.0389 sparsity=3.0608 train_acc=0.9844 gates_open=53.4% (17s) | val acc 1.0000
+[23:07:18] epoch 28/150 kl=0.1175 task=0.1175 sparsity=3.0470 train_acc=0.9766 gates_open=53.0% (17s) | val acc 1.0000
+[23:07:44] epoch 29/150 kl=0.1324 task=0.1324 sparsity=3.0330 train_acc=0.9629 gates_open=52.9% (17s) | val acc 1.0000
+[23:08:10] epoch 30/150 kl=0.0206 task=0.0207 sparsity=3.0189 train_acc=0.9922 gates_open=52.7% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep30.pt | gates open: 369/700 (52.7%)
+[23:08:36] epoch 31/150 kl=0.0954 task=0.0955 sparsity=3.0052 train_acc=0.9570 gates_open=52.3% (17s) | val acc 1.0000
+[23:09:03] epoch 32/150 kl=0.0663 task=0.0663 sparsity=2.9915 train_acc=0.9785 gates_open=52.1% (17s) | val acc 1.0000
+[23:09:29] epoch 33/150 kl=0.0563 task=0.0563 sparsity=2.9787 train_acc=0.9824 gates_open=51.7% (17s) | val acc 1.0000
+[23:09:55] epoch 34/150 kl=0.0018 task=0.0018 sparsity=2.9649 train_acc=1.0000 gates_open=51.4% (17s) | val acc 1.0000
+[23:10:22] epoch 35/150 kl=0.0577 task=0.0577 sparsity=2.9506 train_acc=0.9883 gates_open=51.3% (17s) | val acc 1.0000
+[23:10:48] epoch 36/150 kl=0.0755 task=0.0756 sparsity=2.9364 train_acc=0.9727 gates_open=50.9% (17s) | val acc 1.0000
+[23:11:14] epoch 37/150 kl=0.0418 task=0.0419 sparsity=2.9231 train_acc=0.9902 gates_open=50.4% (17s) | val acc 1.0000
+[23:11:40] epoch 38/150 kl=0.0428 task=0.0428 sparsity=2.9092 train_acc=0.9746 gates_open=50.1% (17s) | val acc 1.0000
+[23:12:07] epoch 39/150 kl=0.0601 task=0.0602 sparsity=2.8955 train_acc=0.9707 gates_open=49.9% (17s) | val acc 1.0000
+[23:12:33] epoch 40/150 kl=0.0178 task=0.0178 sparsity=2.8817 train_acc=0.9922 gates_open=49.9% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep40.pt | gates open: 349/700 (49.9%)
+[23:12:59] epoch 41/150 kl=0.2119 task=0.2120 sparsity=2.8678 train_acc=0.9746 gates_open=49.6% (17s) | val acc 1.0000
+[23:13:25] epoch 42/150 kl=0.0096 task=0.0096 sparsity=2.8540 train_acc=1.0000 gates_open=49.6% (17s) | val acc 1.0000
+[23:13:52] epoch 43/150 kl=0.1636 task=0.1636 sparsity=2.8403 train_acc=0.9570 gates_open=49.4% (17s) | val acc 1.0000
+[23:14:18] epoch 44/150 kl=0.0040 task=0.0040 sparsity=2.8270 train_acc=1.0000 gates_open=49.0% (17s) | val acc 1.0000
+[23:14:44] epoch 45/150 kl=0.2556 task=0.2556 sparsity=2.8135 train_acc=0.9688 gates_open=48.7% (17s) | val acc 1.0000
+[23:15:10] epoch 46/150 kl=0.0766 task=0.0766 sparsity=2.8010 train_acc=0.9746 gates_open=48.6% (17s) | val acc 1.0000
+[23:15:36] epoch 47/150 kl=0.0318 task=0.0318 sparsity=2.7897 train_acc=0.9805 gates_open=48.6% (17s) | val acc 1.0000
+[23:16:02] epoch 48/150 kl=0.0129 task=0.0130 sparsity=2.7778 train_acc=0.9941 gates_open=48.3% (17s) | val acc 1.0000
+[23:16:28] epoch 49/150 kl=0.1844 task=0.1844 sparsity=2.7658 train_acc=0.9805 gates_open=48.1% (17s) | val acc 1.0000
+[23:16:55] epoch 50/150 kl=0.0011 task=0.0010 sparsity=2.7537 train_acc=1.0000 gates_open=47.9% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep50.pt | gates open: 335/700 (47.9%)
+[23:17:21] epoch 51/150 kl=0.0013 task=0.0012 sparsity=2.7416 train_acc=1.0000 gates_open=47.9% (17s) | val acc 1.0000
+[23:17:47] epoch 52/150 kl=0.0003 task=0.0003 sparsity=2.7296 train_acc=1.0000 gates_open=47.6% (17s) | val acc 1.0000
+[23:18:13] epoch 53/150 kl=0.0005 task=0.0005 sparsity=2.7176 train_acc=1.0000 gates_open=47.4% (17s) | val acc 1.0000
+[23:18:39] epoch 54/150 kl=0.0936 task=0.0936 sparsity=2.7057 train_acc=0.9785 gates_open=47.4% (17s) | val acc 1.0000
+[23:19:05] epoch 55/150 kl=0.0709 task=0.0708 sparsity=2.6939 train_acc=0.9863 gates_open=47.1% (17s) | val acc 1.0000
+[23:19:31] epoch 56/150 kl=0.1413 task=0.1414 sparsity=2.6827 train_acc=0.9668 gates_open=47.0% (17s) | val acc 1.0000
+[23:19:58] epoch 57/150 kl=0.0038 task=0.0038 sparsity=2.6718 train_acc=1.0000 gates_open=47.0% (17s) | val acc 1.0000
+[23:20:24] epoch 58/150 kl=0.0009 task=0.0008 sparsity=2.6605 train_acc=1.0000 gates_open=46.6% (17s) | val acc 1.0000
+[23:20:50] epoch 59/150 kl=0.0044 task=0.0045 sparsity=2.6490 train_acc=0.9980 gates_open=46.3% (17s) | val acc 1.0000
+[23:21:16] epoch 60/150 kl=0.0053 task=0.0053 sparsity=2.6375 train_acc=1.0000 gates_open=46.1% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep60.pt | gates open: 323/700 (46.1%)
+[23:21:42] epoch 61/150 kl=0.0031 task=0.0031 sparsity=2.6257 train_acc=1.0000 gates_open=45.9% (17s) | val acc 1.0000
+[23:22:08] epoch 62/150 kl=0.0092 task=0.0092 sparsity=2.6139 train_acc=1.0000 gates_open=45.3% (17s) | val acc 1.0000
+[23:22:35] epoch 63/150 kl=0.0005 task=0.0004 sparsity=2.6020 train_acc=1.0000 gates_open=45.1% (17s) | val acc 1.0000
+[23:23:01] epoch 64/150 kl=0.0051 task=0.0050 sparsity=2.5898 train_acc=0.9980 gates_open=44.9% (17s) | val acc 1.0000
+[23:23:27] epoch 65/150 kl=0.0185 task=0.0185 sparsity=2.5781 train_acc=0.9902 gates_open=44.7% (17s) | val acc 1.0000
+[23:23:53] epoch 66/150 kl=0.0208 task=0.0208 sparsity=2.5664 train_acc=0.9883 gates_open=44.4% (17s) | val acc 1.0000
+[23:24:19] epoch 67/150 kl=0.0276 task=0.0276 sparsity=2.5548 train_acc=0.9922 gates_open=44.3% (17s) | val acc 1.0000
+[23:24:45] epoch 68/150 kl=0.1141 task=0.1141 sparsity=2.5432 train_acc=0.9785 gates_open=44.1% (17s) | val acc 1.0000
+[23:25:12] epoch 69/150 kl=0.0017 task=0.0016 sparsity=2.5311 train_acc=1.0000 gates_open=44.0% (17s) | val acc 1.0000
+[23:25:38] epoch 70/150 kl=0.0048 task=0.0048 sparsity=2.5192 train_acc=1.0000 gates_open=43.9% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep70.pt | gates open: 307/700 (43.9%)
+[23:26:04] epoch 71/150 kl=0.0352 task=0.0352 sparsity=2.5075 train_acc=0.9902 gates_open=43.6% (17s) | val acc 1.0000
+[23:26:30] epoch 72/150 kl=0.0024 task=0.0023 sparsity=2.4957 train_acc=1.0000 gates_open=42.9% (17s) | val acc 1.0000
+[23:26:56] epoch 73/150 kl=0.0063 task=0.0063 sparsity=2.4839 train_acc=1.0000 gates_open=42.6% (17s) | val acc 1.0000
+[23:27:23] epoch 74/150 kl=0.2051 task=0.2051 sparsity=2.4727 train_acc=0.9590 gates_open=42.3% (17s) | val acc 1.0000
+[23:27:49] epoch 75/150 kl=0.1459 task=0.1460 sparsity=2.4621 train_acc=0.9727 gates_open=42.0% (17s) | val acc 1.0000
+[23:28:15] epoch 76/150 kl=0.1466 task=0.1466 sparsity=2.4510 train_acc=0.9707 gates_open=42.0% (17s) | val acc 1.0000
+[23:28:41] epoch 77/150 kl=0.1456 task=0.1456 sparsity=2.4409 train_acc=0.9668 gates_open=41.9% (17s) | val acc 1.0000
+[23:29:07] epoch 78/150 kl=0.0856 task=0.0856 sparsity=2.4311 train_acc=0.9863 gates_open=41.7% (17s) | val acc 1.0000
+[23:29:33] epoch 79/150 kl=0.0007 task=0.0007 sparsity=2.4211 train_acc=1.0000 gates_open=41.7% (17s) | val acc 1.0000
+[23:30:00] epoch 80/150 kl=0.0202 task=0.0202 sparsity=2.4109 train_acc=0.9922 gates_open=41.4% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep80.pt | gates open: 290/700 (41.4%)
+[23:30:26] epoch 81/150 kl=0.0036 task=0.0035 sparsity=2.4009 train_acc=1.0000 gates_open=41.1% (17s) | val acc 1.0000
+[23:30:52] epoch 82/150 kl=0.0035 task=0.0035 sparsity=2.3906 train_acc=1.0000 gates_open=41.1% (17s) | val acc 1.0000
+[23:31:18] epoch 83/150 kl=0.0151 task=0.0150 sparsity=2.3801 train_acc=0.9961 gates_open=40.9% (17s) | val acc 1.0000
+[23:31:44] epoch 84/150 kl=0.1404 task=0.1404 sparsity=2.3698 train_acc=0.9648 gates_open=40.6% (17s) | val acc 1.0000
+[23:32:11] epoch 85/150 kl=0.0254 task=0.0254 sparsity=2.3600 train_acc=0.9863 gates_open=40.3% (17s) | val acc 1.0000
+[23:32:37] epoch 86/150 kl=0.1860 task=0.1860 sparsity=2.3505 train_acc=0.9492 gates_open=40.1% (17s) | val acc 1.0000
+[23:33:03] epoch 87/150 kl=0.1176 task=0.1176 sparsity=2.3412 train_acc=0.9629 gates_open=39.3% (17s) | val acc 1.0000
+[23:33:29] epoch 88/150 kl=0.0029 task=0.0029 sparsity=2.3326 train_acc=1.0000 gates_open=39.1% (17s) | val acc 1.0000
+[23:33:55] epoch 89/150 kl=0.0524 task=0.0524 sparsity=2.3227 train_acc=0.9844 gates_open=38.7% (17s) | val acc 1.0000
+[23:34:21] epoch 90/150 kl=0.0059 task=0.0058 sparsity=2.3129 train_acc=0.9980 gates_open=38.7% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep90.pt | gates open: 271/700 (38.7%)
+[23:34:48] epoch 91/150 kl=0.0088 task=0.0088 sparsity=2.3028 train_acc=0.9961 gates_open=38.7% (17s) | val acc 1.0000
+[23:35:14] epoch 92/150 kl=0.0637 task=0.0637 sparsity=2.2928 train_acc=0.9863 gates_open=38.7% (17s) | val acc 1.0000
+[23:35:40] epoch 93/150 kl=0.0650 task=0.0649 sparsity=2.2832 train_acc=0.9746 gates_open=38.4% (17s) | val acc 1.0000
+[23:36:06] epoch 94/150 kl=0.0055 task=0.0054 sparsity=2.2741 train_acc=0.9980 gates_open=38.1% (17s) | val acc 1.0000
+[23:36:32] epoch 95/150 kl=0.2649 task=0.2649 sparsity=2.2648 train_acc=0.9336 gates_open=38.1% (17s) | val acc 1.0000
+[23:36:59] epoch 96/150 kl=0.1327 task=0.1326 sparsity=2.2562 train_acc=0.9648 gates_open=37.9% (17s) | val acc 1.0000
+[23:37:25] epoch 97/150 kl=0.0279 task=0.0279 sparsity=2.2475 train_acc=0.9863 gates_open=37.9% (17s) | val acc 1.0000
+[23:37:51] epoch 98/150 kl=0.0016 task=0.0016 sparsity=2.2388 train_acc=1.0000 gates_open=37.7% (17s) | val acc 1.0000
+[23:38:17] epoch 99/150 kl=0.1635 task=0.1635 sparsity=2.2298 train_acc=0.9629 gates_open=37.7% (17s) | val acc 1.0000
+[23:38:43] epoch 100/150 kl=0.0712 task=0.0713 sparsity=2.2214 train_acc=0.9844 gates_open=37.6% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep100.pt | gates open: 263/700 (37.6%)
+[23:39:10] epoch 101/150 kl=0.0832 task=0.0831 sparsity=2.2127 train_acc=0.9785 gates_open=37.4% (17s) | val acc 1.0000
+[23:39:36] epoch 102/150 kl=0.0891 task=0.0890 sparsity=2.2041 train_acc=0.9785 gates_open=37.0% (17s) | val acc 1.0000
+[23:40:02] epoch 103/150 kl=0.0018 task=0.0017 sparsity=2.1958 train_acc=1.0000 gates_open=36.9% (17s) | val acc 1.0000
+[23:40:28] epoch 104/150 kl=0.2572 task=0.2572 sparsity=2.1871 train_acc=0.9688 gates_open=36.9% (17s) | val acc 1.0000
+[23:40:54] epoch 105/150 kl=0.0080 task=0.0079 sparsity=2.1785 train_acc=1.0000 gates_open=36.9% (17s) | val acc 1.0000
+[23:41:20] epoch 106/150 kl=0.0303 task=0.0301 sparsity=2.1701 train_acc=0.9824 gates_open=36.6% (17s) | val acc 1.0000
+[23:41:47] epoch 107/150 kl=0.2894 task=0.2894 sparsity=2.1622 train_acc=0.9688 gates_open=36.6% (17s) | val acc 1.0000
+[23:42:13] epoch 108/150 kl=0.0044 task=0.0043 sparsity=2.1541 train_acc=1.0000 gates_open=36.6% (17s) | val acc 1.0000
+[23:42:39] epoch 109/150 kl=0.0016 task=0.0015 sparsity=2.1460 train_acc=1.0000 gates_open=36.6% (17s) | val acc 1.0000
+[23:43:05] epoch 110/150 kl=0.1607 task=0.1607 sparsity=2.1378 train_acc=0.9648 gates_open=36.6% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep110.pt | gates open: 256/700 (36.6%)
+[23:43:31] epoch 111/150 kl=0.0658 task=0.0658 sparsity=2.1295 train_acc=0.9863 gates_open=36.3% (17s) | val acc 1.0000
+[23:43:57] epoch 112/150 kl=0.0148 task=0.0147 sparsity=2.1217 train_acc=0.9922 gates_open=36.1% (17s) | val acc 1.0000
+[23:44:24] epoch 113/150 kl=0.0694 task=0.0693 sparsity=2.1144 train_acc=0.9785 gates_open=35.7% (17s) | val acc 1.0000
+[23:44:50] epoch 114/150 kl=0.0011 task=0.0009 sparsity=2.1069 train_acc=1.0000 gates_open=35.6% (17s) | val acc 1.0000
+[23:45:16] epoch 115/150 kl=0.0011 task=0.0010 sparsity=2.0992 train_acc=1.0000 gates_open=35.4% (17s) | val acc 1.0000
+[23:45:42] epoch 116/150 kl=0.0068 task=0.0067 sparsity=2.0915 train_acc=0.9980 gates_open=35.4% (17s) | val acc 1.0000
+[23:46:08] epoch 117/150 kl=0.0006 task=0.0004 sparsity=2.0839 train_acc=1.0000 gates_open=35.3% (17s) | val acc 1.0000
+[23:46:34] epoch 118/150 kl=0.0008 task=0.0007 sparsity=2.0762 train_acc=1.0000 gates_open=35.3% (17s) | val acc 1.0000
+[23:47:01] epoch 119/150 kl=0.0018 task=0.0016 sparsity=2.0685 train_acc=1.0000 gates_open=35.3% (17s) | val acc 1.0000
+[23:47:27] epoch 120/150 kl=0.0494 task=0.0493 sparsity=2.0608 train_acc=0.9883 gates_open=34.9% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep120.pt | gates open: 244/700 (34.9%)
+[23:47:53] epoch 121/150 kl=0.0420 task=0.0419 sparsity=2.0531 train_acc=0.9863 gates_open=34.9% (17s) | val acc 1.0000
+[23:48:19] epoch 122/150 kl=0.0323 task=0.0322 sparsity=2.0453 train_acc=0.9922 gates_open=34.4% (17s) | val acc 1.0000
+[23:48:45] epoch 123/150 kl=0.0153 task=0.0151 sparsity=2.0378 train_acc=0.9961 gates_open=34.3% (17s) | val acc 1.0000
+[23:49:11] epoch 124/150 kl=0.3245 task=0.3244 sparsity=2.0302 train_acc=0.9414 gates_open=34.1% (17s) | val acc 1.0000
+[23:49:38] epoch 125/150 kl=0.0234 task=0.0232 sparsity=2.0224 train_acc=0.9902 gates_open=33.9% (17s) | val acc 1.0000
+[23:50:04] epoch 126/150 kl=0.0874 task=0.0873 sparsity=2.0148 train_acc=0.9863 gates_open=33.7% (17s) | val acc 1.0000
+[23:50:30] epoch 127/150 kl=0.0066 task=0.0065 sparsity=2.0069 train_acc=0.9961 gates_open=33.6% (17s) | val acc 1.0000
+[23:50:56] epoch 128/150 kl=0.0047 task=0.0045 sparsity=1.9990 train_acc=1.0000 gates_open=33.6% (17s) | val acc 1.0000
+[23:51:22] epoch 129/150 kl=0.0480 task=0.0480 sparsity=1.9913 train_acc=0.9824 gates_open=33.3% (17s) | val acc 1.0000
+[23:51:48] epoch 130/150 kl=0.1039 task=0.1037 sparsity=1.9834 train_acc=0.9688 gates_open=32.7% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep130.pt | gates open: 229/700 (32.7%)
+[23:52:15] epoch 131/150 kl=0.0153 task=0.0152 sparsity=1.9754 train_acc=0.9922 gates_open=32.1% (17s) | val acc 1.0000
+[23:52:41] epoch 132/150 kl=0.1658 task=0.1656 sparsity=1.9674 train_acc=0.9688 gates_open=32.0% (17s) | val acc 1.0000
+[23:53:07] epoch 133/150 kl=0.0024 task=0.0022 sparsity=1.9592 train_acc=1.0000 gates_open=31.9% (17s) | val acc 1.0000
+[23:53:33] epoch 134/150 kl=0.0061 task=0.0059 sparsity=1.9514 train_acc=0.9961 gates_open=31.6% (17s) | val acc 1.0000
+[23:53:59] epoch 135/150 kl=0.0625 task=0.0623 sparsity=1.9437 train_acc=0.9746 gates_open=31.4% (17s) | val acc 1.0000
+[23:54:25] epoch 136/150 kl=0.0031 task=0.0030 sparsity=1.9365 train_acc=1.0000 gates_open=31.1% (17s) | val acc 1.0000
+[23:54:51] epoch 137/150 kl=0.0333 task=0.0331 sparsity=1.9293 train_acc=0.9844 gates_open=31.0% (17s) | val acc 1.0000
+[23:55:18] epoch 138/150 kl=0.0029 task=0.0027 sparsity=1.9222 train_acc=0.9980 gates_open=31.0% (17s) | val acc 1.0000
+[23:55:44] epoch 139/150 kl=0.1955 task=0.1953 sparsity=1.9153 train_acc=0.9668 gates_open=30.7% (17s) | val acc 1.0000
+[23:56:10] epoch 140/150 kl=0.0052 task=0.0049 sparsity=1.9088 train_acc=0.9961 gates_open=30.3% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep140.pt | gates open: 212/700 (30.3%)
+[23:56:37] epoch 141/150 kl=0.0007 task=0.0005 sparsity=1.9026 train_acc=1.0000 gates_open=30.1% (17s) | val acc 1.0000
+[23:57:03] epoch 142/150 kl=0.0722 task=0.0720 sparsity=1.8965 train_acc=0.9805 gates_open=30.1% (17s) | val acc 1.0000
+[23:57:29] epoch 143/150 kl=0.0009 task=0.0007 sparsity=1.8908 train_acc=1.0000 gates_open=30.0% (17s) | val acc 1.0000
+[23:57:55] epoch 144/150 kl=0.0163 task=0.0161 sparsity=1.8852 train_acc=0.9941 gates_open=30.0% (17s) | val acc 1.0000
+[23:58:21] epoch 145/150 kl=0.0006 task=0.0004 sparsity=1.8798 train_acc=1.0000 gates_open=29.9% (17s) | val acc 1.0000
+[23:58:47] epoch 146/150 kl=0.0796 task=0.0794 sparsity=1.8746 train_acc=0.9688 gates_open=29.7% (17s) | val acc 1.0000
+[23:59:14] epoch 147/150 kl=0.0007 task=0.0005 sparsity=1.8695 train_acc=1.0000 gates_open=29.4% (17s) | val acc 1.0000
+[23:59:40] epoch 148/150 kl=0.0244 task=0.0242 sparsity=1.8647 train_acc=0.9941 gates_open=29.4% (17s) | val acc 1.0000
+[00:00:06] epoch 149/150 kl=0.0560 task=0.0559 sparsity=1.8601 train_acc=0.9844 gates_open=29.3% (17s) | val acc 1.0000
+[00:00:32] epoch 150/150 kl=0.0045 task=0.0043 sparsity=1.8556 train_acc=0.9980 gates_open=29.1% (17s) | val acc 1.0000
+saved masks/sections/sec_03_step_1_word.ep150.pt | gates open: 204/700 (29.1%)
+saved masks/sections/sec_03_step_1_word.pt | gates open: 204/700 (29.1%)

@@ -1,0 +1,226 @@
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   3%|▎         | 7/254 [00:00<00:03, 64.10it/s]Loading weights:   7%|▋         | 19/254 [00:00<00:02, 83.53it/s]Loading weights:  11%|█         | 28/254 [00:00<00:03, 75.24it/s]Loading weights:  15%|█▍        | 37/254 [00:00<00:02, 77.83it/s]Loading weights:  19%|█▉        | 48/254 [00:00<00:02, 72.19it/s]Loading weights:  24%|██▍       | 61/254 [00:00<00:02, 86.40it/s]Loading weights:  28%|██▊       | 70/254 [00:00<00:02, 81.98it/s]Loading weights:  32%|███▏      | 82/254 [00:01<00:02, 79.51it/s]Loading weights:  37%|███▋      | 94/254 [00:01<00:01, 84.26it/s]Loading weights:  41%|████      | 103/254 [00:01<00:01, 84.69it/s]Loading weights:  45%|████▍     | 114/254 [00:01<00:01, 85.66it/s]Loading weights:  50%|█████     | 127/254 [00:01<00:01, 94.09it/s]Loading weights:  54%|█████▍    | 137/254 [00:01<00:01, 90.14it/s]Loading weights:  58%|█████▊    | 147/254 [00:01<00:01, 90.97it/s]Loading weights:  62%|██████▏   | 158/254 [00:01<00:01, 91.28it/s]Loading weights:  66%|██████▌   | 168/254 [00:01<00:00, 87.79it/s]Loading weights:  70%|██████▉   | 177/254 [00:02<00:00, 81.87it/s]Loading weights:  73%|███████▎  | 186/254 [00:02<00:00, 81.15it/s]Loading weights:  77%|███████▋  | 195/254 [00:02<00:00, 80.30it/s]Loading weights:  83%|████████▎ | 212/254 [00:02<00:00, 100.03it/s]Loading weights:  88%|████████▊ | 223/254 [00:02<00:00, 90.42it/s] Loading weights:  92%|█████████▏| 233/254 [00:02<00:00, 79.85it/s]Loading weights:  95%|█████████▌| 242/254 [00:02<00:00, 79.46it/s]Loading weights: 100%|██████████| 254/254 [00:02<00:00, 87.99it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 1: Single-Step Arithmetic with Gate
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (57 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 100.0% (50/50)
+- Corrupt Prompt Accuracy: 4.0% (2/50)
+- Tricked / Fallback Error Rate: 96.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: no failures
+- If Corrupt < 90%: 48 failures, e.g. pred='67' gold='off'; pred='21' gold='off'; pred='84' gold='off'; pred='67' gold='off'; pred='78' gold='off'
+
+NEXT STEP / PROPOSED MODIFICATION:
+- see failure analysis; adjust phrasing and re-run
+======================================================================
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 2: Single Key-Value Lookup with Output Mode (INACTIVE->CLOSED)
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (51 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 100.0% (50/50)
+- Corrupt Prompt Accuracy: 0.0% (0/50)
+- Tricked / Fallback Error Rate: 98.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: no failures
+- If Corrupt < 90%: 50 failures, e.g. pred='964' gold='hidden'; pred='494' gold='hidden'; pred='876' gold='hidden'; pred='530' gold='hidden'; pred='141' gold='hidden'
+
+NEXT STEP / PROPOSED MODIFICATION:
+- see failure analysis; adjust phrasing and re-run
+======================================================================
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 3: Direct Spatial Containment with Visibility Filter
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (71 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 100.0% (50/50)
+- Corrupt Prompt Accuracy: 100.0% (50/50)
+- Tricked / Fallback Error Rate: 0.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: no failures
+- If Corrupt < 90%: no failures
+
+NEXT STEP / PROPOSED MODIFICATION:
+- none — family passes; archive dataset
+======================================================================
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 4: Simple Boolean Comparison with Override (BYPASS->AUTO)
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (80 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 100.0% (50/50)
+- Corrupt Prompt Accuracy: 68.0% (34/50)
+- Tricked / Fallback Error Rate: 2.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: no failures
+- If Corrupt < 90%: 16 failures, e.g. pred='pass' gold='auto'; pred='pass' gold='auto'; pred='pass' gold='auto'; pred='pass' gold='auto'; pred='pass' gold='auto'
+
+NEXT STEP / PROPOSED MODIFICATION:
+- see failure analysis; adjust phrasing and re-run
+======================================================================
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 5: Single-Hop Relation with Direct Block
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (55 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 92.0% (46/50)
+- Corrupt Prompt Accuracy: 0.0% (0/50)
+- Tricked / Fallback Error Rate: 88.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: 4 failures, e.g. pred='nathan' gold='iris'; pred='caleb' gold='jack'; pred='frank' gold='noah'; pred='nora' gold='henry'
+- If Corrupt < 90%: 50 failures, e.g. pred='yara' gold='none'; pred='carol' gold='none'; pred='owen' gold='none'; pred='zack' gold='none'; pred='ethan' gold='none'
+
+NEXT STEP / PROPOSED MODIFICATION:
+- see failure analysis; adjust phrasing and re-run
+======================================================================
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 6: String Concatenation with Output Directive (COMBINE->MERGE)
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (57 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 70.0% (35/50)
+- Corrupt Prompt Accuracy: 10.0% (5/50)
+- Tricked / Fallback Error Rate: 58.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: 15 failures, e.g. pred='magenta' gold='magentarock'; pred='purple' gold='purplerock'; pred='magenta' gold='magentafish'; pred='orange' gold='orangesun'; pred='silver' gold='silversun'
+- If Corrupt < 90%: 45 failures, e.g. pred='cyanlight' gold='void'; pred='whitestar' gold='void'; pred='silverwave' gold='void'; pred='purple' gold='void'; pred='tealriver' gold='void'
+
+NEXT STEP / PROPOSED MODIFICATION:
+- see failure analysis; adjust phrasing and re-run
+======================================================================
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 7: Category Membership with Suppression Flag (MUTE->HOLD, N/A->NULL)
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (50 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 100.0% (50/50)
+- Corrupt Prompt Accuracy: 16.0% (8/50)
+- Tricked / Fallback Error Rate: 84.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: no failures
+- If Corrupt < 90%: 42 failures, e.g. pred='fruit' gold='null'; pred='vegetable' gold='null'; pred='tree' gold='null'; pred='flower' gold='null'; pred='mammal' gold='null'
+
+NEXT STEP / PROPOSED MODIFICATION:
+- see failure analysis; adjust phrasing and re-run
+======================================================================
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 8: Simple Unit Conversion with Bypass Switch
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (53 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 100.0% (50/50)
+- Corrupt Prompt Accuracy: 0.0% (0/50)
+- Tricked / Fallback Error Rate: 100.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: no failures
+- If Corrupt < 90%: 50 failures, e.g. pred='14000' gold='zero'; pred='9000' gold='zero'; pred='16000' gold='zero'; pred='10000' gold='zero'; pred='12000' gold='zero'
+
+NEXT STEP / PROPOSED MODIFICATION:
+- see failure analysis; adjust phrasing and re-run
+======================================================================
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 9: List Index Lookup with Render Toggle
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (60 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 22.0% (11/50)
+- Corrupt Prompt Accuracy: 88.0% (44/50)
+- Tricked / Fallback Error Rate: 10.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: 39 failures, e.g. pred='null' gold='pegasus'; pred='null' gold='taurus'; pred='null' gold='prism'; pred='null' gold='viper'; pred='null' gold='lyra'
+- If Corrupt < 90%: 6 failures, e.g. pred='theta' gold='null'; pred='theta' gold='null'; pred='grus' gold='null'; pred='1' gold='null'; pred='lacerta' gold='null'
+
+NEXT STEP / PROPOSED MODIFICATION:
+- see failure analysis; adjust phrasing and re-run
+======================================================================
+======================================================================
+PROCEDURAL ITERATION REPORT #12
+Dataset Family Tested: Template 10: State Change Tracking with Audit Gate
+Model Evaluated: meta-llama/Llama-3.2-3B-Instruct
+
+GOAL VERIFICATION:
+- Task Context Entangled: YES
+- Sequence Length / Positional Alignment: Matching (62 tokens both sides)
+
+PERFORMANCE METRICS (N=50):
+- Clean Prompt Accuracy: 98.0% (49/50)
+- Corrupt Prompt Accuracy: 94.0% (47/50)
+- Tricked / Fallback Error Rate: 6.0% (Model outputs clean answer during corrupt run)
+
+FAILURE ANALYSIS:
+- If Clean < 90%: 1 failures, e.g. pred='blank' gold='yellow'
+- If Corrupt < 90%: 3 failures, e.g. pred='purple' gold='blank'; pred='purple' gold='blank'; pred='purple' gold='blank'
+
+NEXT STEP / PROPOSED MODIFICATION:
+- none — family passes; archive dataset
+======================================================================
+
+log written: /home/exouser/pruning/entangled_patching/logs/iter12_Llama-3.2-3B-Instruct.json
+
+==== SUMMARY ====
+fail  t1_arithmetic_gate           clean=100.0%  corrupt=  4.0%  tricked= 96.0%  align=ok
+fail  t2_kv_lookup                 clean=100.0%  corrupt=  0.0%  tricked= 98.0%  align=ok
+PASS  t3_spatial_containment       clean=100.0%  corrupt=100.0%  tricked=  0.0%  align=ok
+fail  t4_boolean_override          clean=100.0%  corrupt= 68.0%  tricked=  2.0%  align=ok
+fail  t5_relation_block            clean= 92.0%  corrupt=  0.0%  tricked= 88.0%  align=ok
+fail  t6_concat_directive          clean= 70.0%  corrupt= 10.0%  tricked= 58.0%  align=ok
+fail  t7_category_suppression      clean=100.0%  corrupt= 16.0%  tricked= 84.0%  align=ok
+fail  t8_unit_conversion           clean=100.0%  corrupt=  0.0%  tricked=100.0%  align=ok
+fail  t9_list_index                clean= 22.0%  corrupt= 88.0%  tricked= 10.0%  align=ok
+PASS  t10_state_tracking           clean= 98.0%  corrupt= 94.0%  tricked=  6.0%  align=ok

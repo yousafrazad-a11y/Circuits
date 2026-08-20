@@ -1,0 +1,129 @@
+checkpoint: /home/exouser/pruning/elevator_experiment/masks/all_components_l4_lr2.5.pt (epoch ?)
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 42366.71it/s]
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 3306.08it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Llama model successfully adapted for pruning with block-level gates.
+loaded /home/exouser/pruning/elevator_experiment/masks/all_components_l4_lr2.5.pt | locked 339529 closed gates (log_alpha=-1000000.0, grad=0, reopen-proof)
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   8%|▊         | 21/254 [00:00<00:01, 207.14it/s]Loading weights:  24%|██▍       | 62/254 [00:00<00:00, 322.29it/s]Loading weights:  41%|████      | 103/254 [00:00<00:00, 359.10it/s]Loading weights:  58%|█████▊    | 147/254 [00:00<00:00, 384.73it/s]Loading weights:  74%|███████▍  | 188/254 [00:00<00:00, 391.08it/s]Loading weights:  90%|████████▉ | 228/254 [00:00<00:00, 384.46it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 370.16it/s]
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+50/500 exact=0.1600 final=0.2800 full=1.0000
+100/500 exact=0.1500 final=0.2300 full=1.0000
+150/500 exact=0.2000 final=0.2733 full=0.9933
+200/500 exact=0.1950 final=0.2500 full=0.9950
+250/500 exact=0.1880 final=0.2400 full=0.9960
+300/500 exact=0.1967 final=0.2533 full=0.9967
+350/500 exact=0.1971 final=0.2514 full=0.9971
+400/500 exact=0.1850 final=0.2375 full=0.9975
+450/500 exact=0.1778 final=0.2267 full=0.9978
+500/500 exact=0.1820 final=0.2320 full=0.9980
+
+=== 500 pairs, checkpoint /home/exouser/pruning/elevator_experiment/masks/all_components_l4_lr2.5.pt ===
+generation exact-match vs full model: 91/500 = 0.1820
+pruned final-answer accuracy:         116/500 = 0.2320
+full-model final-answer accuracy:     499/500 = 0.9980
+
+--- mismatch pair train_01164 ---
+full:
+Start: 6th
+up -> 7th
+down -> 6th
+down -> 5th
+down -> 4th
+up -> 5th
+FINAL ANSWER: 5th
+pruned:
+Start: 6th
+up -> 7th
+up -> 8th
+up -> 9th
+up -> 10th
+down -> 10th
+FINAL ANSWER: 10th
+
+--- mismatch pair train_00843 ---
+full:
+Start: 3rd
+up -> 4th
+down -> 3rd
+up -> 4th
+up -> 5th
+down -> 4th
+FINAL ANSWER: 4th
+pruned:
+Start: 3rd
+up -> 4th
+up -> 5th
+down -> 5th
+up -> 6th
+down -> 5th
+FINAL ANSWER: 5th
+
+--- mismatch pair train_00816 ---
+full:
+Start: 7th
+down -> 6th
+down -> 5th
+up -> 6th
+up -> 7th
+up -> 8th
+FINAL ANSWER: 8th
+pruned:
+Start: 7th
+down -> 6th
+down -> 5th
+down -> 4th
+down -> 3rd
+down -> 2nd
+down -> 1st
+down -> 0th
+down -> -1st
+down -> -2nd
+down -> -3rd
+down -> -4th
+down -> -5th
+down ->
+
+--- mismatch pair train_00131 ---
+full:
+Start: 3rd
+down -> 2nd
+up -> 3rd
+down -> 2nd
+up -> 3rd
+down -> 2nd
+FINAL ANSWER: 2nd
+pruned:
+Start: 3rd
+down -> 2nd
+down -> 1st
+down -> 0th
+down -> 1st
+down -> 0th
+FINAL ANSWER: 0th
+
+--- mismatch pair train_00016 ---
+full:
+Start: 4th
+down -> 3rd
+down -> 2nd
+down -> 1st
+up -> 2nd
+up -> 3rd
+FINAL ANSWER: 3rd
+pruned:
+Start: 4th
+down -> 3rd
+down -> 2nd
+down -> 1st
+down -> 0th
+down -> 1st
+up -> 2nd
+up -> 1st
+up -> 2nd
+up -> 1st
+up -> 1st
+up -> 1st
+up -> 1st
+up ->

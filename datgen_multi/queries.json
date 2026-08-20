@@ -1,4 +1,26 @@
 [
-  "track positions of items and only give the position in answer. A is first position, B is second position, C is third position, D is fourth position. items at first and second position are swapped, then items at second and third position are swapped. where is A",
-  "track positions of items and only give the position in answer. A is first position, B is second position, C is third position, D is fourth position. items at first and second position are swapped, then items at second and third position are swapped. where is D"
+  {
+    "pair": 1,
+    "type": "clean",
+    "expected": "5th",
+    "prompt": "Answer with one word only (1st, 2nd, 3rd...). Max is on the 3rd floor in an elevator. He goes one floor up, then one floor up. Max is now on"
+  },
+  {
+    "pair": 1,
+    "type": "corrupt",
+    "expected": "3rd",
+    "prompt": "Answer with one word only (1st, 2nd, 3rd...). Max is on the 3rd floor in an elevator. He goes one floor down, then one floor up. Max is now on"
+  },
+  {
+    "pair": 2,
+    "type": "clean",
+    "expected": "3rd",
+    "prompt": "Answer with one word only (1st, 2nd, 3rd...). Max is on the 3rd floor in an elevator. He goes one floor up, then one floor down. Max is now on"
+  },
+  {
+    "pair": 2,
+    "type": "corrupt",
+    "expected": "1st",
+    "prompt": "Answer with one word only (1st, 2nd, 3rd...). Max is on the 3rd floor in an elevator. He goes one floor down, then one floor down. Max is now on"
+  }
 ]

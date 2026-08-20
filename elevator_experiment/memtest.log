@@ -1,0 +1,12 @@
+loading meta-llama/Llama-3.2-1B-Instruct (prunable + frozen full) ...
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 3617.40it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Llama model successfully adapted for pruning with block-level gates.
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights:  34%|███▎      | 49/146 [00:00<00:00, 474.29it/s]Loading weights:  70%|██████▉   | 102/146 [00:00<00:00, 503.78it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 493.78it/s]
+500 example pairs from datasets/divisions/train_03_step_1_word.jsonl
+caching full-model logits ...
+[transformers] `use_return_dict` is deprecated! Use `return_dict` instead!
+
+training: 1 epochs, lr=0.001, kl=1.0, task=1.0, lambda_mult=1.0
+epoch 1/1 kl=4.9693 task=4.9762 sparsity=0.0698 (8s)
+saved masks/memtest.pt | gates open: 197168/197168 (100.0%)

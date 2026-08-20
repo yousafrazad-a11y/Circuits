@@ -1,0 +1,41 @@
+experiment: frozen_expert_router_probe
+seed: 42
+dataset:
+  task: ioi
+  template_order: abba
+  train_examples: 500
+  validation_examples: 100
+  test_examples: 500
+experts:
+  count: 9
+  source: strongest_usable_position_aware_checkpoint
+  frozen: true
+router:
+  hidden_size: 64
+  temperature_start: 2.0
+  temperature_end: 0.25
+  hard_assignment_at_test: true
+  input_ablations:
+    - normalized_position
+    - token_embedding
+    - early_residual
+    - early_residual_plus_position
+training:
+  train_base_model: false
+  train_expert_masks: false
+  train_router: true
+  loss:
+    kl_weight: 1.5
+    task_weight: 1.0
+evaluation:
+  primary:
+    - kl_div
+    - accuracy
+    - pairwise_accuracy
+    - logit_diff
+  router_diagnostics:
+    - assignment_entropy
+    - expert_usage
+    - assignment_stability_across_seeds
+    - agreement_with_hidden_section_labels
+    - performance_by_prompt_length

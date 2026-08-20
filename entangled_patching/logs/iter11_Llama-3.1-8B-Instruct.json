@@ -1,0 +1,819 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "iter": 11,
+  "families": {
+    "t4_boolean_override": {
+      "family": "Template 4: Simple Boolean Comparison with Override (BYPASS->AUTO)",
+      "n": 50,
+      "seq_len": 80,
+      "alignment_ok": true,
+      "clean_acc": 100.0,
+      "corrupt_acc": 100.0,
+      "tricked_pct": 0.0,
+      "clean_details": [
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we follow the rule",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score fails. The Override is NO, so the decision is based",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the normal decision",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the normal rule",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score fails. The Override is NO, so the decision is based",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score fails. The Override is NO, so the decision is based",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we follow the rule",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the normal decision",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the normal rule",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the normal decision",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is 100, which is above the threshold of 50. The Override is NO, so the",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score fails. The Override is NO, so the decision is based",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score fails. The Override is NO, so the decision is based",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the rule for",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score fails. The Override is NO, so the decision is based",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the normal rule",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score fails. The Override is NO, so the decision is based",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the normal rule",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score fails. The Override is NO, so the decision is based",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the normal decision",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so we follow the rule",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so it passes. The Override is NO, so we follow the normal decision",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score fails. The Override is NO, so the decision is based",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " PASS. The score is above the threshold, so the score passes. The Override is NO, so the rule for NO",
+          "pred": "pass",
+          "pred_strict": "pass",
+          "gold": "pass",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " FAIL. The score is below the threshold, so the score does not pass. The Override is NO, so the decision",
+          "pred": "fail",
+          "pred_strict": "fail",
+          "gold": "fail",
+          "pass": true,
+          "tricked": false
+        }
+      ],
+      "corrupt_details": [
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The override",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. 98 is above 62. The override is YES, so the answer is \"AUTO\".  The override",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The override",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is not needed.  The",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is not relevant.  The",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. 96 is above 34. The override is YES, so the answer is \"AUTO\".  The rule",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is not relevant.  The",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The override",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The override is YES, so the answer is \"AUTO\". The score is irrelevant. The control value is the",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is not relevant.  The",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The override",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The override",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The override",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The override",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is not needed.  The",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The override",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO. The override is YES, so the answer is \"AUTO\". The score is irrelevant. The control value is the",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        },
+        {
+          "raw": " AUTO.  The override is YES, so the answer is \"AUTO\".  The score is irrelevant.  The control",
+          "pred": "auto",
+          "pred_strict": "auto",
+          "gold": "auto",
+          "pass": true,
+          "tricked": false
+        }
+      ]
+    }
+  }
+}
