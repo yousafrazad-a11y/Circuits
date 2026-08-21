@@ -125,19 +125,33 @@ def generate_clear_report():
     pdf.text(34, y, "Circuit sizes", 13, True); y -= 12
     pc = P["structure"]["effective_gate_slots_by_granularity"]
     pe = P["structure"]["high_level_edge_pruning"]["all_high_level_edges"]
+    circuits = [G_KL, G_EPOCH, P]
+
+    def size_pair(item):
+        return "{}/{}".format(count(item["active"]), count(item["total"])), "{:.1f}%".format(item["percent_pruned"])
+
     size_rows = []
-    for label, d in [("Normal - KL matched (ep. 80)", G_KL), ("Normal - epoch matched (final)", G_EPOCH), ("Position-aware - final", P)]:
-        c = d["structure"]["effective_gate_slots_by_granularity"]
-        e = d["structure"]["high_level_edge_pruning"]["all_high_level_edges"]
-        pp = d["structure"]["parameter_pruning_proxy"]["whole_model_effective_parameters"]
-        size_rows.append([label, f"{count(e['active'])}/{count(e['total'])} ({e['percent_pruned']:.1f}% closed)", f"{count(c['attention_heads']['active'])}/{count(c['attention_heads']['total'])}", f"{c['attention_neurons']['percent_pruned']:.1f}%", f"{count(c['mlp_blocks']['active'])}/{count(c['mlp_blocks']['total'])}", f"{c['mlp_hidden']['percent_pruned']:.1f}%", f"{c['mlp_output']['percent_pruned']:.1f}%", f"{pp['percent_pruned']:.1f}%"])
-    y = pdf.table(34, y, ["Circuit", "High-level edges active/full", "Heads", "Attn neurons closed", "MLPs", "MLP hidden closed", "MLP output closed", "Model proxy closed"], size_rows, [166,170,66,94,55,91,91,82], 6.8, 27) - 23
+    edge_items = [d["structure"]["high_level_edge_pruning"]["all_high_level_edges"] for d in circuits]
+    size_rows.append(["High-level abstract edges", *sum((size_pair(x) for x in edge_items), ())])
+    for key, label in [
+        ("attention_blocks", "Attention blocks"),
+        ("attention_heads", "Attention heads"),
+        ("attention_neurons", "Attention head neurons"),
+        ("mlp_blocks", "MLP blocks"),
+        ("mlp_hidden", "MLP hidden neurons"),
+        ("mlp_output", "MLP output neurons"),
+    ]:
+        items = [d["structure"]["effective_gate_slots_by_granularity"][key] for d in circuits]
+        size_rows.append([label, *sum((size_pair(x) for x in items), ())])
+    parameter_items = [d["structure"]["parameter_pruning_proxy"]["whole_model_effective_parameters"] for d in circuits]
+    size_rows.append(["Whole-model parameter proxy", *sum((size_pair(x) for x in parameter_items), ())])
+    y = pdf.table(34, y, ["Granularity / size measure", "KL-match open/total", "KL closed", "Epoch-match open/total", "Epoch closed", "Position open/total", "Position closed"], size_rows, [155,120,76,125,76,125,76], 6.6, 21) - 15
     pdf.text(34, y, "Performance on the shared 500-example test set", 13, True); y -= 12
     metric_rows = []
     for label, d in [("Normal - KL matched (ep. 80)", G_KL), ("Normal - epoch matched (final)", G_EPOCH), ("Position-aware - final", P)]:
         metric_rows.append([label, pct(d["accuracy"]), pct(d["exact_match"]), pct(d["pairwise_accuracy"]), f3(d["kl_div"]), f3(d["logit_diff"]), f3(d["soft_faithfulness"])])
     pdf.table(34, y, ["Circuit", "Accuracy", "Exact", "Pairwise", "KL", "Logit diff", "Faithfulness"], metric_rows, [205,85,80,85,80,95,100], 8, 26)
-    pdf.text(34, 49, "All rows use hard, hierarchy-finalized gates. Epoch 80 is the closest tested normal-node KL match to the positional final circuit.", 8)
+    pdf.text(34, 49, "Open/total counts are hierarchy-finalized effective slots; closed columns are percentages. Position totals include nine logical sections.", 8)
     pdf.footer(1)
 
     # Page 2: direct position-aware node versus PEAP comparison.

@@ -24,6 +24,8 @@ training:
   train_base_model: false
   train_expert_masks: false
   train_router: true
+  train_routing: hard_gumbel
+  load_balance_weight: 0.0
   loss:
     kl_weight: 1.5
     task_weight: 1.0

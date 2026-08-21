@@ -1,0 +1,2 @@
+# Training checkpoints are local artifacts; keep metrics and logs in Git.
+results/**/*.pt

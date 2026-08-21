@@ -75,3 +75,18 @@ different partition that performs better than the human sections.
 - `results/`: isolated metrics and checkpoints; no comparison results are
   written here.
 
+
+## Hard-Gumbel probe
+
+The primary second-stage probe uses a one-hot expert in every training forward
+pass with a straight-through Gumbel-softmax gradient. Validation reports both
+deterministic hard routing and the corresponding soft relaxation. Checkpoints
+are selected by deterministic hard-routing validation KL. The run also records
+router gradient norms, pre-hardening entropy and confidence, expert usage, and
+the complete known-section-to-selected-expert matrix.
+
+This frozen-expert probe optimizes assignment to masks that were already learned
+by position-aware pruning; it does not yet learn new masks. Its purpose is to
+test whether useful discrete routing is learnable before jointly optimizing the
+router and pruning gates. The optional load-balance loss is an ablation and is
+disabled by default because true semantic sections are not uniformly frequent.

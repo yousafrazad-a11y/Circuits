@@ -1,0 +1,227 @@
+#!/usr/bin/env python3
+"""Jointly learn discrete token positions and their node-pruning masks."""
+from __future__ import annotations
+import argparse, json, math, random
+from pathlib import Path
+import torch
+import torch.nn.functional as F
+from torch.optim import AdamW
+from torch.utils.data import DataLoader
+from transformers import GPT2LMHeadModel, GPT2TokenizerFast
+from automatic_positions_project.src.metrics import routing_diagnostics
+from automatic_positions_project.src.router import ROUTER_INPUTS, TokenRouter, normalized_positions, router_input_size
+from automatic_positions_project.src.routed_circuit import routed_forward
+from comparison_experiments.common_metrics import CircuitMetricAccumulator
+from comparison_experiments.position_aware_node_pruning.dataset.ioi import IOIDataset, NUM_SECTIONS, SECTION_NAMES, filter_dataset_by_model_correctness, load_or_generate_ioi_data
+from comparison_experiments.position_aware_node_pruning.models.gpt2_circuit import PrunableGPT2LMHeadModel, PruningConfig
+from comparison_experiments.position_aware_node_pruning.utils import disable_dropout
+from comparison_experiments.position_aware_node_pruning.ioi import circuit_density
+
+ROOT = Path(__file__).resolve().parent
+
+def args():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--router-input", choices=ROUTER_INPUTS, required=True)
+    p.add_argument("--output-dir", type=Path, required=True)
+    p.add_argument("--model", default="gpt2"); p.add_argument("--data-path", type=Path, default=ROOT.parent/"comparison_experiments/data")
+    p.add_argument("--num-positions", type=int, default=5)
+    p.add_argument("--gate-learning-rate", type=float, default=3e-2)
+    p.add_argument("--global-sparsity-multiplier", type=float, default=1.0)
+    p.add_argument("--confidence-weight", type=float, default=0.01)
+    p.add_argument("--selection-min-accuracy", type=float, default=0.95)
+    p.add_argument("--confidence-warmup-fraction", type=float, default=0.2)
+    p.add_argument("--epochs", type=int, default=100); p.add_argument("--batch-size", type=int, default=16)
+    p.add_argument("--learning-rate", type=float, default=1e-3); p.add_argument("--hidden-size", type=int, default=64)
+    p.add_argument("--residual-layer", type=int, default=2); p.add_argument("--temperature-start", type=float, default=2.0)
+    p.add_argument("--temperature-end", type=float, default=.25); p.add_argument("--validation-interval", type=int, default=5)
+    p.add_argument("--seed", type=int, default=42); p.add_argument("--num-workers", type=int, default=2)
+    p.add_argument("--train-routing", choices=("hard_gumbel", "soft"), default="hard_gumbel")
+    p.add_argument("--load-balance-weight", type=float, default=0.01)
+    p.add_argument("--no-model-correct-filter", action="store_true")
+    return p.parse_args()
+
+def move(batch, device):
+    return {k: v.to(device) if isinstance(v, torch.Tensor) else v for k,v in batch.items()}
+
+def build_joint_circuit(name, num_positions, device):
+    config=PruningConfig(
+        num_sections=num_positions, sparsity_warmup_steps=1000, depth_penalty_scaling=0.1,
+        prune_attention_heads=True, lambda_attention_heads=0.8,
+        prune_attention_neurons=True, lambda_attention_neurons=0.15,
+        prune_mlp_hidden=True, lambda_mlp_hidden=1.0,
+        prune_mlp_output=True, lambda_mlp_output=1.0,
+        prune_attention_blocks=True, lambda_attention_blocks=0.5,
+        prune_mlp_blocks=True, lambda_mlp_blocks=0.5,
+        prune_full_layers=False, lambda_full_layers=0.0,
+        prune_embedding=False, lambda_embedding=25.0,
+    )
+    model=PrunableGPT2LMHeadModel.from_pretrained_with_pruning(name,config).to(device)
+    disable_dropout(model)
+    for parameter_name,parameter in model.named_parameters():
+        parameter.requires_grad="gate" in parameter_name
+    return model
+
+def gate_state(model):
+    return {name:parameter.detach().cpu() for name,parameter in model.named_parameters() if "gate" in name}
+
+def load_gate_state(model,state):
+    parameters=dict(model.named_parameters())
+    with torch.no_grad():
+        for name,value in state.items(): parameters[name].copy_(value.to(parameters[name].device))
+
+def make_loaders(a, tokenizer, full, device):
+    out={}
+    for split,n in (("train",500),("validation",100),("test",500)):
+        rows=load_or_generate_ioi_data(tokenizer,str(a.data_path),split,n,"abba",a.seed)
+        if not a.no_model_correct_filter:
+            rows=filter_dataset_by_model_correctness(rows,full,tokenizer,str(device),a.batch_size,64,"abba")
+        ds=IOIDataset(rows,tokenizer,max_length=64,template_order="abba")
+        out[split]=DataLoader(ds,batch_size=a.batch_size,shuffle=split=="train",num_workers=a.num_workers,
+                              pin_memory=device.type=="cuda",persistent_workers=a.num_workers>0)
+    return out
+
+def answer_logits(output,batch):
+    rows=torch.arange(output.logits.shape[0],device=output.logits.device)
+    return output.logits[rows,batch["T_Start"]-1]
+
+@torch.no_grad()
+def frozen_features_from_output(full, output, batch, a):
+    position=normalized_positions(batch["attention_mask"])
+    if a.router_input == "normalized_position": return position
+    if a.router_input == "token_embedding": return full.transformer.wte(batch["input_ids"])
+    residual=output.hidden_states[a.residual_layer]
+    if a.router_input == "early_residual": return residual
+    return torch.cat((residual,position.to(residual.dtype)),dim=-1)
+
+@torch.no_grad()
+def build_frozen_cache(full,loaders,a,device):
+    """Cache immutable router features and answer logits by dataset source index."""
+    full.eval(); caches={}
+    for split,loader in loaders.items():
+        feature_rows={}; logit_rows={}
+        for raw in loader:
+            b=move(raw,device)
+            output=full(input_ids=b["input_ids"],attention_mask=b["attention_mask"],
+                        output_hidden_states=True,use_cache=False,return_dict=True)
+            features=frozen_features_from_output(full,output,b,a)
+            logits=answer_logits(output,b)
+            for row,source_index in enumerate(b["source_index"].tolist()):
+                feature_rows[source_index]=features[row].detach()
+                logit_rows[source_index]=logits[row].detach()
+        caches[split]={"features":feature_rows,"answer_logits":logit_rows}
+        print(json.dumps({"event":"frozen_cache","split":split,
+                          "examples":len(feature_rows)},sort_keys=True),flush=True)
+    return caches
+
+def cached_rows(cache,batch,key):
+    return torch.stack([cache[key][index] for index in batch["source_index"].tolist()])
+
+def aggregate_diagnostics(items):
+    total = max(sum(x["valid_token_count"] for x in items), 1)
+    result = {}
+    for key in ("assignment_entropy", "mean_max_probability", "mean_top2_margin"):
+        result[key] = sum(x[key] * x["valid_token_count"] for x in items) / total
+    counts = torch.tensor([x["expert_counts"] for x in items]).sum(0)
+    confusion = torch.tensor([x["section_to_expert_counts"] for x in items]).sum(0)
+    result["expert_counts"] = counts.tolist()
+    result["expert_usage"] = (counts.float() / total).tolist()
+    result["experts_used"] = int((counts > 0).sum().item())
+    result["valid_token_count"] = total
+    result["raw_section_agreement"] = float(confusion.diag().sum().item() / total)
+    result["section_to_expert_counts"] = confusion.tolist()
+    row_totals = confusion.sum(-1, keepdim=True).clamp_min(1)
+    result["section_to_expert_distribution"] = (confusion.float() / row_totals).tolist()
+    return result
+
+@torch.no_grad()
+def evaluate(router,circuit,loader,cache,a,device,routing_mode="hard"):
+
+    router.eval(); circuit.eval(); acc=CircuitMetricAccumulator(); diag=[]
+    for raw in loader:
+        b=move(raw,device); full_answer_logits=cached_rows(cache,b,"answer_logits")
+        if routing_mode == "oracle":
+            cut=circuit(input_ids=b["input_ids"],corrupted_input_ids=b["corrupted_input_ids"],attention_mask=b["attention_mask"],
+                        corrupted_attention_mask=b["corrupted_attention_mask"],section_ids=b["section_ids"],return_dict=True)
+        else:
+            f=cached_rows(cache,b,"features")
+            soft,logits=router(f,temperature=a.temperature_end,hard=False)
+            if routing_mode == "hard":
+                weights=F.one_hot(logits.argmax(-1),a.num_positions).to(soft.dtype)
+            elif routing_mode == "soft":
+                weights=soft
+            else:
+                raise ValueError("Unknown routing mode {}".format(routing_mode))
+            cut=routed_forward(circuit,b,weights)
+            diag.append(routing_diagnostics(soft,b["attention_mask"],b["section_ids"],weights,len(SECTION_NAMES)))
+        acc.update(answer_logits(cut,b),full_answer_logits,b["target_tokens"][:,0],b["distractor_tokens"][:,0])
+    result=acc.compute()
+    if diag:
+        result.update(aggregate_diagnostics(diag))
+    result["routing_mode"] = routing_mode
+    return result
+
+def main():
+    a=args(); random.seed(a.seed); torch.manual_seed(a.seed)
+    if torch.cuda.is_available(): torch.cuda.manual_seed_all(a.seed)
+    a.output_dir.mkdir(parents=True,exist_ok=True); device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    tok=GPT2TokenizerFast.from_pretrained(a.model); tok.pad_token=tok.pad_token or tok.eos_token
+    full=GPT2LMHeadModel.from_pretrained(a.model).to(device).eval(); disable_dropout(full)
+    for p in full.parameters(): p.requires_grad=False
+    circuit=build_joint_circuit(a.model,a.num_positions,device); data=make_loaders(a,tok,full,device)
+    frozen_cache=build_frozen_cache(full,data,a,device)
+    del full
+    if device.type == "cuda":
+        torch.cuda.empty_cache()
+    router=TokenRouter(router_input_size(a.router_input,full.config.hidden_size),a.hidden_size,a.num_positions).to(device)
+    gate_parameters=[p for p in circuit.parameters() if p.requires_grad]
+    opt=AdamW([{"params":router.parameters(),"lr":a.learning_rate},{"params":gate_parameters,"lr":a.gate_learning_rate}])
+    log=a.output_dir/"metrics.jsonl"; log.write_text("",encoding="utf-8"); best_kl=float("inf"); best_density=float("inf"); total_steps=0
+    for epoch in range(a.epochs):
+        router.train(); circuit.train(); frac=epoch/max(a.epochs-1,1); temp=a.temperature_start*math.exp(math.log(a.temperature_end/a.temperature_start)*frac)
+        if a.confidence_warmup_fraction >= 1.0:
+            confidence_scale=0.0
+        else:
+            confidence_scale=min(1.0,max(0.0,(frac-a.confidence_warmup_fraction)/(1.0-a.confidence_warmup_fraction)))
+        sums={"loss":0.,"kl":0.,"task":0.,"sparsity":0.,"confidence":0.,"balance":0.,"router_grad_norm":0.,"gate_grad_norm":0.,"soft_entropy":0.,"mean_max_probability":0.}
+        for raw in data["train"]:
+            b=move(raw,device); opt.zero_grad(set_to_none=True)
+            features=cached_rows(frozen_cache["train"],b,"features")
+            use_hard=a.train_routing == "hard_gumbel"
+            weights,logits=router(features,temperature=temp,hard=use_hard)
+            soft_probabilities=F.softmax(logits/temp,dim=-1)
+            cut=routed_forward(circuit,b,weights)
+            cl,fl=answer_logits(cut,b),cached_rows(frozen_cache["train"],b,"answer_logits")
+            kl=F.kl_div(F.log_softmax(cl,-1),F.log_softmax(fl,-1),reduction="batchmean",log_target=True)
+            rows=torch.arange(cl.shape[0],device=device); margin=cl[rows,b["target_tokens"][:,0]]-cl[rows,b["distractor_tokens"][:,0]]
+            task=F.relu(4.-margin).mean()
+            valid=b["attention_mask"].bool(); valid_probabilities=soft_probabilities[valid]
+            confidence=-(valid_probabilities.clamp_min(1e-12)*valid_probabilities.clamp_min(1e-12).log()).sum(-1).mean()
+            mean_usage=valid_probabilities.mean(0); balance=a.num_positions*mean_usage.square().sum()-1.0
+            sparsity=circuit.get_sparsity_loss(total_steps)["total_sparsity"]
+            loss=1.5*kl+task+a.global_sparsity_multiplier*sparsity+a.confidence_weight*confidence_scale*confidence+a.load_balance_weight*balance
+            loss.backward()
+            router_grad_norm=math.sqrt(sum(float(p.grad.detach().float().square().sum()) for p in router.parameters() if p.grad is not None))
+            gate_grad_norm=math.sqrt(sum(float(p.grad.detach().float().square().sum()) for p in gate_parameters if p.grad is not None))
+            opt.step(); total_steps+=1
+            maximum=valid_probabilities.max(-1).values.mean()
+            for k,v in (("loss",loss),("kl",kl),("task",task),("sparsity",sparsity),("confidence",confidence),("balance",balance),("router_grad_norm",router_grad_norm),("gate_grad_norm",gate_grad_norm),("soft_entropy",confidence),("mean_max_probability",maximum)):
+                sums[k]+=float(v.detach()) if isinstance(v,torch.Tensor) else float(v)
+        density=circuit_density(circuit)
+        record={"event":"epoch","epoch":epoch+1,"steps":total_steps,"temperature":temp,"confidence_scale":confidence_scale,"train_routing":a.train_routing,"load_balance_weight":a.load_balance_weight,"hard_circuit_percent":density["hard_percent"],"expected_circuit_percent":density["expected_percent"],**{k:v/max(len(data["train"]),1) for k,v in sums.items()}}
+        if (epoch+1)%a.validation_interval==0 or epoch+1==a.epochs:
+            val_hard=evaluate(router,circuit,data["validation"],frozen_cache["validation"],a,device,"hard")
+            val_soft=evaluate(router,circuit,data["validation"],frozen_cache["validation"],a,device,"soft")
+            record["validation_hard"]=val_hard; record["validation_soft"]=val_soft
+            state={"epoch":epoch+1,"steps":total_steps,"router_input":a.router_input,"router_state":router.state_dict(),"gate_state":gate_state(circuit),"optimizer_state":opt.state_dict(),"args":vars(a),"validation":val_hard,"validation_hard":val_hard,"validation_soft":val_soft,"density":density}
+            torch.save(state,a.output_dir/f"epoch_{epoch+1:04d}.pt")
+            if val_hard["kl_div"] < best_kl: best_kl=val_hard["kl_div"]; torch.save(state,a.output_dir/"best_kl.pt")
+            if val_hard["accuracy"] >= a.selection_min_accuracy and density["hard_percent"] < best_density: best_density=density["hard_percent"]; torch.save(state,a.output_dir/"best.pt")
+        with log.open("a",encoding="utf-8") as h: h.write(json.dumps(record,default=str,sort_keys=True)+"\n")
+        print(json.dumps(record,default=str,sort_keys=True),flush=True)
+    final_density=circuit_density(circuit); final_hard=evaluate(router,circuit,data["test"],frozen_cache["test"],a,device,"hard"); final_soft=evaluate(router,circuit,data["test"],frozen_cache["test"],a,device,"soft")
+    best_state=torch.load(a.output_dir/"best.pt",map_location=device,weights_only=False); router.load_state_dict(best_state["router_state"]); load_gate_state(circuit,best_state["gate_state"])
+    best_hard=evaluate(router,circuit,data["test"],frozen_cache["test"],a,device,"hard"); best_soft=evaluate(router,circuit,data["test"],frozen_cache["test"],a,device,"soft")
+    final={"final_router_hard_test":final_hard,"final_router_soft_test":final_soft,"final_density":final_density,"best_epoch":best_state["epoch"],"best_router_hard_test":best_hard,"best_router_soft_test":best_soft,"best_density":best_state["density"],"known_section_names":SECTION_NAMES,"learned_position_count":a.num_positions}
+    (a.output_dir/"final_metrics.json").write_text(json.dumps(final,indent=2),encoding="utf-8")
+
+if __name__=="__main__": main()

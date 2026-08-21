@@ -1,0 +1,412 @@
+{
+  "unit": "hierarchical_node_gate",
+  "num_position_sections": 5,
+  "effective_gate_slots_by_granularity": {
+    "attention_blocks": {
+      "total": 60,
+      "active": 25,
+      "closed": 35,
+      "percent_active": 41.666666666666664,
+      "percent_pruned": 58.333333333333336
+    },
+    "mlp_blocks": {
+      "total": 60,
+      "active": 18,
+      "closed": 42,
+      "percent_active": 30.0,
+      "percent_pruned": 70.0
+    },
+    "attention_heads": {
+      "total": 720,
+      "active": 145,
+      "closed": 575,
+      "percent_active": 20.13888888888889,
+      "percent_pruned": 79.86111111111111
+    },
+    "attention_neurons": {
+      "total": 46080,
+      "active": 7047,
+      "closed": 39033,
+      "percent_active": 15.29296875,
+      "percent_pruned": 84.70703125
+    },
+    "mlp_hidden": {
+      "total": 184320,
+      "active": 23954,
+      "closed": 160366,
+      "percent_active": 12.99587673611111,
+      "percent_pruned": 87.00412326388889
+    },
+    "mlp_output": {
+      "total": 46080,
+      "active": 8972,
+      "closed": 37108,
+      "percent_active": 19.47048611111111,
+      "percent_pruned": 80.52951388888889
+    }
+  },
+  "effective_gate_slots_by_section": {
+    "learned_position_0": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 3,
+        "closed": 9,
+        "percent_active": 25.0,
+        "percent_pruned": 75.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 7,
+        "closed": 137,
+        "percent_active": 4.861111111111111,
+        "percent_pruned": 95.13888888888889
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 371,
+        "closed": 8845,
+        "percent_active": 4.025607638888889,
+        "percent_pruned": 95.97439236111111
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 0,
+        "closed": 36864,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      }
+    },
+    "learned_position_1": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 0,
+        "closed": 144,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 0,
+        "closed": 36864,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      }
+    },
+    "learned_position_2": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 12,
+        "closed": 0,
+        "percent_active": 100.0,
+        "percent_pruned": 0.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 12,
+        "closed": 0,
+        "percent_active": 100.0,
+        "percent_pruned": 0.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 92,
+        "closed": 52,
+        "percent_active": 63.888888888888886,
+        "percent_pruned": 36.111111111111114
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 4402,
+        "closed": 4814,
+        "percent_active": 47.76475694444444,
+        "percent_pruned": 52.23524305555556
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 19571,
+        "closed": 17293,
+        "percent_active": 53.08973524305556,
+        "percent_pruned": 46.91026475694444
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 7294,
+        "closed": 1922,
+        "percent_active": 79.14496527777777,
+        "percent_pruned": 20.85503472222222
+      }
+    },
+    "learned_position_3": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 0,
+        "closed": 144,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 0,
+        "closed": 36864,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      }
+    },
+    "learned_position_4": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 10,
+        "closed": 2,
+        "percent_active": 83.33333333333333,
+        "percent_pruned": 16.666666666666668
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 6,
+        "closed": 6,
+        "percent_active": 50.0,
+        "percent_pruned": 50.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 46,
+        "closed": 98,
+        "percent_active": 31.944444444444443,
+        "percent_pruned": 68.05555555555556
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 2274,
+        "closed": 6942,
+        "percent_active": 24.674479166666668,
+        "percent_pruned": 75.32552083333333
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 4383,
+        "closed": 32481,
+        "percent_active": 11.8896484375,
+        "percent_pruned": 88.1103515625
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 1678,
+        "closed": 7538,
+        "percent_active": 18.20746527777778,
+        "percent_pruned": 81.79253472222223
+      }
+    }
+  },
+  "physical_component_union_across_sections": {
+    "layers": {
+      "total": 12,
+      "active": 12,
+      "closed": 0,
+      "percent_active": 100.0,
+      "percent_pruned": 0.0
+    },
+    "attention_blocks": {
+      "total": 12,
+      "active": 12,
+      "closed": 0,
+      "percent_active": 100.0,
+      "percent_pruned": 0.0
+    },
+    "mlp_blocks": {
+      "total": 12,
+      "active": 12,
+      "closed": 0,
+      "percent_active": 100.0,
+      "percent_pruned": 0.0
+    },
+    "attention_heads": {
+      "total": 144,
+      "active": 93,
+      "closed": 51,
+      "percent_active": 64.58333333333333,
+      "percent_pruned": 35.416666666666664
+    },
+    "attention_neurons": {
+      "total": 9216,
+      "active": 4792,
+      "closed": 4424,
+      "percent_active": 51.99652777777778,
+      "percent_pruned": 48.00347222222222
+    },
+    "mlp_hidden": {
+      "total": 36864,
+      "active": 20646,
+      "closed": 16218,
+      "percent_active": 56.005859375,
+      "percent_pruned": 43.994140625
+    },
+    "mlp_output": {
+      "total": 9216,
+      "active": 7456,
+      "closed": 1760,
+      "percent_active": 80.90277777777777,
+      "percent_pruned": 19.09722222222222
+    }
+  },
+  "parameter_pruning_proxy": {
+    "prunable_parameters": {
+      "total": 85017600,
+      "active": 43553732,
+      "closed": 41463868,
+      "percent_active": 51.229077273411626,
+      "percent_pruned": 48.770922726588374
+    },
+    "whole_model_effective_parameters": {
+      "total": 124439808,
+      "active": 82975940,
+      "closed": 41463868,
+      "percent_active": 66.67957893345512,
+      "percent_pruned": 33.32042106654488
+    },
+    "excluded_gate_parameters": 277320,
+    "note": "Union-based extraction proxy over base GPT-2 parameters; learned gate parameters are excluded and the evaluated PyTorch model remains dense."
+  },
+  "high_level_edge_pruning": {
+    "unit": "peap_abstract_directed_edge_qkv_collapsed",
+    "derivation": "circuit_pruning-argo dense-survivor edge counting, adapted to PEAP positions and QKV collapse",
+    "all_high_level_edges": {
+      "total": 59586,
+      "active": 6682,
+      "closed": 52904,
+      "percent_active": 11.214043567280905,
+      "percent_pruned": 88.78595643271909
+    },
+    "residual_and_component_edges": {
+      "total": 57426,
+      "active": 6478,
+      "closed": 50948,
+      "percent_active": 11.280604604186257,
+      "percent_pruned": 88.71939539581375
+    },
+    "attention_transport_edges": {
+      "total": 2160,
+      "active": 204,
+      "closed": 1956,
+      "percent_active": 9.444444444444445,
+      "percent_pruned": 90.55555555555556
+    },
+    "cross_position_attention_edges": {
+      "total": 1440,
+      "active": 59,
+      "closed": 1381,
+      "percent_active": 4.097222222222222,
+      "percent_pruned": 95.90277777777777
+    },
+    "residual_policy": "Residual endpoints are fixed open; an incident edge closes when its gated head or MLP endpoint closes.",
+    "output_policy": "Only the final logical section connects to the next-token output.",
+    "by_source_section_for_non_crossing_edges": {
+      "learned_position_0": {
+        "total": 11454,
+        "active": 23,
+        "closed": 11431,
+        "percent_active": 0.20080321285140562,
+        "percent_pruned": 99.79919678714859
+      },
+      "learned_position_1": {
+        "total": 11454,
+        "active": 0,
+        "closed": 11454,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "learned_position_2": {
+        "total": 11454,
+        "active": 5125,
+        "closed": 6329,
+        "percent_active": 44.744194167976254,
+        "percent_pruned": 55.255805832023746
+      },
+      "learned_position_3": {
+        "total": 11454,
+        "active": 0,
+        "closed": 11454,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "learned_position_4": {
+        "total": 11610,
+        "active": 1330,
+        "closed": 10280,
+        "percent_active": 11.455641688199828,
+        "percent_pruned": 88.54435831180017
+      }
+    }
+  },
+  "aggregation_warning": "Granularities are nested and must not be added together.",
+  "checkpoint": "/home/exouser/pruning/some_random_test/automatic_positions_project/results/joint_5pos_500ep_seed42/epoch_0500.pt"
+}

@@ -1,0 +1,616 @@
+{
+  "unit": "hierarchical_node_gate",
+  "num_position_sections": 9,
+  "effective_gate_slots_by_granularity": {
+    "attention_blocks": {
+      "total": 108,
+      "active": 17,
+      "closed": 91,
+      "percent_active": 15.74074074074074,
+      "percent_pruned": 84.25925925925925
+    },
+    "mlp_blocks": {
+      "total": 108,
+      "active": 15,
+      "closed": 93,
+      "percent_active": 13.88888888888889,
+      "percent_pruned": 86.11111111111111
+    },
+    "attention_heads": {
+      "total": 1296,
+      "active": 77,
+      "closed": 1219,
+      "percent_active": 5.941358024691358,
+      "percent_pruned": 94.05864197530865
+    },
+    "attention_neurons": {
+      "total": 82944,
+      "active": 4085,
+      "closed": 78859,
+      "percent_active": 4.925009645061729,
+      "percent_pruned": 95.07499035493827
+    },
+    "mlp_hidden": {
+      "total": 331776,
+      "active": 13747,
+      "closed": 318029,
+      "percent_active": 4.143458236882716,
+      "percent_pruned": 95.85654176311728
+    },
+    "mlp_output": {
+      "total": 82944,
+      "active": 6346,
+      "closed": 76598,
+      "percent_active": 7.650945216049383,
+      "percent_pruned": 92.34905478395062
+    }
+  },
+  "effective_gate_slots_by_section": {
+    "learned_position_0": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 0,
+        "closed": 144,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 0,
+        "closed": 36864,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      }
+    },
+    "learned_position_1": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 0,
+        "closed": 144,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 0,
+        "closed": 36864,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      }
+    },
+    "learned_position_2": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 5,
+        "closed": 7,
+        "percent_active": 41.666666666666664,
+        "percent_pruned": 58.333333333333336
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 9,
+        "closed": 3,
+        "percent_active": 75.0,
+        "percent_pruned": 25.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 21,
+        "closed": 123,
+        "percent_active": 14.583333333333334,
+        "percent_pruned": 85.41666666666667
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 1070,
+        "closed": 8146,
+        "percent_active": 11.610243055555555,
+        "percent_pruned": 88.38975694444444
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 9414,
+        "closed": 27450,
+        "percent_active": 25.537109375,
+        "percent_pruned": 74.462890625
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 4312,
+        "closed": 4904,
+        "percent_active": 46.78819444444444,
+        "percent_pruned": 53.21180555555556
+      }
+    },
+    "learned_position_3": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 0,
+        "closed": 144,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 0,
+        "closed": 36864,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      }
+    },
+    "learned_position_4": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 0,
+        "closed": 144,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 0,
+        "closed": 36864,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      }
+    },
+    "learned_position_5": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 0,
+        "closed": 144,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 0,
+        "closed": 36864,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      }
+    },
+    "learned_position_6": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 0,
+        "closed": 12,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 0,
+        "closed": 144,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 0,
+        "closed": 36864,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 0,
+        "closed": 9216,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      }
+    },
+    "learned_position_7": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 6,
+        "closed": 6,
+        "percent_active": 50.0,
+        "percent_pruned": 50.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 1,
+        "closed": 11,
+        "percent_active": 8.333333333333334,
+        "percent_pruned": 91.66666666666667
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 20,
+        "closed": 124,
+        "percent_active": 13.88888888888889,
+        "percent_pruned": 86.11111111111111
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 1093,
+        "closed": 8123,
+        "percent_active": 11.859809027777779,
+        "percent_pruned": 88.14019097222223
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 155,
+        "closed": 36709,
+        "percent_active": 0.4204644097222222,
+        "percent_pruned": 99.57953559027777
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 82,
+        "closed": 9134,
+        "percent_active": 0.8897569444444444,
+        "percent_pruned": 99.11024305555556
+      }
+    },
+    "learned_position_8": {
+      "attention_blocks": {
+        "total": 12,
+        "active": 6,
+        "closed": 6,
+        "percent_active": 50.0,
+        "percent_pruned": 50.0
+      },
+      "mlp_blocks": {
+        "total": 12,
+        "active": 5,
+        "closed": 7,
+        "percent_active": 41.666666666666664,
+        "percent_pruned": 58.333333333333336
+      },
+      "attention_heads": {
+        "total": 144,
+        "active": 36,
+        "closed": 108,
+        "percent_active": 25.0,
+        "percent_pruned": 75.0
+      },
+      "attention_neurons": {
+        "total": 9216,
+        "active": 1922,
+        "closed": 7294,
+        "percent_active": 20.85503472222222,
+        "percent_pruned": 79.14496527777777
+      },
+      "mlp_hidden": {
+        "total": 36864,
+        "active": 4178,
+        "closed": 32686,
+        "percent_active": 11.333550347222221,
+        "percent_pruned": 88.66644965277777
+      },
+      "mlp_output": {
+        "total": 9216,
+        "active": 1952,
+        "closed": 7264,
+        "percent_active": 21.180555555555557,
+        "percent_pruned": 78.81944444444444
+      }
+    }
+  },
+  "physical_component_union_across_sections": {
+    "layers": {
+      "total": 12,
+      "active": 12,
+      "closed": 0,
+      "percent_active": 100.0,
+      "percent_pruned": 0.0
+    },
+    "attention_blocks": {
+      "total": 12,
+      "active": 12,
+      "closed": 0,
+      "percent_active": 100.0,
+      "percent_pruned": 0.0
+    },
+    "mlp_blocks": {
+      "total": 12,
+      "active": 12,
+      "closed": 0,
+      "percent_active": 100.0,
+      "percent_pruned": 0.0
+    },
+    "attention_heads": {
+      "total": 144,
+      "active": 62,
+      "closed": 82,
+      "percent_active": 43.05555555555556,
+      "percent_pruned": 56.94444444444444
+    },
+    "attention_neurons": {
+      "total": 9216,
+      "active": 3314,
+      "closed": 5902,
+      "percent_active": 35.959201388888886,
+      "percent_pruned": 64.04079861111111
+    },
+    "mlp_hidden": {
+      "total": 36864,
+      "active": 13310,
+      "closed": 23554,
+      "percent_active": 36.105685763888886,
+      "percent_pruned": 63.894314236111114
+    },
+    "mlp_output": {
+      "total": 9216,
+      "active": 5971,
+      "closed": 3245,
+      "percent_active": 64.78949652777777,
+      "percent_pruned": 35.21050347222222
+    }
+  },
+  "parameter_pruning_proxy": {
+    "prunable_parameters": {
+      "total": 85017600,
+      "active": 27521433,
+      "closed": 57496167,
+      "percent_active": 32.37145367547426,
+      "percent_pruned": 67.62854632452574
+    },
+    "whole_model_effective_parameters": {
+      "total": 124439808,
+      "active": 66943641,
+      "closed": 57496167,
+      "percent_active": 53.79600151745654,
+      "percent_pruned": 46.20399848254346
+    },
+    "excluded_gate_parameters": 499176,
+    "note": "Union-based extraction proxy over base GPT-2 parameters; learned gate parameters are excluded and the evaluated PyTorch model remains dense."
+  },
+  "high_level_edge_pruning": {
+    "unit": "peap_abstract_directed_edge_qkv_collapsed",
+    "derivation": "circuit_pruning-argo dense-survivor edge counting, adapted to PEAP positions and QKV collapse",
+    "all_high_level_edges": {
+      "total": 109722,
+      "active": 1513,
+      "closed": 108209,
+      "percent_active": 1.3789395016496235,
+      "percent_pruned": 98.62106049835037
+    },
+    "residual_and_component_edges": {
+      "total": 103242,
+      "active": 1417,
+      "closed": 101825,
+      "percent_active": 1.3725034385230817,
+      "percent_pruned": 98.62749656147692
+    },
+    "attention_transport_edges": {
+      "total": 6480,
+      "active": 96,
+      "closed": 6384,
+      "percent_active": 1.4814814814814814,
+      "percent_pruned": 98.51851851851852
+    },
+    "cross_position_attention_edges": {
+      "total": 5184,
+      "active": 19,
+      "closed": 5165,
+      "percent_active": 0.36651234567901236,
+      "percent_pruned": 99.63348765432099
+    },
+    "residual_policy": "Residual endpoints are fixed open; an incident edge closes when its gated head or MLP endpoint closes.",
+    "output_policy": "Only the final logical section connects to the next-token output.",
+    "by_source_section_for_non_crossing_edges": {
+      "learned_position_0": {
+        "total": 11454,
+        "active": 0,
+        "closed": 11454,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "learned_position_1": {
+        "total": 11454,
+        "active": 0,
+        "closed": 11454,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "learned_position_2": {
+        "total": 11454,
+        "active": 421,
+        "closed": 11033,
+        "percent_active": 3.675571852627903,
+        "percent_pruned": 96.3244281473721
+      },
+      "learned_position_3": {
+        "total": 11454,
+        "active": 0,
+        "closed": 11454,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "learned_position_4": {
+        "total": 11454,
+        "active": 0,
+        "closed": 11454,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "learned_position_5": {
+        "total": 11454,
+        "active": 0,
+        "closed": 11454,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "learned_position_6": {
+        "total": 11454,
+        "active": 0,
+        "closed": 11454,
+        "percent_active": 0.0,
+        "percent_pruned": 100.0
+      },
+      "learned_position_7": {
+        "total": 11454,
+        "active": 206,
+        "closed": 11248,
+        "percent_active": 1.7984983411908504,
+        "percent_pruned": 98.20150165880915
+      },
+      "learned_position_8": {
+        "total": 11610,
+        "active": 790,
+        "closed": 10820,
+        "percent_active": 6.804478897502153,
+        "percent_pruned": 93.19552110249785
+      }
+    }
+  },
+  "aggregation_warning": "Granularities are nested and must not be added together.",
+  "checkpoint": "/home/exouser/pruning/some_random_test/automatic_positions_project/results/joint_9pos_2000ep_pressure4x_lr2x_bs64_cached_seed42/epoch_2000.pt"
+}
